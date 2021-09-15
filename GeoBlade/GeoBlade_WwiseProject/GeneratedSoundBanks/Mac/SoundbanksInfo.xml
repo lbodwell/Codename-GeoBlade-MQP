@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2385628198" Language="SFX" Hash="1440881832">
+			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps</ObjectPath>
+			<ShortName>Footsteps</ShortName>
+			<Path>Footsteps.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.330023" DurationMax="0.330023">
+					<IncludedMemoryFiles>
+						<File Id="530493106" Language="SFX">
+							<ShortName>footstep.wav</ShortName>
+							<Path>SFX\footstep_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -15,7 +15,7 @@ public class ThirdPersonMovement : MonoBehaviour {
     public bool isGrounded;
     public float nextFootstep = 0f;
     
-    private const float Gravity = 0.2f;
+    private const float Gravity = 0.4f;
     private float _turnSmoothingVel;
 
     private void Update() {
@@ -26,7 +26,7 @@ public class ThirdPersonMovement : MonoBehaviour {
 		
         // Add check to isGrounded
         if (Input.GetKeyDown(KeyCode.Space)) {
-            velocity.y = 32f;
+            velocity.y = 24f;
             isGrounded = false;
         }
 
@@ -56,7 +56,7 @@ public class ThirdPersonMovement : MonoBehaviour {
             
             if (Time.time > nextFootstep) {
                 nextFootstep = Time.time + (isSprinting ? 0.25f : 0.5f);
-                Debug.Log("Footstep Triggered");
+                Debug.Log("Footstep triggered");
                 AkSoundEngine.PostEvent("Footstep", gameObject);
             }
         }
