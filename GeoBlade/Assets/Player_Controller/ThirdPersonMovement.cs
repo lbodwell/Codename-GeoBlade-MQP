@@ -67,7 +67,6 @@ namespace Player_Controller {
             }
             controller.Move(finalVel * Time.deltaTime);
             
-
             if (!controller.isGrounded || !isJumping) return;
             isJumping = false;
             velocity.y = 0f;

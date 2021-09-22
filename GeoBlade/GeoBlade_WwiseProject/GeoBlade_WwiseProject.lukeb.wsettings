@@ -23,12 +23,12 @@
 				</Property>
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
-				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="G8byy9L/+EC5FPmP5pXy0A=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="bn0tQNKTOkKBlDFmUxDgMQ=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="fdVG8r0xikq7qF9OppuUbAECxAX/////YLl2Xk8q0ESM4jf/Yjy02wECxAX/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="YLl2Xk8q0ESM4jf/Yjy02wECCej/////fdVG8r0xikq7qF9OppuUbAECCej/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -60,8 +60,8 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="6+lKKXSNo0+hSP8YRKq6nw=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="KUIp3O3AFEmgqVwGDofAcQ=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="/Ls+fxV71k+tUbrp47Cozg=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="lqxGiU+CNUOX6JXV0xpL0ClCKdztwBRJoKlcBg6HwHHeiOXKMNjkTJg9KkI3UpmX"/>
+				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="0ZQ53KD7K06cIypmvl9vD/y7Pn8Ve9ZPrVG66eOwqM4="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="sURXXP9T4UW77U37jxavRA=="/>
