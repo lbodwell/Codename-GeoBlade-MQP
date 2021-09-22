@@ -123,6 +123,19 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &142358772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad87cca29eec2004bbb96fc6c0b82da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _softDeleted: 0
 --- !u!1 &254691681
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +166,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &495586109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ce3a7cc3f38404592fdd27226cb0a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _partID: 0
+  _partName: Stairs_Test1_0
+  _objectNodeID: 7
+  _geoID: 6
+  _partType: 0
+  _geoNode: {fileID: 1704362921}
+  _isAttribInstancer: 0
+  _isPartInstanced: 0
+  _partPointCount: 40
+  _isObjectInstancer: 0
+  _objectInstancesGenerated: 0
+  _objectInstanceInfos: []
+  _terrainOffsetPosition: {x: 0, y: 0, z: 0}
+  _assetDBTerrainData: {fileID: 0}
+  _isPartEditable: 0
+  _partOutputType: 1
+  _curve: {fileID: 0}
+  _attributesStore: {fileID: 0}
+  _haveInstancesBeenGenerated: 0
+  _meshVertexCount: 180
+  _generatedOutput:
+    _outputData:
+      _gameObject: {fileID: 1906010926}
+      _renderMaterials:
+      - {fileID: 1166558264}
+      _colliders: []
+    _childOutputs: []
+    isInstancer: 0
+  _volumeLayerName: 
 --- !u!1001 &632759449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -160,6 +214,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6213721881995825217, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1113617799}
     - target: {fileID: 6213721881995825218, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -215,6 +273,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6213721881995825218, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
   m_PrefabInstance: {fileID: 632759449}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &883728586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d064048945a579428d136799401f238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objName: Stairs_Test
+  _parentAsset: {fileID: 2126135304}
+  _objectInfo:
+    nameSH: 1528
+    objectInstancePathSH: 0
+    hasTransformChanged: 1
+    haveGeosChanged: 1
+    isVisible: 1
+    isInstancer: 0
+    isInstanced: 0
+    geoCount: 0
+    nodeId: 7
+    objectToInstanceId: -1
+  _geoNodes:
+  - {fileID: 1704362921}
+--- !u!114 &886441747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f09e5b9c866364c97e693a0426cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _material: {fileID: 1166558264}
+  _materialSource: 0
+  _materialKey: 1453660956
 --- !u!1 &1113617796
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +462,57 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!21 &1166558264
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HEU_DEFAULT_MATERIAL_6_0
+  m_Shader: {fileID: 4800000, guid: 5258021c7478f574ba3377ea5d46ed51, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SmoothnessMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Metallic: 0
+    - _Occlusion: 1
+    - _Smoothness: 0.5
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
 --- !u!1 &1167255271
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +702,317 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1280866094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59d17581e5b7f4946a3c54d1fe65c9c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 6
+  _uiLabel: ASSET PARAMETERS
+  _paramInts: 05000000
+  _paramFloats:
+  - 0.5
+  - 0.3
+  - 2
+  _paramStrings: []
+  _paramChoices: []
+  _rootParameters: 0000000001000000
+  _parameterList:
+  - _unityIndex: 0
+    _name: ncy
+    _labelName: Stair_Count
+    _help: 
+    _childParameterIDs: 
+    _choiceValue: 0
+    _intValues: 05000000
+    _floatValues: []
+    _stringValues: []
+    _toggle: 0
+    _color: {r: 0, g: 0, b: 0, a: 0}
+    _gradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    _animCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    _choiceLabels: []
+    _choiceStringValues: []
+    _choiceIntValues: 
+    _parmInfo:
+      id: 0
+      parentId: -1
+      childIndex: 0
+      type: 0
+      scriptType: 0
+      typeInfoSH: 0
+      permissions: 0
+      tagCount: 2
+      size: 1
+      choiceListType: 0
+      choiceCount: 0
+      nameSH: 1540
+      labelSH: 1541
+      templateNameSH: 1543
+      helpSH: 1542
+      hasMin: 1
+      hasMax: 0
+      hasUIMin: 1
+      hasUIMax: 1
+      min: 0
+      max: 20
+      UIMin: 0
+      UIMax: 20
+      invisible: 0
+      disabled: 0
+      spare: 0
+      joinNext: 0
+      labelNone: 0
+      intValuesIndex: 0
+      floatValuesIndex: 0
+      stringValuesIndex: 0
+      choiceIndex: 0
+      inputNodeType: 0
+      inputNodeFlag: -1
+      isChildOfMultiParm: 0
+      instanceNum: -1
+      instanceLength: 0
+      instanceCount: 0
+      instanceStartOffset: -1
+      rampType: -1
+      visibilityConditionSH: 0
+      disabledConditionSH: 0
+      useMenuItemTokenAsValue: 0
+    _showChildren: 0
+    _fileTypeInfo: 
+    _folderListChildrenProcessed: 0
+    _tabSelectedIndex: 0
+    _paramInputNode: {fileID: 0}
+    _hasAssetPathTag: 0
+  - _unityIndex: 1
+    _name: size
+    _labelName: Size
+    _help: 
+    _childParameterIDs: 
+    _choiceValue: 0
+    _intValues: 
+    _floatValues:
+    - 0.5
+    - 0.3
+    - 2
+    _stringValues: []
+    _toggle: 0
+    _color: {r: 0, g: 0, b: 0, a: 0}
+    _gradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    _animCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    _choiceLabels: []
+    _choiceStringValues: []
+    _choiceIntValues: 
+    _parmInfo:
+      id: 1
+      parentId: -1
+      childIndex: 1
+      type: 4
+      scriptType: 11
+      typeInfoSH: 0
+      permissions: 0
+      tagCount: 2
+      size: 3
+      choiceListType: 0
+      choiceCount: 0
+      nameSH: 1544
+      labelSH: 1545
+      templateNameSH: 1547
+      helpSH: 1546
+      hasMin: 0
+      hasMax: 0
+      hasUIMin: 1
+      hasUIMax: 1
+      min: -1
+      max: 1
+      UIMin: -1
+      UIMax: 1
+      invisible: 0
+      disabled: 0
+      spare: 0
+      joinNext: 0
+      labelNone: 0
+      intValuesIndex: 1
+      floatValuesIndex: 0
+      stringValuesIndex: 0
+      choiceIndex: 0
+      inputNodeType: 0
+      inputNodeFlag: -1
+      isChildOfMultiParm: 0
+      instanceNum: -1
+      instanceLength: 0
+      instanceCount: 0
+      instanceStartOffset: -1
+      rampType: -1
+      visibilityConditionSH: 0
+      disabledConditionSH: 0
+      useMenuItemTokenAsValue: 0
+    _showChildren: 0
+    _fileTypeInfo: 
+    _folderListChildrenProcessed: 0
+    _tabSelectedIndex: 0
+    _paramInputNode: {fileID: 0}
+    _hasAssetPathTag: 0
+  _parameterModifiers: []
+  _regenerateParameters: 0
+  _presetData: 235053495f5052455345540a76657273696f6e20322e30610a6f7076616c7565730a7b0a76657273696f6e20302e380a6e6379095b2030096c6f636b733d30205d0928093509290a73697a65095b2030096c6f636b733d30205d092809302e3509302e3239393939393939393939393939393939093209290a7d0a
+  _defaultPresetData: 235053495f5052455345540a76657273696f6e20322e30610a6f7076616c7565730a7b0a76657273696f6e20302e380a6e6379095b2030096c6f636b733d30205d0928093409290a73697a65095b2030096c6f636b733d30205d092809302e3509302e3239393939393939393939393939393939093209290a7d0a
+  _validParameters: 1
+  _showParameters: 1
+--- !u!114 &1452237741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f149f98b4ada1f047b5a0c3d65f45dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showInstanceInputs: 1
+  _numInputsToShowUI: 5
+  _inputsPageIndexUI: 0
+--- !u!114 &1692794609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c73216ad1e23b43a82620464ff135d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _paintBrushSize: 1
+  _paintBrushOpacity: 1
+  _paintIntValue: 
+  _paintFloatValue: []
+  _paintStringValue: []
+  _lastAttributesGeoID: 0
+  _lastAttributesPartID: 0
+  _lastAttributeNodeName: 
+  _lastAttributeName: 
+  _brushHandleColor: {r: 0, g: 0, b: 0, a: 1}
+  _affectedAreaPaintColor: {r: 1, g: 1, b: 0, a: 1}
+  _liveUpdate: 1
+  _isPainting: 0
+  _editPointBoxSize: 0.1
+  _editPointBoxUnselectedColor: {r: 1, g: 0, b: 0, a: 1}
+  _editPointBoxSelectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  _recacheRequired: 1
+  _paintMergeMode: 0
+  _showOnlyEditGeometry: 1
+  _alwaysCookUpstream: 1
+  _paintMeshVisiblity: 0
+--- !u!114 &1704362921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d66a2560bc02844b93f5cd39436c51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _geoInfo:
+    type: 0
+    nameSH: 1531
+    nodeId: 6
+    isEditable: 0
+    isTemplated: 0
+    isDisplayGeo: 1
+    hasGeoChanged: 1
+    hasMaterialChanged: 0
+    pointGroupCount: 0
+    primitiveGroupCount: 0
+    edgeGroupCount: 0
+    partCount: 1
+  _geoName: Stairs_Test1
+  _parts:
+  - {fileID: 495586109}
+  _containerObjectNode: {fileID: 883728586}
+  _inputNode: {fileID: 0}
+  _geoCurve: {fileID: 0}
+  _volumeCache: {fileID: 0}
+  _volumeCaches: []
 --- !u!1 &1759786692
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,6 +1069,298 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1831179694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1831179696}
+  - component: {fileID: 1831179695}
+  m_Layer: 0
+  m_Name: Stairs_Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1831179695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831179694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d22482c65bf0a248a742275874c35f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _houdiniAsset: {fileID: 2126135304}
+  _bakeTargets: []
+--- !u!4 &1831179696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831179694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.97, y: 0.09, z: 0.9079704}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2126135305}
+  - {fileID: 1906010929}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1906010926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906010929}
+  - component: {fileID: 1906010928}
+  - component: {fileID: 1906010927}
+  m_Layer: 0
+  m_Name: Stairs_Test_Stairs_Test1_Stairs_Test1_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!33 &1906010927
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906010926}
+  m_Mesh: {fileID: 1956848811}
+--- !u!23 &1906010928
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906010926}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1166558264}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &1906010929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906010926}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1831179696}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &1956848811
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Stairs_Test1_0_mesh
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 180
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 180
+    localAABB:
+      m_Center: {x: 1, y: 0.6, z: 0}
+      m_Extent: {x: 1.25, y: 0.75, z: 1}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 0
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000100020003000400050006000700080009000a000b000c000d000e000f0010001100120013001400150016001700180019001a001b001c001d001e001f0020002100220023002400250026002700280029002a002b002c002d002e002f0030003100320033003400350036003700380039003a003b003c003d003e003f0040004100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a005b005c005d005e005f0060006100620063006400650066006700680069006a006b006c006d006e006f0070007100720073007400750076007700780079007a007b007c007d007e007f0080008100820083008400850086008700880089008a008b008c008d008e008f0090009100920093009400950096009700980099009a009b009c009d009e009f00a000a100a200a300a400a500a600a700a800a900aa00ab00ac00ad00ae00af00b000b100b200b300
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 180
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 4320
+    _typelessdata: 000080be9a9919be000080bf0000000000000000000080bf000080be9a99193e000080bf0000000000000000000080bf0000803e9a99193e000080bf0000000000000000000080bf0000803e9a99193e000080bf0000000000000000000080bf0000803e9a9919be000080bf0000000000000000000080bf000080be9a9919be000080bf0000000000000000000080bf000080be9a9919be0000803f000080bf0000000000000000000080be9a99193e0000803f000080bf0000000000000000000080be9a99193e000080bf000080bf0000000000000000000080be9a99193e000080bf000080bf0000000000000000000080be9a9919be000080bf000080bf0000000000000000000080be9a9919be0000803f000080bf00000000000000000000803e9a9919be0000803f00000000000000000000803f0000803e9a99193e0000803f00000000000000000000803f000080be9a99193e0000803f00000000000000000000803f000080be9a99193e0000803f00000000000000000000803f000080be9a9919be0000803f00000000000000000000803f0000803e9a9919be0000803f00000000000000000000803f0000803e9a9919be000080bf0000803f00000000000000000000803e9a99193e000080bf0000803f00000000000000000000803e9a99193e0000803f0000803f00000000000000000000803e9a99193e0000803f0000803f00000000000000000000803e9a9919be0000803f0000803f00000000000000000000803e9a9919be000080bf0000803f0000000000000000000080be9a9919be0000803f00000000000080bf00000000000080be9a9919be000080bf00000000000080bf000000000000803e9a9919be000080bf00000000000080bf000000000000803e9a9919be000080bf00000000000080bf000000000000803e9a9919be0000803f00000000000080bf00000000000080be9a9919be0000803f00000000000080bf00000000000080be9a99193e000080bf000000000000803f00000000000080be9a99193e0000803f000000000000803f000000000000803e9a99193e0000803f000000000000803f000000000000803e9a99193e0000803f000000000000803f000000000000803e9a99193e000080bf000000000000803f00000000000080be9a99193e000080bf000000000000803f000000000000803e9a99193e000080bf0000000000000000000080bf0000803e6766e63e000080bf0000000000000000000080bf0000403f6766e63e000080bf0000000000000000000080bf0000403f6766e63e000080bf0000000000000000000080bf0000403f9a99193e000080bf0000000000000000000080bf0000803e9a99193e000080bf0000000000000000000080bf0000803e9a99193e0000803f000080bf00000000000000000000803e6766e63e0000803f000080bf00000000000000000000803e6766e63e000080bf000080bf00000000000000000000803e6766e63e000080bf000080bf00000000000000000000803e9a99193e000080bf000080bf00000000000000000000803e9a99193e0000803f000080bf00000000000000000000403f9a99193e0000803f00000000000000000000803f0000403f6766e63e0000803f00000000000000000000803f0000803e6766e63e0000803f00000000000000000000803f0000803e6766e63e0000803f00000000000000000000803f0000803e9a99193e0000803f00000000000000000000803f0000403f9a99193e0000803f00000000000000000000803f0000403f9a99193e000080bf0000803f00000000000000000000403f6766e63e000080bf0000803f00000000000000000000403f6766e63e0000803f0000803f00000000000000000000403f6766e63e0000803f0000803f00000000000000000000403f9a99193e0000803f0000803f00000000000000000000403f9a99193e000080bf0000803f00000000000000000000803e9a99193e0000803f00000000000080bf000000000000803e9a99193e000080bf00000000000080bf000000000000403f9a99193e000080bf00000000000080bf000000000000403f9a99193e000080bf00000000000080bf000000000000403f9a99193e0000803f00000000000080bf000000000000803e9a99193e0000803f00000000000080bf000000000000803e6766e63e000080bf000000000000803f000000000000803e6766e63e0000803f000000000000803f000000000000403f6766e63e0000803f000000000000803f000000000000403f6766e63e0000803f000000000000803f000000000000403f6766e63e000080bf000000000000803f000000000000803e6766e63e000080bf000000000000803f000000000000403f6766e63e000080bf0000000000000000000080bf0000403f0000403f000080bf0000000000000000000080bf0000a03f0000403f000080bf0000000000000000000080bf0000a03f0000403f000080bf0000000000000000000080bf0000a03f6766e63e000080bf0000000000000000000080bf0000403f6766e63e000080bf0000000000000000000080bf0000403f6766e63e0000803f000080bf00000000000000000000403f0000403f0000803f000080bf00000000000000000000403f0000403f000080bf000080bf00000000000000000000403f0000403f000080bf000080bf00000000000000000000403f6766e63e000080bf000080bf00000000000000000000403f6766e63e0000803f000080bf00000000000000000000a03f6766e63e0000803f00000000000000000000803f0000a03f0000403f0000803f00000000000000000000803f0000403f0000403f0000803f00000000000000000000803f0000403f0000403f0000803f00000000000000000000803f0000403f6766e63e0000803f00000000000000000000803f0000a03f6766e63e0000803f00000000000000000000803f0000a03f6766e63e000080bf0000803f00000000000000000000a03f0000403f000080bf0000803f00000000000000000000a03f0000403f0000803f0000803f00000000000000000000a03f0000403f0000803f0000803f00000000000000000000a03f6766e63e0000803f0000803f00000000000000000000a03f6766e63e000080bf0000803f00000000000000000000403f6766e63e0000803f00000000000080bf000000000000403f6766e63e000080bf00000000000080bf000000000000a03f6766e63e000080bf00000000000080bf000000000000a03f6766e63e000080bf00000000000080bf000000000000a03f6766e63e0000803f00000000000080bf000000000000403f6766e63e0000803f00000000000080bf000000000000403f0000403f000080bf000000000000803f000000000000403f0000403f0000803f000000000000803f000000000000a03f0000403f0000803f000000000000803f000000000000a03f0000403f0000803f000000000000803f000000000000a03f0000403f000080bf000000000000803f000000000000403f0000403f000080bf000000000000803f000000000000a03f0000403f000080bf0000000000000000000080bf0000a03f6666863f000080bf0000000000000000000080bf0000e03f6666863f000080bf0000000000000000000080bf0000e03f6666863f000080bf0000000000000000000080bf0000e03f0000403f000080bf0000000000000000000080bf0000a03f0000403f000080bf0000000000000000000080bf0000a03f0000403f0000803f000080bf00000000000000000000a03f6666863f0000803f000080bf00000000000000000000a03f6666863f000080bf000080bf00000000000000000000a03f6666863f000080bf000080bf00000000000000000000a03f0000403f000080bf000080bf00000000000000000000a03f0000403f0000803f000080bf00000000000000000000e03f0000403f0000803f00000000000000000000803f0000e03f6666863f0000803f00000000000000000000803f0000a03f6666863f0000803f00000000000000000000803f0000a03f6666863f0000803f00000000000000000000803f0000a03f0000403f0000803f00000000000000000000803f0000e03f0000403f0000803f00000000000000000000803f0000e03f0000403f000080bf0000803f00000000000000000000e03f6666863f000080bf0000803f00000000000000000000e03f6666863f0000803f0000803f00000000000000000000e03f6666863f0000803f0000803f00000000000000000000e03f0000403f0000803f0000803f00000000000000000000e03f0000403f000080bf0000803f00000000000000000000a03f0000403f0000803f00000000000080bf000000000000a03f0000403f000080bf00000000000080bf000000000000e03f0000403f000080bf00000000000080bf000000000000e03f0000403f000080bf00000000000080bf000000000000e03f0000403f0000803f00000000000080bf000000000000a03f0000403f0000803f00000000000080bf000000000000a03f6666863f000080bf000000000000803f000000000000a03f6666863f0000803f000000000000803f000000000000e03f6666863f0000803f000000000000803f000000000000e03f6666863f0000803f000000000000803f000000000000e03f6666863f000080bf000000000000803f000000000000a03f6666863f000080bf000000000000803f000000000000e03f6766863f000080bf0000000000000000000080bf0000e03fcdccac3f000080bf0000000000000000000080bf00001040cdccac3f000080bf0000000000000000000080bf00001040cdccac3f000080bf0000000000000000000080bf000010406766863f000080bf0000000000000000000080bf0000e03f6766863f000080bf0000000000000000000080bf0000e03f6766863f0000803f000080bf00000000000000000000e03fcdccac3f0000803f000080bf00000000000000000000e03fcdccac3f000080bf000080bf00000000000000000000e03fcdccac3f000080bf000080bf00000000000000000000e03f6766863f000080bf000080bf00000000000000000000e03f6766863f0000803f000080bf0000000000000000000010406766863f0000803f00000000000000000000803f00001040cdccac3f0000803f00000000000000000000803f0000e03fcdccac3f0000803f00000000000000000000803f0000e03fcdccac3f0000803f00000000000000000000803f0000e03f6766863f0000803f00000000000000000000803f000010406766863f0000803f00000000000000000000803f000010406766863f000080bf0000803f000000000000000000001040cdccac3f000080bf0000803f000000000000000000001040cdccac3f0000803f0000803f000000000000000000001040cdccac3f0000803f0000803f0000000000000000000010406766863f0000803f0000803f0000000000000000000010406766863f000080bf0000803f00000000000000000000e03f6766863f0000803f00000000000080bf000000000000e03f6766863f000080bf00000000000080bf00000000000010406766863f000080bf00000000000080bf00000000000010406766863f000080bf00000000000080bf00000000000010406766863f0000803f00000000000080bf000000000000e03f6766863f0000803f00000000000080bf000000000000e03fcdccac3f000080bf000000000000803f000000000000e03fcdccac3f0000803f000000000000803f0000000000001040cdccac3f0000803f000000000000803f0000000000001040cdccac3f0000803f000000000000803f0000000000001040cdccac3f000080bf000000000000803f000000000000e03fcdccac3f000080bf000000000000803f00000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 1, y: 0.6, z: 0}
+    m_Extent: {x: 1.25, y: 0.75, z: 1}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &2085676979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -696,3 +1450,201 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+--- !u!1 &2126135303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126135305}
+  - component: {fileID: 2126135304}
+  m_Layer: 0
+  m_Name: HDA_Data
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2126135304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126135303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 740823ef63d3f6d468aaab5799b16654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _assetType: 1
+  _assetInfo:
+    nodeId: 6
+    objectNodeId: 7
+    hasEverCooked: 1
+    nameSH: 1538
+    labelSH: 1539
+    filePathSH: 1548
+    versionSH: 1534
+    fullOpNameSH: 1535
+    helpTextSH: 1536
+    helpURLSH: 1537
+    objectCount: -1
+    handleCount: 0
+    transformInputCount: 0
+    geoInputCount: 0
+    geoOutputCount: 1
+    haveObjectsChanged: 0
+    haveMaterialsChanged: 0
+  _nodeInfo:
+    id: 6
+    parentId: 7
+    nameSH: 1529
+    type: 2
+    isValid: 1
+    totalCookCount: 14
+    uniqueHoudiniNodeId: 23
+    internalNodePathSH: 1530
+    parmCount: 2
+    parmIntValueCount: 1
+    parmFloatValueCount: 3
+    parmStringValueCount: 0
+    parmChoiceCount: 0
+    childNodeCount: 2
+    inputCount: 0
+    outputCount: 1
+    createdPostAssetLoad: 1
+    isTimeDependent: 0
+  _assetName: Stairs_Test
+  _assetOpName: Sop/Stairs_Test
+  _assetHelp: 
+  _assetID: 6
+  _assetPath: Assets/Level_Assets/Techno_Level_Asset_Pack/Stairs_Test.hdanc
+  _loadAssetFromMemory: 0
+  _alwaysOverwriteOnLoad: 0
+  _assetFileObject: {fileID: 102900000, guid: 892a954c4fed03e4d928e95d944fb24f, type: 3}
+  _objectNodes:
+  - {fileID: 883728586}
+  _rootGameObject: {fileID: 1831179694}
+  _materialCache:
+  - {fileID: 886441747}
+  _parameters: {fileID: 1280866094}
+  _lastSyncedTransformMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 16.98269
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0.9079704
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  _assetCacheFolderPath: Assets/HoudiniEngineAssetCache/Working/Stairs_Test 2
+  _subassetNames:
+  - Object/Stairs_Test
+  - Sop/Stairs_Test
+  _selectedSubassetIndex: 1
+  _totalCookCount: 28
+  _requestBuildAction: 0
+  _checkParameterChangeForCook: 0
+  _skipCookCheck: 0
+  _uploadParameters: 1
+  _forceUploadInputs: 0
+  _upstreamCookChanged: 0
+  _cookStatus: 0
+  _lastCookResult: 1
+  _isCookingAssetReloaded: 0
+  _sessionID: 1940371185792
+  _uiLocked: 1
+  _showHDAOptions: 0
+  _showGenerateSection: 1
+  _showBakeSection: 0
+  _showEventsSection: 0
+  _showCurvesSection: 0
+  _showInputNodesSection: 0
+  _showToolsSection: 0
+  _showTerrainSection: 0
+  _instanceInputUIState: {fileID: 1452237741}
+  _reloadEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _cookedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _bakedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _reloadDataEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _cookedDataEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _bakedDataEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _preAssetEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _downstreamConnectionCookedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _generateUVs: 0
+  _generateTangents: 1
+  _generateNormals: 1
+  _pushTransformToHoudini: 1
+  _transformChangeTriggersCooks: 0
+  _cookingTriggersDownCooks: 1
+  _autoCookOnParameterChange: 1
+  _ignoreNonDisplayNodes: 0
+  _useOutputNodes: 0
+  _generateMeshUsingPoints: 0
+  _useLODGroups: 1
+  _splitGeosByGroup: 0
+  _sessionSyncAutoCook: 1
+  _bakeUpdateKeepPreviousTransformValues: 0
+  _pauseCooking: 0
+  _curveEditorEnabled: 1
+  _curves: []
+  _curveDrawCollision: 0
+  _curveDrawColliders: []
+  _curveDrawLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _curveProjectMaxDistance: 1000
+  _curveProjectDirection: {x: 0, y: -1, z: 0}
+  _curveDisableScaleRotation: 1
+  _curveCookOnDrag: 1
+  _curveFrameSelectedNodes: 1
+  _curveFrameSelectedNodeDistance: 20
+  _inputNodes: []
+  _handles: []
+  _handlesEnabled: 1
+  _volumeCaches: []
+  _attributeStores: []
+  _editableNodesToolsEnabled: 0
+  _toolsInfo: {fileID: 1692794609}
+  _serializedMetaData: {fileID: 142358772}
+--- !u!4 &2126135305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126135303}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1831179696}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
