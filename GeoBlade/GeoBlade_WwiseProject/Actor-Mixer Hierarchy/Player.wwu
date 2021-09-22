@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Player" ID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="player_footsteps_underground_01" ID="{0218868E-B22A-4737-9D53-0957ECF30439}" ShortID="110964761">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5F726A5D-D618-4847-A5DC-0F25EAC267AB}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E0CE08CF-C6AB-4101-B776-186D06751B56}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="8"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{211AE085-1F9C-405A-A85D-BEF1968412BE}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A2BCEE06-5417-4BBA-BF5A-018AA681C8B1}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="8"/>
+											<Property Name="Min" Type="Real64" Value="-16"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sfx_player_footstep_underground_1" ID="{479523D7-6A26-4A52-A26F-9CBEE25034EC}">
+							<Language>SFX</Language>
+							<AudioFile>sfx_player_footstep_underground_1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="726608421"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="sfx_player_footstep_underground_1" ID="{479523D7-6A26-4A52-A26F-9CBEE25034EC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="player_jump_underground_01" ID="{CAE588DE-D830-4CE4-983D-2A4237529997}" ShortID="859600956">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="player_jump_underground_liftoff_01" ID="{082F324F-5E61-45CB-B3F5-AB0CF6ABF1D3}" ShortID="819232525">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_player_jump_underground_liftoff_01" ID="{B67D022E-E930-4DF4-8187-A8D913A72584}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_player_jump_underground_liftoff_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="714568301"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_player_jump_underground_liftoff_01" ID="{B67D022E-E930-4DF4-8187-A8D913A72584}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="player_jump_underground_landing_01" ID="{8C5ED667-C4E9-41FC-B6B8-5369F4F19CAA}" ShortID="139272416">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_player_jump_underground_landing_01" ID="{62CC1A88-5CF6-4977-B817-77763206F0F0}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_player_jump_underground_landing_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="221872954"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_player_jump_underground_landing_01" ID="{62CC1A88-5CF6-4977-B817-77763206F0F0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

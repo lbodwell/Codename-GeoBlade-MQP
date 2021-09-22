@@ -276,7 +276,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-55118
+  m_Name: pb_Mesh19052
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -505,6 +505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6213721881995825223, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 80f3c240c72da0745adff9eec8a107fe, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
 --- !u!1 &468742817
@@ -520,7 +524,7 @@ GameObject:
   - component: {fileID: 468742821}
   - component: {fileID: 468742820}
   - component: {fileID: 468742819}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +556,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 613226009}
 --- !u!33 &468742820
@@ -5017,7 +5021,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38896
+  m_Name: pb_Mesh19026
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5219,7 +5223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1019002895}
   - component: {fileID: 1019002896}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hallway_Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5270,7 +5274,7 @@ PrefabInstance:
       objectReference: {fileID: 1519118639}
     - target: {fileID: 5112965301579279288, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_Orbits.Array.data[0].m_Height
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301579279288, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_Orbits.Array.data[0].m_Radius
@@ -5286,7 +5290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301579279288, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_Orbits.Array.data[2].m_Height
-      value: -0.5
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301579279288, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_Orbits.Array.data[2].m_Radius
@@ -5414,19 +5418,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9800973
+      value: 0.98009735
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.14957353
+      value: 0.14957352
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.12903222
+      value: -0.1290322
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.019691724
+      value: 0.019691711
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
@@ -5443,7 +5447,7 @@ GameObject:
   - component: {fileID: 1158837778}
   - component: {fileID: 1158837777}
   - component: {fileID: 1158837776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10983,7 +10987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652843102}
   - component: {fileID: 1652843101}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stasis_Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

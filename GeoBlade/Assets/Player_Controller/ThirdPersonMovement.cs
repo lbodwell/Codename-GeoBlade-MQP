@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
@@ -11,7 +12,7 @@ namespace Player_Controller {
         public float movementSpeed = 2f;
         public float turnSmoothingTime = 0.1f;
         public bool isSprinting;
-        public bool isGrounded;
+        public bool isJumping;
         public float nextFootstep = 0f;
     
         private const float Gravity = 0.08f;
@@ -23,14 +24,16 @@ namespace Player_Controller {
             var vertInput = Input.GetAxisRaw("Vertical");
             var inputDirection = new Vector3(horizInput, 0f, vertInput).normalized;
 		
-            // Add check to isGrounded
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                velocity.y = 12f;
-                isGrounded = false;
+            if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded) {
+                velocity.y = 16f;
+                // Jump liftoff
+                AkSoundEngine.PostEvent("Player_Jump", gameObject);
+                isJumping = true;
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftShift)) {
+            if (Input.GetKeyDown(KeyCode.LeftShift) && controller.isGrounded) {
                 isSprinting = true;
+                nextFootstep = Time.time;
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift)) {
@@ -39,7 +42,10 @@ namespace Player_Controller {
         
             velocity.x = movementSpeed * (isSprinting ? 1.5f : 1f);
             velocity.z = movementSpeed * (isSprinting ? 1.5f : 1f);
-            velocity.y -= Gravity;
+            
+            if (!controller.isGrounded) {
+                velocity.y -= Gravity;
+            }
 
             Vector3 finalVel;
 
@@ -52,20 +58,22 @@ namespace Player_Controller {
 
                 var playerDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                 finalVel = new Vector3(velocity.x * playerDirection.x, playerDirection.y + velocity.y, velocity.z * playerDirection.z);
-            
-                if (Time.time > nextFootstep) {
-                    nextFootstep = Time.time + (isSprinting ? 0.25f : 0.5f);
-                    //Debug.Log("Footstep triggered");
-                    AkSoundEngine.PostEvent("Footstep", gameObject);
+                if (controller.isGrounded) {
+                    if (Time.time > nextFootstep) {
+                        nextFootstep = Time.time + (isSprinting ? 0.25f : 0.5f);
+                        AkSoundEngine.PostEvent("Player_Footstep", gameObject);
+                    }
                 }
             }
             controller.Move(finalVel * Time.deltaTime);
-        }
+            
 
-        public void OnCollisionEnter(Collision other) {
-            Debug.Log(other.gameObject.name);
+            if (!controller.isGrounded || !isJumping) return;
+            isJumping = false;
             velocity.y = 0f;
-            isGrounded = true;
+            // Jump landing
+            AkSoundEngine.PostEvent("Player_Jump", gameObject);
+            nextFootstep = Time.time;
         }
     }
 }

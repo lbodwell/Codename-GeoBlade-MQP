@@ -5,7 +5,9 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\lukeb\Desktop\"/>
 				<Property Name="Event Action List\{3BBA4A06-0BAF-4F32-B279-B0AE52626346}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BA223F0D-2886-4B4B-A6CA-6B837CB7A8AE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{FB2C6FEB-D6D8-4E7A-B609-7F9AA2864EDF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FCB43852-C763-4910-8C5D-6EF5672BF780}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -26,7 +28,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="G8byy9L/+EC5FPmP5pXy0A=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="bn0tQNKTOkKBlDFmUxDgMQ=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="YLl2Xk8q0ESM4jf/Yjy02wECkw7/////fdVG8r0xikq7qF9OppuUbAECkw7/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="fdVG8r0xikq7qF9OppuUbAECxAX/////YLl2Xk8q0ESM4jf/Yjy02wECxAX/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
