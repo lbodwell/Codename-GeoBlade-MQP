@@ -11,25 +11,37 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="2385628198" Language="SFX" Hash="1440881832">
-			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps</ObjectPath>
-			<ShortName>Footsteps</ShortName>
-			<Path>Footsteps.bnk</Path>
+		<SoundBank Id="1069431850" Language="SFX" Hash="1558947137">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.330023" DurationMax="0.330023">
+				<Event Id="2453392179" Name="Player_Footstep" ObjectPath="\Events\Player\Player_Footstep" DurationType="OneShot" DurationMin="0.335190" DurationMax="0.532081">
 					<IncludedMemoryFiles>
-						<File Id="530493106" Language="SFX">
-							<ShortName>footstep.wav</ShortName>
-							<Path>SFX\footstep_10C4C929.wem</Path>
+						<File Id="726608421" Language="SFX">
+							<ShortName>sfx_player_footstep_underground_1.wav</ShortName>
+							<Path>SFX\sfx_player_footstep_underground_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1305133589" Name="Player_Jump" ObjectPath="\Events\Player\Player_Jump" DurationType="OneShot" DurationMin="0.263068" DurationMax="0.373136">
+					<IncludedMemoryFiles>
+						<File Id="221872954" Language="SFX">
+							<ShortName>sfx_player_jump_underground_landing_01.wav</ShortName>
+							<Path>SFX\sfx_player_jump_underground_landing_01_10C4C929.wem</Path>
+						</File>
+						<File Id="714568301" Language="SFX">
+							<ShortName>sfx_player_jump_underground_liftoff_01.wav</ShortName>
+							<Path>SFX\sfx_player_jump_underground_liftoff_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

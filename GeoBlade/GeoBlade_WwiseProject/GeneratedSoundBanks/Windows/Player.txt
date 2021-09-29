@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1305133589	Player_Jump			\Player\Player_Jump	
+	2453392179	Player_Footstep			\Player\Player_Footstep	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	221872954	player_jump_underground_landing_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\sfx_player_jump_underground_landing_01_10C4C929.wem		\Actor-Mixer Hierarchy\Player\player_jump_underground_01\player_jump_underground_landing_01		58704
+	714568301	player_jump_underground_liftoff_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\sfx_player_jump_underground_liftoff_01_10C4C929.wem		\Actor-Mixer Hierarchy\Player\player_jump_underground_01\player_jump_underground_liftoff_01		52152
+	726608421	player_footsteps_underground_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\sfx_player_footstep_underground_1_10C4C929.wem		\Actor-Mixer Hierarchy\Player\player_footsteps_underground_01		74560
+

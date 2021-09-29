@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bf6e96cdd6102341ba44d4dafef9011, type: 3}
-  m_Name: 402D7D6E-93D2-423A-8194-31665310E031
+  m_Script: {fileID: 11500000, guid: db4e33580145ae942995f455bea5c984, type: 3}
+  m_Name: 3BBA4A06-0BAF-4F32-B279-B0AE52626346
   m_EditorClassIdentifier: 
-  objectName: Player
-  id: 1069431850
-  guid: 402D7D6E-93D2-423A-8194-31665310E031
+  objectName: Player_Footstep
+  id: 2453392179
+  guid: 3BBA4A06-0BAF-4F32-B279-B0AE52626346
