@@ -370,11 +370,10 @@ MonoBehaviour:
   _haveInstancesBeenGenerated: 0
   _meshVertexCount: 252
   _generatedOutput:
-    _outputData:
-      _gameObject: {fileID: 1906010926}
-      _renderMaterials:
+    _outputData: {_gameObject: {fileID: 1906010926}, _renderMaterials:
       - {fileID: 1166558264}
-      _colliders: []
+, _colliders: []
+}
     _childOutputs: []
     isInstancer: 0
   _volumeLayerName: 
@@ -1070,17 +1069,52 @@ MonoBehaviour:
     _floatValues: []
     _stringValues: []
     _toggle: 0
-    _color: {r: 0, g: 0, b: 0, a: 0}
+    _color:
+      r: 0
+      g: 0
+      b: 0
+      a: 0
     _gradient:
-      serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
-      key5: {r: 0, g: 0, b: 0, a: 0}
-      key6: {r: 0, g: 0, b: 0, a: 0}
-      key7: {r: 0, g: 0, b: 0, a: 0}
+      key0:
+        r: 1
+        g: 1
+        b: 1
+        a: 1
+      key1:
+        r: 1
+        g: 1
+        b: 1
+        a: 1
+      key2:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      key3:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      key4:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      key5:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      key6:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      key7:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
       ctime0: 0
       ctime1: 65535
       ctime2: 0
@@ -1101,7 +1135,6 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     _animCurve:
-      serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -1172,17 +1205,52 @@ MonoBehaviour:
     - 2
     _stringValues: []
     _toggle: 0
-    _color: {r: 0, g: 0, b: 0, a: 0}
+    _color:
+      r: 0
+      g: 0
+      b: 0
+      a: 0
     _gradient:
-      serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
-      key5: {r: 0, g: 0, b: 0, a: 0}
-      key6: {r: 0, g: 0, b: 0, a: 0}
-      key7: {r: 0, g: 0, b: 0, a: 0}
+      key0:
+        r: 1
+        g: 1
+        b: 1
+        a: 1
+      key1:
+        r: 1
+        g: 1
+        b: 1
+        a: 1
+      key2:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      key3:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      key4:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      key5:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      key6:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
+      key7:
+        r: 0
+        g: 0
+        b: 0
+        a: 0
       ctime0: 0
       ctime1: 65535
       ctime2: 0
@@ -1203,7 +1271,6 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     _animCurve:
-      serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -1263,10 +1330,13 @@ MonoBehaviour:
     _hasAssetPathTag: 0
   _parameterModifiers: []
   _regenerateParameters: 0
-  _presetData: 235053495f5052455345540a76657273696f6e20322e30610a6f7076616c7565730a7b0a76657273696f6e20302e380a6e6379095b2030096c6f636b733d30205d0928093709290a73697a65095b2030096c6f636b733d30205d092809302e3509302e3230303030303030323938303233323234093209290a7d0a
-  _defaultPresetData: 235053495f5052455345540a76657273696f6e20322e30610a6f7076616c7565730a7b0a76657273696f6e20302e380a6e6379095b2030096c6f636b733d30205d0928093409290a73697a65095b2030096c6f636b733d30205d092809302e3509302e3239393939393939393939393939393939093209290a7d0a
+  _presetData: "#PSI_PRESET\nversion 2.0a\nopvalues\n{\nversion 0.8\nncy\t[ 0\tlocks=0
+    ]\t(\t7\t)\nsize\t[ 0\tlocks=0 ]\t(\t0.5\t0.20000000298023224\t2\t)\n}\n"
+  _defaultPresetData: "#PSI_PRESET\nversion 2.0a\nopvalues\n{\nversion 0.8\nncy\t[
+    0\tlocks=0 ]\t(\t4\t)\nsize\t[ 0\tlocks=0 ]\t(\t0.5\t0.29999999999999999\t2\t)\n}\n"
   _validParameters: 1
   _showParameters: 1
+  _recacheUI: 0
 --- !u!114 &1452237741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1303,13 +1373,29 @@ MonoBehaviour:
   _lastAttributesPartID: 0
   _lastAttributeNodeName: 
   _lastAttributeName: 
-  _brushHandleColor: {r: 0, g: 0, b: 0, a: 1}
-  _affectedAreaPaintColor: {r: 1, g: 1, b: 0, a: 1}
+  _brushHandleColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  _affectedAreaPaintColor:
+    r: 1
+    g: 1
+    b: 0
+    a: 1
   _liveUpdate: 1
   _isPainting: 0
   _editPointBoxSize: 0.1
-  _editPointBoxUnselectedColor: {r: 1, g: 0, b: 0, a: 1}
-  _editPointBoxSelectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  _editPointBoxUnselectedColor:
+    r: 1
+    g: 0
+    b: 0
+    a: 1
+  _editPointBoxSelectedColor:
+    r: 1
+    g: 0.92156863
+    b: 0.015686275
+    a: 1
   _recacheRequired: 1
   _paintMergeMode: 0
   _showOnlyEditGeometry: 1
@@ -1654,15 +1740,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10611261
+      value: 0.1061126
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.38015097
+      value: 0.38015094
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.04395328
+      value: -0.043953285
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1763,24 +1849,35 @@ MonoBehaviour:
     e00: 1
     e01: 0
     e02: 0
-    e03: 16.97
+    e03: 0
     e10: 0
     e11: 1
     e12: 0
-    e13: 0.09
+    e13: 0
     e20: 0
     e21: 0
     e22: 1
-    e23: 2.894
-    e30: 0
-    e31: 0
-    e32: 0
+    e23: 0
+    e30: 16.97
+    e31: 0.09
+    e32: 2.894
     e33: 1
   _assetCacheFolderPath: Assets/HoudiniEngineAssetCache/Working/Stairs_Test 2
   _subassetNames:
   - Object/Stairs_Test
   - Sop/Stairs_Test
   _selectedSubassetIndex: 1
+  _savedAssetPreset:
+    _identifier: []
+    _version: 0
+    _assetOPName: 
+    _parameterPreset: []
+    _curveNames: []
+    inputPresets: []
+    volumeCachePresets: []
+  _recookPreset:
+    _volumeCachePresets: []
+    _inputPresets: []
   _totalCookCount: 128
   _requestBuildAction: 0
   _checkParameterChangeForCook: 0
@@ -1791,7 +1888,8 @@ MonoBehaviour:
   _cookStatus: 0
   _lastCookResult: 1
   _isCookingAssetReloaded: 0
-  _sessionID: 1940371185792
+  _bForceUpdate: 0
+  <WarnedPrefabNotSupported>k__BackingField: 0
   _uiLocked: 1
   _showHDAOptions: 0
   _showGenerateSection: 1
@@ -1805,27 +1903,35 @@ MonoBehaviour:
   _reloadEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   _cookedEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   _bakedEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   _reloadDataEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   _cookedDataEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   _bakedDataEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   _preAssetEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   _downstreamConnectionCookedEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   _generateUVs: 0
   _generateTangents: 1
   _generateNormals: 1
@@ -1846,7 +1952,6 @@ MonoBehaviour:
   _curveDrawCollision: 0
   _curveDrawColliders: []
   _curveDrawLayerMask:
-    serializedVersion: 2
     m_Bits: 0
   _curveProjectMaxDistance: 1000
   _curveProjectDirection: {x: 0, y: -1, z: 0}
@@ -1862,6 +1967,7 @@ MonoBehaviour:
   _editableNodesToolsEnabled: 0
   _toolsInfo: {fileID: 1692794609}
   _serializedMetaData: {fileID: 142358772}
+  _pendingAutoCookOnMouseRelease: 0
 --- !u!4 &2126135305
 Transform:
   m_ObjectHideFlags: 0
