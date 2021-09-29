@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="1558947137">
+		<SoundBank Id="1069431850" Language="SFX" Hash="2892982581">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -38,10 +38,60 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3022883134">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="527051879">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2026953958" Name="Level1_Music" ObjectPath="\Events\Music\Level1_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="4723067" Language="SFX">
+							<ShortName>music_level1_track1_section2.wav</ShortName>
+							<Path>SFX\music_level1_track1_section2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="30180602" Language="SFX">
+							<ShortName>music_level1_track1_section1.wav</ShortName>
+							<Path>SFX\music_level1_track1_section1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1025610557" Language="SFX">
+							<ShortName>music_level1_track1_section3.wav</ShortName>
+							<Path>SFX\music_level1_track1_section3_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{CFA14121-2F09-4B58-9AC2-B62F1CD035EA}">
+							<Media>
+								<File Id="30180602"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4B300C52-F4A9-48E9-A524-DFD38D7F5AF9}">
+							<Media>
+								<File Id="4723067"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C931A956-4679-4314-BF98-DA7EB0F665E6}">
+							<Media>
+								<File Id="1025610557"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="2489350135" Name="Music_Level1_Track1" ObjectPath="\States\Music\Music_Level1_Track1" GUID="{5EFCDAB4-B77E-4CBA-B45F-1F7C053A0AA0}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Music\Music_Level1_Track1\None" GUID="{DD0D7B19-867E-4C3A-9142-C12A21CAB4C2}"/>
+						<State Id="3524678539" Name="Section1" ObjectPath="\States\Music\Music_Level1_Track1\Section1" GUID="{CFA14121-2F09-4B58-9AC2-B62F1CD035EA}"/>
+						<State Id="3524678536" Name="Section2" ObjectPath="\States\Music\Music_Level1_Track1\Section2" GUID="{4B300C52-F4A9-48E9-A524-DFD38D7F5AF9}"/>
+						<State Id="3524678537" Name="Section3" ObjectPath="\States\Music\Music_Level1_Track1\Section3" GUID="{C931A956-4679-4314-BF98-DA7EB0F665E6}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -1,3 +1,12 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2489350135	Music_Level1_Track1			\Music\Music_Level1_Track1	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music_Level1_Track1			
+	3524678536	Section2	Music_Level1_Track1			
+	3524678537	Section3	Music_Level1_Track1			
+	3524678539	Section1	Music_Level1_Track1			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

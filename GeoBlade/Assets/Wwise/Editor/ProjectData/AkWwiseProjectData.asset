@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b144575cff53e145bbed4dfb8f16af44
     GuidInternal: 
-    m_lastTime: -8585693305908332223
+    m_lastTime: -8585688852628962065
     List:
+    - name: Music
+      guid: abc689fd0b46364393e8e9d43ce750a5
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b144575cff53e145bbed4dfb8f16af44
+      - ElementName: Music
+        ObjectType: 7
+        guid: abc689fd0b46364393e8e9d43ce750a5
+      Path: SoundBanks\Default Work Unit\Music
     - name: Player
       guid: 6e7d2d40d2933a42819431665310e031
       id: 1069431850
@@ -96,6 +110,36 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585693306062528827
     List: []
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 90d90a6b2474e243b6c55a57c1b35207
+    ParentPath: Events\Music
+    guid: 90d90a6b2474e243b6c55a57c1b35207
+    GuidInternal: 
+    m_lastTime: -8585688826445973129
+    List:
+    - name: Level1_Music
+      guid: ddc53016e33abd4296debd8dd65405ee
+      id: 2026953958
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 90d90a6b2474e243b6c55a57c1b35207
+      - ElementName: Level1_Music
+        ObjectType: 3
+        guid: ddc53016e33abd4296debd8dd65405ee
+      Path: Events\Music\Level1_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -171,6 +215,101 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585705223807563521
     List: []
+  - PhysicalPath: States\Music.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 2bac94c602ec474cba1fae799efa8b50
+    ParentPath: States\Music
+    guid: 2bac94c602ec474cba1fae799efa8b50
+    GuidInternal: 
+    m_lastTime: -8585688852628828144
+    List:
+    - name: Music_Level1_Track1
+      guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+      id: 2489350135
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 2bac94c602ec474cba1fae799efa8b50
+      - ElementName: Music_Level1_Track1
+        ObjectType: 9
+        guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+      Path: States\Music\Music_Level1_Track1
+      values:
+      - name: None
+        guid: 197b0ddd7e863a4c9142c12a21cab4c2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1_Track1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: None
+          ObjectType: 8
+          guid: 197b0ddd7e863a4c9142c12a21cab4c2
+      - name: Section1
+        guid: 2141a1cf092f584b9ac2b62f1cd035ea
+        id: 3524678539
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1_Track1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Section1
+          ObjectType: 8
+          guid: 2141a1cf092f584b9ac2b62f1cd035ea
+      - name: Section2
+        guid: 520c304ba9f4e948a524dfd38d7f5af9
+        id: 3524678536
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1_Track1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Section2
+          ObjectType: 8
+          guid: 520c304ba9f4e948a524dfd38d7f5af9
+      - name: Section3
+        guid: 56a931c979461443bf98da7eb0f665e6
+        id: 3524678537
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1_Track1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Section3
+          ObjectType: 8
+          guid: 56a931c979461443bf98da7eb0f665e6
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -200,7 +339,7 @@ MonoBehaviour:
     m_lastTime: -8585705223807851201
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000d0000000e0000000f000000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000080000000c0000000d0000000e0000000f000000100000001100000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

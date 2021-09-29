@@ -1,0 +1,17 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2026953958	Level1_Music			\Music\Level1_Music	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2489350135	Music_Level1_Track1			\Music\Music_Level1_Track1	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music_Level1_Track1			
+	3524678536	Section2	Music_Level1_Track1			
+	3524678537	Section3	Music_Level1_Track1			
+	3524678539	Section1	Music_Level1_Track1			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	4723067	music_level1_track1_section2	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\music_level1_track1_section2_D79FB2B7.wem		\Interactive Music Hierarchy\Level1\Level1_Music\Level1_Section2\Section2\music_level1_track1_section2		6370128
+	30180602	music_level1_track1_section1	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\music_level1_track1_section1_D79FB2B7.wem		\Interactive Music Hierarchy\Level1\Level1_Music\Level1_Section1\Section1\music_level1_track1_section1		19404128
+	1025610557	music_level1_track1_section3	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\music_level1_track1_section3_D79FB2B7.wem		\Interactive Music Hierarchy\Level1\Level1_Music\Level1_Section3\Section3\music_level1_track1_section3		9506128
+
