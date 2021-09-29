@@ -58,6 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-#Houndini cache files
+#Houdini Files
 /HoudiniEngineAssetCache/*
-
+./heu_session.txt
