@@ -61,3 +61,6 @@ crashlytics-build.properties
 #Houdini Files
 Assets/HoudiniEngineAssetCache/*
 heu_session.txt
+
+#Wise asset file
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
