@@ -363,7 +363,7 @@ MonoBehaviour:
   m_listeners:
     initialListenerList: []
     useDefaultListeners: 1
-  isEnvironmentAware: 1
+  isEnvironmentAware: 0
   isStaticObject: 0
   m_positionOffsetData:
     KeepMe: 0
@@ -477,6 +477,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6213721881995825219, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213721881995825219, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6213721881995825223, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
@@ -11283,6 +11287,7 @@ GameObject:
   - component: {fileID: 1835322542}
   - component: {fileID: 1835322541}
   - component: {fileID: 1835322543}
+  - component: {fileID: 1835322544}
   m_Layer: 0
   m_Name: MusicTransitionCollider1
   m_TagString: Untagged
@@ -11341,6 +11346,30 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &1835322544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835322540}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ece73cc067714845be1c4c5b26e7a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state1:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2ee2ee27f6ff3b54c8e22a35c2dc5d9b, type: 2}
+  state2:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: dab9ad824d5506240bccb3c0414d9e42, type: 2}
 --- !u!1 &2104814168
 GameObject:
   m_ObjectHideFlags: 0
@@ -11352,6 +11381,7 @@ GameObject:
   - component: {fileID: 2104814170}
   - component: {fileID: 2104814169}
   - component: {fileID: 2104814171}
+  - component: {fileID: 2104814172}
   m_Layer: 0
   m_Name: MusicTransitionCollider2
   m_TagString: Untagged
@@ -11410,3 +11440,27 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &2104814172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104814168}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ece73cc067714845be1c4c5b26e7a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state1:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: dab9ad824d5506240bccb3c0414d9e42, type: 2}
+  state2:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b4b30cf1045b85f418fc59b3f1a66a27, type: 2}
