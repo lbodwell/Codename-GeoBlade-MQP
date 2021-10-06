@@ -6,6 +6,7 @@ using Vector3 = UnityEngine.Vector3;
 namespace Player_Controller {
     public class ThirdPersonMovement : MonoBehaviour {
         public CharacterController controller;
+        public Animator animator;
         public Transform cam;
     
         public Vector3 velocity = new Vector3(0f, 0f, 0f);
@@ -66,6 +67,10 @@ namespace Player_Controller {
                 }
             }
             controller.Move(finalVel * Time.deltaTime);
+            
+            //Update Animator Parameters
+            animator.SetBool("Grounded", controller.isGrounded);
+            animator.SetFloat("Speed", finalVel.magnitude);
             
             if (!controller.isGrounded || !isJumping) return;
             isJumping = false;
