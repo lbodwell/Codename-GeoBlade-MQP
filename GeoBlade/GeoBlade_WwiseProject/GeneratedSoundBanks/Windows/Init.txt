@@ -1,11 +1,25 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2489350135	Music_Level1_Track1			\Music\Music_Level1_Track1	
+	2578485808	Attack_Type			\Player\Attack_Type	
+	2615620554	Footstep_Type			\Player\Footstep_Type	
+	3865314626	Material			\Player\Material	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Music_Level1_Track1			
 	3524678536	Section2	Music_Level1_Track1			
 	3524678537	Section3	Music_Level1_Track1			
 	3524678539	Section1	Music_Level1_Track1			
+	748895195	None	Attack_Type			
+	2732489590	Heavy	Attack_Type			
+	3192784680	Light1	Attack_Type			
+	3192784683	Light2	Attack_Type			
+	712161704	Run	Footstep_Type			
+	748895195	None	Footstep_Type			
+	2108779966	Walk	Footstep_Type			
+	748895195	None	Material			
+	841620460	Concrete	Material			
+	2473969246	Metal	Material			
+	4248645337	Grass	Material			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

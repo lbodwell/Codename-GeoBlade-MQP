@@ -14,12 +14,52 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID LEVEL1_MUSIC = 2026953958U;
+        static const AkUniqueID PLAYER_ATTACK = 2824512041U;
         static const AkUniqueID PLAYER_FOOTSTEP = 2453392179U;
         static const AkUniqueID PLAYER_JUMP = 1305133589U;
+        static const AkUniqueID PLAYER_UNSHEATHE = 917509252U;
     } // namespace EVENTS
 
     namespace STATES
     {
+        namespace ATTACK_TYPE
+        {
+            static const AkUniqueID GROUP = 2578485808U;
+
+            namespace STATE
+            {
+                static const AkUniqueID HEAVY = 2732489590U;
+                static const AkUniqueID LIGHT1 = 3192784680U;
+                static const AkUniqueID LIGHT2 = 3192784683U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace ATTACK_TYPE
+
+        namespace FOOTSTEP_TYPE
+        {
+            static const AkUniqueID GROUP = 2615620554U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID RUN = 712161704U;
+                static const AkUniqueID WALK = 2108779966U;
+            } // namespace STATE
+        } // namespace FOOTSTEP_TYPE
+
+        namespace MATERIAL
+        {
+            static const AkUniqueID GROUP = 3865314626U;
+
+            namespace STATE
+            {
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MATERIAL
+
         namespace MUSIC_LEVEL1_TRACK1
         {
             static const AkUniqueID GROUP = 2489350135U;

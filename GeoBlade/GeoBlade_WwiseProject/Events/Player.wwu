@@ -8,7 +8,7 @@
 						<Action Name="" ID="{15D6246B-27B1-4F7F-BBBE-676EB293DBE0}" ShortID="978808005">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="player_footsteps_underground_01" ID="{0218868E-B22A-4737-9D53-0957ECF30439}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+									<ObjectRef Name="Player_Footsteps" ID="{96E05679-3EBD-4856-8771-D2E6A3AB2243}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -19,12 +19,24 @@
 						<Action Name="" ID="{1E015F31-AF0B-4FC1-977A-B0ECC4CF9089}" ShortID="848051948">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="player_jump_underground_01" ID="{CAE588DE-D830-4CE4-983D-2A4237529997}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+									<ObjectRef Name="Player_Jump" ID="{90077BB9-3038-450A-9F68-E00E74B6391E}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_Attack" ID="{327B8C41-943B-4B84-987A-1B61B2EF0F23}">
+					<ChildrenList>
+						<Action Name="" ID="{AB671645-394D-4289-ACD6-53557143289F}" ShortID="947198833">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Attack" ID="{2AABB46D-33FA-42D1-8D3B-9EF58E6D0E6E}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Unsheathe" ID="{937329EF-6433-4BB9-8B56-0A96F215CB61}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
