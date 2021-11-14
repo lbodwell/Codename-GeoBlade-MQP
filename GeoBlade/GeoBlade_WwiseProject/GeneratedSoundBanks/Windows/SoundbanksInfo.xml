@@ -11,39 +11,276 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="1646760601">
+		<SoundBank Id="1069431850" Language="SFX" Hash="3887353266">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2453392179" Name="Player_Footstep" ObjectPath="\Events\Player\Player_Footstep" DurationType="OneShot" DurationMin="0.335190" DurationMax="0.532081">
+				<Event Id="2824512041" Name="Player_Attack" ObjectPath="\Events\Player\Player_Attack" DurationType="OneShot" DurationMin="1.413515" DurationMax="2.451882">
 					<IncludedMemoryFiles>
-						<File Id="726608421" Language="SFX">
-							<ShortName>sfx_player_footstep_underground_1.wav</ShortName>
-							<Path>SFX\sfx_player_footstep_underground_1_10C4C929.wem</Path>
+						<File Id="153470063" Language="SFX">
+							<ShortName>geoblade_light1.wav</ShortName>
+							<Path>SFX\geoblade_light1_10C4C929.wem</Path>
+						</File>
+						<File Id="271462458" Language="SFX">
+							<ShortName>geoblade_light2.wav</ShortName>
+							<Path>SFX\geoblade_light2_10C4C929.wem</Path>
+						</File>
+						<File Id="402200985" Language="SFX">
+							<ShortName>geoblade_heavy.wav</ShortName>
+							<Path>SFX\geoblade_heavy_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}">
+							<Media>
+								<File Id="402200985"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}">
+							<Media>
+								<File Id="153470063"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7CAD223E-82F2-416C-A123-452E2E9C946A}">
+							<Media>
+								<File Id="271462458"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
-				<Event Id="1305133589" Name="Player_Jump" ObjectPath="\Events\Player\Player_Jump" DurationType="OneShot" DurationMin="0.263068" DurationMax="0.373136">
+				<Event Id="2453392179" Name="Player_Footstep" ObjectPath="\Events\Player\Player_Footstep" DurationType="OneShot" DurationMin="0.201399" DurationMax="0.401294">
 					<IncludedMemoryFiles>
-						<File Id="221872954" Language="SFX">
-							<ShortName>sfx_player_jump_underground_landing_01.wav</ShortName>
-							<Path>SFX\sfx_player_jump_underground_landing_01_10C4C929.wem</Path>
+						<File Id="32787320" Language="SFX">
+							<ShortName>footstep_metal_high_run_02.wav</ShortName>
+							<Path>SFX\footstep_metal_high_run_02_10C4C929.wem</Path>
 						</File>
-						<File Id="714568301" Language="SFX">
-							<ShortName>sfx_player_jump_underground_liftoff_01.wav</ShortName>
-							<Path>SFX\sfx_player_jump_underground_liftoff_01_10C4C929.wem</Path>
+						<File Id="46684485" Language="SFX">
+							<ShortName>footstep_concrete_walk_05.wav</ShortName>
+							<Path>SFX\footstep_concrete_walk_05_10C4C929.wem</Path>
+						</File>
+						<File Id="50371633" Language="SFX">
+							<ShortName>footstep_metal_high_run_03.wav</ShortName>
+							<Path>SFX\footstep_metal_high_run_03_10C4C929.wem</Path>
+						</File>
+						<File Id="89026786" Language="SFX">
+							<ShortName>footstep_metal_high_run_01.wav</ShortName>
+							<Path>SFX\footstep_metal_high_run_01_10C4C929.wem</Path>
+						</File>
+						<File Id="113663351" Language="SFX">
+							<ShortName>footstep_concrete_run_04.wav</ShortName>
+							<Path>SFX\footstep_concrete_run_04_10C4C929.wem</Path>
+						</File>
+						<File Id="203226021" Language="SFX">
+							<ShortName>footstep_concrete_walk_01.wav</ShortName>
+							<Path>SFX\footstep_concrete_walk_01_10C4C929.wem</Path>
+						</File>
+						<File Id="312519893" Language="SFX">
+							<ShortName>footstep_concrete_walk_02.wav</ShortName>
+							<Path>SFX\footstep_concrete_walk_02_10C4C929.wem</Path>
+						</File>
+						<File Id="456258455" Language="SFX">
+							<ShortName>footstep_concrete_run_05.wav</ShortName>
+							<Path>SFX\footstep_concrete_run_05_10C4C929.wem</Path>
+						</File>
+						<File Id="463047746" Language="SFX">
+							<ShortName>footstep_metal_high_walk_05.wav</ShortName>
+							<Path>SFX\footstep_metal_high_walk_05_10C4C929.wem</Path>
+						</File>
+						<File Id="499523050" Language="SFX">
+							<ShortName>footstep_metal_high_walk_03.wav</ShortName>
+							<Path>SFX\footstep_metal_high_walk_03_10C4C929.wem</Path>
+						</File>
+						<File Id="550283833" Language="SFX">
+							<ShortName>footstep_metal_high_walk_04.wav</ShortName>
+							<Path>SFX\footstep_metal_high_walk_04_10C4C929.wem</Path>
+						</File>
+						<File Id="554610563" Language="SFX">
+							<ShortName>footstep_metal_high_run_05.wav</ShortName>
+							<Path>SFX\footstep_metal_high_run_05_10C4C929.wem</Path>
+						</File>
+						<File Id="639492284" Language="SFX">
+							<ShortName>footstep_concrete_walk_04.wav</ShortName>
+							<Path>SFX\footstep_concrete_walk_04_10C4C929.wem</Path>
+						</File>
+						<File Id="707216286" Language="SFX">
+							<ShortName>footstep_concrete_run_01.wav</ShortName>
+							<Path>SFX\footstep_concrete_run_01_10C4C929.wem</Path>
+						</File>
+						<File Id="723144077" Language="SFX">
+							<ShortName>footstep_metal_high_walk_01.wav</ShortName>
+							<Path>SFX\footstep_metal_high_walk_01_10C4C929.wem</Path>
+						</File>
+						<File Id="725286312" Language="SFX">
+							<ShortName>footstep_concrete_run_03.wav</ShortName>
+							<Path>SFX\footstep_concrete_run_03_10C4C929.wem</Path>
+						</File>
+						<File Id="728767823" Language="SFX">
+							<ShortName>footstep_metal_high_run_04.wav</ShortName>
+							<Path>SFX\footstep_metal_high_run_04_10C4C929.wem</Path>
+						</File>
+						<File Id="863556443" Language="SFX">
+							<ShortName>footstep_concrete_walk_03.wav</ShortName>
+							<Path>SFX\footstep_concrete_walk_03_10C4C929.wem</Path>
+						</File>
+						<File Id="940729660" Language="SFX">
+							<ShortName>footstep_metal_high_walk_02.wav</ShortName>
+							<Path>SFX\footstep_metal_high_walk_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1034364995" Language="SFX">
+							<ShortName>footstep_concrete_run_02.wav</ShortName>
+							<Path>SFX\footstep_concrete_run_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{DEBB55E7-7F75-40F7-95A6-A07ADA26DD32}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{DEBB55E7-7F75-40F7-95A6-A07ADA26DD32}">
+							<DefaultSwitchValue>{29AB9AFA-8942-4EDE-9761-459993B31C40}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{29AB9AFA-8942-4EDE-9761-459993B31C40}">
+									<Media>
+										<File Id="46684485"/>
+										<File Id="203226021"/>
+										<File Id="312519893"/>
+										<File Id="639492284"/>
+										<File Id="863556443"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{E8456B5F-8B90-43E6-B157-A724C80359FC}">
+									<Media>
+										<File Id="463047746"/>
+										<File Id="499523050"/>
+										<File Id="550283833"/>
+										<File Id="723144077"/>
+										<File Id="940729660"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{5313CF49-8F3E-4BA6-8618-57C8E6ED556D}">
+							<DefaultSwitchValue>{29AB9AFA-8942-4EDE-9761-459993B31C40}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{29AB9AFA-8942-4EDE-9761-459993B31C40}">
+									<Media>
+										<File Id="113663351"/>
+										<File Id="456258455"/>
+										<File Id="707216286"/>
+										<File Id="725286312"/>
+										<File Id="1034364995"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{E8456B5F-8B90-43E6-B157-A724C80359FC}">
+									<Media>
+										<File Id="32787320"/>
+										<File Id="50371633"/>
+										<File Id="89026786"/>
+										<File Id="554610563"/>
+										<File Id="728767823"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
+				<Event Id="1305133589" Name="Player_Jump" ObjectPath="\Events\Player\Player_Jump" DurationType="OneShot" DurationMin="0.358672" DurationMax="0.614489">
+					<IncludedMemoryFiles>
+						<File Id="35376889" Language="SFX">
+							<ShortName>footstep_concrete_land_01.wav</ShortName>
+							<Path>SFX\footstep_concrete_land_01_10C4C929.wem</Path>
+						</File>
+						<File Id="516041150" Language="SFX">
+							<ShortName>footstep_metal_land_03.wav</ShortName>
+							<Path>SFX\footstep_metal_land_03_10C4C929.wem</Path>
+						</File>
+						<File Id="529262886" Language="SFX">
+							<ShortName>footstep_concrete_land_04.wav</ShortName>
+							<Path>SFX\footstep_concrete_land_04_10C4C929.wem</Path>
+						</File>
+						<File Id="543054669" Language="SFX">
+							<ShortName>footstep_metal_land_04.wav</ShortName>
+							<Path>SFX\footstep_metal_land_04_10C4C929.wem</Path>
+						</File>
+						<File Id="544685071" Language="SFX">
+							<ShortName>footstep_concrete_land_05.wav</ShortName>
+							<Path>SFX\footstep_concrete_land_05_10C4C929.wem</Path>
+						</File>
+						<File Id="574652563" Language="SFX">
+							<ShortName>footstep_concrete_land_02.wav</ShortName>
+							<Path>SFX\footstep_concrete_land_02_10C4C929.wem</Path>
+						</File>
+						<File Id="579535536" Language="SFX">
+							<ShortName>footstep_metal_land_05.wav</ShortName>
+							<Path>SFX\footstep_metal_land_05_10C4C929.wem</Path>
+						</File>
+						<File Id="600260569" Language="SFX">
+							<ShortName>footstep_concrete_land_03.wav</ShortName>
+							<Path>SFX\footstep_concrete_land_03_10C4C929.wem</Path>
+						</File>
+						<File Id="711010922" Language="SFX">
+							<ShortName>footstep_metal_land_01.wav</ShortName>
+							<Path>SFX\footstep_metal_land_01_10C4C929.wem</Path>
+						</File>
+						<File Id="815893465" Language="SFX">
+							<ShortName>footstep_metal_land_02.wav</ShortName>
+							<Path>SFX\footstep_metal_land_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{29AB9AFA-8942-4EDE-9761-459993B31C40}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{29AB9AFA-8942-4EDE-9761-459993B31C40}">
+							<Media>
+								<File Id="35376889"/>
+								<File Id="529262886"/>
+								<File Id="544685071"/>
+								<File Id="574652563"/>
+								<File Id="600260569"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E8456B5F-8B90-43E6-B157-A724C80359FC}">
+							<Media>
+								<File Id="516041150"/>
+								<File Id="543054669"/>
+								<File Id="579535536"/>
+								<File Id="711010922"/>
+								<File Id="815893465"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="917509252" Name="Player_Unsheathe" ObjectPath="\Events\Player\Player_Unsheathe" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="2578485808" Name="Attack_Type" ObjectPath="\States\Player\Attack_Type" GUID="{05F9D408-CF10-4C60-8710-300508312E18}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Player\Attack_Type\None" GUID="{177B57E6-74FA-4AB7-AEA7-9BCB43590F6A}"/>
+						<State Id="3192784680" Name="Light1" ObjectPath="\States\Player\Attack_Type\Light1" GUID="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}"/>
+						<State Id="3192784683" Name="Light2" ObjectPath="\States\Player\Attack_Type\Light2" GUID="{7CAD223E-82F2-416C-A123-452E2E9C946A}"/>
+						<State Id="2732489590" Name="Heavy" ObjectPath="\States\Player\Attack_Type\Heavy" GUID="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2615620554" Name="Footstep_Type" ObjectPath="\States\Player\Footstep_Type" GUID="{8F75990E-CED9-47AA-8AEE-BFC38DEAC310}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Player\Footstep_Type\None" GUID="{8D78BF09-E98C-46EB-B127-45E165E24259}"/>
+						<State Id="2108779966" Name="Walk" ObjectPath="\States\Player\Footstep_Type\Walk" GUID="{DEBB55E7-7F75-40F7-95A6-A07ADA26DD32}"/>
+						<State Id="712161704" Name="Run" ObjectPath="\States\Player\Footstep_Type\Run" GUID="{5313CF49-8F3E-4BA6-8618-57C8E6ED556D}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3865314626" Name="Material" ObjectPath="\States\Player\Material" GUID="{FB92C39F-9452-4C8C-B66E-3C435E589866}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Player\Material\None" GUID="{D977ACB5-73F3-45AA-9ED1-531DA6577937}"/>
+						<State Id="841620460" Name="Concrete" ObjectPath="\States\Player\Material\Concrete" GUID="{29AB9AFA-8942-4EDE-9761-459993B31C40}"/>
+						<State Id="4248645337" Name="Grass" ObjectPath="\States\Player\Material\Grass" GUID="{72FA282C-A6FB-49C4-ACD7-3AF1BEA8C380}"/>
+						<State Id="2473969246" Name="Metal" ObjectPath="\States\Player\Material\Metal" GUID="{E8456B5F-8B90-43E6-B157-A724C80359FC}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3022883134">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3277874853">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="773129547">
+		<SoundBank Id="3991942870" Language="SFX" Hash="1194107321">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
