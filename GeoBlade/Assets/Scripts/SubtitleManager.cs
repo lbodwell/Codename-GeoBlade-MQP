@@ -43,7 +43,7 @@ public class SubtitleManager : MonoBehaviour {
 
     private async Task<bool> LoadDialogLines() {
         // Throw exception if an unsupported locale is used (currently only en_US is supported)
-        if (locale != "en_US") {
+        if (locale != "en_US" && locale != "test") {
             throw new NotSupportedException();
         }
         

@@ -1,16 +1,38 @@
-line_id,line_en_US,line_speaker,line_duration,line_desc
-dialogue_lvl1_001,Is this how it goes? Maybe like this?,Fairy,5,Opening
-dialogue_lvl1_002,Grrzzt!,Seru,2,Opening
-dialogue_lvl1_003,"Oh, it worked! I’m Fairy, do you know who you are?",Fairy,7,Opening
-dialogue_lvl1_004,I am...,Seru,1,Opening
-dialogue_lvl1_005,Brrzt… SRU-2!,Seru,4,Opening
-dialogue_lvl1_006,Well it’s a pleasure to meet you SRU.. 2? ,Fairy,5,Opening
-dialogue_lvl1_007,"That’s kind of a mouthful, if you don’t mind I’m just gonna call you, umm... Esaru.. Seru… Seru!",Fairy,11,Opening
-dialogue_lvl1_008,Can you walk?,Fairy,4,Opening
-dialogue_lvl1_009,Erzzt... I think so.,Seru,5,Opening
-dialogue_lvl1_010,"Perfect! All this flying is making me tired, let me just ride on you like this.",Fairy,7,Opening
-dialogue_lvl1_011,Let’s go!,Fairy,2,Opening
-dialogue_lvl1_012,Where to?,Seru,2,After Opening
-dialogue_lvl1_013,"Hmm... I think I’ve done enough exploring for today, so let's just get out of here.",Fairy,7,After Opening
-dialogue_lvl1_014,"And umm, well I’m kinda lost myself hehe, so I’ll leave the navigating to you!",Fairy,7,After Opening
-dialogue_lvl1_015,Brrzt... I will do my best.,Seru,5,After Opening
+line_id,line_en_US,line_test,line_speaker,line_duration,line_desc
+dialogue_lvl1_001,Is this how it goes? Maybe like this?,This is an example of translated text.,Fairy,5,Opening
+dialogue_lvl1_002,Grrzzt!,This is an example of translated text.,Seru,2,Opening
+dialogue_lvl1_003,"Oh, it worked! I’m Fairy, do you know who you are?",This is an example of translated text.,Fairy,7,Opening
+dialogue_lvl1_004,I am...,This is an example of translated text.,Seru,1,Opening
+dialogue_lvl1_005,Brrzt… SRU-2!,This is an example of translated text.,Seru,4,Opening
+dialogue_lvl1_006,Well it’s a pleasure to meet you SRU.. 2? ,This is an example of translated text.,Fairy,5,Opening
+dialogue_lvl1_007,"That’s kind of a mouthful, if you don’t mind I’m just gonna call you, umm... Esaru.. Seru… Seru!",This is an example of translated text.,Fairy,11,Opening
+dialogue_lvl1_008,Can you walk?,This is an example of translated text.,Fairy,4,Opening
+dialogue_lvl1_009,Erzzt... I think so.,This is an example of translated text.,Seru,5,Opening
+dialogue_lvl1_010,"Perfect! All this flying is making me tired, let me just ride on you like this.",This is an example of translated text.,Fairy,7,Opening
+dialogue_lvl1_011,Let’s go!,This is an example of translated text.,Fairy,2,Opening
+dialogue_lvl1_012,Where to?,This is an example of translated text.,Seru,2,After Opening
+dialogue_lvl1_013,"Hmm... I think I’ve done enough exploring for today, so let's just get out of here.",This is an example of translated text.,Fairy,7,After Opening
+dialogue_lvl1_014,"And umm, well I’m kinda lost myself hehe, so I’ll leave the navigating to you!",This is an example of translated text.,Fairy,7,After Opening
+dialogue_lvl1_015,Brrzt... I will do my best.,This is an example of translated text.,Seru,5,After Opening
+dialogue_lvl1_016,"Hey, hey! Do you know what all of these doors are for?",This is an example of translated text.,Fairy,4,Spiral
+dialogue_lvl1_017,They’re for! --Erzzt.,This is an example of translated text.,Seru,5,Spiral
+dialogue_lvl1_018,"I apologize, I cannot recall",This is an example of translated text.,Seru,5,Spiral
+dialogue_lvl1_019,"Hey it’s alright, just take it one step at a time.",This is an example of translated text.,Fairy,5,Spiral
+dialogue_lvl1_020,"I think these doors are like homes, so the people in there must be your friends and neighbors.",This is an example of translated text.,Fairy,7,Spiral
+dialogue_lvl1_021,I knocked on a bunch of them but yours was the only one I was able to get open.,This is an example of translated text.,Fairy,7,Spiral
+dialogue_lvl1_022,So you’re a great discovery! And I can’t wait to show you off to everyone else once we get out of here!,This is an example of translated text.,Fairy,7,Spiral
+dialogue_lvl1_023,"Hey, hey! So what’s this place? It looks so abandoned.",This is an example of translated text.,Fairy,5,Subway
+dialogue_lvl1_024,"Errzt... This is a subway station. We will need to take the train if we want to leave, I think.",This is an example of translated text.,Seru,6,Subway
+dialogue_lvl1_025,"Hey, hey! What are these things?",This is an example of translated text.,Fairy,4,Subway
+dialogue_lvl1_026,Errzt... Those are... They are a little different from what I remember. Perhaps they are a new model?,This is an example of translated text.,Seru,7,Subway
+dialogue_lvl1_027,ERROR ERROR ERROR,This is an example of translated text.,Droid,2,Subway
+dialogue_lvl1_028,Hey! I think it’s mad!,This is an example of translated text.,Fairy,3,Subway
+dialogue_lvl1_029,Unknown entity! Initiating attack protocol!,This is an example of translated text.,Droid,5,Subway
+dialogue_lvl1_030,SRU-2 engaging enemy hostiles.,This is an example of translated text.,Seru,5,Subway
+dialogue_lvl1_031,Nice job Seru! That was awesome! Let’s keep going.,This is an example of translated text.,Fairy,5,Subway Defeated
+dialogue_lvl1_032,"Hey, hey! What’s this thing called?",This is an example of translated text.,Fairy,3,Platform A
+dialogue_lvl1_033,"That is a train. I cannot fly like you, so we will need to ride on this if we want to get out of here.",This is an example of translated text.,Seru,7,Platform A
+dialogue_lvl1_034,Ooh! So how does it work?,This is an example of translated text.,Fairy,4,Platform A
+dialogue_lvl1_035,"Erzzt, the train resonates with Geo to propel itself across the track. These trains are activated by a lever in the cab--",This is an example of translated text.,Seru,7,Platform A
+dialogue_lvl1_036,Ah! I found the lever! Ready to go?,This is an example of translated text.,Fairy,4,Platform A
+dialogue_lvl1_037,"Birzt! Yes, let's head off.",This is an example of translated text.,Seru,3,Platform A
