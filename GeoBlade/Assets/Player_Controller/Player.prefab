@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 6213721881995825222}
   - component: {fileID: 6213721881995825223}
   - component: {fileID: 6213721881995825220}
+  - component: {fileID: 6259666281759233201}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -109,7 +110,12 @@ MonoBehaviour:
   turnSmoothingTime: 0.1
   isSprinting: 0
   isJumping: 0
+  isWeaponActive: 0
   nextFootstep: 0
+  nextAttackWindowStart: 0
+  nextAttackWindowClose: 0
+  nextWeaponSheathe: 0
+  nextAttackIndex: 0
 --- !u!114 &6213721881995825221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +192,112 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6259666281759233201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6213721881995825219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: aff52cb0978be3f4a8c7f302a110cecd, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6213721881995825217}
+        m_TargetAssemblyTypeName: Player_Controller.Scripts.ThirdPersonMovement,
+          Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e08d2b87-3fac-4eb9-94f3-571212195c84
+    m_ActionName: Movement/Move
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6213721881995825217}
+        m_TargetAssemblyTypeName: Player_Controller.Scripts.ThirdPersonMovement,
+          Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 510cb160-ad28-4324-8070-999583d0fa49
+    m_ActionName: Movement/Jump
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6213721881995825217}
+        m_TargetAssemblyTypeName: Player_Controller.Scripts.ThirdPersonMovement,
+          Assembly-CSharp
+        m_MethodName: Attack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 58427b67-80e1-4c85-bb11-956b6674d63a
+    m_ActionName: Movement/Attack
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 64fdc2d3-6440-4167-9fe5-9e46081954c0
+    m_ActionName: Movement/Dash
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6213721881995825217}
+        m_TargetAssemblyTypeName: Player_Controller.Scripts.ThirdPersonMovement,
+          Assembly-CSharp
+        m_MethodName: Sprint
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 53169ad3-657d-4f2a-9bc0-854ad49d6506
+    m_ActionName: Movement/Sprint[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3f46dd2f-b25b-411e-89a9-48b3e5d17fc7
+    m_ActionName: Movement/Look[/Mouse/delta]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: Mouse_Keyboard
+  m_DefaultActionMap: Movement
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1001 &2424246904888561053
 PrefabInstance:
   m_ObjectHideFlags: 0
