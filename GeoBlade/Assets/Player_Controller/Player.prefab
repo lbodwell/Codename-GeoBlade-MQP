@@ -105,17 +105,9 @@ MonoBehaviour:
   controller: {fileID: 6213721881995825216}
   animator: {fileID: 4353644546742091943}
   cam: {fileID: 0}
-  velocity: {x: 0, y: 0, z: 0}
   movementSpeed: 12
-  turnSmoothingTime: 0.1
-  isSprinting: 0
-  isJumping: 0
-  isWeaponActive: 0
-  nextFootstep: 0
-  nextAttackWindowStart: 0
-  nextAttackWindowClose: 0
-  nextWeaponSheathe: 0
-  nextAttackIndex: 0
+  Gravity: 22
+  JumpForce: 12
 --- !u!114 &6213721881995825221
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,26 +14,30 @@ namespace Player_Controller.Scripts
         public Animator animator;
         public Transform cam;
         public List<Attack> attacks;
-
-        public Vector3 velocity = new Vector3(0f, 0f, 0f);
+        
         public float movementSpeed = 2f;
-        public float turnSmoothingTime = 0.1f;
-        public bool isSprinting;
-        public bool isJumping;
-        public bool isWeaponActive = false;
-        public float nextFootstep = 0f;
-        public float nextAttackWindowStart = 0f;
-        public float nextAttackWindowClose = 0f;
-        public float nextWeaponSheathe = 0f;
 
-        public int nextAttackIndex = 0;
+        private Vector3 velocity = new Vector3(0f, 0f, 0f);
+        private float nextFootstep = 0f;
+        private float nextAttackWindowStart = 0f;
+        private float nextAttackWindowClose = 0f;
+        private float nextWeaponSheathe = 0f;
+
+        private int nextAttackIndex = 0;
 
         // TODO: encapsulate timeouts within Attack class for more customizability
         public const float AttackCooldown = 0.5f;
         public const float ComboTimeout = 1.0f;
         public const float AttackInactivityTimeout = 5.0f;
+        
+        public float Gravity = 22.0f;
+        public float JumpForce = 12.0f;
+        private float turnSmoothingTime = 0.1f;
+        private bool isSprinting = false;
+        private bool isJumping = false;
+        private bool isWeaponActive = false;
 
-        private const float Gravity = 0.08f;
+        
         private float _turnSmoothingVel;
         private Vector2 movementInput = new Vector2(0, 0);
 
@@ -66,6 +70,7 @@ namespace Player_Controller.Scripts
                 // TODO: clean up
             }
 
+            // Handle Sprinting
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 isSprinting = false;
@@ -74,18 +79,19 @@ namespace Player_Controller.Scripts
             velocity.x = movementSpeed * (isSprinting ? 1.5f : 1f);
             velocity.z = movementSpeed * (isSprinting ? 1.5f : 1f);
 
+            // Accelerate with gravity if not grounded
             if (!controller.isGrounded)
             {
-                velocity.y -= Gravity;
+                velocity.y -= Gravity*Time.deltaTime;
             }
 
             Vector3 finalVel;
-
-            if (inputDirection.magnitude < 0.1f)
+            
+            if (inputDirection.magnitude < 0.1f)    // Input deadzone TODO:remove, input system handles this
             {
                 finalVel = new Vector3(0f, velocity.y, 0f);
             }
-            else
+            else    // Rotate move vector based on camera position
             {
                 var targetAngle = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
                 var smoothedAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothingVel,
@@ -115,6 +121,7 @@ namespace Player_Controller.Scripts
                 }
             }
 
+            // Move the player controller using deltatime
             controller.Move(finalVel * Time.deltaTime);
 
             if (isWeaponActive && Time.time > nextWeaponSheathe)
@@ -146,7 +153,7 @@ namespace Player_Controller.Scripts
         {
             if (controller.isGrounded)
             {
-                velocity.y = 12f;
+                velocity.y = JumpForce;
                 // Jump liftoff
                 AkSoundEngine.PostEvent("Player_Jump", gameObject);
                 isJumping = true;
