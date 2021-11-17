@@ -140,8 +140,6 @@ namespace Player_Controller.Scripts
             Vector2 inputVector = context.ReadValue<Vector2>();
 
             movementInput = new Vector2(inputVector.x, inputVector.y);
-            
-            Debug.Log("Movement detected");
         }
 
         public void Jump(InputAction.CallbackContext context)
