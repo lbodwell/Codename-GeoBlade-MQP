@@ -1,0 +1,16 @@
+line_id,line_en_US,line_speaker,line_duration,line_desc
+dialogue_lvl1_001,Is this how it goes? Maybe like this?,Fairy,5,Opening
+dialogue_lvl1_002,Grrzzt!,Seru,2,Opening
+dialogue_lvl1_003,"Oh, it worked! I’m Fairy, do you know who you are?",Fairy,7,Opening
+dialogue_lvl1_004,I am...,Seru,1,Opening
+dialogue_lvl1_005,Brrzt… SRU-2!,Seru,4,Opening
+dialogue_lvl1_006,Well it’s a pleasure to meet you SRU.. 2? ,Fairy,5,Opening
+dialogue_lvl1_007,"That’s kind of a mouthful, if you don’t mind I’m just gonna call you, umm... Esaru.. Seru… Seru!",Fairy,11,Opening
+dialogue_lvl1_008,Can you walk?,Fairy,4,Opening
+dialogue_lvl1_009,Erzzt... I think so.,Seru,5,Opening
+dialogue_lvl1_010,"Perfect! All this flying is making me tired, let me just ride on you like this.",Fairy,7,Opening
+dialogue_lvl1_011,Let’s go!,Fairy,2,Opening
+dialogue_lvl1_012,Where to?,Seru,2,After Opening
+dialogue_lvl1_013,"Hmm... I think I’ve done enough exploring for today, so let's just get out of here.",Fairy,7,After Opening
+dialogue_lvl1_014,"And umm, well I’m kinda lost myself hehe, so I’ll leave the navigating to you!",Fairy,7,After Opening
+dialogue_lvl1_015,Brrzt... I will do my best.,Seru,5,After Opening

@@ -20,26 +20,31 @@ namespace Player_Controller {
         public CharacterController controller;
         public Animator animator;
         public Transform cam;
-        public List<Attack> attacks;
+        private List<Attack> attacks;
     
         public Vector3 velocity = new Vector3(0f, 0f, 0f);
         public float movementSpeed = 2f;
         public float turnSmoothingTime = 0.1f;
-        public bool isSprinting;
-        public bool isJumping;
-        public bool isWeaponActive = false;
-        public float nextFootstep = 0f;
-        public float nextAttackWindowStart = 0f;
-        public float nextAttackWindowClose = 0f;
-        public float nextWeaponSheathe = 0f;
-        public int nextAttackIndex = 0;
+        
         // TODO: encapsulate timeouts within Attack class for more customizability
         public const float AttackCooldown = 0.5f;
         public const float ComboTimeout = 1.0f;
         public const float AttackInactivityTimeout = 5.0f;
-    
         private const float Gravity = 0.08f;
+        
+        private bool _isSprinting;
+        private bool _isJumping;
+        private bool _isWeaponActive;
+        private float _nextFootstep;
+        private float _nextAttackWindowStart;
+        private float _nextAttackWindowClose;
+        private float _nextWeaponSheathe;
+        private int _nextAttackIndex;
         private float _turnSmoothingVel;
+
+        public ThirdPersonMovement() {
+            _nextAttackWindowClose = 0f;
+        }
 
         private void Start() {
             attacks = new List<Attack> {
@@ -60,36 +65,36 @@ namespace Player_Controller {
                 velocity.y = 12f;
                 // Jump liftoff
                 AkSoundEngine.PostEvent("Player_Jump", gameObject);
-                isJumping = true;
+                _isJumping = true;
             }
 
             if (controller.isGrounded) {
                 if (Input.GetKeyDown(KeyCode.LeftShift)) {
-                    isSprinting = true;
-                    nextFootstep = Time.time;
+                    _isSprinting = true;
+                    _nextFootstep = Time.time;
                 }
                 
                 // TODO: clean up
                 if (Input.GetMouseButtonDown(0)) {
-                    if (Time.time > nextAttackWindowStart) {
-                        var currAttack = attacks[nextAttackIndex];
+                    if (Time.time > _nextAttackWindowStart) {
+                        var currAttack = attacks[_nextAttackIndex];
                     
-                        if (isWeaponActive) {
-                            if (Time.time < nextAttackWindowClose) {
-                                nextAttackIndex = (nextAttackIndex + 1) % 3;
+                        if (_isWeaponActive) {
+                            if (Time.time < _nextAttackWindowClose) {
+                                _nextAttackIndex = (_nextAttackIndex + 1) % 3;
                             } else {
-                                nextAttackIndex = 0;
+                                _nextAttackIndex = 0;
                             }
                         } else {
-                            isWeaponActive = true;
+                            _isWeaponActive = true;
                             Debug.Log("Geoblade unsheathed");
                             AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
-                            nextAttackIndex = 0;
+                            _nextAttackIndex = 0;
                         }
                     
-                        nextAttackWindowStart = Time.time + AttackCooldown;
-                        nextAttackWindowClose = Time.time + ComboTimeout;
-                        nextWeaponSheathe = Time.time + AttackInactivityTimeout;
+                        _nextAttackWindowStart = Time.time + AttackCooldown;
+                        _nextAttackWindowClose = Time.time + ComboTimeout;
+                        _nextWeaponSheathe = Time.time + AttackInactivityTimeout;
                     
                         Debug.Log($"Attack (type: {currAttack.name}, damage: {currAttack.damage})");
                         AkSoundEngine.SetState("Attack_Type", currAttack.name);
@@ -99,11 +104,11 @@ namespace Player_Controller {
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift)) {
-                isSprinting = false;
+                _isSprinting = false;
             }
             
-            velocity.x = movementSpeed * (isSprinting ? 1.5f : 1f);
-            velocity.z = movementSpeed * (isSprinting ? 1.5f : 1f);
+            velocity.x = movementSpeed * (_isSprinting ? 1.5f : 1f);
+            velocity.z = movementSpeed * (_isSprinting ? 1.5f : 1f);
             
             if (!controller.isGrounded) {
                 velocity.y -= Gravity;
@@ -121,13 +126,13 @@ namespace Player_Controller {
                 var playerDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                 finalVel = new Vector3(velocity.x * playerDirection.x, playerDirection.y + velocity.y, velocity.z * playerDirection.z);
                 if (controller.isGrounded) {
-                    if (Time.time > nextFootstep) {
-                        if (isSprinting) {
+                    if (Time.time > _nextFootstep) {
+                        if (_isSprinting) {
                             AkSoundEngine.SetState("Footstep_Type", "Run");
-                            nextFootstep = Time.time + 0.25f;
+                            _nextFootstep = Time.time + 0.25f;
                         } else {
                             AkSoundEngine.SetState("Footstep_Type", "Walk");
-                            nextFootstep = Time.time + 0.25f;
+                            _nextFootstep = Time.time + 0.25f;
                         }
 
                         AkSoundEngine.PostEvent("Player_Footstep", gameObject);
@@ -137,8 +142,8 @@ namespace Player_Controller {
             
             controller.Move(finalVel * Time.deltaTime);
 
-            if (isWeaponActive && Time.time > nextWeaponSheathe) {
-                isWeaponActive = false;
+            if (_isWeaponActive && Time.time > _nextWeaponSheathe) {
+                _isWeaponActive = false;
                 Debug.Log("Geoblade sheathed");
             }
             
@@ -146,12 +151,12 @@ namespace Player_Controller {
             animator.SetBool("Grounded", controller.isGrounded);
             animator.SetFloat("Speed", finalVel.magnitude);
             
-            if (!controller.isGrounded || !isJumping) return;
-            isJumping = false;
+            if (!controller.isGrounded || !_isJumping) return;
+            _isJumping = false;
             velocity.y = 0f;
             // Jump landing
             AkSoundEngine.PostEvent("Player_Jump", gameObject);
-            nextFootstep = Time.time;
+            _nextFootstep = Time.time;
         }
     }
 }
