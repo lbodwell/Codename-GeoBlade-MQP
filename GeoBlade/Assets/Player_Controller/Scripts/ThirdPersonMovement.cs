@@ -12,14 +12,14 @@ namespace Player_Controller.Scripts {
         private List<Attack> attacks;
     
         public Vector3 velocity = new Vector3(0f, 0f, 0f);
-        public float movementSpeed = 2f;
-        public float turnSmoothingTime = 0.1f;
+        public float movementSpeed = 0.5f;
+        public float turnSmoothingTime = 0.5f;
 
         // TODO: encapsulate timeouts within Attack class for more customizability
         public const float AttackCooldown = 0.75f;
         public const float ComboTimeout = 1.0f;
         public const float AttackInactivityTimeout = 5.0f;
-        private const float Gravity = 0.08f;
+        private const float Gravity = 0.24f;
         
         private bool _isSprinting;
         private bool _isJumping;
@@ -57,6 +57,7 @@ namespace Player_Controller.Scripts {
             if (!controller.isGrounded) {
                 velocity.y -= Gravity;
             }
+            print(velocity.y);
 
             Vector3 finalVel;
 
@@ -112,7 +113,7 @@ namespace Player_Controller.Scripts {
         public void Jump(InputAction.CallbackContext context) {
             if (!controller.isGrounded) return;
             
-            velocity.y = 12f;
+            velocity.y = 16f;
             // Jump liftoff
             AkSoundEngine.PostEvent("Player_Jump", gameObject);
             _isJumping = true;
