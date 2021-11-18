@@ -1,119 +1,83 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
-namespace Player_Controller.Scripts
-{
-    public class ThirdPersonMovement : MonoBehaviour
-    {
+namespace Player_Controller.Scripts {
+    public class ThirdPersonMovement : MonoBehaviour {
         public CharacterController controller;
         public Animator animator;
         public Transform cam;
-        public List<Attack> attacks;
-        
-        public float movementSpeed = 2f;
-
-        private Vector3 velocity = new Vector3(0f, 0f, 0f);
-        private float nextFootstep = 0f;
-        private float nextAttackWindowStart = 0f;
-        private float nextAttackWindowClose = 0f;
-        private float nextWeaponSheathe = 0f;
-
-        private int nextAttackIndex = 0;
+        private List<Attack> attacks;
+    
+        public Vector3 velocity = new Vector3(0f, 0f, 0f);
+        public float movementSpeed = 0.5f;
+        public float turnSmoothingTime = 0.5f;
 
         // TODO: encapsulate timeouts within Attack class for more customizability
-        public const float AttackCooldown = 0.5f;
+        public const float AttackCooldown = 0.75f;
         public const float ComboTimeout = 1.0f;
         public const float AttackInactivityTimeout = 5.0f;
+        private const float Gravity = 0.24f;
         
-        public float Gravity = 22.0f;
-        public float JumpForce = 12.0f;
-        private float turnSmoothingTime = 0.1f;
-        private bool isSprinting = false;
-        private bool isJumping = false;
-        private bool isWeaponActive = false;
-
-        
+        private bool _isSprinting;
+        private bool _isJumping;
+        private bool _isWeaponActive;
+        private float _nextFootstep;
+        private float _nextAttackWindowStart;
+        private float _nextAttackWindowClose;
+        private float _nextWeaponSheathe;
+        private int _nextAttackIndex;
         private float _turnSmoothingVel;
-        private Vector2 movementInput = new Vector2(0, 0);
+        private Vector2 _movementInput = new Vector2(0, 0);
 
-        private void Start()
-        {
-            attacks = new List<Attack>
-            {
+        private void Start() {
+            attacks = new List<Attack> {
                 new Attack("Light1", 5),
                 new Attack("Light2", 10),
                 new Attack("Heavy", 20)
             };
         }
 
-        private void Update()
-        {
+        private void Update() {
             AkSoundEngine.SetState("Material", "Concrete");
-            // TODO: migrate to new input system
-            var horizInput = movementInput.x;
-            var vertInput = movementInput.y;
+            
+            var horizInput = _movementInput.x;
+            var vertInput = _movementInput.y;
             var inputDirection = new Vector3(horizInput, 0f, vertInput).normalized;
 
-            if (controller.isGrounded)
-            {
-                if (Input.GetKeyDown(KeyCode.LeftShift))
-                {
-                    isSprinting = true;
-                    nextFootstep = Time.time;
-                }
-
-                // TODO: clean up
+            if (Input.GetKeyUp(KeyCode.LeftShift)) {
+                _isSprinting = false;
             }
-
-            // Handle Sprinting
-            if (Input.GetKeyUp(KeyCode.LeftShift))
-            {
-                isSprinting = false;
+            
+            velocity.x = movementSpeed * (_isSprinting ? 1.5f : 1f);
+            velocity.z = movementSpeed * (_isSprinting ? 1.5f : 1f);
+            
+            if (!controller.isGrounded) {
+                velocity.y -= Gravity;
             }
-
-            velocity.x = movementSpeed * (isSprinting ? 1.5f : 1f);
-            velocity.z = movementSpeed * (isSprinting ? 1.5f : 1f);
-
-            // Accelerate with gravity if not grounded
-            if (!controller.isGrounded)
-            {
-                velocity.y -= Gravity*Time.deltaTime;
-            }
+            print(velocity.y);
 
             Vector3 finalVel;
-            
-            if (inputDirection.magnitude < 0.1f)    // Input deadzone TODO:remove, input system handles this
-            {
+
+            if (inputDirection.magnitude < 0.1f) {
                 finalVel = new Vector3(0f, velocity.y, 0f);
-            }
-            else    // Rotate move vector based on camera position
-            {
+            } else {
                 var targetAngle = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-                var smoothedAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothingVel,
-                    turnSmoothingTime);
+                var smoothedAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothingVel, turnSmoothingTime);
                 transform.rotation = Quaternion.Euler(0f, smoothedAngle, 0f);
 
                 var playerDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-                finalVel = new Vector3(velocity.x * playerDirection.x, playerDirection.y + velocity.y,
-                    velocity.z * playerDirection.z);
-                if (controller.isGrounded)
-                {
-                    if (Time.time > nextFootstep)
-                    {
-                        if (isSprinting)
-                        {
+                finalVel = new Vector3(velocity.x * playerDirection.x, playerDirection.y + velocity.y, velocity.z * playerDirection.z);
+                if (controller.isGrounded) {
+                    if (Time.time > _nextFootstep) {
+                        if (_isSprinting) {
                             AkSoundEngine.SetState("Footstep_Type", "Run");
-                            nextFootstep = Time.time + 0.25f;
-                        }
-                        else
-                        {
+                            _nextFootstep = Time.time + 0.225f;
+                        } else {
                             AkSoundEngine.SetState("Footstep_Type", "Walk");
-                            nextFootstep = Time.time + 0.25f;
+                            _nextFootstep = Time.time + 0.275f;
                         }
 
                         AkSoundEngine.PostEvent("Player_Footstep", gameObject);
@@ -124,89 +88,79 @@ namespace Player_Controller.Scripts
             // Move the player controller using deltatime
             controller.Move(finalVel * Time.deltaTime);
 
-            if (isWeaponActive && Time.time > nextWeaponSheathe)
-            {
-                isWeaponActive = false;
+            if (_isWeaponActive && Time.time > _nextWeaponSheathe) {
+                _isWeaponActive = false;
                 Debug.Log("Geoblade sheathed");
             }
-
+            
             //Update Animator Parameters
             animator.SetBool("Grounded", controller.isGrounded);
             animator.SetFloat("Speed", finalVel.magnitude);
-
-            if (!controller.isGrounded || !isJumping) return;
-            isJumping = false;
+            
+            if (!controller.isGrounded || !_isJumping) return;
+            _isJumping = false;
             velocity.y = 0f;
             // Jump landing
             AkSoundEngine.PostEvent("Player_Jump", gameObject);
-            nextFootstep = Time.time;
+            _nextFootstep = Time.time;
         }
 
-        public void Move(InputAction.CallbackContext context)
-        {
-            Vector2 inputVector = context.ReadValue<Vector2>();
+        public void Move(InputAction.CallbackContext context) {
+            var inputVector = context.ReadValue<Vector2>();
 
-            movementInput = new Vector2(inputVector.x, inputVector.y);
+            _movementInput = new Vector2(inputVector.x, inputVector.y);
         }
 
-        public void Jump(InputAction.CallbackContext context)
-        {
-            if (controller.isGrounded)
-            {
-                velocity.y = JumpForce;
-                // Jump liftoff
-                AkSoundEngine.PostEvent("Player_Jump", gameObject);
-                isJumping = true;
-            }
+        public void Jump(InputAction.CallbackContext context) {
+            if (!controller.isGrounded) return;
+            
+            velocity.y = 16f;
+            // Jump liftoff
+            AkSoundEngine.PostEvent("Player_Jump", gameObject);
+            _isJumping = true;
         }
 
-        public void Attack(InputAction.CallbackContext context)
-        {
-            if (Time.time > nextAttackWindowStart)
-            {
-                var currAttack = attacks[nextAttackIndex];
-
-                if (isWeaponActive)
-                {
-                    if (Time.time < nextAttackWindowClose)
-                    {
-                        nextAttackIndex = (nextAttackIndex + 1) % 3;
-                    }
-                    else
-                    {
-                        nextAttackIndex = 0;
-                    }
+        public void Attack(InputAction.CallbackContext context) {
+            // TODO: clean up
+            
+            if (_isWeaponActive) {
+                if (Time.time < _nextAttackWindowStart) return;
+                if (Time.time < _nextAttackWindowClose) {
+                    _nextAttackIndex = (_nextAttackIndex + 1) % 3;
+                } else {
+                    _nextAttackIndex = 0;
                 }
-                else
-                {
-                    isWeaponActive = true;
-                    Debug.Log("Geoblade unsheathed");
-                    AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
-                    nextAttackIndex = 0;
-                }
-
-                nextAttackWindowStart = Time.time + AttackCooldown;
-                nextAttackWindowClose = Time.time + ComboTimeout;
-                nextWeaponSheathe = Time.time + AttackInactivityTimeout;
-
-                Debug.Log($"Attack (type: {currAttack.name}, damage: {currAttack.damage})");
-                AkSoundEngine.SetState("Attack_Type", currAttack.name);
-                AkSoundEngine.PostEvent("Player_Attack", gameObject);
+            } else {
+                _isWeaponActive = true;
+                _nextAttackIndex = 0;
+                
+                Debug.Log("Geoblade unsheathed");
+                AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
             }
+            
+            var currAttack = attacks[_nextAttackIndex];
+
+            _nextAttackWindowStart = Time.time + AttackCooldown;
+            _nextAttackWindowClose = Time.time + ComboTimeout;
+            _nextWeaponSheathe = Time.time + AttackInactivityTimeout;
+
+            Debug.Log($"Attack (type: {currAttack.name}, damage: {currAttack.damage})");
+            
+            AkSoundEngine.SetState("Attack_Type", currAttack.name);
+            AkSoundEngine.PostEvent("Player_Attack", gameObject);
         }
 
-        public void Sprint(InputAction.CallbackContext context)
-        {
+        public void Sprint(InputAction.CallbackContext context) {
+            _isSprinting = true;
+            _nextFootstep = Time.time;
         }
     }
 
-    public class Attack
-    {
+    public class Attack {
         public string name;
         public float damage;
 
-        public Attack(string name, float damage)
-        {
+        public Attack(string name, float damage) {
             this.name = name;
             this.damage = damage;
         }
