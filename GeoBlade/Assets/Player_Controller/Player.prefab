@@ -102,12 +102,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a08695404b659a4698582bae8bb8b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStats: {fileID: 0}
   controller: {fileID: 6213721881995825216}
   animator: {fileID: 4353644546742091943}
   cam: {fileID: 0}
+  gravity: 0.24
   movementSpeed: 12
-  Gravity: 22
-  JumpForce: 12
+  turnSmoothingTime: 0.5
+  attackCooldown: 0.75
+  comboTimeout: 1
+  attackInactivityTimeout: 5
 --- !u!114 &6213721881995825221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: aff52cb0978be3f4a8c7f302a110cecd, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: f6a4b241b9d83b04896950852fd11bdf, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:

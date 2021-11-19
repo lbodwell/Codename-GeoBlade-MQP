@@ -91,11 +91,19 @@ namespace Player_Controller.Scripts {
             if (_isWeaponActive && Time.time > _nextWeaponSheathe) {
                 _isWeaponActive = false;
                 Debug.Log("Geoblade sheathed");
+                animator.SetInteger("Combo", 0);
+                Debug.Log("Combo set to " + animator.GetInteger("Combo"));
             }
             
             //Update Animator Parameters
             animator.SetBool("Grounded", controller.isGrounded);
             animator.SetFloat("Speed", finalVel.magnitude);
+
+            if (Time.time >= _nextAttackWindowClose && animator.GetInteger("Combo") != 0)
+            {
+                animator.SetInteger("Combo", 0);
+                Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+            }
             
             if (!controller.isGrounded || !_isJumping) return;
             _isJumping = false;
@@ -123,12 +131,19 @@ namespace Player_Controller.Scripts {
         public void Attack(InputAction.CallbackContext context) {
             // TODO: clean up
             
+            animator.SetInteger("Combo", (_nextAttackIndex + 1) % 3);
+            Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+            
             if (_isWeaponActive) {
                 if (Time.time < _nextAttackWindowStart) return;
                 if (Time.time < _nextAttackWindowClose) {
                     _nextAttackIndex = (_nextAttackIndex + 1) % 3;
+                    animator.SetInteger("Combo", (_nextAttackIndex + 1) % 3);
+                    Debug.Log("Combo set to " + animator.GetInteger("Combo"));
                 } else {
                     _nextAttackIndex = 0;
+                    animator.SetInteger("Combo", 1);
+                    Debug.Log("Combo set to " + animator.GetInteger("Combo"));
                 }
             } else {
                 _isWeaponActive = true;
@@ -136,8 +151,10 @@ namespace Player_Controller.Scripts {
                 
                 Debug.Log("Geoblade unsheathed");
                 AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
+                animator.SetInteger("Combo", 1);
+                Debug.Log("Combo set to " + animator.GetInteger("Combo"));
             }
-            
+
             var currAttack = attacks[_nextAttackIndex];
 
             _nextAttackWindowStart = Time.time + AttackCooldown;
