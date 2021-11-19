@@ -8,9 +8,9 @@ public class PlayerController : MonoBehaviour {
     public CharacterController controller;
     public Animator animator;
     public Transform cam;
-    public float gravity = 0.24f;
+    public float gravity = 0.09f;
     public float movementSpeed = 0.5f;
-    public float turnSmoothingTime = 0.5f;
+    public float turnSmoothingTime = 0.1f;
     // TODO: encapsulate timeouts within Attack class for more customizability
     public float attackCooldown = 0.75f;
     public float comboTimeout = 1.0f;

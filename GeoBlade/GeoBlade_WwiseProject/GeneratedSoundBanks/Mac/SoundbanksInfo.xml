@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="3887353266">
+		<SoundBank Id="1069431850" Language="SFX" Hash="227629109">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -280,20 +280,20 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="1194107321">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2140833458">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2026953958" Name="Level1_Music" ObjectPath="\Events\Music\Level1_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="4723067" Language="SFX">
-							<ShortName>music_level1_track1_section2.wav</ShortName>
-							<Path>SFX\music_level1_track1_section2_D79FB2B7.wem</Path>
+						<File Id="332179452" Language="SFX">
+							<ShortName>Seru Theme.wav</ShortName>
+							<Path>SFX\Seru Theme_D79FB2B7.wem</Path>
 						</File>
-						<File Id="30180602" Language="SFX">
-							<ShortName>music_level1_track1_section1.wav</ShortName>
-							<Path>SFX\music_level1_track1_section1_D79FB2B7.wem</Path>
+						<File Id="777378290" Language="SFX">
+							<ShortName>New Section1.wav</ShortName>
+							<Path>SFX\New Section1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="1025610557" Language="SFX">
 							<ShortName>music_level1_track1_section3.wav</ShortName>
@@ -303,17 +303,17 @@
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{CFA14121-2F09-4B58-9AC2-B62F1CD035EA}">
 							<Media>
-								<File Id="30180602"/>
+								<File Id="777378290"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{4B300C52-F4A9-48E9-A524-DFD38D7F5AF9}">
 							<Media>
-								<File Id="4723067"/>
+								<File Id="1025610557"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{C931A956-4679-4314-BF98-DA7EB0F665E6}">
 							<Media>
-								<File Id="1025610557"/>
+								<File Id="332179452"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>

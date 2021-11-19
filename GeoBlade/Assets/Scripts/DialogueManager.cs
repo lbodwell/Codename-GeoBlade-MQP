@@ -66,7 +66,7 @@ public class DialogueManager : MonoBehaviour {
         return true;
     }
 
-    private async Task<string> PlayLine(string lineId) {
+    public async Task<string> PlayLine(string lineId) {
         while (_lineActive) {
             await Task.Delay(25);
         }

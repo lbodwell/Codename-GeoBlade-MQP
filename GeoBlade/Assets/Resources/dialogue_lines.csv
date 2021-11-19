@@ -22,7 +22,7 @@ dialogue_lvl1_020,"I think these doors are like homes, so the people in there mu
 dialogue_lvl1_021,I knocked on a bunch of them but yours was the only one I was able to get open.,This is an example of translated text.,Fairy,7,dialogue_lvl1_022,Spiral
 dialogue_lvl1_022,So you’re a great discovery! And I can’t wait to show you off to everyone else once we get out of here!,This is an example of translated text.,Fairy,7,END,Spiral
 dialogue_lvl1_023,"Hey, hey! So what’s this place? It looks so abandoned.",This is an example of translated text.,Fairy,5,dialogue_lvl1_024,Subway
-dialogue_lvl1_024,"Errzt... This is a subway station. We will need to take the train if we want to leave, I think.",This is an example of translated text.,Seru,6,END,Subway
+dialogue_lvl1_024,"Errzt... This is a subway station. We will need to take the train if we want to leave, I think.",This is an example of translated text.,Seru,6,dialogue_lvl1_025,Subway
 dialogue_lvl1_025,"Hey, hey! What are these things?",This is an example of translated text.,Fairy,4,dialogue_lvl1_026,Subway
 dialogue_lvl1_026,Errzt... Those are... They are a little different from what I remember. Perhaps they are a new model?,This is an example of translated text.,Seru,7,dialogue_lvl1_027,Subway
 dialogue_lvl1_027,ERROR ERROR ERROR,This is an example of translated text.,Droid,2,dialogue_lvl1_028,Subway
