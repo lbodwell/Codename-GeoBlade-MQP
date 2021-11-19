@@ -18,24 +18,18 @@ public class DialogueLine {
     }
 }
 
-public class SubtitleManager : MonoBehaviour {
+public class DialogueManager : MonoBehaviour {
     public GameObject subtitlesTextBox;
     public string locale = "en_US";
-    private static SubtitleManager _instance;
-    private readonly SortedDictionary<string, DialogueLine> _dialogueLines;
-    private bool _subtitleActive;
-
-    public SubtitleManager() {
-        _dialogueLines = new SortedDictionary<string, DialogueLine>();
-    }
+    public bool subtitlesEnabled = true;
+    public static DialogueManager Instance;
+    private SortedDictionary<string, DialogueLine> _dialogueLines;
+    private bool _lineActive;
 
     private async void Awake() {
-        if (_instance != null && _instance != this) {
-            Destroy(gameObject);
-        } else {
-            _instance = this;
-        }
-        
+        Instance = this;
+        _dialogueLines = new SortedDictionary<string, DialogueLine>();
+
         print("Loading dialogue lines...");
         if (!LoadDialogLines()) {
             print("Failed to load dialogue lines.");
@@ -49,7 +43,7 @@ public class SubtitleManager : MonoBehaviour {
                 break;
             }
             
-            nextLine = await RenderSubtitles(nextLine);
+            nextLine = await PlayLine(nextLine);
             await Task.Delay(25);
         }
     }
@@ -72,27 +66,32 @@ public class SubtitleManager : MonoBehaviour {
         return true;
     }
 
-    private async Task<string> RenderSubtitles(string lineId) {
-        while (_subtitleActive) {
+    private async Task<string> PlayLine(string lineId) {
+        while (_lineActive) {
             await Task.Delay(25);
         }
 
         var line = _dialogueLines[lineId];
-
-        var subtitleText = line.Speaker + ": " + line.Text;
         var textBox = subtitlesTextBox.GetComponent<TextMeshProUGUI>();
-        textBox.SetText(subtitleText);
-        _subtitleActive = true;
 
-        await Task.Delay((int) line.Duration * 1000).ContinueWith(t => {
-            _subtitleActive = false;
-        });
-
-        while (_subtitleActive) {
-            await Task.Delay(25);
+        if (subtitlesEnabled) {
+            var subtitleText = line.Speaker + ": " + line.Text;
+            textBox.SetText(subtitleText);
+            _lineActive = true;
         }
 
-        textBox.SetText("");
+        await Task.Delay((int)line.Duration * 1000).ContinueWith(t => {
+            _lineActive = false;
+        });
+        
+        if (subtitlesEnabled) {
+            while (_lineActive) {
+                await Task.Delay(25);
+            }
+
+            textBox.SetText("");
+        }
+
         // TODO: Use id from dict key to send event to Wwise
 
         return line.NextLine;
