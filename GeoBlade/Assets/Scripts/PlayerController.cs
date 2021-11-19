@@ -92,6 +92,11 @@ public class PlayerController : MonoBehaviour {
         //Update Animator Parameters
         animator.SetBool("Grounded", controller.isGrounded);
         animator.SetFloat("Speed", finalVel.magnitude);
+        if (Time.time >= _nextAttackWindowClose && animator.GetInteger("Combo") != 0)
+        {
+            animator.SetInteger("Combo", 0);
+            Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+        }
         
         if (!controller.isGrounded || !_isJumping) return;
         _isJumping = false;
@@ -121,8 +126,12 @@ public class PlayerController : MonoBehaviour {
             if (Time.time < _nextAttackWindowStart) return;
             if (Time.time < _nextAttackWindowClose) {
                 _nextAttackIndex = (_nextAttackIndex + 1) % 3;
+                animator.SetInteger("Combo", (_nextAttackIndex + 1) % 3);
+                Debug.Log("Combo set to " + animator.GetInteger("Combo"));
             } else {
                 _nextAttackIndex = 0;
+                animator.SetInteger("Combo", 1);
+                Debug.Log("Combo set to " + animator.GetInteger("Combo"));
             }
         } else {
             _isWeaponActive = true;
@@ -130,6 +139,8 @@ public class PlayerController : MonoBehaviour {
             
             Debug.Log("GeoBlade unsheathed");
             AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
+            animator.SetInteger("Combo", 1);
+            Debug.Log("Combo set to " + animator.GetInteger("Combo"));
         }
 
         if (_nextAttackIndex == 2 && playerStats.geo < 5) {
