@@ -2,8 +2,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour {
-    public delegate void AttackAction();
+    public delegate void AttackAction(float damage);
     public static event AttackAction OnPlayerAttack;
+    public PlayerStats playerStats;
     public CharacterController controller;
     public Animator animator;
     public Transform cam;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour {
     private Vector2 _movementInput = new Vector2(0, 0);
 
     private void Start() {
+        // TODO: Use enums for attack names
         _attacks = new List<Attack> {
             new Attack("Light1", 5),
             new Attack("Light2", 10),
@@ -128,7 +130,10 @@ public class PlayerController : MonoBehaviour {
             
             Debug.Log("GeoBlade unsheathed");
             AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
-            OnPlayerAttack?.Invoke();
+        }
+
+        if (_nextAttackIndex == 2 && playerStats.geo < 5) {
+            _nextAttackIndex = 0;
         }
         
         var currAttack = _attacks[_nextAttackIndex];
@@ -141,7 +146,12 @@ public class PlayerController : MonoBehaviour {
         
         AkSoundEngine.SetState("Attack_Type", currAttack.Name);
         AkSoundEngine.PostEvent("Player_Attack", gameObject);
-        OnPlayerAttack?.Invoke();
+        
+        OnPlayerAttack?.Invoke(currAttack.Damage);
+        
+        if (_nextAttackIndex == 2) {
+            playerStats.ConsumeGeo(5);
+        }
     }
 
     public void Sprint(InputAction.CallbackContext context) {

@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: a30d77f50bbb0404893a9cf14f62d01c, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -419,6 +419,7 @@ GameObject:
   - component: {fileID: 143681283}
   - component: {fileID: 143681282}
   - component: {fileID: 143681281}
+  - component: {fileID: 143681284}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -468,6 +469,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &143681284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143681280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a8693453414f3fbb9ddc9c276b28ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1769270679}
+  geoBar: {fileID: 168409019}
 --- !u!1 &168409017
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,6 +573,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 77441932}
+    - target: {fileID: 6213721881995825217, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
+      propertyPath: playerStats
+      value: 
+      objectReference: {fileID: 457329728}
     - target: {fileID: 6213721881995825218, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5364,19 +5383,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9764152
+      value: 0.9764153
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17197748
+      value: 0.17197749
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.12854749
+      value: -0.12854746
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.022641264
+      value: 0.022641256
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302648211868, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5424,7 +5443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.12703444
+      value: -0.12703447
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -11621,7 +11640,7 @@ GameObject:
   - component: {fileID: 1769270680}
   - component: {fileID: 1769270679}
   m_Layer: 5
-  m_Name: HPBar
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12114,11 +12133,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101421170}
-  - component: {fileID: 2101421171}
+  - component: {fileID: 2101421169}
   - component: {fileID: 2101421172}
   - component: {fileID: 2101421168}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: SecurityDroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12133,11 +12152,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 2101421167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8344447f47a244f5838086600ed4fb1c, type: 3}
+  m_Script: {fileID: 11500000, guid: c4ab8b8062494891b7d0f353e18b3945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
-  maxHealth: 25
+  health: 50
+  maxHealth: 50
+  securityDroid: {fileID: 2101421167}
+--- !u!114 &2101421169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101421167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d3ea28a8f7fee14c8463cb5bd306111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 2101421172}
+  securityDroidStats: {fileID: 2101421168}
+  movementSpeed: 2
+  chaseRadius: 10
+  attackRadius: 2
+  turnSmoothingTime: 0.2
+  attackCooldown: 2
 --- !u!4 &2101421170
 Transform:
   m_ObjectHideFlags: 0
@@ -12153,24 +12192,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2101421171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101421167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d3ea28a8f7fee14c8463cb5bd306111, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 2101421172}
-  movementSpeed: 2
-  chaseRadius: 15
-  attackRadius: 2
-  turnSmoothingTime: 0.5
-  attackCooldown: 2
 --- !u!143 &2101421172
 CharacterController:
   m_ObjectHideFlags: 0

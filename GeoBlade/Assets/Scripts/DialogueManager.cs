@@ -72,24 +72,30 @@ public class DialogueManager : MonoBehaviour {
         }
 
         var line = _dialogueLines[lineId];
-        var textBox = subtitlesTextBox.GetComponent<TextMeshProUGUI>();
 
-        if (subtitlesEnabled) {
+        if (subtitlesEnabled && subtitlesTextBox != null) {
+            var textBox = subtitlesTextBox.GetComponent<TextMeshProUGUI>();
+
             var subtitleText = line.Speaker + ": " + line.Text;
-            textBox.SetText(subtitleText);
-            _lineActive = true;
+            if (textBox != null) {
+                textBox.SetText(subtitleText);
+                _lineActive = true;
+            }
         }
-
+        
         await Task.Delay((int)line.Duration * 1000).ContinueWith(t => {
             _lineActive = false;
         });
         
-        if (subtitlesEnabled) {
+        if (subtitlesEnabled && subtitlesTextBox != null) {
+            var textBox = subtitlesTextBox.GetComponent<TextMeshProUGUI>();
             while (_lineActive) {
                 await Task.Delay(25);
             }
 
-            textBox.SetText("");
+            if (textBox != null) {
+                textBox.SetText("");
+            }
         }
 
         // TODO: Use id from dict key to send event to Wwise

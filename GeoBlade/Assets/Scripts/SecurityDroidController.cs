@@ -1,9 +1,8 @@
-using System;
-using HoudiniEngineUnity;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour {
+public class SecurityDroidController : MonoBehaviour {
     public CharacterController controller;
+    public SecurityDroidStats securityDroidStats;
     public float movementSpeed = 2f;
     public float chaseRadius = 10f;
     public float attackRadius = 5f;
@@ -11,6 +10,7 @@ public class EnemyController : MonoBehaviour {
     public float attackCooldown = 2f;
 
     private Transform _target;
+    private bool _isInAttackRange;
     private float _turnSmoothingVel;
     private float _nextAttackAttempt;
 
@@ -19,15 +19,18 @@ public class EnemyController : MonoBehaviour {
     }
 
     private void OnEnable() {
-        PlayerController.OnPlayerAttack += Test;
+        PlayerController.OnPlayerAttack += CheckForDamage;
     }
     
     private void OnDisable() {
-        PlayerController.OnPlayerAttack += Test;
+        PlayerController.OnPlayerAttack -= CheckForDamage;
     }
 
-    private void Test() {
-        print("Test");
+    private void CheckForDamage(float damage) {
+        // This range (player attack range) should be separated from the enemy attack range
+        if (_isInAttackRange) {
+            securityDroidStats.DamageCharacter(damage);
+        }
     }
 
     private void Update() {
@@ -41,12 +44,13 @@ public class EnemyController : MonoBehaviour {
             transform.rotation = Quaternion.Euler(0f, smoothedAngle, 0f);
             
             if (dist <= attackRadius) {
+                _isInAttackRange = true;
                 if (Time.time >= _nextAttackAttempt) {
-                    // Attack player
                     PlayerManager.Instance.player.GetComponent<PlayerStats>().DamageCharacter(10);
                     _nextAttackAttempt = Time.time + attackCooldown;
                 }
             } else {
+                _isInAttackRange = false;
                 controller.SimpleMove(new Vector3(dir.x * movementSpeed, dir.y, dir.z * movementSpeed));
             }
         }
