@@ -6,6 +6,7 @@ public class SecurityDroidStats : CharacterStats {
     
     public override void DamageCharacter(float amount) {
         health = Math.Max(0, health - amount);
+        print("health: " + health);
         
         if (health == 0) {
             Destroy(securityDroid);
