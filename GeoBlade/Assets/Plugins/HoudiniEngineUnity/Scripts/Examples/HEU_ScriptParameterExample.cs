@@ -24,6 +24,10 @@
 * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+#if (UNITY_EDITOR_WIN || UNITY_EDITOR_OSX || UNITY_STANDALONE_LINUX)
+#define HOUDINIENGINEUNITY_ENABLED
+#endif
+
 
 using UnityEngine;
 using System.Collections;
@@ -47,11 +51,11 @@ public class HEU_ScriptParameterExample : MonoBehaviour
     public float _scale = 20f;
 
 
-
+#if HOUDINIENGINEUNITY_ENABLED
     public void Start()
     {
 	// Grab the HEU_HoduiniAsset
-	_evergreenAsset = _evergreenGameObject.GetComponent<HEU_HoudiniAssetRoot>() != null ? _evergreenGameObject.GetComponent<HEU_HoudiniAssetRoot>()._houdiniAsset : null;
+	_evergreenAsset = _evergreenGameObject.GetComponent<HEU_HoudiniAssetRoot>() != null ? _evergreenGameObject.GetComponent<HEU_HoudiniAssetRoot>().HoudiniAsset : null;
 
 	// Always get the latest parms after each cook
 	List<HEU_ParameterData> parms = _evergreenAsset.Parameters.GetParameters();
@@ -100,5 +104,5 @@ public class HEU_ScriptParameterExample : MonoBehaviour
 	    _evergreenAsset.RequestCook(true, false, true, true);
 	}
     }
-
+#endif
 }

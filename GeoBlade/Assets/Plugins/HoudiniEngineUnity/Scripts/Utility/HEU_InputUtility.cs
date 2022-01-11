@@ -151,7 +151,7 @@ namespace HoudiniEngineUnity
 	/// </summary>
 	/// <param name="inputObjectInfo">Input object info used to find the interface</param>
 	/// <returns>Compatible input interface or null</returns>
-	public static HEU_InputInterface GetInputInterface(HEU_InputObjectInfo inputObjectInfo)
+	internal static HEU_InputInterface GetInputInterface(HEU_InputObjectInfo inputObjectInfo)
 	{
 	    HEU_InputInterface inputInterface = null;
 	    if (inputObjectInfo._inputInterfaceType == null)
@@ -183,7 +183,7 @@ namespace HoudiniEngineUnity
 	/// <param name="inputObjectsConnectedAssetIDs">List of input node IDs for the input nodes created</param>
 	/// <param name="inputNode">The specified inputNode to create the node for (used for settings)</param>
 	/// <returns>True if successfully uploading input nodes</returns>
-	public static bool CreateInputNodeWithMultiObjects(HEU_SessionBase session, HAPI_NodeId assetID,
+	internal static bool CreateInputNodeWithMultiObjects(HEU_SessionBase session, HAPI_NodeId assetID,
 		ref HAPI_NodeId connectMergeID, ref List<HEU_InputObjectInfo> inputObjects, ref List<HAPI_NodeId> inputObjectsConnectedAssetIDs, HEU_InputNode inputNode)
 	{
 	    bool bKeepWorldTransform = inputNode.KeepWorldTransform;
@@ -243,7 +243,7 @@ namespace HoudiniEngineUnity
 	    return true;
 	}
 
-	public static bool CreateInputNodeWithMultiAssets(HEU_SessionBase session, HEU_HoudiniAsset parentAsset,
+	internal static bool CreateInputNodeWithMultiAssets(HEU_SessionBase session, HEU_HoudiniAsset parentAsset,
 		ref HAPI_NodeId connectMergeID, ref List<HEU_InputHDAInfo> inputAssetInfos,
 		 bool bKeepWorldTransform, HAPI_NodeId mergeParentID = -1)
 	{
@@ -292,6 +292,7 @@ namespace HoudiniEngineUnity
 
 		inputAssetInfos[i]._connectedInputNodeID = inputAssetID;
 		inputAssetInfos[i]._connectedGO = inputAssetInfos[i]._pendingGO;
+		inputAssetInfos[i]._connectedMergeNodeID = connectMergeID;
 
 		parentAsset.ConnectToUpstream(inputAssetRoot._houdiniAsset);
 	    }
@@ -307,7 +308,7 @@ namespace HoudiniEngineUnity
 	/// <param name="inputNodeID">The input node ID</param>
 	/// <param name="bKeepWorldTransform">Whether to use world transform or not</param>
 	/// <returns></returns>
-	public static bool UploadInputObjectTransform(HEU_SessionBase session, HEU_InputObjectInfo inputObject, HAPI_NodeId inputNodeID, bool bKeepWorldTransform)
+	internal static bool UploadInputObjectTransform(HEU_SessionBase session, HEU_InputObjectInfo inputObject, HAPI_NodeId inputNodeID, bool bKeepWorldTransform)
 	{
 	    Matrix4x4 inputTransform = Matrix4x4.identity;
 	    if (inputObject._useTransformOffset)
@@ -345,9 +346,29 @@ namespace HoudiniEngineUnity
 	    if (session.SetObjectTransform(inputNodeInfo.parentId, ref transformEuler))
 	    {
 		inputObject._syncdTransform = inputTransform;
+
+		inputObject._syncdChildTransforms.Clear();
+
+		GetChildrenTransforms(inputObject._gameObject.transform, ref inputObject._syncdChildTransforms);
 	    }
 
 	    return true;
+	}
+
+	// Get the child transform using DFS.
+	public static void GetChildrenTransforms(Transform transform, ref List<Matrix4x4> childTransforms)
+	{
+	    if (transform == null || transform.childCount == 0 || childTransforms == null)
+	    {
+		return;
+	    }
+
+	    for (int i = 0; i < transform.childCount; i++)
+	    {
+		Transform childTransform = transform.GetChild(i);
+		childTransforms.Add(childTransform.localToWorldMatrix);
+		GetChildrenTransforms(childTransform, ref childTransforms);
+	    }
 	}
     }
 

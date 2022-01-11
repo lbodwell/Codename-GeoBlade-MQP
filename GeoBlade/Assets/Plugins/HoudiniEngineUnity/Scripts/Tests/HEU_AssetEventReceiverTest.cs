@@ -33,19 +33,19 @@ using UnityEngine.Events;
 /// </summary>
 public class HEU_AssetEventReceiverTest : MonoBehaviour
 {
-
-    public void ReloadCallback(HoudiniEngineUnity.HEU_HoudiniAsset asset, bool success, List<GameObject> outputList)
+    public void ReloadCallback(HoudiniEngineUnity.HEU_ReloadEventData Data)
     {
-	Debug.LogFormat("Reloaded! Asset={0}, Success={1}, Outputs={2}", asset.AssetName, success, outputList.Count);
+	Debug.LogFormat("Reloaded! Asset={0}, Success={1}, Outputs={2}", Data.Asset.AssetName, Data.CookSuccess, Data.OutputObjects.Count);
     }
 
-    public void CookedCallback(HoudiniEngineUnity.HEU_HoudiniAsset asset, bool success, List<GameObject> outputList)
+    public void CookedCallback(HoudiniEngineUnity.HEU_CookedEventData Data)
     {
-	Debug.LogFormat("Cooked! Asset={0}, Success={1}, Outputs={2}", asset.AssetName, success, outputList.Count);
+	Debug.LogFormat("Cooked! Asset={0}, Success={1}, Outputs={2}", Data.Asset.AssetName, Data.CookSuccess, Data.OutputObjects.Count);
     }
 
-    public void BakedCallback(HoudiniEngineUnity.HEU_HoudiniAsset asset, bool success, List<GameObject> outputList)
+    public void BakedCallback(HoudiniEngineUnity.HEU_BakedEventData Data)
     {
-	Debug.LogFormat("Baked! Asset={0}, Success={1}, Outputs={2}", asset.AssetName, success, outputList.Count);
+	Debug.LogFormat("Baked! Asset={0}, Success={1}, Outputs={2}", Data.Asset.AssetName, Data.CookSuccess, Data.OutputObjects.Count);
     }
+
 }
