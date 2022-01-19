@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6213721881995825218}
   - component: {fileID: 6213721881995825216}
   - component: {fileID: 6213721881995825217}
+  - component: {fileID: 6041909709532860174}
   - component: {fileID: 6213721881995825221}
   - component: {fileID: 6213721881995825222}
   - component: {fileID: 6213721881995825223}
@@ -70,14 +71,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats: {fileID: 0}
   controller: {fileID: 6213721881995825216}
-  animator: {fileID: 0}
+  animator: {fileID: 2978857075321096510}
   cam: {fileID: 0}
-  gravity: 0.24
+  gravity: 9.8
   movementSpeed: 12
   turnSmoothingTime: 0.5
   attackCooldown: 0.75
   comboTimeout: 1
   attackInactivityTimeout: 5
+--- !u!114 &6041909709532860174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6213721881995825219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7446134a9614965b17000502d2da920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+  maxHealth: 20
+  maxGeo: 20
+  geo: 20
 --- !u!114 &6213721881995825221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,6 +398,11 @@ PrefabInstance:
 --- !u!4 &9202871018548466500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5e0d59c0887c94d46affd2a9ab947cc8, type: 3}
+  m_PrefabInstance: {fileID: 8664242971315336367}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2978857075321096510 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 5e0d59c0887c94d46affd2a9ab947cc8, type: 3}
   m_PrefabInstance: {fileID: 8664242971315336367}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8659217299769644052 stripped

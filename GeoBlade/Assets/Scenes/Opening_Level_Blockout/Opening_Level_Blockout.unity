@@ -869,12 +869,8 @@ PrefabInstance:
       objectReference: {fileID: 77441932}
     - target: {fileID: 6213721881995825217, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
       propertyPath: gravity
-      value: 0.09
+      value: 24
       objectReference: {fileID: 0}
-    - target: {fileID: 6213721881995825217, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1878326564}
     - target: {fileID: 6213721881995825217, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
       propertyPath: playerStats
       value: 
@@ -6323,31 +6319,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 6.2116547
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -23.182222
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9649227
+      value: 0.9800034
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.22778738
+      value: 0.1510382
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.12703444
+      value: -0.12802911
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.02998876
+      value: 0.01973186
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
@@ -8193,11 +8189,6 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: dab9ad824d5506240bccb3c0414d9e42, type: 2}
---- !u!95 &1878326564 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2978857075321096510, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
-  m_PrefabInstance: {fileID: 336822161}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1958702635
 PrefabInstance:
   m_ObjectHideFlags: 0
