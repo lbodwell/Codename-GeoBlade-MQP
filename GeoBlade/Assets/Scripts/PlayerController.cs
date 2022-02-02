@@ -34,13 +34,15 @@ public class PlayerController : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Confined;
     }
     
-    private void Start() {
+    private async void Start() {
         // TODO: Use enums for attack names
         _attacks = new List<Attack> {
             new Attack("Light1", 5),
             new Attack("Light2", 10),
             new Attack("Heavy", 20)
         };
+        
+        await DialogueManager.Instance.PlayDialogueSequence("lvl1_stasis_room_seru_01");
     }
 
     private void Update() {

@@ -6428,8 +6428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Seru: Actually, my memories of this facility are\u2026 scattered. It seems
-    deeply familiar, yet so distant. I will do my best."
+  m_text: "Seru: They are\u2026 I apologize. I cannot recall their purpose."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8132,8 +8131,9 @@ GameObject:
   - component: {fileID: 1835322541}
   - component: {fileID: 1835322543}
   - component: {fileID: 1835322544}
+  - component: {fileID: 1835322545}
   m_Layer: 0
-  m_Name: MusicTransitionCollider1
+  m_Name: TransitionCollider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8214,6 +8214,19 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: dab9ad824d5506240bccb3c0414d9e42, type: 2}
+--- !u!114 &1835322545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835322540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a35c4f9d423624a92608a5075f968f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineId: lvl1_spiral_room_iris_01
 --- !u!1001 &1958702635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8782,7 +8795,7 @@ GameObject:
   - component: {fileID: 2104814171}
   - component: {fileID: 2104814172}
   m_Layer: 0
-  m_Name: MusicTransitionCollider2
+  m_Name: TransitionCollider2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -27,8 +27,9 @@ public class DialogueManager : MonoBehaviour {
     public static DialogueManager Instance;
     private SortedDictionary<string, DialogueLine> _dialogueLines;
     private bool _lineActive;
+    private bool _interruptRequested;
 
-    private async void Awake() {
+    private void Awake() {
         Instance = this;
         _dialogueLines = new SortedDictionary<string, DialogueLine>();
 
@@ -38,8 +39,6 @@ public class DialogueManager : MonoBehaviour {
             return;
         }
         print("Successfully loaded dialogue lines.");
-        
-        await PlayDialogueSequence("lvl1_stasis_room_iris_01");
     }
 
     private bool LoadDialogLines() {
@@ -73,25 +72,25 @@ public class DialogueManager : MonoBehaviour {
     }
     
     public async Task PlayDialogueSequence(string firstLineId) {
-        var nextLine = firstLineId;
+        // TODO: Use cancellation tokens to end task early if dialogue is interrupted by new line
         
+        var nextLine = firstLineId;
+
         while (true) {
             if (nextLine == "END") {
                 break;
             }
             
             nextLine = await PlayLine(nextLine);
-            await Task.Delay(25);
+            await Task.Delay(10);
         }
     }
-    
+
     public async Task<string> PlayLine(string lineId) {
         while (_lineActive) {
-            await Task.Delay(25);
+            await Task.Delay(10);
         }
 
-        Debug.Log(lineId);
-        
         var line = _dialogueLines[lineId];
 
         if (subtitlesEnabled && subtitlesTextBox != null) {
@@ -119,19 +118,21 @@ public class DialogueManager : MonoBehaviour {
             _lineActive = false;
         });
         
-        if (subtitlesEnabled && subtitlesTextBox != null) {
+        if (subtitlesTextBox != null) {
             var textBox = subtitlesTextBox.GetComponent<TextMeshProUGUI>();
             while (_lineActive) {
-                await Task.Delay(25);
+                await Task.Delay(10);
             }
-
+            
             if (textBox != null) {
                 textBox.SetText("");
             }
+            
+            if (line.PostDelay > 0) {
+                await Task.Delay((int) (line.PostDelay * 1000));
+            }
         }
-
-        // TODO: Add line post delay
-
+        
         return line.NextLine;
     }
 }

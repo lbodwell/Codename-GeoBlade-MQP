@@ -42,9 +42,16 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID LVL1_SPIRAL_ROOM_IRIS_01 = 3146552052U;
+                static const AkUniqueID LVL1_SPIRAL_ROOM_IRIS_02 = 3146552055U;
+                static const AkUniqueID LVL1_SPIRAL_ROOM_IRIS_03 = 3146552054U;
+                static const AkUniqueID LVL1_SPIRAL_ROOM_IRIS_04 = 3146552049U;
+                static const AkUniqueID LVL1_SPIRAL_ROOM_IRIS_05 = 3146552048U;
                 static const AkUniqueID LVL1_STASIS_ROOM_IRIS_01 = 1590806114U;
                 static const AkUniqueID LVL1_STASIS_ROOM_IRIS_02 = 1590806113U;
                 static const AkUniqueID LVL1_STASIS_ROOM_IRIS_03 = 1590806112U;
+                static const AkUniqueID LVL1_STASIS_ROOM_SERU_01 = 3207995528U;
+                static const AkUniqueID LVL1_STASIS_ROOM_SERU_02 = 3207995531U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace DIALOGUE_LINE

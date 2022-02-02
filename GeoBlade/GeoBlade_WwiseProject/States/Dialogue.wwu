@@ -9,6 +9,13 @@
 						<State Name="lvl1_stasis_room_iris_01" ID="{56C248E3-C83D-440E-A53E-A8D276FE6E51}"/>
 						<State Name="lvl1_stasis_room_iris_02" ID="{088CB4B8-DD73-450B-BE3D-9D5495B14544}"/>
 						<State Name="lvl1_stasis_room_iris_03" ID="{9B512410-5A0D-457C-B98F-5DE48494DAB5}"/>
+						<State Name="lvl1_stasis_room_seru_01" ID="{BD86F8AD-F762-42BC-A223-387EB5AC0D6A}"/>
+						<State Name="lvl1_stasis_room_seru_02" ID="{00933F0A-4A9C-4A13-8DB3-83CA0AA956F2}"/>
+						<State Name="lvl1_spiral_room_iris_04" ID="{E5FA1B82-2B00-47E8-82D9-5F54C4DE1B11}"/>
+						<State Name="lvl1_spiral_room_iris_05" ID="{8A364B4B-9C3F-4C66-BA68-21266C55D5B2}"/>
+						<State Name="lvl1_spiral_room_iris_01" ID="{75124501-3797-4A8D-B484-902E7ACF0B36}"/>
+						<State Name="lvl1_spiral_room_iris_02" ID="{79879831-D608-4436-9238-27D92375409E}"/>
+						<State Name="lvl1_spiral_room_iris_03" ID="{8EA3C08F-AF4E-4F56-A3FD-D6785ED40847}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

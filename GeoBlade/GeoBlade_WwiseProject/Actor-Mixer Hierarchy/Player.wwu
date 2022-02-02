@@ -1113,6 +1113,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<SwitchContainer Name="Player_Attack" ID="{2AABB46D-33FA-42D1-8D3B-9EF58E6D0E6E}" ShortID="214393001">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>

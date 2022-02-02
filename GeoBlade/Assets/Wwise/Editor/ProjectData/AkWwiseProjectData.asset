@@ -152,8 +152,8 @@ MonoBehaviour:
         guid: 0666227a29948e44bafd5efae5ca592a
       Path: Events\Dialogue\Dialogue_Trigger
       maxAttenuation: 0
-      maxDuration: 10.421291
-      minDuration: 6.988708
+      maxDuration: 11.449729
+      minDuration: 1.430979
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -304,7 +304,7 @@ MonoBehaviour:
     ParentPath: States\Dialogue
     guid: 144533a6a42c9b4788631915b5bc027b
     GuidInternal: 
-    m_lastTime: -8585578170389461744
+    m_lastTime: -8585578100857496812
     List:
     - name: Dialogue_Line
       guid: 5810706b7aea4d41b6605c58c6e215a1
@@ -321,6 +321,86 @@ MonoBehaviour:
         guid: 5810706b7aea4d41b6605c58c6e215a1
       Path: States\Dialogue\Dialogue_Line
       values:
+      - name: lvl1_spiral_room_iris_01
+        guid: 0145127597378d4ab484902e7acf0b36
+        id: 3146552052
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiral_room_iris_01
+          ObjectType: 8
+          guid: 0145127597378d4ab484902e7acf0b36
+      - name: lvl1_spiral_room_iris_02
+        guid: 3198877908d63644923827d92375409e
+        id: 3146552055
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiral_room_iris_02
+          ObjectType: 8
+          guid: 3198877908d63644923827d92375409e
+      - name: lvl1_spiral_room_iris_03
+        guid: 8fc0a38e4eaf564fa3fdd6785ed40847
+        id: 3146552054
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiral_room_iris_03
+          ObjectType: 8
+          guid: 8fc0a38e4eaf564fa3fdd6785ed40847
+      - name: lvl1_spiral_room_iris_04
+        guid: 821bfae5002be84782d95f54c4de1b11
+        id: 3146552049
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiral_room_iris_04
+          ObjectType: 8
+          guid: 821bfae5002be84782d95f54c4de1b11
+      - name: lvl1_spiral_room_iris_05
+        guid: 4b4b368a3f9c664cba6821266c55d5b2
+        id: 3146552048
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiral_room_iris_05
+          ObjectType: 8
+          guid: 4b4b368a3f9c664cba6821266c55d5b2
       - name: lvl1_stasis_room_iris_01
         guid: e348c2563dc80e44a53ea8d276fe6e51
         id: 1590806114
@@ -369,6 +449,38 @@ MonoBehaviour:
         - ElementName: lvl1_stasis_room_iris_03
           ObjectType: 8
           guid: 1024519b0d5a7c45b98f5de48494dab5
+      - name: lvl1_stasis_room_seru_01
+        guid: adf886bd62f7bc42a223387eb5ac0d6a
+        id: 3207995528
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasis_room_seru_01
+          ObjectType: 8
+          guid: adf886bd62f7bc42a223387eb5ac0d6a
+      - name: lvl1_stasis_room_seru_02
+        guid: 0a3f93009c4a134a8db383ca0aa956f2
+        id: 3207995531
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasis_room_seru_02
+          ObjectType: 8
+          guid: 0a3f93009c4a134a8db383ca0aa956f2
       - name: None
         guid: c6f04601eaaeae4c9e355f8766ecf0bf
         id: 748895195
