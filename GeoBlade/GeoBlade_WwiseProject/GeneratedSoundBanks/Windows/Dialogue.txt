@@ -1,0 +1,17 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4029211690	Dialogue_Trigger			\Dialogue\Dialogue_Trigger	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3247544628	Dialogue_Line			\Dialogue\Dialogue_Line	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Dialogue_Line			
+	1590806112	lvl1_stasis_room_iris_03	Dialogue_Line			
+	1590806113	lvl1_stasis_room_iris_02	Dialogue_Line			
+	1590806114	lvl1_stasis_room_iris_01	Dialogue_Line			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	230777457	geoblade_dialogue_lvl1_stasis_room_iris_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\geoblade_dialogue_lvl1_stasis_room_iris_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\geoblade_dialogue_lvl1_stasis_room_iris_02		2000952
+	761327441	geoblade_dialogue_lvl1_stasis_room_iris_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\geoblade_dialogue_lvl1_stasis_room_iris_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\geoblade_dialogue_lvl1_stasis_room_iris_03		1341896
+	1016299112	geoblade_dialogue_lvl1_stasis_room_iris_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\geoblade_dialogue_lvl1_stasis_room_iris_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\geoblade_dialogue_lvl1_stasis_room_iris_01		1479004
+

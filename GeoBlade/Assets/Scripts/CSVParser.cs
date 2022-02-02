@@ -27,11 +27,11 @@ public class CsvParser : MonoBehaviour {
                 // This may be unnecessary
                 value = value.TrimStart(TrimChars).TrimEnd(TrimChars).Replace("\\", "");
                 object finalValue = value;
-                if (int.TryParse(value, out var n)) {
-                    finalValue = n;
-                } else if (float.TryParse(value, out var f)) {
-                    finalValue = f;
-                }
+                // if (int.TryParse(value, out var n)) {
+                //     finalValue = n;
+                // } else if (float.TryParse(value, out var f)) {
+                //     finalValue = f;
+                // }
 
                 entry[header[j]] = finalValue;
             }

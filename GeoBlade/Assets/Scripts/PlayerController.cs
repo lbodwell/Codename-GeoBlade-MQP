@@ -29,8 +29,7 @@ public class PlayerController : MonoBehaviour {
     private float _turnSmoothingVel;
     private Vector2 _movementInput = new Vector2(0, 0);
 
-    private void Awake()
-    {
+    private void Awake() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
     }

@@ -1,38 +1,44 @@
-line_id,line_en_US,line_test,line_speaker,line_duration,next_line,line_desc
-dialogue_lvl1_001,Is this how it goes? Maybe like this?,This is an example of translated text.,Fairy,5,dialogue_lvl1_002,Opening
-dialogue_lvl1_002,Grrzzt!,This is an example of translated text.,Seru,2,dialogue_lvl1_003,Opening
-dialogue_lvl1_003,"Oh, it worked! I’m Fairy, do you know who you are?",This is an example of translated text.,Fairy,7,dialogue_lvl1_004,Opening
-dialogue_lvl1_004,I am...,This is an example of translated text.,Seru,1,dialogue_lvl1_005,Opening
-dialogue_lvl1_005,Brrzt… SRU-2!,This is an example of translated text.,Seru,4,dialogue_lvl1_006,Opening
-dialogue_lvl1_006,Well it’s a pleasure to meet you SRU.. 2? ,This is an example of translated text.,Fairy,5,dialogue_lvl1_007,Opening
-dialogue_lvl1_007,"That’s kind of a mouthful, if you don’t mind I’m just gonna call you, umm... Esaru.. Seru… Seru!",This is an example of translated text.,Fairy,11,dialogue_lvl1_008,Opening
-dialogue_lvl1_008,Can you walk?,This is an example of translated text.,Fairy,4,dialogue_lvl1_009,Opening
-dialogue_lvl1_009,Erzzt... I think so.,This is an example of translated text.,Seru,5,dialogue_lvl1_010,Opening
-dialogue_lvl1_010,"Perfect! All this flying is making me tired, let me just ride on you like this.",This is an example of translated text.,Fairy,7,dialogue_lvl1_011,Opening
-dialogue_lvl1_011,Let’s go!,This is an example of translated text.,Fairy,2,dialogue_lvl1_012,Opening
-dialogue_lvl1_012,Where to?,This is an example of translated text.,Seru,2,dialogue_lvl1_013,After Opening
-dialogue_lvl1_013,"Hmm... I think I’ve done enough exploring for today, so let's just get out of here.",This is an example of translated text.,Fairy,7,dialogue_lvl1_014,After Opening
-dialogue_lvl1_014,"And umm, well I’m kinda lost myself hehe, so I’ll leave the navigating to you!",This is an example of translated text.,Fairy,7,dialogue_lvl1_015,After Opening
-dialogue_lvl1_015,Brrzt... I will do my best.,This is an example of translated text.,Seru,5,END,After Opening
-dialogue_lvl1_016,"Hey, hey! Do you know what all of these doors are for?",This is an example of translated text.,Fairy,4,dialogue_lvl1_017,Spiral
-dialogue_lvl1_017,They’re for! --Erzzt.,This is an example of translated text.,Seru,5,dialogue_lvl1_018,Spiral
-dialogue_lvl1_018,"I apologize, I cannot recall",This is an example of translated text.,Seru,5,dialogue_lvl1_019,Spiral
-dialogue_lvl1_019,"Hey it’s alright, just take it one step at a time.",This is an example of translated text.,Fairy,5,dialogue_lvl1_020,Spiral
-dialogue_lvl1_020,"I think these doors are like homes, so the people in there must be your friends and neighbors.",This is an example of translated text.,Fairy,7,dialogue_lvl1_021,Spiral
-dialogue_lvl1_021,I knocked on a bunch of them but yours was the only one I was able to get open.,This is an example of translated text.,Fairy,7,dialogue_lvl1_022,Spiral
-dialogue_lvl1_022,So you’re a great discovery! And I can’t wait to show you off to everyone else once we get out of here!,This is an example of translated text.,Fairy,7,END,Spiral
-dialogue_lvl1_023,"Hey, hey! So what’s this place? It looks so abandoned.",This is an example of translated text.,Fairy,5,dialogue_lvl1_024,Subway
-dialogue_lvl1_024,"Errzt... This is a subway station. We will need to take the train if we want to leave, I think.",This is an example of translated text.,Seru,6,dialogue_lvl1_025,Subway
-dialogue_lvl1_025,"Hey, hey! What are these things?",This is an example of translated text.,Fairy,4,dialogue_lvl1_026,Subway
-dialogue_lvl1_026,Errzt... Those are... They are a little different from what I remember. Perhaps they are a new model?,This is an example of translated text.,Seru,7,dialogue_lvl1_027,Subway
-dialogue_lvl1_027,ERROR ERROR ERROR,This is an example of translated text.,Droid,2,dialogue_lvl1_028,Subway
-dialogue_lvl1_028,Hey! I think it’s mad!,This is an example of translated text.,Fairy,3,dialogue_lvl1_029,Subway
-dialogue_lvl1_029,Unknown entity! Initiating attack protocol!,This is an example of translated text.,Droid,5,dialogue_lvl1_030,Subway
-dialogue_lvl1_030,SRU-2 engaging enemy hostiles.,This is an example of translated text.,Seru,5,dialogue_lvl1_031,Subway
-dialogue_lvl1_031,Nice job Seru! That was awesome! Let’s keep going.,This is an example of translated text.,Fairy,5,END,Subway Defeated
-dialogue_lvl1_032,"Hey, hey! What’s this thing called?",This is an example of translated text.,Fairy,3,dialogue_lvl1_033,Platform A
-dialogue_lvl1_033,"That is a train. I cannot fly like you, so we will need to ride on this if we want to get out of here.",This is an example of translated text.,Seru,7,dialogue_lvl1_034,Platform A
-dialogue_lvl1_034,Ooh! So how does it work?,This is an example of translated text.,Fairy,4,dialogue_lvl1_035,Platform A
-dialogue_lvl1_035,"Erzzt, the train resonates with Geo to propel itself across the track. These trains are activated by a lever in the cab--",This is an example of translated text.,Seru,7,dialogue_lvl1_036,Platform A
-dialogue_lvl1_036,Ah! I found the lever! Ready to go?,This is an example of translated text.,Fairy,4,dialogue_lvl1_037,Platform A
-dialogue_lvl1_037,"Birzt! Yes, let's head off.",This is an example of translated text.,Seru,3,END,Platform A
+line_id,line_en_US,line_test,line_speaker,line_duration,post_delay,next_line,line_desc
+lvl1_opening_cutscene_iris_01,"Well, that was… surprisingly easy. Woah. What are these things?",This is an example of translated text.,Iris,4,0,lvl1_opening_cutscene_iris_02,
+lvl1_opening_cutscene_iris_02,It looks like there are machines inside. Wait… Are they… alive?,This is an example of translated text.,Iris,,3,lvl1_opening_cutscene_iris_03,
+lvl1_opening_cutscene_iris_03,"I feel like there’s something… different about this one, and it looks like the one next to it is empty too. I wonder if I can open it…",This is an example of translated text.,Iris,,0,lvl1_opening_cutscene_iris_04,
+lvl1_opening_cutscene_iris_04,Is this how it goes? Maybe like… this?,This is an example of translated text.,Iris,,5,lvl1_opening_cutscene_iris_05,
+lvl1_opening_cutscene_iris_05,"Oh, it worked! Hey, there! I’m Iris! Do you know who you are?",This is an example of translated text.,Iris,,1,lvl1_opening_cutscene_seru_01,
+lvl1_opening_cutscene_seru_01,I… I am Surface Reconnaissance Unit 02. You may call me SRU-2 for short.,This is an example of translated text.,Seru,,0,lvl1_opening_cutscene_iris_06,
+lvl1_opening_cutscene_iris_06,"Nice to meet you, SR… That’s kind of a mouthful. If you don’t mind, I’ll just call you, umm, S… R… U… Esaru… Seru… Seru!",This is an example of translated text.,Iris,,0,lvl1_opening_cutscene_seru_02,
+lvl1_opening_cutscene_seru_02,Very well.,This is an example of translated text.,Seru,,1,lvl1_opening_cutscene_iris_07,
+lvl1_opening_cutscene_iris_07,"Can you walk, Seru?",This is an example of translated text.,Iris,,0,lvl1_opening_cutscene_seru_03,
+lvl1_opening_cutscene_seru_03,I believe so.,This is an example of translated text.,Seru,,0,lvl1_opening_cutscene_iris_08,
+lvl1_opening_cutscene_iris_08,"Great, then let’s go!",This is an example of translated text.,Iris,,0,END,
+lvl1_stasis_room_seru_01,What is our destination?,This is an example of translated text.,Seru,,0,lvl1_stasis_room_iris_01,
+lvl1_stasis_room_iris_01,"Hmm. I think I’ve done enough exploring for today, so we should probably start making our way out of this place.",This is an example of translated text.,Iris,7.75,0,lvl1_stasis_room_iris_02,
+lvl1_stasis_room_iris_02,"It’s a little creepy in here to be honest, and, well, I’m kind of lost myself, so I’ll leave the navigating to you! You must know your way around, right?",This is an example of translated text.,Iris,10.5,1,lvl1_stasis_room_seru_02,
+lvl1_stasis_room_seru_02,"Actually, my memories of this facility are… scattered. It seems deeply familiar, yet so distant. I will do my best.",This is an example of translated text.,Seru,,0,lvl1_stasis_room_iris_03,
+lvl1_stasis_room_iris_03,"Don’t worry, I’m sure your memory will come back soon! You seem like a nice person, so I’ll trust you to figure it out!",This is an example of translated text.,Iris,7,0,END,
+lvl1_spiral_room_iris_01,"Hey, Seru, what are all these doors for?",This is an example of translated text.,Iris,3,0,lvl1_spiral_room_seru_01,
+lvl1_spiral_room_seru_01,They are… I apologize. I cannot recall their purpose.,This is an example of translated text.,Seru,,0,lvl1_spiral_room_iris_02,
+lvl1_spiral_room_iris_02,"It’s okay! Just take it one step at a time. I think these doors are like homes, so the people in there must be your friends and neighbors.",This is an example of translated text.,Iris,8.5,0,lvl1_spiral_room_iris_03,
+lvl1_spiral_room_iris_03,"I knocked on a couple of them but yours was the only one I could get open, so, you’re a great discovery!",This is an example of translated text.,Iris,6,0,lvl1_spiral_room_iris_04,
+lvl1_spiral_room_iris_04,"I can’t wait to show you off to everyone else once we get to the surface! Not many people in the village still believe that the old civilization ever existed, but you’re living proof that it did!",This is an example of translated text.,Iris,11.5,0,lvl1_spiral_room_seru_02,
+lvl1_spiral_room_seru_02,The surface? A village? The…old civilization? I do not understand.,This is an example of translated text.,Seru,,0,lvl1_spiral_room_iris_05,
+lvl1_spiral_room_iris_05,"Oh, boy. I think you might have been out for quite a while. I think it would help to just see things for yourself, but maybe we can find some clues on our way out of here to help you piece things together.",This is an example of translated text.,Iris,11.25,0,lvl1_spiral_room_seru_03,
+lvl1_spiral_room_seru_03,Understood.,This is an example of translated text.,Seru,,0,END,
+lvl1_transportation_hanagar_iris_01,What is this place? It looks so… abandoned.,This is an example of translated text.,Iris,,1,lvl1_transportation_hanagar_seru_01,
+lvl1_transportation_hanagar_seru_01,This appears to be some sort of locomotive transportation hangar. It seems we will need to board that tram if we want to leave.,This is an example of translated text.,Seru,,2,lvl1_transportation_hanagar_iris_02,
+lvl1_transportation_hanagar_iris_02,"Uh, what are those things?",This is an example of translated text.,Iris,,0,lvl1_transportation_hanagar_seru_02,
+lvl1_transportation_hanagar_seru_02,They must be security droids tasked with protecting this location.,This is an example of translated text.,Seru,,2,lvl1_transportation_hanagar_droids_01,
+lvl1_transportation_hanagar_droids_01,Security breach detected. Targets include entity of unknown origin and possible renegade surface reconnaissance unit.,This is an example of translated text.,Security Droid 1,6.5,0.5,lvl1_transportation_hanagar_droids_02,
+lvl1_transportation_hanagar_droids_02,Decryonization of Unit-02 has not been authorized.,This is an example of translated text.,Security Droid 2,3.5,1,lvl1_transportation_hanagar_iris_03,
+lvl1_transportation_hanagar_iris_03,Uh-oh. It sounds like they didn’t want me to wake you up… or be here in the first place.,This is an example of translated text.,Iris,,0,lvl1_transportation_hanagar_droids_02,
+lvl1_transportation_hanagar_droids_03,Breach confirmed. Initiate attack protocol.,This is an example of translated text.,Security Droid 2,2.5,1,lvl1_transportation_hanagar_iris_04,
+lvl1_transportation_hanagar_iris_04,"Okay, I think they’re mad! Be careful!",This is an example of translated text.,Iris,,0,lvl1_transportation_hanagar_iris_04,
+lvl1_transportation_hanagar_seru_03,Engaging enemy hostiles.,This is an example of translated text.,Seru,,0,END,
+lvl1_transportation_hanagar_iris_05,"Nice job, Seru! That was incredible!",This is an example of translated text.,Iris,,1,lvl1_transportation_hanagar_seru_04,
+lvl1_transportation_hanagar_seru_04,It appears my combat programming is still intact.,This is an example of translated text.,Seru,,0,lvl1_transportation_hanagar_iris_06,
+lvl1_transportation_hanagar_iris_06,I’ll say! You’ve got some real skills with that blade!,This is an example of translated text.,Iris,,0,END,
+lvl1_platform_a_iris_01,"Hey, so this thing… You called it a tram, right? How does it work?",This is an example of translated text.,Iris,,0,lvl1_platform_a_seru_01,
+lvl1_platform_a_seru_01,It exerts Geo energy to propel itself along a track. There should be a control mechanism nearby we can use to activate it.,This is an example of translated text.,Seru,,2,lvl1_platform_a_iris_02,
+lvl1_platform_a_iris_02,Ah! I found it! Ready to go?,This is an example of translated text.,Iris,,0,lvl1_platform_a_seru_02,
+lvl1_platform_a_seru_02,Indeed.,This is an example of translated text.,Seru,,0,END,
+lvl1_platform_a_iris_03,"This is a bit slower than I expected, but it’s still amazing!",This is an example of translated text.,Iris,,1,lvl1_platform_a_seru_03,Triggered 5 seconds after tram starts moving
+lvl1_platform_a_seru_03,That is… true. Hmm...,This is an example of translated text.,Seru,,0,END,

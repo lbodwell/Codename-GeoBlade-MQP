@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="227629109">
+		<SoundBank Id="1069431850" Language="SFX" Hash="3044714578">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -275,12 +275,63 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3277874853">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1179886863">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2140833458">
+		<SoundBank Id="3930136735" Language="SFX" Hash="3773268985">
+			<ObjectPath>\SoundBanks\Default Work Unit\Dialogue</ObjectPath>
+			<ShortName>Dialogue</ShortName>
+			<Path>Dialogue.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4029211690" Name="Dialogue_Trigger" ObjectPath="\Events\Dialogue\Dialogue_Trigger" DurationType="OneShot" DurationMin="6.988708" DurationMax="10.421291">
+					<IncludedMemoryFiles>
+						<File Id="230777457" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_stasis_room_iris_02.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_stasis_room_iris_02_10C4C929.wem</Path>
+						</File>
+						<File Id="761327441" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_stasis_room_iris_03.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_stasis_room_iris_03_10C4C929.wem</Path>
+						</File>
+						<File Id="1016299112" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_stasis_room_iris_01.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_stasis_room_iris_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{0146F0C6-AEEA-4CAE-9E35-5F8766ECF0BF}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{56C248E3-C83D-440E-A53E-A8D276FE6E51}">
+							<Media>
+								<File Id="1016299112"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{088CB4B8-DD73-450B-BE3D-9D5495B14544}">
+							<Media>
+								<File Id="230777457"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9B512410-5A0D-457C-B98F-5DE48494DAB5}">
+							<Media>
+								<File Id="761327441"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="3247544628" Name="Dialogue_Line" ObjectPath="\States\Dialogue\Dialogue_Line" GUID="{6B701058-EA7A-414D-B660-5C58C6E215A1}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Dialogue\Dialogue_Line\None" GUID="{0146F0C6-AEEA-4CAE-9E35-5F8766ECF0BF}"/>
+						<State Id="1590806114" Name="lvl1_stasis_room_iris_01" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasis_room_iris_01" GUID="{56C248E3-C83D-440E-A53E-A8D276FE6E51}"/>
+						<State Id="1590806113" Name="lvl1_stasis_room_iris_02" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasis_room_iris_02" GUID="{088CB4B8-DD73-450B-BE3D-9D5495B14544}"/>
+						<State Id="1590806112" Name="lvl1_stasis_room_iris_03" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasis_room_iris_03" GUID="{9B512410-5A0D-457C-B98F-5DE48494DAB5}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="948682490">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

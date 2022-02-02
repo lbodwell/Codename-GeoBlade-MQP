@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: bb8f8cfe1e885447b85a271938b99bc3
     GuidInternal: 
-    m_lastTime: -8585603614573291199
+    m_lastTime: -8585643027370968801
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ebe94a29748da34fa148ff1844aaba9f
     GuidInternal: 
-    m_lastTime: -8585603614573351199
+    m_lastTime: -8585643027378383993
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b144575cff53e145bbed4dfb8f16af44
     GuidInternal: 
-    m_lastTime: -8585603613844023139
+    m_lastTime: -8585578153082099256
     List:
+    - name: Dialogue
+      guid: 4a7f2e159c23e64a8d15f2d8b354e15c
+      id: 3930136735
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b144575cff53e145bbed4dfb8f16af44
+      - ElementName: Dialogue
+        ObjectType: 7
+        guid: 4a7f2e159c23e64a8d15f2d8b354e15c
+      Path: SoundBanks\Default Work Unit\Dialogue
     - name: Music
       guid: abc689fd0b46364393e8e9d43ce750a5
       id: 3991942870
@@ -108,8 +122,38 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fcbb3e7f157bd64fad51bae9e3b0a8ce
     GuidInternal: 
-    m_lastTime: -8585603614258857828
+    m_lastTime: -8585643027384097908
     List: []
+  - PhysicalPath: Events\Dialogue.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Dialogue
+      ObjectType: 12
+      guid: 475c5da5829670438fba66501ba9a246
+    ParentPath: Events\Dialogue
+    guid: 475c5da5829670438fba66501ba9a246
+    GuidInternal: 
+    m_lastTime: -8585578166425003227
+    List:
+    - name: Dialogue_Trigger
+      guid: 0666227a29948e44bafd5efae5ca592a
+      id: 4029211690
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Dialogue
+        ObjectType: 12
+        guid: 475c5da5829670438fba66501ba9a246
+      - ElementName: Dialogue_Trigger
+        ObjectType: 3
+        guid: 0666227a29948e44bafd5efae5ca592a
+      Path: Events\Dialogue\Dialogue_Trigger
+      maxAttenuation: 0
+      maxDuration: 10.421291
+      minDuration: 6.988708
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -121,7 +165,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 90d90a6b2474e243b6c55a57c1b35207
     GuidInternal: 
-    m_lastTime: -8585603614258857828
+    m_lastTime: -8585643027384097908
     List:
     - name: Level1_Music
       guid: ddc53016e33abd4296debd8dd65405ee
@@ -151,7 +195,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: d19439dca0fb2b4e9c232a66be5f6f0f
     GuidInternal: 
-    m_lastTime: -8585603613849133133
+    m_lastTime: -8585620922290491557
     List:
     - name: Player_Attack
       guid: 418c7b323b94844b987a1b61b2ef0f23
@@ -233,7 +277,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6729555d9375884586107b6426b43d60
     GuidInternal: 
-    m_lastTime: -8585603614573421206
+    m_lastTime: -8585643027384092946
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -247,8 +291,103 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0712bfab92afb340a63c6588fc4ec0f8
     GuidInternal: 
-    m_lastTime: -8585603614573301196
+    m_lastTime: -8585643027370983681
     List: []
+  - PhysicalPath: States\Dialogue.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Dialogue
+      ObjectType: 12
+      guid: 144533a6a42c9b4788631915b5bc027b
+    ParentPath: States\Dialogue
+    guid: 144533a6a42c9b4788631915b5bc027b
+    GuidInternal: 
+    m_lastTime: -8585578170389461744
+    List:
+    - name: Dialogue_Line
+      guid: 5810706b7aea4d41b6605c58c6e215a1
+      id: 3247544628
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Dialogue
+        ObjectType: 12
+        guid: 144533a6a42c9b4788631915b5bc027b
+      - ElementName: Dialogue_Line
+        ObjectType: 9
+        guid: 5810706b7aea4d41b6605c58c6e215a1
+      Path: States\Dialogue\Dialogue_Line
+      values:
+      - name: lvl1_stasis_room_iris_01
+        guid: e348c2563dc80e44a53ea8d276fe6e51
+        id: 1590806114
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasis_room_iris_01
+          ObjectType: 8
+          guid: e348c2563dc80e44a53ea8d276fe6e51
+      - name: lvl1_stasis_room_iris_02
+        guid: b8b48c0873dd0b45be3d9d5495b14544
+        id: 1590806113
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasis_room_iris_02
+          ObjectType: 8
+          guid: b8b48c0873dd0b45be3d9d5495b14544
+      - name: lvl1_stasis_room_iris_03
+        guid: 1024519b0d5a7c45b98f5de48494dab5
+        id: 1590806112
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasis_room_iris_03
+          ObjectType: 8
+          guid: 1024519b0d5a7c45b98f5de48494dab5
+      - name: None
+        guid: c6f04601eaaeae4c9e355f8766ecf0bf
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: None
+          ObjectType: 8
+          guid: c6f04601eaaeae4c9e355f8766ecf0bf
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: States\Music.wwu
     PathAndIcons:
     - ElementName: States
@@ -260,7 +399,7 @@ MonoBehaviour:
     ParentPath: States\Music
     guid: 2bac94c602ec474cba1fae799efa8b50
     GuidInternal: 
-    m_lastTime: -8585603614251957844
+    m_lastTime: -8585643027370978719
     List:
     - name: Music_Level1_Track1
       guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
@@ -355,7 +494,7 @@ MonoBehaviour:
     ParentPath: States\Player
     guid: 98e2c4458da7bb4bb423952bf4ad2d10
     GuidInternal: 
-    m_lastTime: -8585603613844018126
+    m_lastTime: -8585620922282596944
     List:
     - name: Attack_Type
       guid: 08d4f90510cf604c8710300508312e18
@@ -599,7 +738,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: ba3f39085c1e1a4eaa95b413330db915
     GuidInternal: 
-    m_lastTime: -8585603614573301196
+    m_lastTime: -8585643027370973763
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -613,10 +752,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: f25b47a12a518141afbc59f62725d309
     GuidInternal: 
-    m_lastTime: -8585603614573296200
+    m_lastTime: -8585643027370968801
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 060000001a0000001b0000001c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

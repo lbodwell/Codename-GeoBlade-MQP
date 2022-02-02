@@ -1064,6 +1064,30 @@ MonoBehaviour:
   maxHealth: 100
   maxGeo: 100
   geo: 100
+--- !u!114 &457329729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457329727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207a261a53804ac45a46bb24e1ba78fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c8b9a58c42157c14caec5887b974b21d, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &468742817
 GameObject:
   m_ObjectHideFlags: 0
@@ -6279,19 +6303,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9764152
+      value: 0.9764153
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17197748
+      value: 0.17197749
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.12854749
+      value: -0.12854746
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.022641264
+      value: 0.022641256
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302648211868, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6319,31 +6343,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.2116547
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.182222
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9800034
+      value: 0.9649227
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1510382
+      value: 0.22778738
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.12802911
+      value: -0.12703444
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.01973186
+      value: 0.02998876
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
@@ -6404,7 +6428,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "Seru: Actually, my memories of this facility are\u2026 scattered. It seems
+    deeply familiar, yet so distant. I will do my best."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7937,7 +7962,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18756
+  m_Name: pb_Mesh19062
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

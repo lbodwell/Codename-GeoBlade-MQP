@@ -20,6 +20,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Dialogue" ID="{152E7F4A-239C-4AE6-8D15-F2D8B354E15C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Dialogue_Trigger" ID="{7A226606-9429-448E-BAFD-5EFAE5CA592A}" WorkUnitID="{A55D5C47-9682-4370-8FBA-66501BA9A246}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

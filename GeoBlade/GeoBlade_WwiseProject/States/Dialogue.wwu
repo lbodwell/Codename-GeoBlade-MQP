@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A6334514-2CA4-479B-8863-1915B5BC027B}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Dialogue" ID="{A6334514-2CA4-479B-8863-1915B5BC027B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Dialogue_Line" ID="{6B701058-EA7A-414D-B660-5C58C6E215A1}">
+					<ChildrenList>
+						<State Name="None" ID="{0146F0C6-AEEA-4CAE-9E35-5F8766ECF0BF}"/>
+						<State Name="lvl1_stasis_room_iris_01" ID="{56C248E3-C83D-440E-A53E-A8D276FE6E51}"/>
+						<State Name="lvl1_stasis_room_iris_02" ID="{088CB4B8-DD73-450B-BE3D-9D5495B14544}"/>
+						<State Name="lvl1_stasis_room_iris_03" ID="{9B512410-5A0D-457C-B98F-5DE48494DAB5}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
