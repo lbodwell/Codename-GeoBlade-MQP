@@ -41,8 +41,10 @@ public class PlayerController : MonoBehaviour {
             new Attack("Light2", 10),
             new Attack("Heavy", 20)
         };
-        
-        await DialogueManager.Instance.PlayDialogueSequence("lvl1_stasis_room_seru_01");
+
+        if (DialogueManager.Instance != null) {
+            await DialogueManager.Instance.PlayDialogueSequence("lvl1_stasis_room_seru_01");
+        }
     }
 
     private void Update() {
