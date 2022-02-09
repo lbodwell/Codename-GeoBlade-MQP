@@ -75,16 +75,18 @@ public class DialogueManager : MonoBehaviour {
         return true;
     }
     
-    public async void PlayDialogueSequence(string firstLineId) {
+    
+    //TODO: Verify that all async task delays are required and their timings are optimal for minimizing busy-waiting
+    public async Task PlayDialogueSequence(string firstLineId) {
         if (_sequenceActive) {
             while (_lineActive) {
-                await Task.Delay(50, _token);
-                Debug.Log("Waiting for active line to finish");
+                await Task.Delay(100, _token);
+                Debug.Log("Waiting for active line to finish to start next dialogue sequence...");
             }
-            
+
             _source.Cancel();
         }
-        
+
         var nextLine = firstLineId;
 
         while (true) {
@@ -96,9 +98,12 @@ public class DialogueManager : MonoBehaviour {
                 _sequenceActive = true;
                 nextLine = await PlayLine(nextLine, _token);
                 await Task.Delay(100, _token);
-            } catch (OperationCanceledException) {
-                Debug.Log("Dialogue task cancelled");
-            } finally {
+            }
+            catch (OperationCanceledException) {
+                Debug.Log("Current dialogue sequence cancelled");
+                break;
+            }
+            finally {
                 ResetCancellationToken();
             }
         }
@@ -106,15 +111,9 @@ public class DialogueManager : MonoBehaviour {
         _sequenceActive = false;
     }
 
-    private void ResetCancellationToken() {
-        _source?.Dispose();
-        _source = new CancellationTokenSource();
-        _token = _source.Token;
-    }
-
     private async Task<string> PlayLine(string lineId, CancellationToken token) {
         while (_lineActive) {
-            await Task.Delay(500, token);
+            await Task.Delay(250, token);
         }
 
         var line = _dialogueLines[lineId];
@@ -131,12 +130,12 @@ public class DialogueManager : MonoBehaviour {
         
         AkSoundEngine.SetState("Dialogue_Line", lineId);
         
-        // TODO: Fix this garbage
+        // TODO: Find more elegant way to check if singletons and their member values are defined yet
         while (PlayerManager.Instance == null) {
-            await Task.Delay(10);
+            await Task.Delay(50, token);
         }
         while (PlayerManager.Instance.player == null) {
-            await Task.Delay(10);
+            await Task.Delay(50, token);
         }
         AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.player);
         
@@ -145,7 +144,7 @@ public class DialogueManager : MonoBehaviour {
         if (subtitlesTextBox != null) {
             var textBox = subtitlesTextBox.GetComponent<TextMeshProUGUI>();
             while (_lineActive) {
-                await Task.Delay(500, token);
+                await Task.Delay(250, token);
             }
             
             if (textBox != null) {
@@ -158,5 +157,11 @@ public class DialogueManager : MonoBehaviour {
         }
         
         return line.NextLine;
+    }
+    
+    private void ResetCancellationToken() {
+        _source?.Dispose();
+        _source = new CancellationTokenSource();
+        _token = _source.Token;
     }
 }
