@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -26,19 +27,22 @@ public class DialogueManager : MonoBehaviour {
     public bool subtitlesEnabled = true;
     public static DialogueManager Instance;
     private SortedDictionary<string, DialogueLine> _dialogueLines;
+    private CancellationTokenSource _source;
+    private CancellationToken _token;
     private bool _lineActive;
-    private bool _interruptRequested;
+    private bool _sequenceActive;
 
     private void Awake() {
         Instance = this;
         _dialogueLines = new SortedDictionary<string, DialogueLine>();
+        ResetCancellationToken();
 
-        print("Loading dialogue lines...");
+        Debug.Log("Loading dialogue lines...");
         if (!LoadDialogLines()) {
-            print("Failed to load dialogue lines.");
+            Debug.Log("Failed to load dialogue lines.");
             return;
         }
-        print("Successfully loaded dialogue lines.");
+        Debug.Log("Successfully loaded dialogue lines.");
     }
 
     private bool LoadDialogLines() {
@@ -71,8 +75,15 @@ public class DialogueManager : MonoBehaviour {
         return true;
     }
     
-    public async Task PlayDialogueSequence(string firstLineId) {
-        // TODO: Use cancellation tokens to end task early if dialogue is interrupted by new line
+    public async void PlayDialogueSequence(string firstLineId) {
+        if (_sequenceActive) {
+            while (_lineActive) {
+                await Task.Delay(50, _token);
+                Debug.Log("Waiting for active line to finish");
+            }
+            
+            _source.Cancel();
+        }
         
         var nextLine = firstLineId;
 
@@ -80,15 +91,30 @@ public class DialogueManager : MonoBehaviour {
             if (nextLine == "END") {
                 break;
             }
-            
-            nextLine = await PlayLine(nextLine);
-            await Task.Delay(10);
+
+            try {
+                _sequenceActive = true;
+                nextLine = await PlayLine(nextLine, _token);
+                await Task.Delay(100, _token);
+            } catch (OperationCanceledException) {
+                Debug.Log("Dialogue task cancelled");
+            } finally {
+                ResetCancellationToken();
+            }
         }
+
+        _sequenceActive = false;
     }
 
-    public async Task<string> PlayLine(string lineId) {
+    private void ResetCancellationToken() {
+        _source?.Dispose();
+        _source = new CancellationTokenSource();
+        _token = _source.Token;
+    }
+
+    private async Task<string> PlayLine(string lineId, CancellationToken token) {
         while (_lineActive) {
-            await Task.Delay(10);
+            await Task.Delay(500, token);
         }
 
         var line = _dialogueLines[lineId];
@@ -114,23 +140,21 @@ public class DialogueManager : MonoBehaviour {
         }
         AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.player);
         
-        await Task.Delay((int) (line.Duration * 1000)).ContinueWith(t => {
-            _lineActive = false;
-        });
+        await Task.Delay((int) (line.Duration * 1000), token).ContinueWith(t => _lineActive = false, token);
         
         if (subtitlesTextBox != null) {
             var textBox = subtitlesTextBox.GetComponent<TextMeshProUGUI>();
             while (_lineActive) {
-                await Task.Delay(10);
+                await Task.Delay(500, token);
             }
             
             if (textBox != null) {
                 textBox.SetText("");
             }
-            
-            if (line.PostDelay > 0) {
-                await Task.Delay((int) (line.PostDelay * 1000));
-            }
+        }
+        
+        if (line.PostDelay > 0) {
+            await Task.Delay((int) (line.PostDelay * 1000), token);
         }
         
         return line.NextLine;
