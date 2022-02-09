@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour {
         _velocity.z = movementSpeed * (_isSprinting ? 1.5f : 1f);
         
         if (!controller.isGrounded) {
-            _velocity.y -= gravity;
+            _velocity.y -= gravity * Time.deltaTime;
         }
 
         Vector3 finalVel;
