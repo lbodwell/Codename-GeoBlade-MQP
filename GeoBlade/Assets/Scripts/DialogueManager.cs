@@ -137,7 +137,16 @@ public class DialogueManager : MonoBehaviour {
         while (PlayerManager.Instance.player == null) {
             await Task.Delay(50, token);
         }
-        AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.player);
+
+        // TODO: Make this more robust
+        if (line.Speaker == "Seru") {
+            AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.player);
+        } else if (line.Speaker == "Iris") {
+            AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.iris);
+        } else {
+            Debug.Log("Invalid speaker for current dialogue line");
+        }
+        
         
         await Task.Delay((int) (line.Duration * 1000), token).ContinueWith(t => _lineActive = false, token);
         

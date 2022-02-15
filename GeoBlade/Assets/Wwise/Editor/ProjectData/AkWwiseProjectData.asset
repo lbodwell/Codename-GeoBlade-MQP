@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b144575cff53e145bbed4dfb8f16af44
     GuidInternal: 
-    m_lastTime: -8585578153082099256
+    m_lastTime: -8585571638451845449
     List:
     - name: Dialogue
       guid: 4a7f2e159c23e64a8d15f2d8b354e15c
@@ -135,7 +135,7 @@ MonoBehaviour:
     ParentPath: Events\Dialogue
     guid: 475c5da5829670438fba66501ba9a246
     GuidInternal: 
-    m_lastTime: -8585578166425003227
+    m_lastTime: -8585571638459960008
     List:
     - name: Dialogue_Trigger
       guid: 0666227a29948e44bafd5efae5ca592a
@@ -151,7 +151,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0666227a29948e44bafd5efae5ca592a
       Path: Events\Dialogue\Dialogue_Trigger
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: 11.449729
       minDuration: 1.430979
   - PhysicalPath: Events\Music.wwu
@@ -304,7 +304,7 @@ MonoBehaviour:
     ParentPath: States\Dialogue
     guid: 144533a6a42c9b4788631915b5bc027b
     GuidInternal: 
-    m_lastTime: -8585578100857496812
+    m_lastTime: -8585571638451840491
     List:
     - name: Dialogue_Line
       guid: 5810706b7aea4d41b6605c58c6e215a1
@@ -867,7 +867,7 @@ MonoBehaviour:
     m_lastTime: -8585643027370968801
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 060000001a0000001b0000001c000000
+  ExpandedWaapiItemIds: 03000000040000000600000008000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

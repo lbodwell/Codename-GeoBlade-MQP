@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour {
     public string lineId;
+    private bool _hasDialogueBeenTriggered;
     
     private async void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
-            await DialogueManager.Instance.PlayDialogueSequence(lineId);
-        }
+        if (_hasDialogueBeenTriggered || !other.gameObject.CompareTag("Player")) return;
+        
+        _hasDialogueBeenTriggered = true;
+        await DialogueManager.Instance.PlayDialogueSequence(lineId);
     }
 }

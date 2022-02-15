@@ -280,12 +280,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3930136735" Language="SFX" Hash="1045650007">
+		<SoundBank Id="3930136735" Language="SFX" Hash="1585357023">
 			<ObjectPath>\SoundBanks\Default Work Unit\Dialogue</ObjectPath>
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4029211690" Name="Dialogue_Trigger" ObjectPath="\Events\Dialogue\Dialogue_Trigger" DurationType="OneShot" DurationMin="1.430979" DurationMax="11.449729">
+				<Event Id="4029211690" Name="Dialogue_Trigger" ObjectPath="\Events\Dialogue\Dialogue_Trigger" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.430979" DurationMax="11.449729">
 					<IncludedMemoryFiles>
 						<File Id="69217860" Language="SFX">
 							<ShortName>geoblade_dialogue_lvl1_spiral_room_iris_04.wav</ShortName>
