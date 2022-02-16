@@ -61,10 +61,6 @@ public class PlayerController : MonoBehaviour {
         if (!controller.isGrounded) {
             _velocity.y -= gravity * Time.deltaTime;
         }
-        else if(!_isJumping)
-        {
-            _velocity.y = -0.4f;
-        }
 
         Vector3 finalVel;
 
@@ -99,16 +95,30 @@ public class PlayerController : MonoBehaviour {
             Debug.Log("GeoBlade sheathed");
         }
         
-        //Update Animator Parameters
+        // Update Animator Parameters
+        Vector3 horizontalVel = new Vector3(finalVel.x, finalVel.z, 0);
+        
         animator.SetBool("Grounded", controller.isGrounded);
-        animator.SetFloat("Speed", finalVel.magnitude);
-        Debug.Log("velocity = " + finalVel);
+        animator.SetFloat("Speed", horizontalVel.magnitude);
+        
         if (Time.time >= _nextAttackWindowClose && animator.GetInteger("Combo") != 0)
         {
             animator.SetInteger("Combo", 0);
             //Debug.Log("Combo set to " + animator.GetInteger("Combo"));
         }
-        
+
+        // Triggered when animator switches states (for several frames)
+        if (animator.IsInTransition(0))
+        {
+            AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
+            AnimatorStateInfo nextState = animator.GetNextAnimatorStateInfo(0);
+            if (nextState.IsName("Run")) // Set animation speed to player speed
+                animator.speed = movementSpeed / 12;
+            else
+                animator.speed = 1;
+        }
+
+        // TODO: Is there any reason this is so scuffed?
         if (!controller.isGrounded || !_isJumping) return;
         _isJumping = false;
         _velocity.y = 0f;
