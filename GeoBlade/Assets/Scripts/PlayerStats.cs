@@ -13,6 +13,7 @@ public class PlayerStats : CharacterStats {
         if (health == 0) {
             // TODO: make this more robust
             Debug.Log("Game over!");
+            Destroy(gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }

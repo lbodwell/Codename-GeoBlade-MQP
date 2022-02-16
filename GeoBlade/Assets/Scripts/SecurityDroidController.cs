@@ -7,7 +7,8 @@ public class SecurityDroidController : MonoBehaviour {
     public float chaseRadius = 10f;
     public float attackRadius = 5f;
     public float turnSmoothingTime = 0.2f;
-    public float attackCooldown = 2f;
+    public float attackCooldown = 3f;
+    public float attackGracePeriod = 1f;
 
     private Transform _target;
     private bool _isInAttackRange;
@@ -44,9 +45,12 @@ public class SecurityDroidController : MonoBehaviour {
             transform.rotation = Quaternion.Euler(0f, smoothedAngle, 0f);
             
             if (dist <= attackRadius) {
+                if (!_isInAttackRange) {
+                    _nextAttackAttempt = Time.time + attackGracePeriod;
+                }
                 _isInAttackRange = true;
                 if (Time.time >= _nextAttackAttempt) {
-                    PlayerManager.Instance.player.GetComponent<PlayerStats>().DamageCharacter(10);
+                    PlayerManager.Instance.player.GetComponent<PlayerStats>().DamageCharacter(5);
                     _nextAttackAttempt = Time.time + attackCooldown;
                 }
             } else {

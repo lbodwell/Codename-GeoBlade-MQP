@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,13 +10,14 @@ public class PlayerController : MonoBehaviour {
     public CharacterController controller;
     public Animator animator;
     public Transform cam;
-    public float gravity = 0.09f;
+    public float gravity = 0.1f;
     public float movementSpeed = 0.5f;
     public float turnSmoothingTime = 0.1f;
     // TODO: encapsulate timeouts within Attack class for more customizability
-    public float attackCooldown = 0.75f;
-    public float comboTimeout = 1.0f;
+    public float attackCooldown = 0.5f;
+    public float comboTimeout = 0.75f;
     public float attackInactivityTimeout = 5.0f;
+    public bool isAttacking;
 
     private List<Attack> _attacks;
     private Vector3 _velocity = new Vector3(0f, 0f, 0f);
@@ -27,7 +30,7 @@ public class PlayerController : MonoBehaviour {
     private float _nextWeaponSheathe;
     private int _nextAttackIndex;
     private float _turnSmoothingVel;
-    private Vector2 _movementInput = new Vector2(0, 0);
+    private Vector2 _movementInput = new Vector2(0f, 0f);
 
     private void Awake() {
         Cursor.visible = false;
@@ -45,6 +48,10 @@ public class PlayerController : MonoBehaviour {
         if (DialogueManager.Instance != null) {
             await DialogueManager.Instance.PlayDialogueSequence("lvl1_stasis_room_seru_01");
         }
+    }
+
+    private void OnDestroy() {
+        AkSoundEngine.StopAll();
     }
 
     private void Update() {
@@ -124,7 +131,7 @@ public class PlayerController : MonoBehaviour {
     public void Jump(InputAction.CallbackContext context) {
         if (!controller.isGrounded) return;
         
-        _velocity.y = 16f;
+        _velocity.y = 10f;
         // Jump liftoff
         AkSoundEngine.PostEvent("Player_Jump", gameObject);
         _isJumping = true;
@@ -168,6 +175,8 @@ public class PlayerController : MonoBehaviour {
         AkSoundEngine.PostEvent("Player_Attack", gameObject);
         
         OnPlayerAttack?.Invoke(currAttack.Damage);
+        isAttacking = true;
+        StartCoroutine(ResetAttacking());
         
         if (_nextAttackIndex == 2) {
             playerStats.ConsumeGeo(5);
@@ -177,6 +186,12 @@ public class PlayerController : MonoBehaviour {
     public void Sprint(InputAction.CallbackContext context) {
         _isSprinting = true;
         _nextFootstep = Time.time;
+    }
+    
+    // This is janky
+    private IEnumerator ResetAttacking() {
+        yield return new WaitForSeconds(attackCooldown);
+        isAttacking = false;
     }
 }
 
