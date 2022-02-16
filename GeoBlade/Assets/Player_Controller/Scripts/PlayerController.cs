@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
+
 public class PlayerController : MonoBehaviour {
     public delegate void AttackAction(float damage);
     public static event AttackAction OnPlayerAttack;
@@ -15,6 +17,7 @@ public class PlayerController : MonoBehaviour {
     public float attackCooldown = 0.75f;
     public float comboTimeout = 1.0f;
     public float attackInactivityTimeout = 5.0f;
+    public DamageCollider weaponCollider;
 
     private List<Attack> _attacks;
     private Vector3 _velocity = new Vector3(0f, 0f, 0f);
@@ -42,6 +45,13 @@ public class PlayerController : MonoBehaviour {
             new Attack("Light2", 10),
             new Attack("Heavy", 20)
         };
+        
+        //weaponCollider.onDamage += (other) => {}
+    }
+
+    private void knockback(StatCollider other)
+    {
+        
     }
 
     private void Update() {
@@ -179,7 +189,8 @@ public class PlayerController : MonoBehaviour {
         AkSoundEngine.SetState("Attack_Type", currAttack.Name);
         AkSoundEngine.PostEvent("Player_Attack", gameObject);
         
-        OnPlayerAttack?.Invoke(currAttack.Damage);
+        //OnPlayerAttack?.Invoke(currAttack.Damage); TODO: Make less jenk
+        weaponCollider.damage = currAttack.Damage;
         
         if (_nextAttackIndex == 2) {
             playerStats.ConsumeGeo(5);

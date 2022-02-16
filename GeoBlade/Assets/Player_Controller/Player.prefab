@@ -74,7 +74,7 @@ MonoBehaviour:
   animator: {fileID: 2978857075321096510}
   cam: {fileID: 0}
   gravity: 9.8
-  movementSpeed: 12
+  movementSpeed: 8
   turnSmoothingTime: 0.5
   attackCooldown: 0.75
   comboTimeout: 1
