@@ -51,6 +51,7 @@ public class SecurityDroidController : MonoBehaviour {
                 _isInAttackRange = true;
                 if (Time.time >= _nextAttackAttempt) {
                     PlayerManager.Instance.player.GetComponent<PlayerStats>().DamageCharacter(5);
+                    AkSoundEngine.PostEvent("Security_Droid_Attack", gameObject);
                     _nextAttackAttempt = Time.time + attackCooldown;
                 }
             } else {

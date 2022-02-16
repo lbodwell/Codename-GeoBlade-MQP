@@ -1237,6 +1237,74 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Sound Name="security_droid_stab" ID="{65E26057-3FEA-49AB-BA8E-EA2FF82CC5F1}" ShortID="974644065">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Dialogue Attenuation" ID="{232333E8-5B48-4A71-955A-30F850AFA733}" WorkUnitID="{9E44F940-DC2D-46E1-9E14-08F4FE44DFE7}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="security_droid_stab" ID="{96CCA744-EA7A-4EB8-A0C2-51FF6BEE0C51}">
+							<Language>SFX</Language>
+							<AudioFile>security_droid_stab.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="119322569"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="security_droid_stab" ID="{96CCA744-EA7A-4EB8-A0C2-51FF6BEE0C51}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="stasis_pod_hiss" ID="{53BA0B1E-0120-403F-AA71-C4F877E3F9DF}" ShortID="517188729">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Dialogue Attenuation" ID="{232333E8-5B48-4A71-955A-30F850AFA733}" WorkUnitID="{9E44F940-DC2D-46E1-9E14-08F4FE44DFE7}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="stasis_pod_hiss" ID="{23BFE3C9-B8D5-4B06-91AE-D4A0E9109C13}">
+							<Language>SFX</Language>
+							<AudioFile>stasis_pod_hiss.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="201693393"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="stasis_pod_hiss" ID="{23BFE3C9-B8D5-4B06-91AE-D4A0E9109C13}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

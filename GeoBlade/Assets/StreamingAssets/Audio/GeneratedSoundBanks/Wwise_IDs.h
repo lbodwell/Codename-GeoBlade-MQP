@@ -19,6 +19,8 @@ namespace AK
         static const AkUniqueID PLAYER_FOOTSTEP = 2453392179U;
         static const AkUniqueID PLAYER_JUMP = 1305133589U;
         static const AkUniqueID PLAYER_UNSHEATHE = 917509252U;
+        static const AkUniqueID SECURITY_DROID_ATTACK = 1402779743U;
+        static const AkUniqueID STASIS_POD_HISS = 3474418164U;
     } // namespace EVENTS
 
     namespace STATES

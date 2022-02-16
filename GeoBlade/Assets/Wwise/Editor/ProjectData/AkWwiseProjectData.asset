@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b144575cff53e145bbed4dfb8f16af44
     GuidInternal: 
-    m_lastTime: -8585571638451845449
+    m_lastTime: -8585565613557210852
     List:
     - name: Dialogue
       guid: 4a7f2e159c23e64a8d15f2d8b354e15c
@@ -151,7 +151,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0666227a29948e44bafd5efae5ca592a
       Path: Events\Dialogue\Dialogue_Trigger
-      maxAttenuation: 50
+      maxAttenuation: 25
       maxDuration: 11.449729
       minDuration: 1.430979
   - PhysicalPath: Events\Music.wwu
@@ -195,7 +195,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: d19439dca0fb2b4e9c232a66be5f6f0f
     GuidInternal: 
-    m_lastTime: -8585620922290491557
+    m_lastTime: -8585565613557146370
     List:
     - name: Player_Attack
       guid: 418c7b323b94844b987a1b61b2ef0f23
@@ -265,6 +265,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Security_Droid_Attack
+      guid: 51070990e701f74a8dd5de6f148aa2e5
+      id: 1402779743
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Security_Droid_Attack
+        ObjectType: 3
+        guid: 51070990e701f74a8dd5de6f148aa2e5
+      Path: Events\Player\Security_Droid_Attack
+      maxAttenuation: 0
+      maxDuration: 63.396393
+      minDuration: 63.396393
+    - name: Stasis_Pod_Hiss
+      guid: 585f63e979bc9a4385690f2689f9a533
+      id: 3474418164
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Stasis_Pod_Hiss
+        ObjectType: 3
+        guid: 585f63e979bc9a4385690f2689f9a533
+      Path: Events\Player\Stasis_Pod_Hiss
+      maxAttenuation: 0
+      maxDuration: 61.266098
+      minDuration: 61.266098
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -867,7 +901,7 @@ MonoBehaviour:
     m_lastTime: -8585643027370968801
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 030000000400000006000000080000001b0000001c000000
+  ExpandedWaapiItemIds: 03000000040000000500000006000000080000000b0000001b0000001c0000001d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

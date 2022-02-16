@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="3341947741">
+		<SoundBank Id="1069431850" Language="SFX" Hash="45474103">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -248,6 +248,22 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="917509252" Name="Player_Unsheathe" ObjectPath="\Events\Player\Player_Unsheathe" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1402779743" Name="Security_Droid_Attack" ObjectPath="\Events\Player\Security_Droid_Attack" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="63.396393" DurationMax="63.396393">
+					<IncludedMemoryFiles>
+						<File Id="119322569" Language="SFX">
+							<ShortName>security_droid_stab.wav</ShortName>
+							<Path>SFX\security_droid_stab_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3474418164" Name="Stasis_Pod_Hiss" ObjectPath="\Events\Player\Stasis_Pod_Hiss" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="61.266098" DurationMax="61.266098">
+					<IncludedMemoryFiles>
+						<File Id="201693393" Language="SFX">
+							<ShortName>stasis_pod_hiss.wav</ShortName>
+							<Path>SFX\stasis_pod_hiss_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<StateGroups>
 				<StateGroup Id="2578485808" Name="Attack_Type" ObjectPath="\States\Player\Attack_Type" GUID="{05F9D408-CF10-4C60-8710-300508312E18}">
@@ -280,12 +296,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3930136735" Language="SFX" Hash="1585357023">
+		<SoundBank Id="3930136735" Language="SFX" Hash="1176879085">
 			<ObjectPath>\SoundBanks\Default Work Unit\Dialogue</ObjectPath>
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4029211690" Name="Dialogue_Trigger" ObjectPath="\Events\Dialogue\Dialogue_Trigger" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.430979" DurationMax="11.449729">
+				<Event Id="4029211690" Name="Dialogue_Trigger" ObjectPath="\Events\Dialogue\Dialogue_Trigger" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.430979" DurationMax="11.449729">
 					<IncludedMemoryFiles>
 						<File Id="69217860" Language="SFX">
 							<ShortName>geoblade_dialogue_lvl1_spiral_room_iris_04.wav</ShortName>
