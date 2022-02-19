@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="45474103">
+		<SoundBank Id="1069431850" Language="SFX" Hash="1406197558">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -248,7 +248,7 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="917509252" Name="Player_Unsheathe" ObjectPath="\Events\Player\Player_Unsheathe" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1402779743" Name="Security_Droid_Attack" ObjectPath="\Events\Player\Security_Droid_Attack" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="63.396393" DurationMax="63.396393">
+				<Event Id="1402779743" Name="Security_Droid_Attack" ObjectPath="\Events\Player\Security_Droid_Attack" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.340454" DurationMax="0.340454">
 					<IncludedMemoryFiles>
 						<File Id="119322569" Language="SFX">
 							<ShortName>security_droid_stab.wav</ShortName>
@@ -296,7 +296,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3930136735" Language="SFX" Hash="1176879085">
+		<SoundBank Id="3930136735" Language="SFX" Hash="2515057833">
 			<ObjectPath>\SoundBanks\Default Work Unit\Dialogue</ObjectPath>
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>

@@ -6118,7 +6118,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19072
+  m_Name: pb_Mesh39992
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6445,19 +6445,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9764153
+      value: 0.9764152
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17197749
+      value: 0.17197748
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.12854746
+      value: -0.12854749
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.022641256
+      value: 0.022641264
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302648211868, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8505,30 +8505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f34826a869c2d14f8d5976cab6c4a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1958702643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958702636}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207a261a53804ac45a46bb24e1ba78fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 80f3c240c72da0745adff9eec8a107fe, type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!1 &1979373029
 GameObject:
   m_ObjectHideFlags: 0
@@ -9091,6 +9067,10 @@ PrefabInstance:
     - target: {fileID: 4138032695740395156, guid: b2f5dcd472a573b4aad9348d813a9502, type: 3}
       propertyPath: m_Name
       value: SecurityDroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138032695740395156, guid: b2f5dcd472a573b4aad9348d813a9502, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4138032695740395156, guid: b2f5dcd472a573b4aad9348d813a9502, type: 3}
       propertyPath: m_TagString
