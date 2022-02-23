@@ -456,6 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 457329727}
+  geoBlade: {fileID: 1306305868}
   iris: {fileID: 1597568563}
 --- !u!4 &143681283
 Transform:
@@ -868,6 +869,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 457329728}
     - target: {fileID: 6213721881995825217, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
+      propertyPath: movementSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213721881995825217, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
+      propertyPath: weaponCollider
+      value: 
+      objectReference: {fileID: 1306305869}
+    - target: {fileID: 6213721881995825217, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
       propertyPath: turnSmoothingTime
       value: 0.1
       objectReference: {fileID: 0}
@@ -1022,6 +1031,7 @@ MonoBehaviour:
   turnSmoothingTime: 0.2
   attackCooldown: 4
   attackGracePeriod: 1
+  attackDamage: 10
 --- !u!4 &439443843
 Transform:
   m_ObjectHideFlags: 0
@@ -5717,6 +5727,7 @@ MonoBehaviour:
   turnSmoothingTime: 0.2
   attackCooldown: 4
   attackGracePeriod: 1
+  attackDamage: 10
 --- !u!4 &736603268
 Transform:
   m_ObjectHideFlags: 0
@@ -5805,6 +5816,7 @@ MonoBehaviour:
   turnSmoothingTime: 0.2
   attackCooldown: 4
   attackGracePeriod: 1
+  attackDamage: 10
 --- !u!4 &762848323
 Transform:
   m_ObjectHideFlags: 0
@@ -5893,6 +5905,7 @@ MonoBehaviour:
   turnSmoothingTime: 0.2
   attackCooldown: 4
   attackGracePeriod: 1
+  attackDamage: 10
 --- !u!4 &763653898
 Transform:
   m_ObjectHideFlags: 0
@@ -5981,6 +5994,7 @@ MonoBehaviour:
   turnSmoothingTime: 0.2
   attackCooldown: 4
   attackGracePeriod: 1
+  attackDamage: 10
 --- !u!4 &876550254
 Transform:
   m_ObjectHideFlags: 0
@@ -6445,19 +6459,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9764153
+      value: 0.9764152
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17197749
+      value: 0.17197748
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.12854746
+      value: -0.12854749
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301690757652, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.022641256
+      value: 0.022641264
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302648211868, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6570,9 +6584,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Iris: It\u2019s a little creepy in here to be honest, and, well, I\u2019m
-    kind of lost myself, so I\u2019ll leave the navigating to you! You must know
-    your way around, right?"
+  m_text: "Iris: Don\u2019t worry, I\u2019m sure your memory will come back soon!
+    You seem like a nice person, so I\u2019ll trust you to figure it out!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6984,6 +6997,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4367341011766158584, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
   m_PrefabInstance: {fileID: 336822161}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1306305869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306305868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf94236f24ed8645b773ba338323202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 1306305870}
+  damage: 0
+  active: 1
+--- !u!65 &1306305870 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 4073173333960995143, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
+  m_PrefabInstance: {fileID: 336822161}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1306305871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7085,6 +7118,7 @@ MonoBehaviour:
   turnSmoothingTime: 0.2
   attackCooldown: 4
   attackGracePeriod: 1
+  attackDamage: 10
 --- !u!4 &1389019170
 Transform:
   m_ObjectHideFlags: 0
@@ -7980,6 +8014,7 @@ MonoBehaviour:
   turnSmoothingTime: 0.2
   attackCooldown: 4
   attackGracePeriod: 1
+  attackDamage: 10
 --- !u!4 &1680693649
 Transform:
   m_ObjectHideFlags: 0
@@ -8886,6 +8921,7 @@ MonoBehaviour:
   turnSmoothingTime: 0.2
   attackCooldown: 2
   attackGracePeriod: 1
+  attackDamage: 10
 --- !u!4 &2101421170
 Transform:
   m_ObjectHideFlags: 0

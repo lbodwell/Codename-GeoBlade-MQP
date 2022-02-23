@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="1406197558">
+		<SoundBank Id="1069431850" Language="SFX" Hash="3506467811">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -256,7 +256,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3474418164" Name="Stasis_Pod_Hiss" ObjectPath="\Events\Player\Stasis_Pod_Hiss" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="61.266098" DurationMax="61.266098">
+				<Event Id="3474418164" Name="Stasis_Pod_Hiss" ObjectPath="\Events\Player\Stasis_Pod_Hiss" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="61.407814" DurationMax="61.407814">
 					<IncludedMemoryFiles>
 						<File Id="201693393" Language="SFX">
 							<ShortName>stasis_pod_hiss.wav</ShortName>
@@ -296,7 +296,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3930136735" Language="SFX" Hash="2515057833">
+		<SoundBank Id="3930136735" Language="SFX" Hash="2776455794">
 			<ObjectPath>\SoundBanks\Default Work Unit\Dialogue</ObjectPath>
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>

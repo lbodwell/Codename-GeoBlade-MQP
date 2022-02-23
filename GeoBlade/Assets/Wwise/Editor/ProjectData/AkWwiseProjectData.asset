@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b144575cff53e145bbed4dfb8f16af44
     GuidInternal: 
-    m_lastTime: -8585559593139679355
+    m_lastTime: -8585559582841187468
     List:
     - name: Dialogue
       guid: 4a7f2e159c23e64a8d15f2d8b354e15c
@@ -135,7 +135,7 @@ MonoBehaviour:
     ParentPath: Events\Dialogue
     guid: 475c5da5829670438fba66501ba9a246
     GuidInternal: 
-    m_lastTime: -8585559593150933585
+    m_lastTime: -8585559582850785063
     List:
     - name: Dialogue_Trigger
       guid: 0666227a29948e44bafd5efae5ca592a
@@ -195,7 +195,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: d19439dca0fb2b4e9c232a66be5f6f0f
     GuidInternal: 
-    m_lastTime: -8585559593150928627
+    m_lastTime: -8585559582850780100
     List:
     - name: Player_Attack
       guid: 418c7b323b94844b987a1b61b2ef0f23
@@ -297,8 +297,8 @@ MonoBehaviour:
         guid: 585f63e979bc9a4385690f2689f9a533
       Path: Events\Player\Stasis_Pod_Hiss
       maxAttenuation: 25
-      maxDuration: 61.266098
-      minDuration: 61.266098
+      maxDuration: 61.407814
+      minDuration: 61.407814
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -338,7 +338,7 @@ MonoBehaviour:
     ParentPath: States\Dialogue
     guid: 144533a6a42c9b4788631915b5bc027b
     GuidInternal: 
-    m_lastTime: -8585559593139674393
+    m_lastTime: -8585559582841182506
     List:
     - name: Dialogue_Line
       guid: 5810706b7aea4d41b6605c58c6e215a1

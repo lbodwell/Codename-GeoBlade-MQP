@@ -1239,7 +1239,7 @@
 				</SwitchContainer>
 				<Sound Name="security_droid_stab" ID="{65E26057-3FEA-49AB-BA8E-EA2FF82CC5F1}" ShortID="974644065">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-8</Value>
@@ -1273,10 +1273,15 @@
 				</Sound>
 				<Sound Name="stasis_pod_hiss" ID="{53BA0B1E-0120-403F-AA71-C4F877E3F9DF}" ShortID="517188729">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-12</Value>
+								<Value>-24</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

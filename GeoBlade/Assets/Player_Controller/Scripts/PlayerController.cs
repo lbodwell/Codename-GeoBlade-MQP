@@ -94,6 +94,7 @@ public class PlayerController : MonoBehaviour {
             finalVel = new Vector3(_velocity.x * playerDirection.x, playerDirection.y + _velocity.y, _velocity.z * playerDirection.z);
             if (controller.isGrounded) {
                 if (Time.time > _nextFootstep) {
+                    // TODO: Make this dynamic
                     if (_isSprinting) {
                         AkSoundEngine.SetState("Footstep_Type", "Run");
                         _nextFootstep = Time.time + 0.225f;
