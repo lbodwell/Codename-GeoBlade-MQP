@@ -26,7 +26,7 @@ public class DialogueManager : MonoBehaviour {
     public string locale = "en_US";
     public bool subtitlesEnabled = true;
     public static DialogueManager Instance;
-    private SortedDictionary<string, DialogueLine> _dialogueLines;
+    private Dictionary<string, DialogueLine> _dialogueLines;
     private CancellationTokenSource _source;
     private CancellationToken _token;
     private bool _lineActive;
@@ -34,7 +34,7 @@ public class DialogueManager : MonoBehaviour {
 
     private void Awake() {
         Instance = this;
-        _dialogueLines = new SortedDictionary<string, DialogueLine>();
+        _dialogueLines = new Dictionary<string, DialogueLine>();
         ResetCancellationToken();
 
         Debug.Log("Loading dialogue lines...");
@@ -98,12 +98,10 @@ public class DialogueManager : MonoBehaviour {
                 _sequenceActive = true;
                 nextLine = await PlayLine(nextLine, _token);
                 await Task.Delay(100, _token);
-            }
-            catch (OperationCanceledException) {
+            } catch (OperationCanceledException) {
                 Debug.Log("Current dialogue sequence cancelled");
                 break;
-            }
-            finally {
+            } finally {
                 ResetCancellationToken();
             }
         }
