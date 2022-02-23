@@ -12,7 +12,7 @@ public class DamageCollider : MonoBehaviour
     public Collider collider;
     public float damage = 0;
     public bool active = true;
-    public DamageEvent onDamage;
+    public DamageEvent onDamage = new DamageEvent();
     // Start is called before the first frame update
 
     private void OnCollisionEnter(Collision collision)
@@ -35,11 +35,11 @@ public class DamageCollider : MonoBehaviour
 
     private void OnCollision(GameObject otherObject)
     {
-        if (otherObject.TryGetComponent(out StatCollider other))
+        if (otherObject.TryGetComponent(out StatCollider other) && active)
         {
             other.stats.DamageCharacter(this.damage);
             Debug.Log("Dealing " + this.damage + "  to " + otherObject.name);
-            onDamage.Invoke(other);
+            onDamage?.Invoke(other);
         }
     }
 
