@@ -1,8 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
+
 public class PlayerController : MonoBehaviour {
     public delegate void AttackAction(float damage);
     public static event AttackAction OnPlayerAttack;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour {
     public float attackCooldown = 0.5f;
     public float comboTimeout = 0.75f;
     public float attackInactivityTimeout = 5.0f;
+    public DamageCollider weaponCollider;
     public bool isAttacking;
 
     private List<Attack> _attacks;
@@ -52,6 +54,13 @@ public class PlayerController : MonoBehaviour {
 
     private void OnDestroy() {
         AkSoundEngine.StopAll();
+        
+        //weaponCollider.onDamage += (other) => {}
+    }
+
+    private void knockback(StatCollider other)
+    {
+        
     }
 
     private void Update() {
@@ -105,15 +114,30 @@ public class PlayerController : MonoBehaviour {
             Debug.Log("GeoBlade sheathed");
         }
         
-        //Update Animator Parameters
+        // Update Animator Parameters
+        Vector3 horizontalVel = new Vector3(finalVel.x, finalVel.z, 0);
+        
         animator.SetBool("Grounded", controller.isGrounded);
-        animator.SetFloat("Speed", finalVel.magnitude);
+        animator.SetFloat("Speed", horizontalVel.magnitude);
+        
         if (Time.time >= _nextAttackWindowClose && animator.GetInteger("Combo") != 0)
         {
             animator.SetInteger("Combo", 0);
-            Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+            //Debug.Log("Combo set to " + animator.GetInteger("Combo"));
         }
-        
+
+        // Triggered when animator switches states (for several frames)
+        if (animator.IsInTransition(0))
+        {
+            AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
+            AnimatorStateInfo nextState = animator.GetNextAnimatorStateInfo(0);
+            if (nextState.IsName("Run")) // Set animation speed to player speed
+                animator.speed = movementSpeed / 12;
+            else
+                animator.speed = 1;
+        }
+
+        // TODO: Is there any reason this is so scuffed?
         if (!controller.isGrounded || !_isJumping) return;
         _isJumping = false;
         _velocity.y = 0f;
@@ -143,11 +167,11 @@ public class PlayerController : MonoBehaviour {
             if (Time.time < _nextAttackWindowClose) {
                 _nextAttackIndex = (_nextAttackIndex + 1) % 3;
                 animator.SetInteger("Combo", (_nextAttackIndex + 1) % 3);
-                Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+                //Debug.Log("Combo set to " + animator.GetInteger("Combo"));
             } else {
                 _nextAttackIndex = 0;
                 animator.SetInteger("Combo", 1);
-                Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+                //Debug.Log("Combo set to " + animator.GetInteger("Combo"));
             }
         } else {
             _isWeaponActive = true;
@@ -156,7 +180,7 @@ public class PlayerController : MonoBehaviour {
             Debug.Log("GeoBlade unsheathed");
             AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
             animator.SetInteger("Combo", 1);
-            Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+            //Debug.Log("Combo set to " + animator.GetInteger("Combo"));
         }
 
         if (_nextAttackIndex == 2 && playerStats.geo < 5) {
@@ -169,7 +193,7 @@ public class PlayerController : MonoBehaviour {
         _nextAttackWindowClose = Time.time + comboTimeout;
         _nextWeaponSheathe = Time.time + attackInactivityTimeout;
 
-        Debug.Log($"Attack (type: {currAttack.Name}, damage: {currAttack.Damage})");
+        //Debug.Log($"Attack (type: {currAttack.Name}, damage: {currAttack.Damage})");
         
         AkSoundEngine.SetState("Attack_Type", currAttack.Name);
         AkSoundEngine.PostEvent("Player_Attack", gameObject);
@@ -177,6 +201,8 @@ public class PlayerController : MonoBehaviour {
         OnPlayerAttack?.Invoke(currAttack.Damage);
         isAttacking = true;
         StartCoroutine(ResetAttacking());
+        //OnPlayerAttack?.Invoke(currAttack.Damage); TODO: Make less jenk
+        weaponCollider.damage = currAttack.Damage;
         
         if (_nextAttackIndex == 2) {
             playerStats.ConsumeGeo(5);
