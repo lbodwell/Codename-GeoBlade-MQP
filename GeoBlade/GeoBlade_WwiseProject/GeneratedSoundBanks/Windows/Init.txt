@@ -1,15 +1,25 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2489350135	Music_Level1_Track1			\Music\Music_Level1_Track1	
+	2533881733	Resonant_Frequency_Note			\Puzzle\Resonant_Frequency_Note	
 	2578485808	Attack_Type			\Player\Attack_Type	
 	2615620554	Footstep_Type			\Player\Footstep_Type	
 	3247544628	Dialogue_Line			\Dialogue\Dialogue_Line	
 	3865314626	Material			\Player\Material	
+	4288503750	Generator_Hum_Note			\Puzzle\Generator_Hum_Note	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Music_Level1_Track1			
 	3524678536	Section2	Music_Level1_Track1			
 	3524678537	Section3	Music_Level1_Track1			
 	3524678539	Section1	Music_Level1_Track1			
+	748895195	None	Resonant_Frequency_Note			
+	2108395137	Note_1	Resonant_Frequency_Note			
+	2108395138	Note_2	Resonant_Frequency_Note			
+	2108395139	Note_3	Resonant_Frequency_Note			
+	2108395140	Note_4	Resonant_Frequency_Note			
+	2108395141	Note_5	Resonant_Frequency_Note			
+	2108395142	Note_6	Resonant_Frequency_Note			
+	2108395143	Note_7	Resonant_Frequency_Note			
 	748895195	None	Attack_Type			
 	2732489590	Heavy	Attack_Type			
 	3192784680	Light1	Attack_Type			
@@ -32,6 +42,11 @@ State	ID	Name	State Group			Notes
 	841620460	Concrete	Material			
 	2473969246	Metal	Material			
 	4248645337	Grass	Material			
+	748895195	None	Generator_Hum_Note			
+	2108395138	Note_2	Generator_Hum_Note			
+	2108395139	Note_3	Generator_Hum_Note			
+	2108395140	Note_4	Generator_Hum_Note			
+	2108395141	Note_5	Generator_Hum_Note			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

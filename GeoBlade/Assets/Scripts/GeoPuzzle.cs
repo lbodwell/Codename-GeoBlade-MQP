@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GeoPuzzle : MonoBehaviour {
     public static GeoPuzzle Instance { get; private set; }
@@ -10,6 +12,15 @@ public class GeoPuzzle : MonoBehaviour {
     public List<GeoReceptacle> receptacles;
     private GeoReceptacle _nearestReceptacle;
     private GeoPickup _currentPickup;
+    private bool _isPuzzleComplete;
+    private bool _lastPlaythroughStarted;
+    private int _noteSequenceIndex;
+    private int _notesLeftInLastPlaythrough = 5;
+    private float _nextNote;
+    // Roughly the amount of time that a half note lasts at 112 bpm
+    private const float NoteTimeout = 1.0708f;
+    private Material _activeGeneratorMaterial;
+    private Material _inactiveGeneratorMaterial;
 
     private void Awake() {
         // TODO: Apply this pattern to all singletons
@@ -18,12 +29,47 @@ public class GeoPuzzle : MonoBehaviour {
         } else {
             Instance = this;
         }
+
+        _activeGeneratorMaterial = Resources.Load("Materials/GeoPickup1", typeof(Material)) as Material;
+        _inactiveGeneratorMaterial = receptacles[0].gameObject.GetComponent<Renderer>().material;
     }
     
     private void Update() {
         if (!isPuzzleActive) return;
         
         var player = PlayerManager.Instance.player;
+
+        if (Time.time > _nextNote) {
+            _nextNote = Time.time + NoteTimeout;
+            
+            var receptacle = receptacles[_noteSequenceIndex];
+            var prevReceptacle = _noteSequenceIndex == 0 ? receptacles[3] : receptacles[_noteSequenceIndex - 1];
+            
+            if (_isPuzzleComplete && !_lastPlaythroughStarted && _noteSequenceIndex == 3) {
+                _lastPlaythroughStarted = true;
+            }
+            
+            receptacle.gameObject.GetComponent<Renderer>().material = _activeGeneratorMaterial;
+            prevReceptacle.gameObject.GetComponent<Renderer>().material = _inactiveGeneratorMaterial;
+
+            AkSoundEngine.SetState("Generator_Hum_Note", "Note_" + receptacle.targetEnergy);
+            AkSoundEngine.PostEvent("Play_Generator_Hum", receptacle.gameObject);
+            
+            if (!receptacle.IsEmpty()) {
+                AkSoundEngine.SetState("Resonant_Frequency_Note", "Note_" + receptacle.totalEnergy);
+                AkSoundEngine.PostEvent("Play_Resonant_Frequency", receptacle.gameObject);
+            }
+            
+            _noteSequenceIndex = (_noteSequenceIndex + 1) % 4;
+
+            if (_lastPlaythroughStarted) {
+                _notesLeftInLastPlaythrough--;
+            }
+
+            if (_notesLeftInLastPlaythrough == 0) {
+                isPuzzleActive = false;
+            }
+        }
             
         // Switch to new input system (move to player controller?)
         if (Input.GetKeyDown(KeyCode.E)) {
@@ -49,14 +95,14 @@ public class GeoPuzzle : MonoBehaviour {
                     _nearestReceptacle.AddPickup(_currentPickup);
                     var targetPos = _nearestReceptacle.GetNextOpenPosition();
                     pickupTransform.position = targetPos;
-                    pickupTransform.SetParent(null);
-                    // Apply rotational force
+                    pickupTransform.rotation = Quaternion.identity;
+                    _currentPickup.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 1, 0);
                 } else {
-                    pickupTransform.SetParent(null);
                     _currentPickup.GetComponent<Rigidbody>().useGravity = true; 
                     _currentPickup.GetComponent<BoxCollider>().enabled = true;
                 }
                 
+                pickupTransform.SetParent(null);
                 _currentPickup = null;
                 isPickupInHand = false;
             } else {
@@ -94,7 +140,7 @@ public class GeoPuzzle : MonoBehaviour {
                     
                     var body = _currentPickup.GetComponent<Rigidbody>();
                     body.velocity = Vector3.zero;
-                    body.angularVelocity = Vector3.zero;
+                    body.angularVelocity = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f));
 
                     isPickupInHand = true;
                 }
@@ -105,9 +151,9 @@ public class GeoPuzzle : MonoBehaviour {
             DisplayPuzzleStatus();
         }
         
-        if (receptacles.Count(receptacle => receptacle.targetReached) == receptacles.Count) {
+        if (!_isPuzzleComplete && receptacles.Count(receptacle => receptacle.targetReached) == receptacles.Count) {
             Debug.Log("Puzzle complete!");
-            isPuzzleActive = false;
+            _isPuzzleComplete = true;
         }
     }
 

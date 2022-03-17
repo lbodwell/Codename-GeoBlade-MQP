@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{53997664-804D-49C9-A56E-1FE8688A3D65}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Puzzle" ID="{53997664-804D-49C9-A56E-1FE8688A3D65}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Generator_Hum_Note" ID="{3ED5A98B-B3B5-4344-89A2-24A4FCC251C1}">
+					<ChildrenList>
+						<State Name="None" ID="{62454E68-7B50-473A-9F47-0D71975E1E73}"/>
+						<State Name="Note_4" ID="{5A030A1A-81DE-4F10-88BA-E00426CA262B}"/>
+						<State Name="Note_5" ID="{7A6B1C69-1FEC-4FDE-A31B-F4D56FA0C4E8}"/>
+						<State Name="Note_2" ID="{371D63DF-1D21-4F60-A2A7-36441A9B4678}"/>
+						<State Name="Note_3" ID="{915EC0E9-9CD2-4913-A370-026F5291CE9B}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Resonant_Frequency_Note" ID="{F7F79A31-0CA6-4966-8C61-5385ADF19D35}">
+					<ChildrenList>
+						<State Name="None" ID="{616AC7EB-37A4-40A7-A632-4919A6DFF8BC}"/>
+						<State Name="Note_1" ID="{288CA895-C2B7-4798-B8C0-1EF065BE9A4D}"/>
+						<State Name="Note_2" ID="{F2C7E356-2973-4710-B9B2-9133BBB8A011}"/>
+						<State Name="Note_3" ID="{42B47A64-3E10-4BDA-AB91-76154DA9EDE1}"/>
+						<State Name="Note_4" ID="{CE8302C9-4AB7-42B2-8CAF-914E2A283CCC}"/>
+						<State Name="Note_5" ID="{5D483DE1-DFA1-4D1D-9F56-DCC336406FC2}"/>
+						<State Name="Note_6" ID="{7170785E-6CF5-4DC7-AFD8-6E25232FBC0B}"/>
+						<State Name="Note_7" ID="{004154A8-3DED-4BA4-9E7A-F048A33F83E0}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

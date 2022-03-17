@@ -29,6 +29,14 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Puzzle" ID="{6973FC17-7E27-4E9D-B016-25918E5F1E53}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Generator_Hum" ID="{4D7A41AA-B6CE-43CD-A6AE-58977F35A58E}" WorkUnitID="{66A72FF5-11BA-4B84-882C-D3DD3494D08A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Resonant_Frequency" ID="{2DB44A77-0899-46EE-B94C-8ACCAE3B8F9A}" WorkUnitID="{66A72FF5-11BA-4B84-882C-D3DD3494D08A}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

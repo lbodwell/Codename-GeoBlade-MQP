@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="3506467811">
+		<SoundBank Id="1069431850" Language="SFX" Hash="1760279059">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -291,12 +291,155 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3241598657">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3734948534">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3930136735" Language="SFX" Hash="2776455794">
+		<SoundBank Id="1780448749" Language="SFX" Hash="935151259">
+			<ObjectPath>\SoundBanks\Default Work Unit\Puzzle</ObjectPath>
+			<ShortName>Puzzle</ShortName>
+			<Path>Puzzle.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2682110950" Name="Play_Generator_Hum" ObjectPath="\Events\Puzzle\Play_Generator_Hum" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.128050">
+					<IncludedMemoryFiles>
+						<File Id="59144974" Language="SFX">
+							<ShortName>Puzzle_Generator_Hum_A.wav</ShortName>
+							<Path>SFX\Puzzle_Generator_Hum_A_10C4C929.wem</Path>
+						</File>
+						<File Id="389562452" Language="SFX">
+							<ShortName>Puzzle_Generator_Hum_G.wav</ShortName>
+							<Path>SFX\Puzzle_Generator_Hum_G_10C4C929.wem</Path>
+						</File>
+						<File Id="595071410" Language="SFX">
+							<ShortName>Puzzle_Generator_Hum_B.wav</ShortName>
+							<Path>SFX\Puzzle_Generator_Hum_B_10C4C929.wem</Path>
+						</File>
+						<File Id="1010712288" Language="SFX">
+							<ShortName>Puzzle_Generator_Hum_F#.wav</ShortName>
+							<Path>SFX\Puzzle_Generator_Hum_F#_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{62454E68-7B50-473A-9F47-0D71975E1E73}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{5A030A1A-81DE-4F10-88BA-E00426CA262B}">
+							<Media>
+								<File Id="59144974"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7A6B1C69-1FEC-4FDE-A31B-F4D56FA0C4E8}">
+							<Media>
+								<File Id="595071410"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{371D63DF-1D21-4F60-A2A7-36441A9B4678}">
+							<Media>
+								<File Id="1010712288"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{915EC0E9-9CD2-4913-A370-026F5291CE9B}">
+							<Media>
+								<File Id="389562452"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="853873997" Name="Play_Resonant_Frequency" ObjectPath="\Events\Puzzle\Play_Resonant_Frequency" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.229116" DurationMax="1.249501">
+					<IncludedMemoryFiles>
+						<File Id="89613828" Language="SFX">
+							<ShortName>Puzzle_Resonant_Freq_A.wav</ShortName>
+							<Path>SFX\Puzzle_Resonant_Freq_A_10C4C929.wem</Path>
+						</File>
+						<File Id="153292582" Language="SFX">
+							<ShortName>Puzzle_Resonant_Freq_D.wav</ShortName>
+							<Path>SFX\Puzzle_Resonant_Freq_D_10C4C929.wem</Path>
+						</File>
+						<File Id="722968896" Language="SFX">
+							<ShortName>Puzzle_Resonant_Freq_F#.wav</ShortName>
+							<Path>SFX\Puzzle_Resonant_Freq_F#_10C4C929.wem</Path>
+						</File>
+						<File Id="770132114" Language="SFX">
+							<ShortName>Puzzle_Resonant_Freq_B.wav</ShortName>
+							<Path>SFX\Puzzle_Resonant_Freq_B_10C4C929.wem</Path>
+						</File>
+						<File Id="851307500" Language="SFX">
+							<ShortName>Puzzle_Resonant_Freq_C.wav</ShortName>
+							<Path>SFX\Puzzle_Resonant_Freq_C_10C4C929.wem</Path>
+						</File>
+						<File Id="1050792892" Language="SFX">
+							<ShortName>Puzzle_Resonant_Freq_G.wav</ShortName>
+							<Path>SFX\Puzzle_Resonant_Freq_G_10C4C929.wem</Path>
+						</File>
+						<File Id="1051904299" Language="SFX">
+							<ShortName>Puzzle_Resonant_Freq_E.wav</ShortName>
+							<Path>SFX\Puzzle_Resonant_Freq_E_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{616AC7EB-37A4-40A7-A632-4919A6DFF8BC}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{CE8302C9-4AB7-42B2-8CAF-914E2A283CCC}">
+							<Media>
+								<File Id="89613828"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{5D483DE1-DFA1-4D1D-9F56-DCC336406FC2}">
+							<Media>
+								<File Id="770132114"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7170785E-6CF5-4DC7-AFD8-6E25232FBC0B}">
+							<Media>
+								<File Id="851307500"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{004154A8-3DED-4BA4-9E7A-F048A33F83E0}">
+							<Media>
+								<File Id="153292582"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{288CA895-C2B7-4798-B8C0-1EF065BE9A4D}">
+							<Media>
+								<File Id="1051904299"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F2C7E356-2973-4710-B9B2-9133BBB8A011}">
+							<Media>
+								<File Id="722968896"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{42B47A64-3E10-4BDA-AB91-76154DA9EDE1}">
+							<Media>
+								<File Id="1050792892"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="2533881733" Name="Resonant_Frequency_Note" ObjectPath="\States\Puzzle\Resonant_Frequency_Note" GUID="{F7F79A31-0CA6-4966-8C61-5385ADF19D35}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Puzzle\Resonant_Frequency_Note\None" GUID="{616AC7EB-37A4-40A7-A632-4919A6DFF8BC}"/>
+						<State Id="2108395137" Name="Note_1" ObjectPath="\States\Puzzle\Resonant_Frequency_Note\Note_1" GUID="{288CA895-C2B7-4798-B8C0-1EF065BE9A4D}"/>
+						<State Id="2108395138" Name="Note_2" ObjectPath="\States\Puzzle\Resonant_Frequency_Note\Note_2" GUID="{F2C7E356-2973-4710-B9B2-9133BBB8A011}"/>
+						<State Id="2108395139" Name="Note_3" ObjectPath="\States\Puzzle\Resonant_Frequency_Note\Note_3" GUID="{42B47A64-3E10-4BDA-AB91-76154DA9EDE1}"/>
+						<State Id="2108395140" Name="Note_4" ObjectPath="\States\Puzzle\Resonant_Frequency_Note\Note_4" GUID="{CE8302C9-4AB7-42B2-8CAF-914E2A283CCC}"/>
+						<State Id="2108395141" Name="Note_5" ObjectPath="\States\Puzzle\Resonant_Frequency_Note\Note_5" GUID="{5D483DE1-DFA1-4D1D-9F56-DCC336406FC2}"/>
+						<State Id="2108395142" Name="Note_6" ObjectPath="\States\Puzzle\Resonant_Frequency_Note\Note_6" GUID="{7170785E-6CF5-4DC7-AFD8-6E25232FBC0B}"/>
+						<State Id="2108395143" Name="Note_7" ObjectPath="\States\Puzzle\Resonant_Frequency_Note\Note_7" GUID="{004154A8-3DED-4BA4-9E7A-F048A33F83E0}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="4288503750" Name="Generator_Hum_Note" ObjectPath="\States\Puzzle\Generator_Hum_Note" GUID="{3ED5A98B-B3B5-4344-89A2-24A4FCC251C1}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Puzzle\Generator_Hum_Note\None" GUID="{62454E68-7B50-473A-9F47-0D71975E1E73}"/>
+						<State Id="2108395140" Name="Note_4" ObjectPath="\States\Puzzle\Generator_Hum_Note\Note_4" GUID="{5A030A1A-81DE-4F10-88BA-E00426CA262B}"/>
+						<State Id="2108395141" Name="Note_5" ObjectPath="\States\Puzzle\Generator_Hum_Note\Note_5" GUID="{7A6B1C69-1FEC-4FDE-A31B-F4D56FA0C4E8}"/>
+						<State Id="2108395138" Name="Note_2" ObjectPath="\States\Puzzle\Generator_Hum_Note\Note_2" GUID="{371D63DF-1D21-4F60-A2A7-36441A9B4678}"/>
+						<State Id="2108395139" Name="Note_3" ObjectPath="\States\Puzzle\Generator_Hum_Note\Note_3" GUID="{915EC0E9-9CD2-4913-A370-026F5291CE9B}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="3930136735" Language="SFX" Hash="3525356248">
 			<ObjectPath>\SoundBanks\Default Work Unit\Dialogue</ObjectPath>
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>

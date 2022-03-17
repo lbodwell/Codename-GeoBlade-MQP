@@ -1,0 +1,36 @@
+Event	ID	Name			Wwise Object Path	Notes
+	853873997	Play_Resonant_Frequency			\Puzzle\Play_Resonant_Frequency	
+	2682110950	Play_Generator_Hum			\Puzzle\Play_Generator_Hum	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2533881733	Resonant_Frequency_Note			\Puzzle\Resonant_Frequency_Note	
+	4288503750	Generator_Hum_Note			\Puzzle\Generator_Hum_Note	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Resonant_Frequency_Note			
+	2108395137	Note_1	Resonant_Frequency_Note			
+	2108395138	Note_2	Resonant_Frequency_Note			
+	2108395139	Note_3	Resonant_Frequency_Note			
+	2108395140	Note_4	Resonant_Frequency_Note			
+	2108395141	Note_5	Resonant_Frequency_Note			
+	2108395142	Note_6	Resonant_Frequency_Note			
+	2108395143	Note_7	Resonant_Frequency_Note			
+	748895195	None	Generator_Hum_Note			
+	2108395138	Note_2	Generator_Hum_Note			
+	2108395139	Note_3	Generator_Hum_Note			
+	2108395140	Note_4	Generator_Hum_Note			
+	2108395141	Note_5	Generator_Hum_Note			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	59144974	Puzzle_Generator_Hum_A	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Generator_Hum_A_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Generator_Hum\Puzzle_Generator_Hum_A		199052
+	89613828	Puzzle_Resonant_Freq_A	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Resonant_Freq_A_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Resonant_Frequency\Puzzle_Resonant_Freq_A		219276
+	153292582	Puzzle_Resonant_Freq_D	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Resonant_Freq_D_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Resonant_Frequency\Puzzle_Resonant_Freq_D		216880
+	389562452	Puzzle_Generator_Hum_G	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Generator_Hum_G_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Generator_Hum\Puzzle_Generator_Hum_G		198516
+	595071410	Puzzle_Generator_Hum_B	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Generator_Hum_B_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Generator_Hum\Puzzle_Generator_Hum_B		198692
+	722968896	Puzzle_Resonant_Freq_F#	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Resonant_Freq_F#_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Resonant_Frequency\Puzzle_Resonant_Freq_F#		216880
+	770132114	Puzzle_Resonant_Freq_B	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Resonant_Freq_B_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Resonant_Frequency\Puzzle_Resonant_Freq_B		220476
+	851307500	Puzzle_Resonant_Freq_C	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Resonant_Freq_C_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Resonant_Frequency\Puzzle_Resonant_Freq_C		219276
+	1010712288	Puzzle_Generator_Hum_F#	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Generator_Hum_F#_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Generator_Hum\Puzzle_Generator_Hum_F#		198656
+	1050792892	Puzzle_Resonant_Freq_G	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Resonant_Freq_G_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Resonant_Frequency\Puzzle_Resonant_Freq_G		218676
+	1051904299	Puzzle_Resonant_Freq_E	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\Puzzle_Resonant_Freq_E_10C4C929.wem		\Actor-Mixer Hierarchy\Puzzle\Puzzle_Resonant_Frequency\Puzzle_Resonant_Freq_E		216880
+
