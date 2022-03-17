@@ -1,19 +1,42 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GeoReceptacle : MonoBehaviour {
     public int id;
-    public int numPickups;
     public int totalEnergy;
     public int targetEnergy;
-    
-    public delegate void GeoReceptacleAction(GeoReceptacle receptacle);
-    
-    public static event GeoReceptacleAction OnReceptacleInRange;
+    public bool targetReached;
+    private readonly Stack<GeoPickup> _pickups = new Stack<GeoPickup>();
 
-    private void Update() {
-        if (Vector3.Distance(PlayerManager.Instance.player.transform.position, transform.position) < 5) {
-            // Debug.Log("here");
-            OnReceptacleInRange?.Invoke(this);
-        }
+    public void AddPickup(GeoPickup pickup) {
+        _pickups.Push(pickup);
+        totalEnergy += pickup.energyValue;
+        targetReached = targetEnergy == totalEnergy;
+        
+        DisplayReceptacleStatus();
+    }
+
+    public GeoPickup RemovePickup() {
+        var pickup = _pickups.Pop();
+
+        totalEnergy -= pickup.energyValue;
+        targetReached = targetEnergy == totalEnergy;
+
+        DisplayReceptacleStatus();
+        
+        return pickup;
+    }
+
+    public Vector3 GetNextOpenPosition() {
+        var pos = transform.position;
+        return new Vector3(pos.x,  pos.y + (_pickups.Count + 1) * 0.5f, pos.z);
+    }
+
+    public bool IsEmpty() {
+        return _pickups.Count == 0;
+    }
+
+    private void DisplayReceptacleStatus() {
+        Debug.Log("Receptacle " + id + ": " + totalEnergy + "/" + targetEnergy);
     }
 }

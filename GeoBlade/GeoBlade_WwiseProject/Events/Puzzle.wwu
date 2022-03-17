@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{66A72FF5-11BA-4B84-882C-D3DD3494D08A}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Puzzle" ID="{66A72FF5-11BA-4B84-882C-D3DD3494D08A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Generator_Hum" ID="{4D7A41AA-B6CE-43CD-A6AE-58977F35A58E}">
+					<ChildrenList>
+						<Action Name="" ID="{83A301C2-3CA7-4788-AA6E-0E3D4AB44D11}" ShortID="811911538">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Puzzle_Generator_Hum" ID="{DF054188-C2CE-4CC7-9EAA-80D86E79C3E2}" WorkUnitID="{F43D3F90-AFB7-4022-A244-2A5BF36F7435}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Resonant_Frequency" ID="{2DB44A77-0899-46EE-B94C-8ACCAE3B8F9A}">
+					<ChildrenList>
+						<Action Name="" ID="{86C3F54F-720B-4D4C-B823-3486933D27B5}" ShortID="965280856">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Puzzle_Resonant_Frequency" ID="{A930C6A2-10A9-46EF-9C40-96AAD18A048D}" WorkUnitID="{F43D3F90-AFB7-4022-A244-2A5BF36F7435}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

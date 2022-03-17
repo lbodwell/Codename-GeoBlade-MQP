@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StatCollider : MonoBehaviour
 {
-    public Collider collider;
+    public Collider coll;
     public CharacterStats stats;
     public CharacterController controller;
     public float mass = 3.0f;

@@ -15,6 +15,8 @@ namespace AK
     {
         static const AkUniqueID DIALOGUE_TRIGGER = 4029211690U;
         static const AkUniqueID LEVEL1_MUSIC = 2026953958U;
+        static const AkUniqueID PLAY_GENERATOR_HUM = 2682110950U;
+        static const AkUniqueID PLAY_RESONANT_FREQUENCY = 853873997U;
         static const AkUniqueID PLAYER_ATTACK = 2824512041U;
         static const AkUniqueID PLAYER_FOOTSTEP = 2453392179U;
         static const AkUniqueID PLAYER_JUMP = 1305133589U;
@@ -70,6 +72,20 @@ namespace AK
             } // namespace STATE
         } // namespace FOOTSTEP_TYPE
 
+        namespace GENERATOR_HUM_NOTE
+        {
+            static const AkUniqueID GROUP = 4288503750U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NOTE_2 = 2108395138U;
+                static const AkUniqueID NOTE_3 = 2108395139U;
+                static const AkUniqueID NOTE_4 = 2108395140U;
+                static const AkUniqueID NOTE_5 = 2108395141U;
+            } // namespace STATE
+        } // namespace GENERATOR_HUM_NOTE
+
         namespace MATERIAL
         {
             static const AkUniqueID GROUP = 3865314626U;
@@ -96,6 +112,23 @@ namespace AK
             } // namespace STATE
         } // namespace MUSIC_LEVEL1_TRACK1
 
+        namespace RESONANT_FREQUENCY_NOTE
+        {
+            static const AkUniqueID GROUP = 2533881733U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NOTE_1 = 2108395137U;
+                static const AkUniqueID NOTE_2 = 2108395138U;
+                static const AkUniqueID NOTE_3 = 2108395139U;
+                static const AkUniqueID NOTE_4 = 2108395140U;
+                static const AkUniqueID NOTE_5 = 2108395141U;
+                static const AkUniqueID NOTE_6 = 2108395142U;
+                static const AkUniqueID NOTE_7 = 2108395143U;
+            } // namespace STATE
+        } // namespace RESONANT_FREQUENCY_NOTE
+
     } // namespace STATES
 
     namespace BANKS
@@ -104,6 +137,7 @@ namespace AK
         static const AkUniqueID DIALOGUE = 3930136735U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID PUZZLE = 1780448749U;
     } // namespace BANKS
 
     namespace BUSSES

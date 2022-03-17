@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: bb8f8cfe1e885447b85a271938b99bc3
     GuidInternal: 
-    m_lastTime: -8585603614573291199
+    m_lastTime: -8585643027370968801
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ebe94a29748da34fa148ff1844aaba9f
     GuidInternal: 
-    m_lastTime: -8585603614573351199
+    m_lastTime: -8585643027378383993
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b144575cff53e145bbed4dfb8f16af44
     GuidInternal: 
-    m_lastTime: -8585541136715898999
+    m_lastTime: -8585541064084700910
     List:
     - name: Dialogue
       guid: 4a7f2e159c23e64a8d15f2d8b354e15c
@@ -110,6 +110,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 6e7d2d40d2933a42819431665310e031
       Path: SoundBanks\Default Work Unit\Player
+    - name: Puzzle
+      guid: 17fc7369277e9d4eb01625918e5f1e53
+      id: 1780448749
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b144575cff53e145bbed4dfb8f16af44
+      - ElementName: Puzzle
+        ObjectType: 7
+        guid: 17fc7369277e9d4eb01625918e5f1e53
+      Path: SoundBanks\Default Work Unit\Puzzle
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -122,7 +136,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fcbb3e7f157bd64fad51bae9e3b0a8ce
     GuidInternal: 
-    m_lastTime: -8585603614258857828
+    m_lastTime: -8585643027384097908
     List: []
   - PhysicalPath: Events\Dialogue.wwu
     PathAndIcons:
@@ -135,7 +149,7 @@ MonoBehaviour:
     ParentPath: Events\Dialogue
     guid: 475c5da5829670438fba66501ba9a246
     GuidInternal: 
-    m_lastTime: -8585541136724453777
+    m_lastTime: -8585541121159471438
     List:
     - name: Dialogue_Trigger
       guid: 0666227a29948e44bafd5efae5ca592a
@@ -165,7 +179,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 90d90a6b2474e243b6c55a57c1b35207
     GuidInternal: 
-    m_lastTime: -8585603614258857828
+    m_lastTime: -8585643027384097908
     List:
     - name: Level1_Music
       guid: ddc53016e33abd4296debd8dd65405ee
@@ -195,7 +209,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: d19439dca0fb2b4e9c232a66be5f6f0f
     GuidInternal: 
-    m_lastTime: -8585541136724448780
+    m_lastTime: -8585541121159466493
     List:
     - name: Player_Attack
       guid: 418c7b323b94844b987a1b61b2ef0f23
@@ -299,6 +313,53 @@ MonoBehaviour:
       maxAttenuation: 25
       maxDuration: 61.407814
       minDuration: 61.407814
+  - PhysicalPath: Events\Puzzle.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Puzzle
+      ObjectType: 12
+      guid: f52fa766ba11844b882cd3dd3494d08a
+    ParentPath: Events\Puzzle
+    guid: f52fa766ba11844b882cd3dd3494d08a
+    GuidInternal: 
+    m_lastTime: -8585541067792330861
+    List:
+    - name: Play_Generator_Hum
+      guid: aa417a4dceb6cd43a6ae58977f35a58e
+      id: 2682110950
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: f52fa766ba11844b882cd3dd3494d08a
+      - ElementName: Play_Generator_Hum
+        ObjectType: 3
+        guid: aa417a4dceb6cd43a6ae58977f35a58e
+      Path: Events\Puzzle\Play_Generator_Hum
+      maxAttenuation: 100
+      maxDuration: 1.12805
+      minDuration: 1.125011
+    - name: Play_Resonant_Frequency
+      guid: 774ab42d9908ee46b94c8accae3b8f9a
+      id: 853873997
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: f52fa766ba11844b882cd3dd3494d08a
+      - ElementName: Play_Resonant_Frequency
+        ObjectType: 3
+        guid: 774ab42d9908ee46b94c8accae3b8f9a
+      Path: Events\Puzzle\Play_Resonant_Frequency
+      maxAttenuation: 100
+      maxDuration: 1.249501
+      minDuration: 1.229116
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -311,7 +372,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6729555d9375884586107b6426b43d60
     GuidInternal: 
-    m_lastTime: -8585603614573421206
+    m_lastTime: -8585643027384092946
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -325,7 +386,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0712bfab92afb340a63c6588fc4ec0f8
     GuidInternal: 
-    m_lastTime: -8585603614573301196
+    m_lastTime: -8585643027370983681
     List: []
   - PhysicalPath: States\Dialogue.wwu
     PathAndIcons:
@@ -338,7 +399,7 @@ MonoBehaviour:
     ParentPath: States\Dialogue
     guid: 144533a6a42c9b4788631915b5bc027b
     GuidInternal: 
-    m_lastTime: -8585541136715888998
+    m_lastTime: -8585541121149353063
     List:
     - name: Dialogue_Line
       guid: 5810706b7aea4d41b6605c58c6e215a1
@@ -545,7 +606,7 @@ MonoBehaviour:
     ParentPath: States\Music
     guid: 2bac94c602ec474cba1fae799efa8b50
     GuidInternal: 
-    m_lastTime: -8585603614251957844
+    m_lastTime: -8585643027370978719
     List:
     - name: Music_Level1_Track1
       guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
@@ -640,7 +701,7 @@ MonoBehaviour:
     ParentPath: States\Player
     guid: 98e2c4458da7bb4bb423952bf4ad2d10
     GuidInternal: 
-    m_lastTime: -8585603613844018126
+    m_lastTime: -8585620922282596944
     List:
     - name: Attack_Type
       guid: 08d4f90510cf604c8710300508312e18
@@ -872,6 +933,263 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+  - PhysicalPath: States\Puzzle.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Puzzle
+      ObjectType: 12
+      guid: 647699534d80c949a56e1fe8688a3d65
+    ParentPath: States\Puzzle
+    guid: 647699534d80c949a56e1fe8688a3d65
+    GuidInternal: 
+    m_lastTime: -8585541064598139610
+    List:
+    - name: Generator_Hum_Note
+      guid: 8ba9d53eb5b3444389a224a4fcc251c1
+      id: 4288503750
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: 647699534d80c949a56e1fe8688a3d65
+      - ElementName: Generator_Hum_Note
+        ObjectType: 9
+        guid: 8ba9d53eb5b3444389a224a4fcc251c1
+      Path: States\Puzzle\Generator_Hum_Note
+      values:
+      - name: None
+        guid: 684e4562507b3a479f470d71975e1e73
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: None
+          ObjectType: 8
+          guid: 684e4562507b3a479f470d71975e1e73
+      - name: Note_2
+        guid: df631d37211d604fa2a736441a9b4678
+        id: 2108395138
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_2
+          ObjectType: 8
+          guid: df631d37211d604fa2a736441a9b4678
+      - name: Note_3
+        guid: e9c05e91d29c1349a370026f5291ce9b
+        id: 2108395139
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_3
+          ObjectType: 8
+          guid: e9c05e91d29c1349a370026f5291ce9b
+      - name: Note_4
+        guid: 1a0a035ade81104f88bae00426ca262b
+        id: 2108395140
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_4
+          ObjectType: 8
+          guid: 1a0a035ade81104f88bae00426ca262b
+      - name: Note_5
+        guid: 691c6b7aec1fde4fa31bf4d56fa0c4e8
+        id: 2108395141
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_5
+          ObjectType: 8
+          guid: 691c6b7aec1fde4fa31bf4d56fa0c4e8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Resonant_Frequency_Note
+      guid: 319af7f7a60c66498c615385adf19d35
+      id: 2533881733
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: 647699534d80c949a56e1fe8688a3d65
+      - ElementName: Resonant_Frequency_Note
+        ObjectType: 9
+        guid: 319af7f7a60c66498c615385adf19d35
+      Path: States\Puzzle\Resonant_Frequency_Note
+      values:
+      - name: None
+        guid: ebc76a61a437a740a6324919a6dff8bc
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: None
+          ObjectType: 8
+          guid: ebc76a61a437a740a6324919a6dff8bc
+      - name: Note_1
+        guid: 95a88c28b7c29847b8c01ef065be9a4d
+        id: 2108395137
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_1
+          ObjectType: 8
+          guid: 95a88c28b7c29847b8c01ef065be9a4d
+      - name: Note_2
+        guid: 56e3c7f273291047b9b29133bbb8a011
+        id: 2108395138
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_2
+          ObjectType: 8
+          guid: 56e3c7f273291047b9b29133bbb8a011
+      - name: Note_3
+        guid: 647ab442103eda4bab9176154da9ede1
+        id: 2108395139
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_3
+          ObjectType: 8
+          guid: 647ab442103eda4bab9176154da9ede1
+      - name: Note_4
+        guid: c90283ceb74ab2428caf914e2a283ccc
+        id: 2108395140
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_4
+          ObjectType: 8
+          guid: c90283ceb74ab2428caf914e2a283ccc
+      - name: Note_5
+        guid: e13d485da1df1d4d9f56dcc336406fc2
+        id: 2108395141
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_5
+          ObjectType: 8
+          guid: e13d485da1df1d4d9f56dcc336406fc2
+      - name: Note_6
+        guid: 5e787071f56cc74dafd86e25232fbc0b
+        id: 2108395142
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_6
+          ObjectType: 8
+          guid: 5e787071f56cc74dafd86e25232fbc0b
+      - name: Note_7
+        guid: a8544100ed3da44b9e7af048a33f83e0
+        id: 2108395143
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_7
+          ObjectType: 8
+          guid: a8544100ed3da44b9e7af048a33f83e0
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -884,7 +1202,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: ba3f39085c1e1a4eaa95b413330db915
     GuidInternal: 
-    m_lastTime: -8585603614573301196
+    m_lastTime: -8585643027370973763
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -898,10 +1216,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: f25b47a12a518141afbc59f62725d309
     GuidInternal: 
-    m_lastTime: -8585603614573296200
+    m_lastTime: -8585643027370968801
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 2200000023000000c7010000c8010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

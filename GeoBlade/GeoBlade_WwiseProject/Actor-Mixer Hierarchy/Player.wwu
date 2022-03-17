@@ -1202,6 +1202,27 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Attack_Type" ID="{05F9D408-CF10-4C60-8710-300508312E18}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Light2" ID="{7CAD223E-82F2-416C-A123-452E2E9C946A}"/>
+								<CustomState Name="" ID="{1324DE6E-56B3-48C2-ABC0-45869241BC9A}" ShortID="952957686"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Light1" ID="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}"/>
+								<CustomState Name="" ID="{0A59BAE3-4A4A-4803-B0C8-2DDEB66FAB76}" ShortID="600532651"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Heavy" ID="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}"/>
+								<CustomState Name="" ID="{A3A2F671-A250-4DF6-8796-026BB94B1BCD}" ShortID="735348389"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists/>
 					<GroupingInfo>
 						<GroupingBehaviorList>
