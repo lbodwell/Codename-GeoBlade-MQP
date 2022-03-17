@@ -189,6 +189,8 @@ namespace HoudiniEngineUnity
         [MarshalAs(UnmanagedType.U1)]
         public HAPI_Bool splitGeosByGroup;              //Normally geos are split into parts in two different ways. First itis split by group and within each group it is split by primitive type.For example if you have a geo with group1 covering half of the meshand volume1 and group2 covering the other half of the mesh all ofcurve1 and volume2 you will end up with 5 parts. First two partswill be for the half-mesh of group1 and volume1 and the last threewill cover group2.This toggle lets you disable the splitting by group and just havethe geo be split by primitive type alone. By default this is trueand therefore geos will be split by group and primitive type. Ifset to false geos will only be split by primitive type.
 
+        public HAPI_StringHandle splitGroupSH;              //Normally geos are split into parts in two different ways. First itis split by group and within each group it is split by primitive type.For example if you have a geo with group1 covering half of the meshand volume1 and group2 covering the other half of the mesh all ofcurve1 and volume2 you will end up with 5 parts. First two partswill be for the half-mesh of group1 and volume1 and the last threewill cover group2.This toggle lets you disable the splitting by group and just havethe geo be split by primitive type alone. By default this is trueand therefore geos will be split by group and primitive type. Ifset to false geos will only be split by primitive type.
+
         [MarshalAs(UnmanagedType.U1)]
         public HAPI_Bool splitGeosByAttribute;              //This toggle lets you enable the splitting by unique valuesof a specified attribute. By default this is false andthe geo be split as described above.as described above. If this is set to true and splitGeosByGroupset to false mesh geos will be split on attribute valuesThe attribute name to split on must be created with HAPI_SetCustomStringand then the splitAttrSH handle set on the struct.
 
@@ -603,7 +605,7 @@ namespace HoudiniEngineUnity
     [StructLayout(LayoutKind.Sequential)]
     public partial struct HAPI_ImageInfo          //Data for an image used with HAPI_GetImageInfo and HAPI_SetImageInfo
     {
-        public HAPI_StringHandle imageFileFormatNameSH;              //Unlike the other members of this struct changing imageFileFormatNameSHand giving this struct back to HAPI_SetImageInfo nothing will happen.Use this member variable to derive which image file format will be usedby the HAPI_ExtractImageTo... functions if called withimage_file_format_name set to NULL. This way you can decide whetherto ask for a file format conversion slower or not faster.Read-only
+        public HAPI_StringHandle imageFileFormatNameSH;              //Unlike the other members of this struct changing imageFileFormatNameSHand giving this struct back to HAPI_SetImageInfo nothing will happen.Use this member variable to derive which image file format will be usedby the HAPI_ExtractImageToFile and HAPI_ExtractImageToMemoryfunctions if called with image_file_format_name set to NULL. This wayyou can decide whether to ask for a file format conversion slower ornot faster.Read-only
 
         [MarshalAs(UnmanagedType.I4)]
         public int xRes;              
@@ -732,7 +734,7 @@ namespace HoudiniEngineUnity
         public int knotCount;              //The number of knots for all curves.
 
         [MarshalAs(UnmanagedType.U1)]
-        public HAPI_Bool isPeriodic;              //Whether the curves in this curve mesh are periodic.
+        public HAPI_Bool isPeriodic;              //Whether the curves in this curve mesh are periodic closed by appending a new point
 
         [MarshalAs(UnmanagedType.U1)]
         public HAPI_Bool isRational;              //Whether the curves in this curve mesh are rational.
@@ -742,6 +744,29 @@ namespace HoudiniEngineUnity
 
         [MarshalAs(UnmanagedType.U1)]
         public HAPI_Bool hasKnots;              //Whether the curve has knots.
+
+        [MarshalAs(UnmanagedType.U1)]
+        public HAPI_Bool isClosed;              //Similar to isPeriodic but creates a polygon instead of a separate point
+
+    };
+
+    [StructLayout(LayoutKind.Sequential)]
+    public partial struct HAPI_InputCurveInfo          
+    {
+        public HAPI_CurveType curveType;              //The desired curve type of the curveNote that this is NOT necessarily equal to the value in HAPI_CurveInfoin the case of curve refinement
+
+        [MarshalAs(UnmanagedType.I4)]
+        public int order;              //The desired order for your input curveThis is your desired order which may differ from HAPI_CurveInfoas it will do range checks and adjust the actual order accordingly
+
+        [MarshalAs(UnmanagedType.U1)]
+        public HAPI_Bool closed;              //Whether or not the curve is closedMay differ from HAPI_CurveInfo::isPeriodic depending on the curveTypee.g. A NURBs curve is never technically closed according to HAPI_CurveInfo
+
+        [MarshalAs(UnmanagedType.U1)]
+        public HAPI_Bool reverse;              //Whether or not to reverse the curve input
+
+        public HAPI_InputCurveMethod inputMethod;              
+
+        public HAPI_InputCurveParameterization breakpointParameterization;              
 
     };
 
@@ -780,10 +805,10 @@ namespace HoudiniEngineUnity
         public HAPI_PDG_WorkitemId dependencyId;              //id of related workitem dependency
 
         [MarshalAs(UnmanagedType.I4)]
-        public int currentState;              //HAPI_PDG_WorkItemState value of current state for state change
+        public int currentState;              //HAPI_PDG_WorkitemState value of current state for state change
 
         [MarshalAs(UnmanagedType.I4)]
-        public int lastState;              //HAPI_PDG_WorkItemState value of last state for state change
+        public int lastState;              //HAPI_PDG_WorkitemState value of last state for state change
 
         [MarshalAs(UnmanagedType.I4)]
         public int eventType;              //HAPI_PDG_EventType event type

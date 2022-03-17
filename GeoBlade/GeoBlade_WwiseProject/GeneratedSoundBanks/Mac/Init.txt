@@ -2,6 +2,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2489350135	Music_Level1_Track1			\Music\Music_Level1_Track1	
 	2578485808	Attack_Type			\Player\Attack_Type	
 	2615620554	Footstep_Type			\Player\Footstep_Type	
+	3247544628	Dialogue_Line			\Dialogue\Dialogue_Line	
 	3865314626	Material			\Player\Material	
 
 State	ID	Name	State Group			Notes
@@ -16,6 +17,17 @@ State	ID	Name	State Group			Notes
 	712161704	Run	Footstep_Type			
 	748895195	None	Footstep_Type			
 	2108779966	Walk	Footstep_Type			
+	748895195	None	Dialogue_Line			
+	1590806112	lvl1_stasis_room_iris_03	Dialogue_Line			
+	1590806113	lvl1_stasis_room_iris_02	Dialogue_Line			
+	1590806114	lvl1_stasis_room_iris_01	Dialogue_Line			
+	3146552048	lvl1_spiral_room_iris_05	Dialogue_Line			
+	3146552049	lvl1_spiral_room_iris_04	Dialogue_Line			
+	3146552052	lvl1_spiral_room_iris_01	Dialogue_Line			
+	3146552054	lvl1_spiral_room_iris_03	Dialogue_Line			
+	3146552055	lvl1_spiral_room_iris_02	Dialogue_Line			
+	3207995528	lvl1_stasis_room_seru_01	Dialogue_Line			
+	3207995531	lvl1_stasis_room_seru_02	Dialogue_Line			
 	748895195	None	Material			
 	841620460	Concrete	Material			
 	2473969246	Metal	Material			

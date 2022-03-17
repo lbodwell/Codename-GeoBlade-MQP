@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	917509252	Player_Unsheathe			\Player\Player_Unsheathe	
 	1305133589	Player_Jump			\Player\Player_Jump	
+	1402779743	Security_Droid_Attack			\Player\Security_Droid_Attack	
 	2453392179	Player_Footstep			\Player\Player_Footstep	
 	2824512041	Player_Attack			\Player\Player_Attack	
+	3474418164	Stasis_Pod_Hiss			\Player\Stasis_Pod_Hiss	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2578485808	Attack_Type			\Player\Attack_Type	
@@ -29,7 +31,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	50371633	footstep_metal_high_run_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\footstep_metal_high_run_03_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Player_Footsteps\Footsteps_Run\Footsteps_Metal_Run\footstep_metal_high_run_03		70192
 	89026786	footstep_metal_high_run_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\footstep_metal_high_run_01_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Player_Footsteps\Footsteps_Run\Footsteps_Metal_Run\footstep_metal_high_run_01		65344
 	113663351	footstep_concrete_run_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\footstep_concrete_run_04_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Player_Footsteps\Footsteps_Run\Footsteps_Concrete_Run\footstep_concrete_run_04		54852
+	119322569	security_droid_stab	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\security_droid_stab_10C4C929.wem		\Actor-Mixer Hierarchy\Player\security_droid_stab		60120
 	153470063	geoblade_light1	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\geoblade_light1_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Player_Attack\geoblade_light1		249408
+	201693393	stasis_pod_hiss	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\stasis_pod_hiss_10C4C929.wem		\Actor-Mixer Hierarchy\Player\stasis_pod_hiss		10807404
 	203226021	footstep_concrete_walk_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\footstep_concrete_walk_01_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Player_Footsteps\Footsteps_Walk\Footsteps_Concrete_Walk\footstep_concrete_walk_01		60092
 	271462458	geoblade_light2	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\geoblade_light2_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Player_Attack\geoblade_light2		342764
 	312519893	footstep_concrete_walk_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\footstep_concrete_walk_02_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Player_Footsteps\Footsteps_Walk\Footsteps_Concrete_Walk\footstep_concrete_walk_02		58436

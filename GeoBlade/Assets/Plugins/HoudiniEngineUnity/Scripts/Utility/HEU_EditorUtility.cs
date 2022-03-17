@@ -1376,6 +1376,32 @@ namespace HoudiniEngineUnity
 	    return result;
 	}
 
+#if UNITY_EDITOR
+	public static void EnumToPopup(SerializedProperty property, string name, int currentEnumValue, string [] enumNames, bool bAddOneToEnumIndex,  string tooltip = "", System.Action<int> onChangeEnumValue = null)
+	{
+	    int newEnumValue = EditorGUILayout.Popup(
+	        new GUIContent(name, tooltip),
+	        currentEnumValue,
+	        enumNames);
+	    
+	    if (newEnumValue != currentEnumValue)
+	    {
+		int enumIndex = newEnumValue;
+
+		// May require + 1 if enum doesn't start at 0
+		if (bAddOneToEnumIndex)
+		    enumIndex++;
+		
+	        property.enumValueIndex =  enumIndex;
+
+		if (onChangeEnumValue != null)
+		{
+		    onChangeEnumValue(newEnumValue);
+		}
+	    }
+	}
+#endif
+
     }
 
 }   // HoudiniEngineUnity

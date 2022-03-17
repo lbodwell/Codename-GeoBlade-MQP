@@ -12,6 +12,8 @@ public class GeoReceptacle : MonoBehaviour {
         _pickups.Push(pickup);
         totalEnergy += pickup.energyValue;
         targetReached = targetEnergy == totalEnergy;
+        
+        DisplayReceptacleStatus();
     }
 
     public GeoPickup RemovePickup() {
@@ -19,6 +21,8 @@ public class GeoReceptacle : MonoBehaviour {
 
         totalEnergy -= pickup.energyValue;
         targetReached = targetEnergy == totalEnergy;
+
+        DisplayReceptacleStatus();
         
         return pickup;
     }
@@ -30,5 +34,9 @@ public class GeoReceptacle : MonoBehaviour {
 
     public bool IsEmpty() {
         return _pickups.Count == 0;
+    }
+
+    private void DisplayReceptacleStatus() {
+        Debug.Log("Receptacle " + id + ": " + totalEnergy + "/" + targetEnergy);
     }
 }

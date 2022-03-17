@@ -13,11 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DIALOGUE_TRIGGER = 4029211690U;
         static const AkUniqueID LEVEL1_MUSIC = 2026953958U;
         static const AkUniqueID PLAYER_ATTACK = 2824512041U;
         static const AkUniqueID PLAYER_FOOTSTEP = 2453392179U;
         static const AkUniqueID PLAYER_JUMP = 1305133589U;
         static const AkUniqueID PLAYER_UNSHEATHE = 917509252U;
+        static const AkUniqueID SECURITY_DROID_ATTACK = 1402779743U;
+        static const AkUniqueID STASIS_POD_HISS = 3474418164U;
     } // namespace EVENTS
 
     namespace STATES
@@ -34,6 +37,26 @@ namespace AK
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace ATTACK_TYPE
+
+        namespace DIALOGUE_LINE
+        {
+            static const AkUniqueID GROUP = 3247544628U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LVL1_SPIRAL_ROOM_IRIS_01 = 3146552052U;
+                static const AkUniqueID LVL1_SPIRAL_ROOM_IRIS_02 = 3146552055U;
+                static const AkUniqueID LVL1_SPIRAL_ROOM_IRIS_03 = 3146552054U;
+                static const AkUniqueID LVL1_SPIRAL_ROOM_IRIS_04 = 3146552049U;
+                static const AkUniqueID LVL1_SPIRAL_ROOM_IRIS_05 = 3146552048U;
+                static const AkUniqueID LVL1_STASIS_ROOM_IRIS_01 = 1590806114U;
+                static const AkUniqueID LVL1_STASIS_ROOM_IRIS_02 = 1590806113U;
+                static const AkUniqueID LVL1_STASIS_ROOM_IRIS_03 = 1590806112U;
+                static const AkUniqueID LVL1_STASIS_ROOM_SERU_01 = 3207995528U;
+                static const AkUniqueID LVL1_STASIS_ROOM_SERU_02 = 3207995531U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace DIALOGUE_LINE
 
         namespace FOOTSTEP_TYPE
         {
@@ -78,6 +101,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID DIALOGUE = 3930136735U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER = 1069431850U;
     } // namespace BANKS

@@ -37,6 +37,28 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Player_Unsheathe" ID="{937329EF-6433-4BB9-8B56-0A96F215CB61}"/>
+				<Event Name="Security_Droid_Attack" ID="{90090751-01E7-4AF7-8DD5-DE6F148AA2E5}">
+					<ChildrenList>
+						<Action Name="" ID="{66DD774E-E2E8-472A-AC8F-35C009F59F9E}" ShortID="902925027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="security_droid_stab" ID="{65E26057-3FEA-49AB-BA8E-EA2FF82CC5F1}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stasis_Pod_Hiss" ID="{E9635F58-BC79-439A-8569-0F2689F9A533}">
+					<ChildrenList>
+						<Action Name="" ID="{F8BA29D1-E7FB-4DE0-9AC9-13FA24B3982E}" ShortID="620267796">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stasis_pod_hiss" ID="{53BA0B1E-0120-403F-AA71-C4F877E3F9DF}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

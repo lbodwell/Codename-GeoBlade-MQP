@@ -7,15 +7,19 @@ public class SecurityDroidController : MonoBehaviour {
     public float chaseRadius = 10f;
     public float attackRadius = 5f;
     public float turnSmoothingTime = 0.2f;
-    public float attackCooldown = 2f;
+    public float attackCooldown = 3f;
+    public float attackGracePeriod = 1f;
+    public float attackDamage = 10f;
 
     private Transform _target;
+    private Collider _playerWeaponCollider;
     private bool _isInAttackRange;
     private float _turnSmoothingVel;
     private float _nextAttackAttempt;
 
     private void Start() {
         _target = PlayerManager.Instance.player.transform;
+        _playerWeaponCollider = PlayerManager.Instance.geoBlade.GetComponent<Collider>();
     }
 
     private void OnEnable() {
@@ -44,9 +48,13 @@ public class SecurityDroidController : MonoBehaviour {
             transform.rotation = Quaternion.Euler(0f, smoothedAngle, 0f);
             
             if (dist <= attackRadius) {
+                if (!_isInAttackRange) {
+                    _nextAttackAttempt = Time.time + attackGracePeriod;
+                }
                 _isInAttackRange = true;
                 if (Time.time >= _nextAttackAttempt) {
-                    PlayerManager.Instance.player.GetComponent<PlayerStats>().DamageCharacter(10);
+                    PlayerManager.Instance.player.GetComponent<PlayerStats>().DamageCharacter(attackDamage);
+                    AkSoundEngine.PostEvent("Security_Droid_Attack", gameObject);
                     _nextAttackAttempt = Time.time + attackCooldown;
                 }
             } else {

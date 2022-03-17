@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour {
     public string lineId;
-    private async void OnCollisionEnter(Collision collision) {
-        if (!collision.gameObject.CompareTag("Player")) return;
+    private bool _hasDialogueBeenTriggered;
+    
+    private async void OnTriggerEnter(Collider other) {
+        if (_hasDialogueBeenTriggered || !other.gameObject.CompareTag("Player")) return;
         
-        print("collision with player");
-
-        await DialogueManager.Instance.PlayLine(lineId);
+        _hasDialogueBeenTriggered = true;
+        await DialogueManager.Instance.PlayDialogueSequence(lineId);
     }
 }

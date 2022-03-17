@@ -339,6 +339,23 @@ namespace HoudiniEngineUnity
         HAPI_CURVETYPE_MAX,        
     };
 
+    public enum HAPI_InputCurveMethod          
+    {
+        HAPI_CURVEMETHOD_INVALID = -1,        
+        HAPI_CURVEMETHOD_CVS,        
+        HAPI_CURVEMETHOD_BREAKPOINTS,        
+        HAPI_CURVEMETHOD_MAX,        
+    };
+
+    public enum HAPI_InputCurveParameterization          
+    {
+        HAPI_CURVEPARAMETERIZATION_INVALID = -1,        
+        HAPI_CURVEPARAMETERIZATION_UNIFORM,        
+        HAPI_CURVEPARAMETERIZATION_CHORD,        
+        HAPI_CURVEPARAMETERIZATION_CENTRIPETAL,        
+        HAPI_CURVEPARAMETERIZATION_MAX,        
+    };
+
     public enum HAPI_VolumeType          
     {
         HAPI_VOLUMETYPE_INVALID = -1,        
@@ -369,6 +386,14 @@ namespace HoudiniEngineUnity
         HAPI_STORAGETYPE_UINT8,        
         HAPI_STORAGETYPE_INT8,        
         HAPI_STORAGETYPE_INT16,        
+        HAPI_STORAGETYPE_INT_ARRAY,        
+        HAPI_STORAGETYPE_INT64_ARRAY,        
+        HAPI_STORAGETYPE_FLOAT_ARRAY,        
+        HAPI_STORAGETYPE_FLOAT64_ARRAY,        
+        HAPI_STORAGETYPE_STRING_ARRAY,        
+        HAPI_STORAGETYPE_UINT8_ARRAY,        
+        HAPI_STORAGETYPE_INT8_ARRAY,        
+        HAPI_STORAGETYPE_INT16_ARRAY,        
         HAPI_STORAGETYPE_MAX,        
     };
 
@@ -563,15 +588,15 @@ namespace HoudiniEngineUnity
         HAPI_PDG_EVENT_NODE_RENAME,        //Sent when a node was renamed
         HAPI_PDG_EVENT_NODE_CONNECT,        //Sent when a node was connected to another node
         HAPI_PDG_EVENT_NODE_DISCONNECT,        //Sent when a node is disconnected from another node
-        HAPI_PDG_EVENT_WORKITEM_SET_INT,        //Sent when an int attribute value is modified on a work item
-        HAPI_PDG_EVENT_WORKITEM_SET_FLOAT,        //Sent when a float attribute value is modified on a work item
-        HAPI_PDG_EVENT_WORKITEM_SET_STRING,        //Sent when a string attribute value is modified on a work item
-        HAPI_PDG_EVENT_WORKITEM_SET_FILE,        //Sent when a file attribute value is modified on a work item
-        HAPI_PDG_EVENT_WORKITEM_SET_PYOBJECT,        //Sent when a Python object attribute value is modified on a work item
-        HAPI_PDG_EVENT_WORKITEM_SET_GEOMETRY,        //Sent when a geometry attribute value is modified on a work item
+        HAPI_PDG_EVENT_WORKITEM_SET_INT,        //Deprecated
+        HAPI_PDG_EVENT_WORKITEM_SET_FLOAT,        //Deprecated
+        HAPI_PDG_EVENT_WORKITEM_SET_STRING,        //Deprecated
+        HAPI_PDG_EVENT_WORKITEM_SET_FILE,        //Deprecated
+        HAPI_PDG_EVENT_WORKITEM_SET_PYOBJECT,        //Deprecated
+        HAPI_PDG_EVENT_WORKITEM_SET_GEOMETRY,        //Deprecated
         HAPI_PDG_EVENT_WORKITEM_MERGE,        //Deprecated
         HAPI_PDG_EVENT_WORKITEM_RESULT,        //Sent when an output file is added to a work item
-        HAPI_PDG_EVENT_WORKITEM_PRIORITY,        //Sent when a work items priority is changed
+        HAPI_PDG_EVENT_WORKITEM_PRIORITY,        //Deprecated
         HAPI_PDG_EVENT_COOK_START,        //Sent for each node in the graph when a cook starts
         HAPI_PDG_EVENT_WORKITEM_ADD_STATIC_ANCESTOR,        //Deprecated
         HAPI_PDG_EVENT_WORKITEM_REMOVE_STATIC_ANCESTOR,        //Deprecated
@@ -581,7 +606,7 @@ namespace HoudiniEngineUnity
         HAPI_PDG_EVENT_LOG,        //A special enum that represents the OR of both the `CookError` and `CookWarning` events
         HAPI_PDG_EVENT_SCHEDULER_ADDED,        //Sent when a new scheduler is added to the graph
         HAPI_PDG_EVENT_SCHEDULER_REMOVED,        //Sent when a scheduler is removed from the graph
-        HAPI_PDG_EVENT_SET_SCHEDULER,        //Sent when the scheduler assigned to a node is changed
+        HAPI_PDG_EVENT_SET_SCHEDULER,        //Deprecated
         HAPI_PDG_EVENT_SERVICE_MANAGER_ALL,        //Deprecated
         HAPI_PDG_CONTEXT_EVENTS,        
     };

@@ -90,6 +90,8 @@ namespace HoudiniEngineUnity
 	public const float HAPI_VOLUME_SURFACE_MAX_PT_PER_C = 64000; // Max points per container. 65000 is Unity max.
 	public const float HAPI_VOLUME_SURFACE_DELTA_MULT = 1.2f;
 	public const float HAPI_VOLUME_SURFACE_PT_SIZE_MULT = 1800.0f;
+	public const string DEFAULT_TOP_NODE_FILTER = "HE_";
+	public const string DEFAULT_TOP_OUTPUT_FILTER = "HE_OUT_";
 
 	// Shared Constants -------------------------------------------------
 	//
@@ -103,6 +105,7 @@ namespace HoudiniEngineUnity
 
 	public const string HAPI_OBJMERGE_TRANSFORM_PARAM = "xformtype";
 	public const string HAPI_OBJMERGE_PACK_GEOMETRY = "pack";
+	public const string HAPI_OBJPATH_1_PARAM = "objpath1";
 
 	// Messages
 	public const string NO_EXISTING_SESSION = "No existing session.";
@@ -363,6 +366,7 @@ namespace HoudiniEngineUnity
 	// Instance Names
 	public const string HEU_INSTANCE = "_Instance";
 	public const string HEU_INSTANCE_PATTERN = HEU_INSTANCE + "\\d*\\z";
+	public const string HEU_INSTANCE_SPLIT_ATTR = "unity_split_attr";
 
 	// Geometry
 	public const string HEU_DEFAULT_GEO_GROUP_NAME = "main_geo";

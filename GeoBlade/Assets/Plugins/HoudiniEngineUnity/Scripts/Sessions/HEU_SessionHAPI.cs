@@ -283,6 +283,7 @@ namespace HoudiniEngineUnity
 
 	    _sessionData.ProcessID = processID;
 	    _sessionData.Port = serverPort;
+	    _sessionData.ThisSessionMode = SessionMode.Socket;
 
 	    // Then create the session
 	    _sessionData._HAPISession.type = HAPI_SessionType.HAPI_SESSION_THRIFT;
@@ -385,6 +386,7 @@ namespace HoudiniEngineUnity
 	    HAPI_Result result;
 
 	    _sessionData.PipeName = pipeName;
+	    _sessionData.ThisSessionMode = SessionMode.Pipe;
 
 	    // Start at failed since this is several steps. Once connected, we can set it as such.
 	    ConnectionState = SessionConnectionState.FAILED_TO_CONNECT;
@@ -671,15 +673,17 @@ namespace HoudiniEngineUnity
 	{
 	    HAPI_SessionType sessionType = HAPI_SessionType.HAPI_SESSION_THRIFT;
 	    int processID = -1;
+	    int port = -1;
 	    if (IsSessionValid())
 	    {
 		sessionType = _sessionData.SessionType;
 		processID = _sessionData.ProcessID;
+		port = _sessionData.Port;
 
 		CheckAndCloseExistingSession();
 	    }
 
-	    if (sessionType == HAPI_SessionType.HAPI_SESSION_THRIFT && processID > 0)
+	    if (sessionType == HAPI_SessionType.HAPI_SESSION_THRIFT && processID > 0 && port > 0)
 	    {
 		return CreateThriftSocketSession(true, HEU_PluginSettings.Session_Localhost, HEU_PluginSettings.Session_Port, HEU_PluginSettings.Session_AutoClose, HEU_PluginSettings.Session_Timeout, true);
 	    }
@@ -750,6 +754,8 @@ namespace HoudiniEngineUnity
 		return false;
 	    }
 
+            SetServerEnvString(HEU_HAPIConstants.HAPI_ENV_CLIENT_NAME, "unity");
+
 	    sessionData.IsInitialized = true;
 	    ConnectionState = SessionConnectionState.CONNECTED;
 
@@ -811,6 +817,7 @@ namespace HoudiniEngineUnity
 	    // Though allowing it now behind an option.
 	    cookOptions.splitGeosByGroup = HEU_PluginSettings.CookOptionSplitGeosByGroup;
 	    cookOptions.splitGeosByAttribute = false;
+	    cookOptions.splitGroupSH = 0;
 	    cookOptions.splitAttrSH = 0;
 	    cookOptions.splitPointsByVertexAttributes = false;
 
@@ -1315,10 +1322,10 @@ namespace HoudiniEngineUnity
 	/// <param name="nodeID">The node to retrieve the asset info for</param>
 	/// <param name="assetInfo">The asset info structure to populate</param>
 	/// <returns>True if successfully queried the asset info</returns>
-	public override bool GetAssetInfo(HAPI_NodeId nodeID, ref HAPI_AssetInfo assetInfo)
+	public override bool GetAssetInfo(HAPI_NodeId nodeID, ref HAPI_AssetInfo assetInfo, bool bLogError)
 	{
 	    HAPI_Result result = HEU_HAPIFunctions.HAPI_GetAssetInfo(ref _sessionData._HAPISession, nodeID, out assetInfo);
-	    HandleStatusResult(result, "Getting Asset Info", false, true);
+	    HandleStatusResult(result, "Getting Asset Info", false, bLogError);
 	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
 	}
 
@@ -1381,10 +1388,10 @@ namespace HoudiniEngineUnity
 	/// <param name="bRecursive">Whether or not to compose the list recursively</param>
 	/// <param name="count">Number of child nodes composed</param>
 	/// <returns>True if successfully composed the child node list</returns>
-	public override bool ComposeChildNodeList(HAPI_NodeId parentNodeID, HAPI_NodeTypeBits nodeTypeFilter, HAPI_NodeFlagsBits nodeFlagFilter, bool bRecursive, ref int count)
+	public override bool ComposeChildNodeList(HAPI_NodeId parentNodeID, HAPI_NodeTypeBits nodeTypeFilter, HAPI_NodeFlagsBits nodeFlagFilter, bool bRecursive, ref int count, bool bLogError = true)
 	{
 	    HAPI_Result result = HEU_HAPIFunctions.HAPI_ComposeChildNodeList(ref _sessionData._HAPISession, parentNodeID, nodeTypeFilter, nodeFlagFilter, bRecursive, out count);
-	    HandleStatusResult(result, "Composing Child Node List", false, true);
+	    HandleStatusResult(result, "Composing Child Node List", false, bLogError);
 	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
 	}
 
@@ -1395,11 +1402,11 @@ namespace HoudiniEngineUnity
 	/// <param name="childNodeIDs">Array to store the child node IDs. If null, will create array of size count. If non-null, size must at least be count.</param>
 	/// <param name="count">Number of children in the composed list. Must match the count returned by ComposeChildNodeList</param>
 	/// <returns>True if successfully retrieved the child node list</returns>
-	public override bool GetComposedChildNodeList(HAPI_NodeId parentNodeID, HAPI_NodeId[] childNodeIDs, int count)
+	public override bool GetComposedChildNodeList(HAPI_NodeId parentNodeID, HAPI_NodeId[] childNodeIDs, int count, bool bLogError = true)
 	{
 	    Debug.Assert(childNodeIDs != null && childNodeIDs.Length == count, "Child node IDs array not set to correct size!");
 	    HAPI_Result result = HEU_HAPIFunctions.HAPI_GetComposedChildNodeList(ref _sessionData._HAPISession, parentNodeID, childNodeIDs, count);
-	    HandleStatusResult(result, "Getting Child Node List", false, true);
+	    HandleStatusResult(result, "Getting Child Node List", false, bLogError);
 	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
 	}
 
@@ -1667,6 +1674,14 @@ namespace HoudiniEngineUnity
 	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
 	}
 
+	public override bool GetAttributeFloatArrayData(HAPI_NodeId nodeID, HAPI_PartId partID, string name, ref HAPI_AttributeInfo attrInfo,
+		ref float[] data, int dataLength, ref int[] sizesArray, int start, int sizesLength)
+	{
+	    HAPI_Result result = HEU_HAPIFunctions.HAPI_GetAttributeFloatArrayData(ref _sessionData._HAPISession, nodeID, partID, name.AsByteArray(), ref attrInfo, data, dataLength, sizesArray, start, sizesLength);
+	    HandleStatusResult(result, "Getting Attribute Float Array Data", false, true);
+	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
+	}
+
 	public override bool GetAttributeFloat64Data(HAPI_NodeId nodeID, HAPI_PartId partID, string name, ref HAPI_AttributeInfo attributeInfo, [Out] double[] data, int start, int length)
 	{
 	    HAPI_Result result = HEU_HAPIFunctions.HAPI_GetAttributeFloat64Data(ref _sessionData._HAPISession, nodeID, partID, name.AsByteArray(), ref attributeInfo, -1, data, start, length);
@@ -1900,6 +1915,13 @@ namespace HoudiniEngineUnity
 	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
 	}
 
+	public override bool GetInputCurveInfo(HAPI_NodeId nodeID, HAPI_PartId partID, ref HAPI_InputCurveInfo inputCurveInfo)
+	{
+	    HAPI_Result result = HEU_HAPIFunctions.HAPI_GetInputCurveInfo(ref _sessionData._HAPISession, nodeID, partID, out inputCurveInfo);
+	    HandleStatusResult(result, "Getting Input Curve Info", false, true);
+	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
+	}
+
 	// GEOMETRY SETTERS -------------------------------------------------------------------------------------------
 
 	public override bool SetPartInfo(HAPI_NodeId nodeID, HAPI_PartId partID, ref HAPI_PartInfo partInfo)
@@ -1962,6 +1984,16 @@ namespace HoudiniEngineUnity
 	    HandleStatusResult(result, "Setting Attribute Float Data", false, true);
 	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
 	}
+
+	public override bool SetAttributeFloatArrayData(HAPI_NodeId nodeID, HAPI_PartId partID, string name, ref HAPI_AttributeInfo attrInfo,
+		float[] data, int dataLength, int[] sizesArray, int start, int sizesLength)
+	{
+
+	    HAPI_Result result = HEU_HAPIFunctions.HAPI_SetAttributeFloatArrayData(ref _sessionData._HAPISession, nodeID, partID, name.AsByteArray(), ref attrInfo, data, dataLength, sizesArray, start, sizesLength);
+	    HandleStatusResult(result, "Setting Attribute Float Array Data", false, true);
+	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
+	}
+
 
 	public override bool SetAttributeStringData(HAPI_NodeId nodeID, HAPI_PartId partID, string name, ref HAPI_AttributeInfo attrInfo,
 		string[] data, int start, int length)
@@ -2038,6 +2070,39 @@ namespace HoudiniEngineUnity
 	{
 	    HAPI_Result result = HEU_HAPIFunctions.HAPI_SetCurveKnots(ref _sessionData._HAPISession, nodeID, partID, knots, start, length);
 	    HandleStatusResult(result, "Setting Curve Knots", false, true);
+	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
+	}
+
+	public override bool SetInputCurveInfo(HAPI_NodeId nodeID, HAPI_PartId partID, ref HAPI_InputCurveInfo inputCurveInfo)
+	{
+	    HAPI_Result result = HEU_HAPIFunctions.HAPI_SetInputCurveInfo(ref _sessionData._HAPISession, nodeID, partID, ref inputCurveInfo);
+	    HandleStatusResult(result, "Setting Input Curve Info", false, true);
+	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
+	}
+
+	public override bool SetInputCurvePositions(HAPI_NodeId nodeID, HAPI_PartId partID, float[] positionsArray, int start, int length)
+	{
+	    HAPI_Result result = HEU_HAPIFunctions.HAPI_SetInputCurvePositions(ref _sessionData._HAPISession, nodeID, partID, positionsArray, start, length);
+	    HandleStatusResult(result, "Setting Input Curve Positions", false, true);
+	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
+	}
+
+	public override bool SetInputCurvePositionsRotationsScales(HAPI_NodeId nodeID, HAPI_PartId partID, float[] positionsArray, int start, int length
+	    , float[] rotationsArray, int rotationsStart, int rotationsLength, float[] scalesArray, int scalesStart, int scalesLength)
+	{
+	    HAPI_Result result = HEU_HAPIFunctions.HAPI_SetInputCurvePositionsRotationsScales(
+		    ref _sessionData._HAPISession,nodeID,
+		    partID,
+		    positionsArray,
+		    start,
+		    length,
+		    rotationsArray,
+		    rotationsStart,
+		    rotationsLength,
+		    scalesArray,
+		    scalesStart,
+		    scalesLength);
+	    HandleStatusResult(result, "Setting Input Curve Positions Rotations Scales", false, true);
 	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
 	}
 
@@ -2377,6 +2442,13 @@ namespace HoudiniEngineUnity
 	{
 	    HAPI_Result result = HEU_HAPIFunctions.HAPI_CreateInputNode(ref _sessionData._HAPISession, out nodeID, name.AsByteArray());
 	    HandleStatusResult(result, "Creating Input Node", false, true);
+	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
+	}
+
+	public override bool CreateInputCurveNode(out HAPI_NodeId nodeID, string name)
+	{
+	    HAPI_Result result = HEU_HAPIFunctions.HAPI_CreateInputCurveNode(ref _sessionData._HAPISession, out nodeID, name.AsByteArray());
+	    HandleStatusResult(result, "Creating Input Curve Node", false, true);
 	    return (result == HAPI_Result.HAPI_RESULT_SUCCESS);
 	}
 

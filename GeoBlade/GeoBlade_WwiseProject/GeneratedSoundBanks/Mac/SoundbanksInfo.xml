@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="227629109">
+		<SoundBank Id="1069431850" Language="SFX" Hash="3506467811">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -248,6 +248,22 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="917509252" Name="Player_Unsheathe" ObjectPath="\Events\Player\Player_Unsheathe" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1402779743" Name="Security_Droid_Attack" ObjectPath="\Events\Player\Security_Droid_Attack" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.340454" DurationMax="0.340454">
+					<IncludedMemoryFiles>
+						<File Id="119322569" Language="SFX">
+							<ShortName>security_droid_stab.wav</ShortName>
+							<Path>SFX\security_droid_stab_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3474418164" Name="Stasis_Pod_Hiss" ObjectPath="\Events\Player\Stasis_Pod_Hiss" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="61.407814" DurationMax="61.407814">
+					<IncludedMemoryFiles>
+						<File Id="201693393" Language="SFX">
+							<ShortName>stasis_pod_hiss.wav</ShortName>
+							<Path>SFX\stasis_pod_hiss_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<StateGroups>
 				<StateGroup Id="2578485808" Name="Attack_Type" ObjectPath="\States\Player\Attack_Type" GUID="{05F9D408-CF10-4C60-8710-300508312E18}">
@@ -275,12 +291,133 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1753444211">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3241598657">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2140833458">
+		<SoundBank Id="3930136735" Language="SFX" Hash="2776455794">
+			<ObjectPath>\SoundBanks\Default Work Unit\Dialogue</ObjectPath>
+			<ShortName>Dialogue</ShortName>
+			<Path>Dialogue.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4029211690" Name="Dialogue_Trigger" ObjectPath="\Events\Dialogue\Dialogue_Trigger" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.430979" DurationMax="11.449729">
+					<IncludedMemoryFiles>
+						<File Id="69217860" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_spiral_room_iris_04.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_spiral_room_iris_04_10C4C929.wem</Path>
+						</File>
+						<File Id="91184430" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_stasis_room_seru_01.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_stasis_room_seru_01_10C4C929.wem</Path>
+						</File>
+						<File Id="92462724" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_spiral_room_iris_05.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_spiral_room_iris_05_10C4C929.wem</Path>
+						</File>
+						<File Id="129079745" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_spiral_room_iris_01.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_spiral_room_iris_01_10C4C929.wem</Path>
+						</File>
+						<File Id="163305341" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_spiral_room_iris_03.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_spiral_room_iris_03_10C4C929.wem</Path>
+						</File>
+						<File Id="230777457" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_stasis_room_iris_02.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_stasis_room_iris_02_10C4C929.wem</Path>
+						</File>
+						<File Id="732132979" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_spiral_room_iris_02.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_spiral_room_iris_02_10C4C929.wem</Path>
+						</File>
+						<File Id="761327441" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_stasis_room_iris_03.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_stasis_room_iris_03_10C4C929.wem</Path>
+						</File>
+						<File Id="903138545" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_stasis_room_seru_02.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_stasis_room_seru_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1016299112" Language="SFX">
+							<ShortName>geoblade_dialogue_lvl1_stasis_room_iris_01.wav</ShortName>
+							<Path>SFX\geoblade_dialogue_lvl1_stasis_room_iris_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{0146F0C6-AEEA-4CAE-9E35-5F8766ECF0BF}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{56C248E3-C83D-440E-A53E-A8D276FE6E51}">
+							<Media>
+								<File Id="1016299112"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{088CB4B8-DD73-450B-BE3D-9D5495B14544}">
+							<Media>
+								<File Id="230777457"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9B512410-5A0D-457C-B98F-5DE48494DAB5}">
+							<Media>
+								<File Id="761327441"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BD86F8AD-F762-42BC-A223-387EB5AC0D6A}">
+							<Media>
+								<File Id="91184430"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{00933F0A-4A9C-4A13-8DB3-83CA0AA956F2}">
+							<Media>
+								<File Id="903138545"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{75124501-3797-4A8D-B484-902E7ACF0B36}">
+							<Media>
+								<File Id="129079745"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{79879831-D608-4436-9238-27D92375409E}">
+							<Media>
+								<File Id="732132979"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{8EA3C08F-AF4E-4F56-A3FD-D6785ED40847}">
+							<Media>
+								<File Id="163305341"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E5FA1B82-2B00-47E8-82D9-5F54C4DE1B11}">
+							<Media>
+								<File Id="69217860"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{8A364B4B-9C3F-4C66-BA68-21266C55D5B2}">
+							<Media>
+								<File Id="92462724"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="3247544628" Name="Dialogue_Line" ObjectPath="\States\Dialogue\Dialogue_Line" GUID="{6B701058-EA7A-414D-B660-5C58C6E215A1}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Dialogue\Dialogue_Line\None" GUID="{0146F0C6-AEEA-4CAE-9E35-5F8766ECF0BF}"/>
+						<State Id="1590806114" Name="lvl1_stasis_room_iris_01" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasis_room_iris_01" GUID="{56C248E3-C83D-440E-A53E-A8D276FE6E51}"/>
+						<State Id="1590806113" Name="lvl1_stasis_room_iris_02" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasis_room_iris_02" GUID="{088CB4B8-DD73-450B-BE3D-9D5495B14544}"/>
+						<State Id="1590806112" Name="lvl1_stasis_room_iris_03" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasis_room_iris_03" GUID="{9B512410-5A0D-457C-B98F-5DE48494DAB5}"/>
+						<State Id="3207995528" Name="lvl1_stasis_room_seru_01" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasis_room_seru_01" GUID="{BD86F8AD-F762-42BC-A223-387EB5AC0D6A}"/>
+						<State Id="3207995531" Name="lvl1_stasis_room_seru_02" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasis_room_seru_02" GUID="{00933F0A-4A9C-4A13-8DB3-83CA0AA956F2}"/>
+						<State Id="3146552049" Name="lvl1_spiral_room_iris_04" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_spiral_room_iris_04" GUID="{E5FA1B82-2B00-47E8-82D9-5F54C4DE1B11}"/>
+						<State Id="3146552048" Name="lvl1_spiral_room_iris_05" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_spiral_room_iris_05" GUID="{8A364B4B-9C3F-4C66-BA68-21266C55D5B2}"/>
+						<State Id="3146552052" Name="lvl1_spiral_room_iris_01" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_spiral_room_iris_01" GUID="{75124501-3797-4A8D-B484-902E7ACF0B36}"/>
+						<State Id="3146552055" Name="lvl1_spiral_room_iris_02" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_spiral_room_iris_02" GUID="{79879831-D608-4436-9238-27D92375409E}"/>
+						<State Id="3146552054" Name="lvl1_spiral_room_iris_03" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_spiral_room_iris_03" GUID="{8EA3C08F-AF4E-4F56-A3FD-D6785ED40847}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="492963397">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

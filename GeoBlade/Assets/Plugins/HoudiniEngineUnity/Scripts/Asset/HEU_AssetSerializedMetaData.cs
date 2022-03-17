@@ -29,10 +29,19 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+// Expose internal classes/functions
+#if UNITY_EDITOR
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("HoudiniEngineUnityEditor")]
+[assembly: InternalsVisibleTo("HoudiniEngineUnityEditorTests")]
+[assembly: InternalsVisibleTo("HoudiniEngineUnityPlayModeTests")]
+#endif
+
 namespace HoudiniEngineUnity
 {
     // Super hacky way to force save data when access is limited such as undo deletion events
-    public class HEU_AssetSerializedMetaData : ScriptableObject, IEquivable<HEU_AssetSerializedMetaData>
+    internal class HEU_AssetSerializedMetaData : ScriptableObject, IEquivable<HEU_AssetSerializedMetaData>
     {
 	[SerializeField]
 	private bool _softDeleted = false;
@@ -42,6 +51,10 @@ namespace HoudiniEngineUnity
 	[SerializeField]
 	private Dictionary<string, List<CurveNodeData>> _savedCurveNodeData = new Dictionary<string, List<CurveNodeData>>();
 	public Dictionary<string, List<CurveNodeData>> SavedCurveNodeData { get { return _savedCurveNodeData; } }
+
+	[SerializeField]
+	private Dictionary<string, HEU_InputCurveInfo> _savedInputCurveInfo = new Dictionary<string, HEU_InputCurveInfo>();
+	public Dictionary<string, HEU_InputCurveInfo> SavedInputCurveInfo { get { return _savedInputCurveInfo; } }
 
 	public bool IsEquivalentTo(HEU_AssetSerializedMetaData other)
 	{

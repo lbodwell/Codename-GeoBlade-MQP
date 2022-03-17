@@ -104,9 +104,10 @@ public class GeoPuzzle : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.P)) {
             DisplayPuzzleStatus();
         }
-            
+        
         if (receptacles.Count(receptacle => receptacle.targetReached) == receptacles.Count) {
             Debug.Log("Puzzle complete!");
+            isPuzzleActive = false;
         }
     }
 
