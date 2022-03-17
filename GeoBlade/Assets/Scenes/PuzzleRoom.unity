@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 143681282}
   - component: {fileID: 143681281}
   - component: {fileID: 143681284}
+  - component: {fileID: 143681285}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -345,6 +346,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   geoBar: {fileID: 0}
+--- !u!114 &143681285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143681280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c20e14fa5046f954184ec921f88d8201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPuzzleActive: 1
+  receptacles:
+  - {fileID: 1185530282}
+  - {fileID: 1737586649}
+  - {fileID: 1331538960}
+  - {fileID: 1721877368}
 --- !u!1001 &336822161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1612,7 +1631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.029988773
+      value: 0.02998878
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
@@ -1757,7 +1776,7 @@ GameObject:
   - component: {fileID: 1185530278}
   - component: {fileID: 1185530282}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Geo Receptacle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1856,6 +1875,7 @@ MonoBehaviour:
   numPickups: 0
   totalEnergy: 0
   targetEnergy: 2
+  targetReached: 0
 --- !u!1 &1240492234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,7 +2112,7 @@ GameObject:
   - component: {fileID: 1331538956}
   - component: {fileID: 1331538960}
   m_Layer: 0
-  m_Name: Cylinder (2)
+  m_Name: Geo Receptacle 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2191,6 +2211,7 @@ MonoBehaviour:
   numPickups: 0
   totalEnergy: 0
   targetEnergy: 4
+  targetReached: 0
 --- !u!1 &1339179547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,7 +2576,7 @@ GameObject:
   - component: {fileID: 1721877364}
   - component: {fileID: 1721877368}
   m_Layer: 0
-  m_Name: Cylinder (3)
+  m_Name: Geo Receptacle 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2654,6 +2675,7 @@ MonoBehaviour:
   numPickups: 0
   totalEnergy: 0
   targetEnergy: 3
+  targetReached: 0
 --- !u!1 &1737586644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,7 +2690,7 @@ GameObject:
   - component: {fileID: 1737586645}
   - component: {fileID: 1737586649}
   m_Layer: 0
-  m_Name: Cylinder (1)
+  m_Name: Geo Receptacle 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2767,6 +2789,7 @@ MonoBehaviour:
   numPickups: 0
   totalEnergy: 0
   targetEnergy: 1
+  targetReached: 0
 --- !u!1 &1760824640
 GameObject:
   m_ObjectHideFlags: 0

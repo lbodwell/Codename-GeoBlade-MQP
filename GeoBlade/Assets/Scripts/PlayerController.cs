@@ -98,18 +98,22 @@ public class PlayerController : MonoBehaviour {
         //Update Animator Parameters
         animator.SetBool("Grounded", controller.isGrounded);
         animator.SetFloat("Speed", finalVel.magnitude);
-        if (Time.time >= _nextAttackWindowClose && animator.GetInteger("Combo") != 0)
-        {
+        if (Time.time >= _nextAttackWindowClose && animator.GetInteger("Combo") != 0) {
             animator.SetInteger("Combo", 0);
             Debug.Log("Combo set to " + animator.GetInteger("Combo"));
         }
         
-        if (!controller.isGrounded || !_isJumping) return;
-        _isJumping = false;
-        _velocity.y = 0f;
-        // Jump landing
-        AkSoundEngine.PostEvent("Player_Jump", gameObject);
-        _nextFootstep = Time.time;
+        // if (Input.GetKeyDown(KeyCode.E)) {
+        //     Debug.Log("Interact");
+        // }
+
+        if (controller.isGrounded && _isJumping) {
+            _isJumping = false;
+            _velocity.y = 0f;
+            // Jump landing
+            AkSoundEngine.PostEvent("Player_Jump", gameObject);
+            _nextFootstep = Time.time;
+        }
     }
 
     public void Move(InputAction.CallbackContext context) {
