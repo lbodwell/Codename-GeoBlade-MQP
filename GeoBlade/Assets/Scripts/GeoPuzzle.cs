@@ -8,7 +8,6 @@ public class GeoPuzzle : MonoBehaviour {
     public bool isPuzzleActive = true;
     public bool isPickupInHand;
     public List<GeoReceptacle> receptacles;
-    public List<GeoPickup> pickups;
     private GeoReceptacle _nearestReceptacle;
     private GeoPickup _currentPickup;
 
@@ -22,82 +21,99 @@ public class GeoPuzzle : MonoBehaviour {
     }
     
     private void Update() {
-        if (isPuzzleActive) {
-            var player = PlayerManager.Instance.player;
+        if (!isPuzzleActive) return;
+        
+        var player = PlayerManager.Instance.player;
             
-            // Switch to new input system (move to player controller?)
-            if (Input.GetKeyDown(KeyCode.E)) {
-                var minDist = double.MaxValue;
+        // Switch to new input system (move to player controller?)
+        if (Input.GetKeyDown(KeyCode.E)) {
+
+            var minReceptacleDist = double.MaxValue;
                 
-                foreach (var receptacle in receptacles) {
-                    var dist = Vector3.Distance(player.transform.position, receptacle.transform.position);
+            foreach (var receptacle in receptacles) {
+                var dist = Vector3.Distance(player.transform.position, receptacle.transform.position);
                     
-                    if (dist < minDist) {
-                        _nearestReceptacle = receptacle;
-                        minDist = dist;
+                if (dist < minReceptacleDist) {
+                    _nearestReceptacle = receptacle;
+                    minReceptacleDist = dist;
+                }
+            }
+
+            Transform pickupTransform;
+            var isReceptacleInRange = minReceptacleDist < 5;
+            
+            if (isPickupInHand) {
+                pickupTransform = _currentPickup.transform;
+                    
+                if (isReceptacleInRange) {
+                    _nearestReceptacle.AddPickup(_currentPickup);
+                    var targetPos = _nearestReceptacle.GetNextOpenPosition();
+                    pickupTransform.position = targetPos;
+                    pickupTransform.SetParent(null);
+                    // Apply rotational force
+                } else {
+                    pickupTransform.SetParent(null);
+                    _currentPickup.GetComponent<Rigidbody>().useGravity = true; 
+                    _currentPickup.GetComponent<BoxCollider>().enabled = true;
+                }
+                
+                _currentPickup = null;
+                isPickupInHand = false;
+            } else {
+                if (isReceptacleInRange && !_nearestReceptacle.IsEmpty()) {
+                    _currentPickup = _nearestReceptacle.RemovePickup();
+                } else {
+                    // TODO: Tune size of colliders buffer for optimal performance while ensuring all pickups are found.
+                    var colliders = new Collider[10];
+                    Physics.OverlapSphereNonAlloc(player.transform.position, 5, colliders);
+
+                    GeoPickup nearestPickup = null;
+                    var minPickupDist = double.MaxValue;
+
+                    foreach (var coll in colliders) {
+                        if (coll != null && coll.CompareTag("GeoPickup")) {
+                            var dist = Vector3.Distance(player.transform.position, coll.transform.position);
+
+                            if (dist < minPickupDist) {
+                                nearestPickup = coll.gameObject.GetComponent<GeoPickup>();
+                                minPickupDist = dist;
+                            }
+                        }
                     }
+
+                    _currentPickup = nearestPickup;
                 }
 
-                var isReceptacleInRange = minDist < 5;
-                
-                if (isPickupInHand) {
-                    var pickupTransform = _currentPickup.transform;
-                    
-                    if (isReceptacleInRange) {
-                        Debug.Log("Place in receptacle");
-                        _nearestReceptacle.AddPickup(_currentPickup);
-                        var targetPos = _nearestReceptacle.GetNextOpenPosition();
-                        pickupTransform.position = targetPos;
-                        pickupTransform.parent = null;
-                        // Apply rotational force
-                    } else {
-                        Debug.Log("Drop on floor");
-                        pickupTransform.parent = null;
-                        _currentPickup.GetComponent<Rigidbody>().useGravity = true; 
-                        _currentPickup.GetComponent<BoxCollider>().enabled = true;
-                    }
-
-                    _currentPickup = null;
-                    isPickupInHand = false;
-                } else {
-
-                    var colliders = new Collider[5];
-                    var size = Physics.OverlapSphereNonAlloc(player.transform.position, 2, colliders);
-                    Debug.Log("Searching for nearby pickups...");
-                    foreach (var coll in colliders) {
-                        Debug.Log("Found collider with tag: " + coll.tag);
-                    }
-                    
-                    // Maybe don't use this here. Should probably prioritize nearest pickup even if within range of receptacle.
-                    if (isReceptacleInRange) {
-                        Debug.Log("Grab from receptacle");
-                        _currentPickup = _nearestReceptacle.RemovePickup();
-                    } else {
-                        Debug.Log("Pick up from floor");
-                        
-                    }
-
-                    var pickupTransform = _currentPickup.transform;
+                if (_currentPickup != null) {
+                    pickupTransform = _currentPickup.transform;
+                    pickupTransform.position = pickupDestination.position;
+                    pickupTransform.SetParent(pickupDestination);
                     
                     _currentPickup.GetComponent<Rigidbody>().useGravity = false;
                     _currentPickup.GetComponent<BoxCollider>().enabled = false;
-                    pickupTransform.position = pickupDestination.position;
-                    pickupTransform.parent = pickupDestination;
                     
+                    var body = _currentPickup.GetComponent<Rigidbody>();
+                    body.velocity = Vector3.zero;
+                    body.angularVelocity = Vector3.zero;
+
                     isPickupInHand = true;
                 }
             }
+        }
 
-            if (Input.GetKeyDown(KeyCode.P)) {
-                Debug.Log("Current puzzle status:");
-                foreach (var receptacle in receptacles) {
-                    Debug.Log("Receptacle " + receptacle.id + ": " + receptacle.totalEnergy + "/" + receptacle.targetEnergy);
-                }
-            }
+        if (Input.GetKeyDown(KeyCode.P)) {
+            DisplayPuzzleStatus();
+        }
             
-            if (receptacles.Count(receptacle => receptacle.targetReached) == receptacles.Count) {
-                Debug.Log("Puzzle complete!");
-            }
+        if (receptacles.Count(receptacle => receptacle.targetReached) == receptacles.Count) {
+            Debug.Log("Puzzle complete!");
+        }
+    }
+
+    private void DisplayPuzzleStatus() {
+        Debug.Log("Current puzzle status:");
+        foreach (var receptacle in receptacles) {
+            Debug.Log("Receptacle " + receptacle.id + ": " + receptacle.totalEnergy + "/" + receptacle.targetEnergy);
         }
     }
 }

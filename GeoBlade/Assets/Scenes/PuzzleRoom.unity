@@ -358,12 +358,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c20e14fa5046f954184ec921f88d8201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupDestination: {fileID: 1339179548}
   isPuzzleActive: 1
+  isPickupInHand: 0
   receptacles:
   - {fileID: 1185530282}
   - {fileID: 1737586649}
   - {fileID: 1331538960}
   - {fileID: 1721877368}
+  pickups: []
 --- !u!1001 &336822161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -601,7 +604,7 @@ GameObject:
   - component: {fileID: 631588680}
   m_Layer: 0
   m_Name: GeoPickup (11)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -728,7 +731,7 @@ GameObject:
   - component: {fileID: 769597852}
   m_Layer: 0
   m_Name: GeoPickup (8)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -855,7 +858,7 @@ GameObject:
   - component: {fileID: 812338355}
   m_Layer: 0
   m_Name: GeoPickup (6)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -982,7 +985,7 @@ GameObject:
   - component: {fileID: 851986230}
   m_Layer: 0
   m_Name: GeoPickup (4)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1204,7 +1207,7 @@ GameObject:
   - component: {fileID: 988730826}
   m_Layer: 0
   m_Name: GeoPickup (2)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1331,7 +1334,7 @@ GameObject:
   - component: {fileID: 1015269427}
   m_Layer: 0
   m_Name: GeoPickup
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1631,7 +1634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302779995440, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.02998878
+      value: 0.029988773
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
@@ -1651,7 +1654,7 @@ GameObject:
   - component: {fileID: 1158077903}
   m_Layer: 0
   m_Name: GeoPickup (1)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1872,7 +1875,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  numPickups: 0
   totalEnergy: 0
   targetEnergy: 2
   targetReached: 0
@@ -1892,7 +1894,7 @@ GameObject:
   - component: {fileID: 1240492235}
   m_Layer: 0
   m_Name: GeoPickup (10)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2208,7 +2210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3
-  numPickups: 0
   totalEnergy: 0
   targetEnergy: 4
   targetReached: 0
@@ -2258,7 +2259,7 @@ GameObject:
   - component: {fileID: 1410942880}
   m_Layer: 0
   m_Name: GeoPickup (7)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2672,7 +2673,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
-  numPickups: 0
   totalEnergy: 0
   targetEnergy: 3
   targetReached: 0
@@ -2786,7 +2786,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
-  numPickups: 0
   totalEnergy: 0
   targetEnergy: 1
   targetReached: 0
@@ -2862,7 +2861,7 @@ GameObject:
   - component: {fileID: 1900936067}
   m_Layer: 0
   m_Name: GeoPickup (3)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2989,7 +2988,7 @@ GameObject:
   - component: {fileID: 1927062913}
   m_Layer: 0
   m_Name: GeoPickup (9)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3116,7 +3115,7 @@ GameObject:
   - component: {fileID: 1930139085}
   m_Layer: 0
   m_Name: GeoPickup (5)
-  m_TagString: Untagged
+  m_TagString: GeoPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
