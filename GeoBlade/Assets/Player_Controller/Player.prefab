@@ -527,6 +527,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 6213721881995825218}
     m_Modifications:
     - target: {fileID: 5112965301329874971, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+      propertyPath: m_XDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112965301329874971, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+      propertyPath: m_YDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112965301329874971, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+      propertyPath: m_ZDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112965301329874971, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_FollowOffset.y
       value: 2
       objectReference: {fileID: 0}
@@ -545,6 +557,10 @@ PrefabInstance:
     - target: {fileID: 5112965301579279288, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_Lens.FieldOfView
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112965301579279288, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+      propertyPath: m_XAxis.m_MaxSpeed
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 5112965301579279288, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_Orbits.Array.data[0].m_Height
@@ -731,12 +747,36 @@ PrefabInstance:
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302793540596, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+      propertyPath: m_XDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112965302793540596, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+      propertyPath: m_YDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112965302793540596, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+      propertyPath: m_ZDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112965302793540596, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_FollowOffset.y
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302793540596, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_FollowOffset.z
       value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112965302953803596, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+      propertyPath: m_XDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112965302953803596, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+      propertyPath: m_YDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112965302953803596, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
+      propertyPath: m_ZDamping
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112965302953803596, guid: 9dccbf735668ec046a65da8e2e9e310a, type: 3}
       propertyPath: m_FollowOffset.y
