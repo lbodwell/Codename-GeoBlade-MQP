@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: bb8f8cfe1e885447b85a271938b99bc3
     GuidInternal: 
-    m_lastTime: -8585603614573291199
+    m_lastTime: -8585643027370968801
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ebe94a29748da34fa148ff1844aaba9f
     GuidInternal: 
-    m_lastTime: -8585603614573351199
+    m_lastTime: -8585643027378383993
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b144575cff53e145bbed4dfb8f16af44
     GuidInternal: 
-    m_lastTime: -8585540599514976911
+    m_lastTime: -8585540574850814054
     List:
     - name: Dialogue
       guid: 4a7f2e159c23e64a8d15f2d8b354e15c
@@ -136,7 +136,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fcbb3e7f157bd64fad51bae9e3b0a8ce
     GuidInternal: 
-    m_lastTime: -8585603614258857828
+    m_lastTime: -8585643027384097908
     List: []
   - PhysicalPath: Events\Dialogue.wwu
     PathAndIcons:
@@ -149,7 +149,7 @@ MonoBehaviour:
     ParentPath: Events\Dialogue
     guid: 475c5da5829670438fba66501ba9a246
     GuidInternal: 
-    m_lastTime: -8585540601817668904
+    m_lastTime: -8585541121159471438
     List:
     - name: Dialogue_Trigger
       guid: 0666227a29948e44bafd5efae5ca592a
@@ -179,7 +179,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 90d90a6b2474e243b6c55a57c1b35207
     GuidInternal: 
-    m_lastTime: -8585603614258857828
+    m_lastTime: -8585643027384097908
     List:
     - name: Level1_Music
       guid: ddc53016e33abd4296debd8dd65405ee
@@ -209,7 +209,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: d19439dca0fb2b4e9c232a66be5f6f0f
     GuidInternal: 
-    m_lastTime: -8585540601817663900
+    m_lastTime: -8585541121159466493
     List:
     - name: Player_Attack
       guid: 418c7b323b94844b987a1b61b2ef0f23
@@ -324,7 +324,7 @@ MonoBehaviour:
     ParentPath: Events\Puzzle
     guid: f52fa766ba11844b882cd3dd3494d08a
     GuidInternal: 
-    m_lastTime: -8585540599516516917
+    m_lastTime: -8585540574853616447
     List:
     - name: Play_Generator_Hum
       guid: aa417a4dceb6cd43a6ae58977f35a58e
@@ -372,7 +372,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6729555d9375884586107b6426b43d60
     GuidInternal: 
-    m_lastTime: -8585603614573421206
+    m_lastTime: -8585643027384092946
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -386,7 +386,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0712bfab92afb340a63c6588fc4ec0f8
     GuidInternal: 
-    m_lastTime: -8585603614573301196
+    m_lastTime: -8585643027370983681
     List: []
   - PhysicalPath: States\Dialogue.wwu
     PathAndIcons:
@@ -399,7 +399,7 @@ MonoBehaviour:
     ParentPath: States\Dialogue
     guid: 144533a6a42c9b4788631915b5bc027b
     GuidInternal: 
-    m_lastTime: -8585540601810573892
+    m_lastTime: -8585541121149353063
     List:
     - name: Dialogue_Line
       guid: 5810706b7aea4d41b6605c58c6e215a1
@@ -606,7 +606,7 @@ MonoBehaviour:
     ParentPath: States\Music
     guid: 2bac94c602ec474cba1fae799efa8b50
     GuidInternal: 
-    m_lastTime: -8585603614251957844
+    m_lastTime: -8585643027370978719
     List:
     - name: Music_Level1_Track1
       guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
@@ -701,7 +701,7 @@ MonoBehaviour:
     ParentPath: States\Player
     guid: 98e2c4458da7bb4bb423952bf4ad2d10
     GuidInternal: 
-    m_lastTime: -8585603613844018126
+    m_lastTime: -8585620922282596944
     List:
     - name: Attack_Type
       guid: 08d4f90510cf604c8710300508312e18
@@ -944,7 +944,7 @@ MonoBehaviour:
     ParentPath: States\Puzzle
     guid: 647699534d80c949a56e1fe8688a3d65
     GuidInternal: 
-    m_lastTime: -8585540599514976911
+    m_lastTime: -8585540574850809094
     List:
     - name: Generator_Hum_Note
       guid: 8ba9d53eb5b3444389a224a4fcc251c1
@@ -1202,7 +1202,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: ba3f39085c1e1a4eaa95b413330db915
     GuidInternal: 
-    m_lastTime: -8585603614573301196
+    m_lastTime: -8585643027370973763
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1216,10 +1216,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: f25b47a12a518141afbc59f62725d309
     GuidInternal: 
-    m_lastTime: -8585603614573296200
+    m_lastTime: -8585643027370968801
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 2200000023000000c7010000c8010000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
