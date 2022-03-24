@@ -28,16 +28,16 @@ State	ID	Name	State Group			Notes
 	748895195	None	Footstep_Type			
 	2108779966	Walk	Footstep_Type			
 	748895195	None	Dialogue_Line			
-	1590806112	lvl1_stasis_room_iris_03	Dialogue_Line			
-	1590806113	lvl1_stasis_room_iris_02	Dialogue_Line			
-	1590806114	lvl1_stasis_room_iris_01	Dialogue_Line			
-	3146552048	lvl1_spiral_room_iris_05	Dialogue_Line			
-	3146552049	lvl1_spiral_room_iris_04	Dialogue_Line			
-	3146552052	lvl1_spiral_room_iris_01	Dialogue_Line			
-	3146552054	lvl1_spiral_room_iris_03	Dialogue_Line			
-	3146552055	lvl1_spiral_room_iris_02	Dialogue_Line			
-	3207995528	lvl1_stasis_room_seru_01	Dialogue_Line			
-	3207995531	lvl1_stasis_room_seru_02	Dialogue_Line			
+	2662722072	lvl1_spiralRoom_iris_02	Dialogue_Line			
+	2662722073	lvl1_spiralRoom_iris_03	Dialogue_Line			
+	2662722075	lvl1_spiralRoom_iris_01	Dialogue_Line			
+	2662722078	lvl1_spiralRoom_iris_04	Dialogue_Line			
+	2662722079	lvl1_spiralRoom_iris_05	Dialogue_Line			
+	4003890720	lvl1_stasisRoom_seru_02	Dialogue_Line			
+	4003890723	lvl1_stasisRoom_seru_01	Dialogue_Line			
+	4061841897	lvl1_stasisRoom_iris_01	Dialogue_Line			
+	4061841898	lvl1_stasisRoom_iris_02	Dialogue_Line			
+	4061841899	lvl1_stasisRoom_iris_03	Dialogue_Line			
 	748895195	None	Material			
 	841620460	Concrete	Material			
 	2473969246	Metal	Material			
