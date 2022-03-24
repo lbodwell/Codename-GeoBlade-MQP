@@ -12,14 +12,1212 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04a859ab5d3c6d642a34877fcb067757, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: bb8f8cfe1e885447b85a271938b99bc3
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: bb8f8cfe1e885447b85a271938b99bc3
+    GuidInternal: 
+    m_lastTime: -8585643027370968801
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ebe94a29748da34fa148ff1844aaba9f
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: ebe94a29748da34fa148ff1844aaba9f
+    GuidInternal: 
+    m_lastTime: -8585643027378383993
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebe94a29748da34fa148ff1844aaba9f
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: b144575cff53e145bbed4dfb8f16af44
+    ParentPath: SoundBanks\Default Work Unit
+    guid: b144575cff53e145bbed4dfb8f16af44
+    GuidInternal: 
+    m_lastTime: -8585540564273979825
+    List:
+    - name: Dialogue
+      guid: 4a7f2e159c23e64a8d15f2d8b354e15c
+      id: 3930136735
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b144575cff53e145bbed4dfb8f16af44
+      - ElementName: Dialogue
+        ObjectType: 7
+        guid: 4a7f2e159c23e64a8d15f2d8b354e15c
+      Path: SoundBanks\Default Work Unit\Dialogue
+    - name: Music
+      guid: abc689fd0b46364393e8e9d43ce750a5
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b144575cff53e145bbed4dfb8f16af44
+      - ElementName: Music
+        ObjectType: 7
+        guid: abc689fd0b46364393e8e9d43ce750a5
+      Path: SoundBanks\Default Work Unit\Music
+    - name: Player
+      guid: 6e7d2d40d2933a42819431665310e031
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b144575cff53e145bbed4dfb8f16af44
+      - ElementName: Player
+        ObjectType: 7
+        guid: 6e7d2d40d2933a42819431665310e031
+      Path: SoundBanks\Default Work Unit\Player
+    - name: Puzzle
+      guid: 17fc7369277e9d4eb01625918e5f1e53
+      id: 1780448749
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b144575cff53e145bbed4dfb8f16af44
+      - ElementName: Puzzle
+        ObjectType: 7
+        guid: 17fc7369277e9d4eb01625918e5f1e53
+      Path: SoundBanks\Default Work Unit\Puzzle
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: fcbb3e7f157bd64fad51bae9e3b0a8ce
+    ParentPath: Events\Default Work Unit
+    guid: fcbb3e7f157bd64fad51bae9e3b0a8ce
+    GuidInternal: 
+    m_lastTime: -8585643027384097908
+    List: []
+  - PhysicalPath: Events\Dialogue.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Dialogue
+      ObjectType: 12
+      guid: 475c5da5829670438fba66501ba9a246
+    ParentPath: Events\Dialogue
+    guid: 475c5da5829670438fba66501ba9a246
+    GuidInternal: 
+    m_lastTime: -8585540564286017728
+    List:
+    - name: Dialogue_Trigger
+      guid: 0666227a29948e44bafd5efae5ca592a
+      id: 4029211690
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Dialogue
+        ObjectType: 12
+        guid: 475c5da5829670438fba66501ba9a246
+      - ElementName: Dialogue_Trigger
+        ObjectType: 3
+        guid: 0666227a29948e44bafd5efae5ca592a
+      Path: Events\Dialogue\Dialogue_Trigger
+      maxAttenuation: 25
+      maxDuration: 11.449729
+      minDuration: 1.430979
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 90d90a6b2474e243b6c55a57c1b35207
+    ParentPath: Events\Music
+    guid: 90d90a6b2474e243b6c55a57c1b35207
+    GuidInternal: 
+    m_lastTime: -8585643027384097908
+    List:
+    - name: Level1_Music
+      guid: ddc53016e33abd4296debd8dd65405ee
+      id: 2026953958
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 90d90a6b2474e243b6c55a57c1b35207
+      - ElementName: Level1_Music
+        ObjectType: 3
+        guid: ddc53016e33abd4296debd8dd65405ee
+      Path: Events\Music\Level1_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Player.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Player
+      ObjectType: 12
+      guid: d19439dca0fb2b4e9c232a66be5f6f0f
+    ParentPath: Events\Player
+    guid: d19439dca0fb2b4e9c232a66be5f6f0f
+    GuidInternal: 
+    m_lastTime: -8585540564286012771
+    List:
+    - name: Player_Attack
+      guid: 418c7b323b94844b987a1b61b2ef0f23
+      id: 2824512041
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Player_Attack
+        ObjectType: 3
+        guid: 418c7b323b94844b987a1b61b2ef0f23
+      Path: Events\Player\Player_Attack
+      maxAttenuation: 0
+      maxDuration: 2.451882
+      minDuration: 1.413515
+    - name: Player_Footstep
+      guid: 064aba3baf0b324fb279b0ae52626346
+      id: 2453392179
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Player_Footstep
+        ObjectType: 3
+        guid: 064aba3baf0b324fb279b0ae52626346
+      Path: Events\Player\Player_Footstep
+      maxAttenuation: 0
+      maxDuration: 0.401294
+      minDuration: 0.201399
+    - name: Player_Jump
+      guid: 0d3f22ba86284b4ba6ca6b837cb7a8ae
+      id: 1305133589
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Player_Jump
+        ObjectType: 3
+        guid: 0d3f22ba86284b4ba6ca6b837cb7a8ae
+      Path: Events\Player\Player_Jump
+      maxAttenuation: 0
+      maxDuration: 0.614489
+      minDuration: 0.358672
+    - name: Player_Unsheathe
+      guid: ef2973933364b94b8b560a96f215cb61
+      id: 917509252
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Player_Unsheathe
+        ObjectType: 3
+        guid: ef2973933364b94b8b560a96f215cb61
+      Path: Events\Player\Player_Unsheathe
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Security_Droid_Attack
+      guid: 51070990e701f74a8dd5de6f148aa2e5
+      id: 1402779743
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Security_Droid_Attack
+        ObjectType: 3
+        guid: 51070990e701f74a8dd5de6f148aa2e5
+      Path: Events\Player\Security_Droid_Attack
+      maxAttenuation: 25
+      maxDuration: 0.340454
+      minDuration: 0.340454
+    - name: Stasis_Pod_Hiss
+      guid: 585f63e979bc9a4385690f2689f9a533
+      id: 3474418164
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Stasis_Pod_Hiss
+        ObjectType: 3
+        guid: 585f63e979bc9a4385690f2689f9a533
+      Path: Events\Player\Stasis_Pod_Hiss
+      maxAttenuation: 25
+      maxDuration: 61.407814
+      minDuration: 61.407814
+  - PhysicalPath: Events\Puzzle.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Puzzle
+      ObjectType: 12
+      guid: f52fa766ba11844b882cd3dd3494d08a
+    ParentPath: Events\Puzzle
+    guid: f52fa766ba11844b882cd3dd3494d08a
+    GuidInternal: 
+    m_lastTime: -8585540564286007811
+    List:
+    - name: Play_Generator_Hum
+      guid: aa417a4dceb6cd43a6ae58977f35a58e
+      id: 2682110950
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: f52fa766ba11844b882cd3dd3494d08a
+      - ElementName: Play_Generator_Hum
+        ObjectType: 3
+        guid: aa417a4dceb6cd43a6ae58977f35a58e
+      Path: Events\Puzzle\Play_Generator_Hum
+      maxAttenuation: 100
+      maxDuration: 1.12805
+      minDuration: 1.125011
+    - name: Play_Resonant_Frequency
+      guid: 774ab42d9908ee46b94c8accae3b8f9a
+      id: 853873997
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: f52fa766ba11844b882cd3dd3494d08a
+      - ElementName: Play_Resonant_Frequency
+        ObjectType: 3
+        guid: 774ab42d9908ee46b94c8accae3b8f9a
+      Path: Events\Puzzle\Play_Resonant_Frequency
+      maxAttenuation: 100
+      maxDuration: 1.249501
+      minDuration: 1.229116
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6729555d9375884586107b6426b43d60
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 6729555d9375884586107b6426b43d60
+    GuidInternal: 
+    m_lastTime: -8585643027384092946
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 0712bfab92afb340a63c6588fc4ec0f8
+    ParentPath: States\Default Work Unit
+    guid: 0712bfab92afb340a63c6588fc4ec0f8
+    GuidInternal: 
+    m_lastTime: -8585535236378551044
+    List: []
+  - PhysicalPath: States\Dialogue.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Dialogue
+      ObjectType: 12
+      guid: 144533a6a42c9b4788631915b5bc027b
+    ParentPath: States\Dialogue
+    guid: 144533a6a42c9b4788631915b5bc027b
+    GuidInternal: 
+    m_lastTime: -8585535235952373509
+    List:
+    - name: Dialogue_Line
+      guid: 5810706b7aea4d41b6605c58c6e215a1
+      id: 3247544628
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Dialogue
+        ObjectType: 12
+        guid: 144533a6a42c9b4788631915b5bc027b
+      - ElementName: Dialogue_Line
+        ObjectType: 9
+        guid: 5810706b7aea4d41b6605c58c6e215a1
+      Path: States\Dialogue\Dialogue_Line
+      values:
+      - name: lvl1_spiralRoom_iris_01
+        guid: 0145127597378d4ab484902e7acf0b36
+        id: 2662722075
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_iris_01
+          ObjectType: 8
+          guid: 0145127597378d4ab484902e7acf0b36
+      - name: lvl1_spiralRoom_iris_02
+        guid: 3198877908d63644923827d92375409e
+        id: 2662722072
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_iris_02
+          ObjectType: 8
+          guid: 3198877908d63644923827d92375409e
+      - name: lvl1_spiralRoom_iris_03
+        guid: 8fc0a38e4eaf564fa3fdd6785ed40847
+        id: 2662722073
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_iris_03
+          ObjectType: 8
+          guid: 8fc0a38e4eaf564fa3fdd6785ed40847
+      - name: lvl1_spiralRoom_iris_04
+        guid: 821bfae5002be84782d95f54c4de1b11
+        id: 2662722078
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_iris_04
+          ObjectType: 8
+          guid: 821bfae5002be84782d95f54c4de1b11
+      - name: lvl1_spiralRoom_iris_05
+        guid: 4b4b368a3f9c664cba6821266c55d5b2
+        id: 2662722079
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_iris_05
+          ObjectType: 8
+          guid: 4b4b368a3f9c664cba6821266c55d5b2
+      - name: lvl1_stasisRoom_iris_01
+        guid: e348c2563dc80e44a53ea8d276fe6e51
+        id: 4061841897
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasisRoom_iris_01
+          ObjectType: 8
+          guid: e348c2563dc80e44a53ea8d276fe6e51
+      - name: lvl1_stasisRoom_iris_02
+        guid: b8b48c0873dd0b45be3d9d5495b14544
+        id: 4061841898
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasisRoom_iris_02
+          ObjectType: 8
+          guid: b8b48c0873dd0b45be3d9d5495b14544
+      - name: lvl1_stasisRoom_iris_03
+        guid: 1024519b0d5a7c45b98f5de48494dab5
+        id: 4061841899
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasisRoom_iris_03
+          ObjectType: 8
+          guid: 1024519b0d5a7c45b98f5de48494dab5
+      - name: lvl1_stasisRoom_seru_01
+        guid: adf886bd62f7bc42a223387eb5ac0d6a
+        id: 4003890723
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasisRoom_seru_01
+          ObjectType: 8
+          guid: adf886bd62f7bc42a223387eb5ac0d6a
+      - name: lvl1_stasisRoom_seru_02
+        guid: 0a3f93009c4a134a8db383ca0aa956f2
+        id: 4003890720
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasisRoom_seru_02
+          ObjectType: 8
+          guid: 0a3f93009c4a134a8db383ca0aa956f2
+      - name: None
+        guid: c6f04601eaaeae4c9e355f8766ecf0bf
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: None
+          ObjectType: 8
+          guid: c6f04601eaaeae4c9e355f8766ecf0bf
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\Music.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 2bac94c602ec474cba1fae799efa8b50
+    ParentPath: States\Music
+    guid: 2bac94c602ec474cba1fae799efa8b50
+    GuidInternal: 
+    m_lastTime: -8585643027370978719
+    List:
+    - name: Music_Level1_Track1
+      guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+      id: 2489350135
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 2bac94c602ec474cba1fae799efa8b50
+      - ElementName: Music_Level1_Track1
+        ObjectType: 9
+        guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+      Path: States\Music\Music_Level1_Track1
+      values:
+      - name: None
+        guid: 197b0ddd7e863a4c9142c12a21cab4c2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1_Track1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: None
+          ObjectType: 8
+          guid: 197b0ddd7e863a4c9142c12a21cab4c2
+      - name: Section1
+        guid: 2141a1cf092f584b9ac2b62f1cd035ea
+        id: 3524678539
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1_Track1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Section1
+          ObjectType: 8
+          guid: 2141a1cf092f584b9ac2b62f1cd035ea
+      - name: Section2
+        guid: 520c304ba9f4e948a524dfd38d7f5af9
+        id: 3524678536
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1_Track1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Section2
+          ObjectType: 8
+          guid: 520c304ba9f4e948a524dfd38d7f5af9
+      - name: Section3
+        guid: 56a931c979461443bf98da7eb0f665e6
+        id: 3524678537
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1_Track1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Section3
+          ObjectType: 8
+          guid: 56a931c979461443bf98da7eb0f665e6
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\Player.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Player
+      ObjectType: 12
+      guid: 98e2c4458da7bb4bb423952bf4ad2d10
+    ParentPath: States\Player
+    guid: 98e2c4458da7bb4bb423952bf4ad2d10
+    GuidInternal: 
+    m_lastTime: -8585620922282596944
+    List:
+    - name: Attack_Type
+      guid: 08d4f90510cf604c8710300508312e18
+      id: 2578485808
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 98e2c4458da7bb4bb423952bf4ad2d10
+      - ElementName: Attack_Type
+        ObjectType: 9
+        guid: 08d4f90510cf604c8710300508312e18
+      Path: States\Player\Attack_Type
+      values:
+      - name: Heavy
+        guid: 6c4c6adbc626044ead8990ce445f177b
+        id: 2732489590
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Attack_Type
+          ObjectType: 9
+          guid: 08d4f90510cf604c8710300508312e18
+        - ElementName: Heavy
+          ObjectType: 8
+          guid: 6c4c6adbc626044ead8990ce445f177b
+      - name: Light1
+        guid: 9cafa5be2b4a1942a75a94b48d061310
+        id: 3192784680
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Attack_Type
+          ObjectType: 9
+          guid: 08d4f90510cf604c8710300508312e18
+        - ElementName: Light1
+          ObjectType: 8
+          guid: 9cafa5be2b4a1942a75a94b48d061310
+      - name: Light2
+        guid: 3e22ad7cf2826c41a123452e2e9c946a
+        id: 3192784683
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Attack_Type
+          ObjectType: 9
+          guid: 08d4f90510cf604c8710300508312e18
+        - ElementName: Light2
+          ObjectType: 8
+          guid: 3e22ad7cf2826c41a123452e2e9c946a
+      - name: None
+        guid: e6577b17fa74b74aaea79bcb43590f6a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Attack_Type
+          ObjectType: 9
+          guid: 08d4f90510cf604c8710300508312e18
+        - ElementName: None
+          ObjectType: 8
+          guid: e6577b17fa74b74aaea79bcb43590f6a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Footstep_Type
+      guid: 0e99758fd9ceaa478aeebfc38deac310
+      id: 2615620554
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 98e2c4458da7bb4bb423952bf4ad2d10
+      - ElementName: Footstep_Type
+        ObjectType: 9
+        guid: 0e99758fd9ceaa478aeebfc38deac310
+      Path: States\Player\Footstep_Type
+      values:
+      - name: None
+        guid: 09bf788d8ce9eb46b12745e165e24259
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Footstep_Type
+          ObjectType: 9
+          guid: 0e99758fd9ceaa478aeebfc38deac310
+        - ElementName: None
+          ObjectType: 8
+          guid: 09bf788d8ce9eb46b12745e165e24259
+      - name: Run
+        guid: 49cf13533e8fa64b861857c8e6ed556d
+        id: 712161704
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Footstep_Type
+          ObjectType: 9
+          guid: 0e99758fd9ceaa478aeebfc38deac310
+        - ElementName: Run
+          ObjectType: 8
+          guid: 49cf13533e8fa64b861857c8e6ed556d
+      - name: Walk
+        guid: e755bbde757ff74095a6a07ada26dd32
+        id: 2108779966
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Footstep_Type
+          ObjectType: 9
+          guid: 0e99758fd9ceaa478aeebfc38deac310
+        - ElementName: Walk
+          ObjectType: 8
+          guid: e755bbde757ff74095a6a07ada26dd32
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Material
+      guid: 9fc392fb52948c4cb66e3c435e589866
+      id: 3865314626
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 98e2c4458da7bb4bb423952bf4ad2d10
+      - ElementName: Material
+        ObjectType: 9
+        guid: 9fc392fb52948c4cb66e3c435e589866
+      Path: States\Player\Material
+      values:
+      - name: Concrete
+        guid: fa9aab294289de4e9761459993b31c40
+        id: 841620460
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Material
+          ObjectType: 9
+          guid: 9fc392fb52948c4cb66e3c435e589866
+        - ElementName: Concrete
+          ObjectType: 8
+          guid: fa9aab294289de4e9761459993b31c40
+      - name: Grass
+        guid: 2c28fa72fba6c449acd73af1bea8c380
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Material
+          ObjectType: 9
+          guid: 9fc392fb52948c4cb66e3c435e589866
+        - ElementName: Grass
+          ObjectType: 8
+          guid: 2c28fa72fba6c449acd73af1bea8c380
+      - name: Metal
+        guid: 5f6b45e8908be643b157a724c80359fc
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Material
+          ObjectType: 9
+          guid: 9fc392fb52948c4cb66e3c435e589866
+        - ElementName: Metal
+          ObjectType: 8
+          guid: 5f6b45e8908be643b157a724c80359fc
+      - name: None
+        guid: b5ac77d9f373aa459ed1531da6577937
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Material
+          ObjectType: 9
+          guid: 9fc392fb52948c4cb66e3c435e589866
+        - ElementName: None
+          ObjectType: 8
+          guid: b5ac77d9f373aa459ed1531da6577937
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\Puzzle.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Puzzle
+      ObjectType: 12
+      guid: 647699534d80c949a56e1fe8688a3d65
+    ParentPath: States\Puzzle
+    guid: 647699534d80c949a56e1fe8688a3d65
+    GuidInternal: 
+    m_lastTime: -8585540564273974865
+    List:
+    - name: Generator_Hum_Note
+      guid: 8ba9d53eb5b3444389a224a4fcc251c1
+      id: 4288503750
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: 647699534d80c949a56e1fe8688a3d65
+      - ElementName: Generator_Hum_Note
+        ObjectType: 9
+        guid: 8ba9d53eb5b3444389a224a4fcc251c1
+      Path: States\Puzzle\Generator_Hum_Note
+      values:
+      - name: None
+        guid: 684e4562507b3a479f470d71975e1e73
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: None
+          ObjectType: 8
+          guid: 684e4562507b3a479f470d71975e1e73
+      - name: Note_2
+        guid: df631d37211d604fa2a736441a9b4678
+        id: 2108395138
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_2
+          ObjectType: 8
+          guid: df631d37211d604fa2a736441a9b4678
+      - name: Note_3
+        guid: e9c05e91d29c1349a370026f5291ce9b
+        id: 2108395139
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_3
+          ObjectType: 8
+          guid: e9c05e91d29c1349a370026f5291ce9b
+      - name: Note_4
+        guid: 1a0a035ade81104f88bae00426ca262b
+        id: 2108395140
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_4
+          ObjectType: 8
+          guid: 1a0a035ade81104f88bae00426ca262b
+      - name: Note_5
+        guid: 691c6b7aec1fde4fa31bf4d56fa0c4e8
+        id: 2108395141
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_5
+          ObjectType: 8
+          guid: 691c6b7aec1fde4fa31bf4d56fa0c4e8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Resonant_Frequency_Note
+      guid: 319af7f7a60c66498c615385adf19d35
+      id: 2533881733
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: 647699534d80c949a56e1fe8688a3d65
+      - ElementName: Resonant_Frequency_Note
+        ObjectType: 9
+        guid: 319af7f7a60c66498c615385adf19d35
+      Path: States\Puzzle\Resonant_Frequency_Note
+      values:
+      - name: None
+        guid: ebc76a61a437a740a6324919a6dff8bc
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: None
+          ObjectType: 8
+          guid: ebc76a61a437a740a6324919a6dff8bc
+      - name: Note_1
+        guid: 95a88c28b7c29847b8c01ef065be9a4d
+        id: 2108395137
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_1
+          ObjectType: 8
+          guid: 95a88c28b7c29847b8c01ef065be9a4d
+      - name: Note_2
+        guid: 56e3c7f273291047b9b29133bbb8a011
+        id: 2108395138
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_2
+          ObjectType: 8
+          guid: 56e3c7f273291047b9b29133bbb8a011
+      - name: Note_3
+        guid: 647ab442103eda4bab9176154da9ede1
+        id: 2108395139
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_3
+          ObjectType: 8
+          guid: 647ab442103eda4bab9176154da9ede1
+      - name: Note_4
+        guid: c90283ceb74ab2428caf914e2a283ccc
+        id: 2108395140
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_4
+          ObjectType: 8
+          guid: c90283ceb74ab2428caf914e2a283ccc
+      - name: Note_5
+        guid: e13d485da1df1d4d9f56dcc336406fc2
+        id: 2108395141
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_5
+          ObjectType: 8
+          guid: e13d485da1df1d4d9f56dcc336406fc2
+      - name: Note_6
+        guid: 5e787071f56cc74dafd86e25232fbc0b
+        id: 2108395142
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_6
+          ObjectType: 8
+          guid: 5e787071f56cc74dafd86e25232fbc0b
+      - name: Note_7
+        guid: a8544100ed3da44b9e7af048a33f83e0
+        id: 2108395143
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_7
+          ObjectType: 8
+          guid: a8544100ed3da44b9e7af048a33f83e0
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ba3f39085c1e1a4eaa95b413330db915
+    ParentPath: Switches\Default Work Unit
+    guid: ba3f39085c1e1a4eaa95b413330db915
+    GuidInternal: 
+    m_lastTime: -8585643027370973763
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: f25b47a12a518141afbc59f62725d309
+    ParentPath: Triggers\Default Work Unit
+    guid: f25b47a12a518141afbc59f62725d309
+    GuidInternal: 
+    m_lastTime: -8585643027370968801
+    List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
