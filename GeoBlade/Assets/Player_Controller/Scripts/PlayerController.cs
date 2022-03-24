@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
     public float turnSmoothingTime = 0.1f;
     // TODO: encapsulate timeouts within Attack class for more customizability
     public float attackCooldown = 0.5f;
-    public float comboTimeout = 0.75f;
+    public float comboTimeout = 1.00f;
     public float attackInactivityTimeout = 5.0f;
     public DamageCollider weaponCollider;
     public bool isAttacking;
@@ -111,6 +111,7 @@ public class PlayerController : MonoBehaviour {
 
         if (_isWeaponActive && Time.time > _nextWeaponSheathe) {
             _isWeaponActive = false;
+            animator.SetBool("Weapon_Active", false);
             Debug.Log("GeoBlade sheathed");
         }
         
@@ -167,20 +168,21 @@ public class PlayerController : MonoBehaviour {
             if (Time.time < _nextAttackWindowClose) {
                 _nextAttackIndex = (_nextAttackIndex + 1) % 3;
                 animator.SetInteger("Combo", (_nextAttackIndex + 1) % 3);
-                //Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+                Debug.Log("Combo set to " + animator.GetInteger("Combo"));
             } else {
                 _nextAttackIndex = 0;
                 animator.SetInteger("Combo", 1);
-                //Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+                Debug.Log("Combo reset to " + animator.GetInteger("Combo"));
             }
         } else {
             _isWeaponActive = true;
-            _nextAttackIndex = 0;
+            animator.SetBool("Weapon_Active", true);
             
+            _nextAttackIndex = 0;
             Debug.Log("GeoBlade unsheathed");
             AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
             animator.SetInteger("Combo", 1);
-            //Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+            Debug.Log("Combo reset to " + animator.GetInteger("Combo"));
         }
 
         if (_nextAttackIndex == 2 && playerStats.geo < 5) {

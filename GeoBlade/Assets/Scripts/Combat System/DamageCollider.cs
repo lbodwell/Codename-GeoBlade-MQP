@@ -17,7 +17,6 @@ public class DamageCollider : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collider was hit");
         OnCollision(collision.gameObject);
     }
 
@@ -35,7 +34,7 @@ public class DamageCollider : MonoBehaviour
 
     private void OnCollision(GameObject otherObject)
     {
-        if (otherObject.TryGetComponent(out StatCollider other) && active)
+        if (active && otherObject.TryGetComponent(out StatCollider other))
         {
             other.stats.DamageCharacter(this.damage);
             Debug.Log("Dealing " + this.damage + "  to " + otherObject.name);
