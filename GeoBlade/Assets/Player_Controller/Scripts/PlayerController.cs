@@ -167,12 +167,12 @@ public class PlayerController : MonoBehaviour {
             if (Time.time < _nextAttackWindowStart) return;
             if (Time.time < _nextAttackWindowClose) {
                 _nextAttackIndex = (_nextAttackIndex + 1) % 3;
-                animator.SetInteger("Combo", (_nextAttackIndex + 1) % 3);
-                Debug.Log("Combo set to " + animator.GetInteger("Combo"));
+                //animator.SetInteger("Combo", _nextAttackIndex + 1);
+                //animator.SetInteger("Combo", (_nextAttackIndex + 1) % 3);
+                //Debug.Log("Combo set to " + animator.GetInteger("Combo"));
             } else {
                 _nextAttackIndex = 0;
-                animator.SetInteger("Combo", 1);
-                Debug.Log("Combo reset to " + animator.GetInteger("Combo"));
+                //animator.SetInteger("Combo", 1); 
             }
         } else {
             _isWeaponActive = true;
@@ -181,8 +181,8 @@ public class PlayerController : MonoBehaviour {
             _nextAttackIndex = 0;
             Debug.Log("GeoBlade unsheathed");
             AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
-            animator.SetInteger("Combo", 1);
-            Debug.Log("Combo reset to " + animator.GetInteger("Combo"));
+            //animator.SetInteger("Combo", 1);
+            //Debug.Log("Combo reset to " + animator.GetInteger("Combo"));
         }
 
         if (_nextAttackIndex == 2 && playerStats.geo < 5) {
@@ -195,15 +195,18 @@ public class PlayerController : MonoBehaviour {
         _nextAttackWindowClose = Time.time + comboTimeout;
         _nextWeaponSheathe = Time.time + attackInactivityTimeout;
 
-        //Debug.Log($"Attack (type: {currAttack.Name}, damage: {currAttack.Damage})");
+        Debug.Log($"Attack (type: {currAttack.Name}, damage: {currAttack.Damage})");
+        animator.SetInteger("Combo", _nextAttackIndex + 1);
+        
+        Debug.Log("current animator attack index: " + animator.GetInteger("Combo"));
         
         AkSoundEngine.SetState("Attack_Type", currAttack.Name);
         AkSoundEngine.PostEvent("Player_Attack", gameObject);
         
         OnPlayerAttack?.Invoke(currAttack.Damage);
         isAttacking = true;
-        StartCoroutine(ResetAttacking());
-        //OnPlayerAttack?.Invoke(currAttack.Damage); TODO: Make less jenk
+        // Why is this here?
+        //StartCoroutine(ResetAttacking());
         weaponCollider.damage = currAttack.Damage;
         
         if (_nextAttackIndex == 2) {
