@@ -156,6 +156,10 @@ public class DialogueManager : MonoBehaviour {
             AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.player);
         } else if (line.Speaker == "Iris") {
             AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.iris);
+        } else if (line.Speaker == "Security Droid 1") {
+            AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.securityDroid1);
+        } else if (line.Speaker == "Security Droid 2") {
+            AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.securityDroid2);
         } else {
             Debug.Log("Invalid speaker for current dialogue line");
         }

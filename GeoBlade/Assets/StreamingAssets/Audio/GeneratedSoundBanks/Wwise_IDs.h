@@ -17,7 +17,8 @@ namespace AK
         static const AkUniqueID LEVEL1_MUSIC = 2026953958U;
         static const AkUniqueID PLAY_GENERATOR_HUM = 2682110950U;
         static const AkUniqueID PLAY_RESONANT_FREQUENCY = 853873997U;
-        static const AkUniqueID PLAYER_ATTACK = 2824512041U;
+        static const AkUniqueID PLAYER_ATTACK_IMPACT = 3715470202U;
+        static const AkUniqueID PLAYER_ATTACK_SWING = 337451782U;
         static const AkUniqueID PLAYER_FOOTSTEP = 2453392179U;
         static const AkUniqueID PLAYER_JUMP = 1305133589U;
         static const AkUniqueID PLAYER_UNSHEATHE = 917509252U;

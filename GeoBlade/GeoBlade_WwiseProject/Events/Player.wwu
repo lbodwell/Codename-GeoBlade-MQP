@@ -25,18 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Player_Attack" ID="{327B8C41-943B-4B84-987A-1B61B2EF0F23}">
+				<Event Name="Player_Attack_Swing" ID="{327B8C41-943B-4B84-987A-1B61B2EF0F23}">
 					<ChildrenList>
 						<Action Name="" ID="{AB671645-394D-4289-ACD6-53557143289F}" ShortID="947198833">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player_Attack" ID="{2AABB46D-33FA-42D1-8D3B-9EF58E6D0E6E}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+									<ObjectRef Name="Player_Attack_Swing" ID="{2AABB46D-33FA-42D1-8D3B-9EF58E6D0E6E}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Player_Unsheathe" ID="{937329EF-6433-4BB9-8B56-0A96F215CB61}"/>
+				<Event Name="Player_Unsheathe" ID="{937329EF-6433-4BB9-8B56-0A96F215CB61}">
+					<ChildrenList>
+						<Action Name="" ID="{362E28D6-FB4C-4594-9F5B-E81BAA1C3678}" ShortID="468630338">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="geoblade_unsheathe" ID="{AB947EDA-4EA8-46DE-B625-89F79C46EBE7}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Security_Droid_Attack" ID="{90090751-01E7-4AF7-8DD5-DE6F148AA2E5}">
 					<ChildrenList>
 						<Action Name="" ID="{66DD774E-E2E8-472A-AC8F-35C009F59F9E}" ShortID="902925027">
@@ -54,6 +64,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="stasis_pod_hiss" ID="{53BA0B1E-0120-403F-AA71-C4F877E3F9DF}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Attack_Impact" ID="{169DD30A-786B-4741-9415-7B131727DF95}">
+					<ChildrenList>
+						<Action Name="" ID="{1B086BAF-EEBE-4A44-A0A0-C98614573601}" ShortID="242606329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Attack_Impact" ID="{64399029-3111-4545-9FC8-6A20EC4B5764}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

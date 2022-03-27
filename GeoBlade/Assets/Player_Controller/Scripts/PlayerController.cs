@@ -4,18 +4,16 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
-    public delegate void AttackAction(float damage);
-    public static event AttackAction OnPlayerAttack;
     public PlayerStats playerStats;
     public CharacterController controller;
     public Animator animator;
     public Transform cam;
-    public float gravity = 0.1f;
-    public float movementSpeed = 0.5f;
+    public float gravity;
+    public float movementSpeed;
     public float turnSmoothingTime = 0.1f;
     // TODO: encapsulate timeouts within Attack class for more customizability
     public float attackCooldown = 0.5f;
-    public float comboTimeout = 1.00f;
+    public float comboTimeout = 1.0f;
     public float attackInactivityTimeout = 5.0f;
     public DamageCollider weaponCollider;
 
@@ -23,6 +21,7 @@ public class PlayerController : MonoBehaviour {
     private Vector3 _velocity = new Vector3(0f, 0f, 0f);
     private bool _isSprinting;
     private bool _isJumping;
+    private bool _isAttacking;
     private bool _isWeaponActive;
     private float _nextFootstep;
     private float _nextAttackWindowStart;
@@ -77,7 +76,7 @@ public class PlayerController : MonoBehaviour {
 
         Vector3 finalVel;
 
-        if (inputDirection.magnitude < 0.1f) {
+        if (inputDirection.magnitude < 0.1f || _isAttacking) {
             finalVel = new Vector3(0f, _velocity.y, 0f);
         } else {
             var targetAngle = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -91,10 +90,10 @@ public class PlayerController : MonoBehaviour {
                     // TODO: Make this dynamic
                     if (_isSprinting) {
                         AkSoundEngine.SetState("Footstep_Type", "Run");
-                        _nextFootstep = Time.time + 0.225f;
+                        _nextFootstep = Time.time + 0.3375f;
                     } else {
                         AkSoundEngine.SetState("Footstep_Type", "Walk");
-                        _nextFootstep = Time.time + 0.275f;
+                        _nextFootstep = Time.time + 0.4125f;
                     }
 
                     AkSoundEngine.PostEvent("Player_Footstep", gameObject);
@@ -116,15 +115,13 @@ public class PlayerController : MonoBehaviour {
         animator.SetBool("Grounded", controller.isGrounded);
         animator.SetFloat("Speed", horizontalVel.magnitude);
         
-        if (Time.time >= _nextAttackWindowClose && animator.GetInteger("Combo") != 0)
-        {
+        if (Time.time >= _nextAttackWindowClose && animator.GetInteger("Combo") != 0) {
             animator.SetInteger("Combo", 0);
             //Debug.Log("Combo set to " + animator.GetInteger("Combo"));
         }
 
         // Triggered when animator switches states (for several frames)
-        if (animator.IsInTransition(0))
-        {
+        if (animator.IsInTransition(0)) {
             AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
             AnimatorStateInfo nextState = animator.GetNextAnimatorStateInfo(0);
             if (nextState.IsName("Run")) // Set animation speed to player speed
@@ -175,7 +172,7 @@ public class PlayerController : MonoBehaviour {
             
             _nextAttackIndex = 0;
             Debug.Log("GeoBlade unsheathed");
-            AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
+            //AkSoundEngine.PostEvent("Player_Unsheathe", gameObject);
             //animator.SetInteger("Combo", 1);
             //Debug.Log("Combo reset to " + animator.GetInteger("Combo"));
         }
@@ -196,18 +193,14 @@ public class PlayerController : MonoBehaviour {
         Debug.Log("current animator attack index: " + animator.GetInteger("Combo"));
         
         AkSoundEngine.SetState("Attack_Type", currAttack.Name);
-        AkSoundEngine.PostEvent("Player_Attack", gameObject);
+        AkSoundEngine.PostEvent("Player_Attack_Swing", weaponCollider.gameObject);
         
         //OnPlayerAttack?.Invoke(currAttack.Damage);
         // Why is this here?
         StartCoroutine(ResetAttacking());
         weaponCollider.damage = currAttack.Damage;
         weaponCollider.active = true;
-        
-        // This should only happen on hit
-        if (_nextAttackIndex == 2) {
-            playerStats.ConsumeGeo(5);
-        }
+        _isAttacking = true;
     }
 
     public void Sprint(InputAction.CallbackContext context) {
@@ -218,7 +211,8 @@ public class PlayerController : MonoBehaviour {
     // This is janky
     private IEnumerator ResetAttacking() {
         yield return new WaitForSeconds(attackCooldown);
-        weaponCollider.active = true;
+        weaponCollider.active = false;
+        _isAttacking = false;
     }
 }
 

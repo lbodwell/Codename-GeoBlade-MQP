@@ -13,7 +13,11 @@ public class HUDManager : MonoBehaviour {
     public Image geoBar;
 
     private void Awake() {
-        Instance = this;
+        if (Instance != null && Instance != this) {
+            Destroy(this);
+        } else {
+            Instance = this;
+        }
     }
     
     public void UpdateBar(BarType type, float fill) {

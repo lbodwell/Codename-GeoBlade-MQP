@@ -5,6 +5,13 @@
 			<ChildrenList>
 				<SwitchContainer Name="Player_Footsteps" ID="{96E05679-3EBD-4856-8771-D2E6A3AB2243}" ShortID="475261289">
 					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{44C88023-6AC3-41B8-8C72-9BA496945033}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -1112,152 +1119,6 @@
 						<ActiveSource Name="geoblade_unsheathe" ID="{49F67C97-A25B-4058-8532-5867535BCDD5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<SwitchContainer Name="Player_Attack" ID="{2AABB46D-33FA-42D1-8D3B-9EF58E6D0E6E}" ShortID="214393001">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-8</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-						</Reference>
-						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="Attack_Type" ID="{05F9D408-CF10-4C60-8710-300508312E18}" WorkUnitID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="geoblade_heavy" ID="{9DFBA883-CBAD-4B85-A49F-28A75D2DA27D}" ShortID="1063310510">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="geoblade_heavy" ID="{AC945A52-905C-4533-835E-9BCE67DA6D9F}">
-									<Language>SFX</Language>
-									<AudioFile>geoblade_heavy.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="402200985"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="geoblade_heavy" ID="{AC945A52-905C-4533-835E-9BCE67DA6D9F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="geoblade_light1" ID="{DEC3374B-BB83-411A-98BC-3437AE1B40B1}" ShortID="844733515">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="geoblade_light1" ID="{240DAD3F-9917-479E-A792-A7BD7603616D}">
-									<Language>SFX</Language>
-									<AudioFile>geoblade_light1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="153470063"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="geoblade_light1" ID="{240DAD3F-9917-479E-A792-A7BD7603616D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="geoblade_light2" ID="{B893DA03-EC36-49C9-AF8E-F5F47C98D0D5}" ShortID="857484402">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="geoblade_light2" ID="{9A11E8DC-1098-49FB-A0AC-5B5341A4DF3F}">
-									<Language>SFX</Language>
-									<AudioFile>geoblade_light2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="271462458"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="geoblade_light2" ID="{9A11E8DC-1098-49FB-A0AC-5B5341A4DF3F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="Attack_Type" ID="{05F9D408-CF10-4C60-8710-300508312E18}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList>
-							<CustomState>
-								<StateRef Name="Light2" ID="{7CAD223E-82F2-416C-A123-452E2E9C946A}"/>
-								<CustomState Name="" ID="{1324DE6E-56B3-48C2-ABC0-45869241BC9A}" ShortID="952957686"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Light1" ID="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}"/>
-								<CustomState Name="" ID="{0A59BAE3-4A4A-4803-B0C8-2DDEB66FAB76}" ShortID="600532651"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Heavy" ID="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}"/>
-								<CustomState Name="" ID="{A3A2F671-A250-4DF6-8796-026BB94B1BCD}" ShortID="735348389"/>
-							</CustomState>
-						</CustomStateList>
-					</StateInfo>
-					<ObjectLists/>
-					<GroupingInfo>
-						<GroupingBehaviorList>
-							<GroupingBehavior>
-								<ItemRef Name="geoblade_light2" ID="{B893DA03-EC36-49C9-AF8E-F5F47C98D0D5}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="geoblade_light1" ID="{DEC3374B-BB83-411A-98BC-3437AE1B40B1}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="geoblade_heavy" ID="{9DFBA883-CBAD-4B85-A49F-28A75D2DA27D}"/>
-							</GroupingBehavior>
-						</GroupingBehaviorList>
-						<GroupingList>
-							<Grouping>
-								<SwitchRef Name="Light2" ID="{7CAD223E-82F2-416C-A123-452E2E9C946A}"/>
-								<ItemList>
-									<ItemRef Name="geoblade_light2" ID="{B893DA03-EC36-49C9-AF8E-F5F47C98D0D5}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Heavy" ID="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}"/>
-								<ItemList>
-									<ItemRef Name="geoblade_heavy" ID="{9DFBA883-CBAD-4B85-A49F-28A75D2DA27D}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Light1" ID="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}"/>
-								<ItemList>
-									<ItemRef Name="geoblade_light1" ID="{DEC3374B-BB83-411A-98BC-3437AE1B40B1}"/>
-								</ItemList>
-							</Grouping>
-						</GroupingList>
-					</GroupingInfo>
-				</SwitchContainer>
 				<Sound Name="security_droid_stab" ID="{65E26057-3FEA-49AB-BA8E-EA2FF82CC5F1}" ShortID="974644065">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -1331,6 +1192,342 @@
 						<ActiveSource Name="stasis_pod_hiss" ID="{23BFE3C9-B8D5-4B06-91AE-D4A0E9109C13}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="Player_Attack" ID="{21078E0B-A8AA-446C-B78F-E43D621BB6F2}" ShortID="115098924">
+					<ChildrenList>
+						<SwitchContainer Name="Player_Attack_Swing" ID="{2AABB46D-33FA-42D1-8D3B-9EF58E6D0E6E}" ShortID="214393001">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A1B0B861-D60C-4C1B-8653-06BB4C6A6F59}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attack Attenuation" ID="{5CF3BAFF-C218-4D80-BA2D-5F67BA6C59D5}" WorkUnitID="{9E44F940-DC2D-46E1-9E14-08F4FE44DFE7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="None" ID="{177B57E6-74FA-4AB7-AEA7-9BCB43590F6A}" WorkUnitID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Attack_Type" ID="{05F9D408-CF10-4C60-8710-300508312E18}" WorkUnitID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="geoblade_heavy_swing" ID="{AC421ED8-886F-4791-ACAE-FEEDF20E95DF}" ShortID="931768354">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="geoblade_heavy_swing" ID="{8CDA0904-9C38-4CFA-ADBC-8D7F30E364E8}">
+											<Language>SFX</Language>
+											<AudioFile>geoblade_heavy_swing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1032158792"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="geoblade_heavy_swing" ID="{8CDA0904-9C38-4CFA-ADBC-8D7F30E364E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="geoblade_light1_swing" ID="{2A9BDC82-2E59-4ED3-8A18-21AA75114204}" ShortID="182593669">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="geoblade_light1_swing" ID="{BA148288-66AA-47FE-ACA2-E48A35279749}">
+											<Language>SFX</Language>
+											<AudioFile>geoblade_light1_swing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="66772328"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="geoblade_light1_swing" ID="{BA148288-66AA-47FE-ACA2-E48A35279749}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="geoblade_light2_swing" ID="{CBB1D4C5-4DB0-40B4-9571-BC62A5B1D170}" ShortID="4084773">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="geoblade_light2_swing" ID="{8E659541-2F54-46E7-8E51-919923C9C450}">
+											<Language>SFX</Language>
+											<AudioFile>geoblade_light2_swing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="87165200"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="geoblade_light2_swing" ID="{8E659541-2F54-46E7-8E51-919923C9C450}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Attack_Type" ID="{05F9D408-CF10-4C60-8710-300508312E18}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Light2" ID="{7CAD223E-82F2-416C-A123-452E2E9C946A}"/>
+										<CustomState Name="" ID="{1324DE6E-56B3-48C2-ABC0-45869241BC9A}" ShortID="952957686"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Light1" ID="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}"/>
+										<CustomState Name="" ID="{0A59BAE3-4A4A-4803-B0C8-2DDEB66FAB76}" ShortID="600532651"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Heavy" ID="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}"/>
+										<CustomState Name="" ID="{A3A2F671-A250-4DF6-8796-026BB94B1BCD}" ShortID="735348389"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="geoblade_light1_swing" ID="{2A9BDC82-2E59-4ED3-8A18-21AA75114204}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="geoblade_light2_swing" ID="{CBB1D4C5-4DB0-40B4-9571-BC62A5B1D170}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="geoblade_heavy_swing" ID="{AC421ED8-886F-4791-ACAE-FEEDF20E95DF}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Light2" ID="{7CAD223E-82F2-416C-A123-452E2E9C946A}"/>
+										<ItemList>
+											<ItemRef Name="geoblade_light2_swing" ID="{CBB1D4C5-4DB0-40B4-9571-BC62A5B1D170}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Heavy" ID="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}"/>
+										<ItemList>
+											<ItemRef Name="geoblade_heavy_swing" ID="{AC421ED8-886F-4791-ACAE-FEEDF20E95DF}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Light1" ID="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}"/>
+										<ItemList>
+											<ItemRef Name="geoblade_light1_swing" ID="{2A9BDC82-2E59-4ED3-8A18-21AA75114204}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Player_Attack_Impact" ID="{64399029-3111-4545-9FC8-6A20EC4B5764}" ShortID="403768291">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{ADDEC626-E99C-4D8C-8864-5029F0A9E492}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attack Attenuation" ID="{5CF3BAFF-C218-4D80-BA2D-5F67BA6C59D5}" WorkUnitID="{9E44F940-DC2D-46E1-9E14-08F4FE44DFE7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="None" ID="{177B57E6-74FA-4AB7-AEA7-9BCB43590F6A}" WorkUnitID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Attack_Type" ID="{05F9D408-CF10-4C60-8710-300508312E18}" WorkUnitID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="geoblade_heavy_impact" ID="{EB6708E7-7088-46E6-B30A-7ACAA3149563}" ShortID="118056278">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="geoblade_heavy_impact" ID="{0641718B-9D6F-493C-B581-A58EA1B26B02}">
+											<Language>SFX</Language>
+											<AudioFile>geoblade_heavy_impact.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="241756453"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="geoblade_heavy_impact" ID="{0641718B-9D6F-493C-B581-A58EA1B26B02}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="geoblade_light1_impact" ID="{1E7B28FE-33AD-4AA3-B8AD-7E82D1614046}" ShortID="585828209">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="geoblade_light1_impact" ID="{EDC24518-B98B-4A2D-AE05-71372A3B5E2D}">
+											<Language>SFX</Language>
+											<AudioFile>geoblade_light1_impact.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="415420482"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="geoblade_light1_impact" ID="{EDC24518-B98B-4A2D-AE05-71372A3B5E2D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="geoblade_light2_impact" ID="{663CE9A7-B67C-472A-9961-9D8838093C96}" ShortID="98484047">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="geoblade_light2_impact" ID="{80ED2018-0275-4AF0-86BA-2F3C5956F7BB}">
+											<Language>SFX</Language>
+											<AudioFile>geoblade_light2_impact.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="626910642"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="geoblade_light2_impact" ID="{80ED2018-0275-4AF0-86BA-2F3C5956F7BB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Attack_Type" ID="{05F9D408-CF10-4C60-8710-300508312E18}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Light2" ID="{7CAD223E-82F2-416C-A123-452E2E9C946A}"/>
+										<CustomState Name="" ID="{C3230076-7D8F-4D1C-AD71-70FDE95366C7}" ShortID="1021874574"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Light1" ID="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}"/>
+										<CustomState Name="" ID="{036A6DB2-3B53-4902-B584-47FE6C302A5C}" ShortID="24680275"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Heavy" ID="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}"/>
+										<CustomState Name="" ID="{B21C14C4-CB63-4D63-85FE-3DDCFF467345}" ShortID="343993494"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="geoblade_light2_impact" ID="{663CE9A7-B67C-472A-9961-9D8838093C96}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="geoblade_heavy_impact" ID="{EB6708E7-7088-46E6-B30A-7ACAA3149563}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="geoblade_light1_impact" ID="{1E7B28FE-33AD-4AA3-B8AD-7E82D1614046}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Light2" ID="{7CAD223E-82F2-416C-A123-452E2E9C946A}"/>
+										<ItemList>
+											<ItemRef Name="geoblade_light2_impact" ID="{663CE9A7-B67C-472A-9961-9D8838093C96}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Heavy" ID="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}"/>
+										<ItemList>
+											<ItemRef Name="geoblade_heavy_impact" ID="{EB6708E7-7088-46E6-B30A-7ACAA3149563}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Light1" ID="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}"/>
+										<ItemList>
+											<ItemRef Name="geoblade_light1_impact" ID="{1E7B28FE-33AD-4AA3-B8AD-7E82D1614046}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

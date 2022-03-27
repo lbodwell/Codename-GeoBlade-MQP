@@ -25,8 +25,10 @@ public class DamageCollider : MonoBehaviour {
     private void OnCollision(GameObject otherObject) {
         if (active && otherObject.TryGetComponent(out StatCollider other)) {
             other.stats.DamageCharacter(damage);
+            AkSoundEngine.PostEvent("Player_Attack_Impact", gameObject);
             Debug.Log("Dealing " + damage + "  to " + otherObject.name);
             onDamage?.Invoke(other);
+            active = false;
         }
     }
 

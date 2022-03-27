@@ -6,9 +6,10 @@
 				<SoundBank Name="Player" ID="{402D7D6E-93D2-423A-8194-31665310E031}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Stasis_Pod_Hiss" ID="{E9635F58-BC79-439A-8569-0F2689F9A533}" WorkUnitID="{DC3994D1-FBA0-4E2B-9C23-2A66BE5F6F0F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Attack_Impact" ID="{169DD30A-786B-4741-9415-7B131727DF95}" WorkUnitID="{DC3994D1-FBA0-4E2B-9C23-2A66BE5F6F0F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Security_Droid_Attack" ID="{90090751-01E7-4AF7-8DD5-DE6F148AA2E5}" WorkUnitID="{DC3994D1-FBA0-4E2B-9C23-2A66BE5F6F0F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Jump" ID="{BA223F0D-2886-4B4B-A6CA-6B837CB7A8AE}" WorkUnitID="{DC3994D1-FBA0-4E2B-9C23-2A66BE5F6F0F}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Player_Attack" ID="{327B8C41-943B-4B84-987A-1B61B2EF0F23}" WorkUnitID="{DC3994D1-FBA0-4E2B-9C23-2A66BE5F6F0F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Attack_Swing" ID="{327B8C41-943B-4B84-987A-1B61B2EF0F23}" WorkUnitID="{DC3994D1-FBA0-4E2B-9C23-2A66BE5F6F0F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Unsheathe" ID="{937329EF-6433-4BB9-8B56-0A96F215CB61}" WorkUnitID="{DC3994D1-FBA0-4E2B-9C23-2A66BE5F6F0F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Footstep" ID="{3BBA4A06-0BAF-4F32-B279-B0AE52626346}" WorkUnitID="{DC3994D1-FBA0-4E2B-9C23-2A66BE5F6F0F}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

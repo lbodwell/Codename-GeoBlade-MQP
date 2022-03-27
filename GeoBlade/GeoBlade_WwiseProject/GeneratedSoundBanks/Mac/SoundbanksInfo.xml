@@ -11,40 +11,75 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="2118270697">
+		<SoundBank Id="1069431850" Language="SFX" Hash="4210732908">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2824512041" Name="Player_Attack" ObjectPath="\Events\Player\Player_Attack" DurationType="OneShot" DurationMin="1.413515" DurationMax="2.451882">
+				<Event Id="3715470202" Name="Player_Attack_Impact" ObjectPath="\Events\Player\Player_Attack_Impact" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.199113" DurationMax="1.965013">
 					<IncludedMemoryFiles>
-						<File Id="153470063" Language="SFX">
-							<ShortName>geoblade_light1.wav</ShortName>
-							<Path>SFX\geoblade_light1_10C4C929.wem</Path>
+						<File Id="241756453" Language="SFX">
+							<ShortName>geoblade_heavy_impact.wav</ShortName>
+							<Path>SFX\geoblade_heavy_impact_10C4C929.wem</Path>
 						</File>
-						<File Id="271462458" Language="SFX">
-							<ShortName>geoblade_light2.wav</ShortName>
-							<Path>SFX\geoblade_light2_10C4C929.wem</Path>
+						<File Id="415420482" Language="SFX">
+							<ShortName>geoblade_light1_impact.wav</ShortName>
+							<Path>SFX\geoblade_light1_impact_10C4C929.wem</Path>
 						</File>
-						<File Id="402200985" Language="SFX">
-							<ShortName>geoblade_heavy.wav</ShortName>
-							<Path>SFX\geoblade_heavy_10C4C929.wem</Path>
+						<File Id="626910642" Language="SFX">
+							<ShortName>geoblade_light2_impact.wav</ShortName>
+							<Path>SFX\geoblade_light2_impact_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{177B57E6-74FA-4AB7-AEA7-9BCB43590F6A}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}">
 							<Media>
-								<File Id="402200985"/>
+								<File Id="241756453"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}">
 							<Media>
-								<File Id="153470063"/>
+								<File Id="415420482"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{7CAD223E-82F2-416C-A123-452E2E9C946A}">
 							<Media>
-								<File Id="271462458"/>
+								<File Id="626910642"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="337451782" Name="Player_Attack_Swing" ObjectPath="\Events\Player\Player_Attack_Swing" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.898961" DurationMax="2.454716">
+					<IncludedMemoryFiles>
+						<File Id="66772328" Language="SFX">
+							<ShortName>geoblade_light1_swing.wav</ShortName>
+							<Path>SFX\geoblade_light1_swing_10C4C929.wem</Path>
+						</File>
+						<File Id="87165200" Language="SFX">
+							<ShortName>geoblade_light2_swing.wav</ShortName>
+							<Path>SFX\geoblade_light2_swing_10C4C929.wem</Path>
+						</File>
+						<File Id="1032158792" Language="SFX">
+							<ShortName>geoblade_heavy_swing.wav</ShortName>
+							<Path>SFX\geoblade_heavy_swing_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{177B57E6-74FA-4AB7-AEA7-9BCB43590F6A}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}">
+							<Media>
+								<File Id="1032158792"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}">
+							<Media>
+								<File Id="66772328"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7CAD223E-82F2-416C-A123-452E2E9C946A}">
+							<Media>
+								<File Id="87165200"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -247,7 +282,14 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="917509252" Name="Player_Unsheathe" ObjectPath="\Events\Player\Player_Unsheathe" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="917509252" Name="Player_Unsheathe" ObjectPath="\Events\Player\Player_Unsheathe" DurationType="OneShot" DurationMin="2.217415" DurationMax="2.217415">
+					<IncludedMemoryFiles>
+						<File Id="528719708" Language="SFX">
+							<ShortName>geoblade_unsheathe.wav</ShortName>
+							<Path>SFX\geoblade_unsheathe_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1402779743" Name="Security_Droid_Attack" ObjectPath="\Events\Player\Security_Droid_Attack" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.340454" DurationMax="0.340454">
 					<IncludedMemoryFiles>
 						<File Id="119322569" Language="SFX">

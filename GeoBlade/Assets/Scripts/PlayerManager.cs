@@ -5,8 +5,14 @@ public class PlayerManager : MonoBehaviour {
     public GameObject player;
     public GameObject geoBlade;
     public GameObject iris;
+    public GameObject securityDroid1;
+    public GameObject securityDroid2;
 
     private void Awake() {
-        Instance = this;
+        if (Instance != null && Instance != this) {
+            Destroy(this);
+        } else {
+            Instance = this;
+        }
     }
 }

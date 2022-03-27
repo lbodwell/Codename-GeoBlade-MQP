@@ -12,10 +12,17 @@ public class SecurityDroidStats : CharacterStats {
 
     public override void DamageCharacter(float amount) {
         health = Math.Max(0, health - amount);
+
+        var playerStats = PlayerManager.Instance.player.GetComponent<PlayerStats>();
+
+        // Incredibly jank way to check for heavy attack. This should not be handled like this.
+        if (Math.Abs(amount - 20) < 0.5) {
+            playerStats.ConsumeGeo(5);
+        }
         
         if (health == 0) {
             Destroy(gameObject);
-            PlayerManager.Instance.player.GetComponent<PlayerStats>().ReplenishGeo(10);
+            playerStats.ReplenishGeo(10);
         }
         
         healthBarUI.SetActive(true);
