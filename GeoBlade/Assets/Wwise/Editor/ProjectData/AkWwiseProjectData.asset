@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b144575cff53e145bbed4dfb8f16af44
     GuidInternal: 
-    m_lastTime: -8585540599514976911
+    m_lastTime: -8585540564273979825
     List:
     - name: Dialogue
       guid: 4a7f2e159c23e64a8d15f2d8b354e15c
@@ -149,7 +149,7 @@ MonoBehaviour:
     ParentPath: Events\Dialogue
     guid: 475c5da5829670438fba66501ba9a246
     GuidInternal: 
-    m_lastTime: -8585540601817668904
+    m_lastTime: -8585540564286017728
     List:
     - name: Dialogue_Trigger
       guid: 0666227a29948e44bafd5efae5ca592a
@@ -209,7 +209,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: d19439dca0fb2b4e9c232a66be5f6f0f
     GuidInternal: 
-    m_lastTime: -8585540601817663900
+    m_lastTime: -8585540564286012771
     List:
     - name: Player_Attack
       guid: 418c7b323b94844b987a1b61b2ef0f23
@@ -324,7 +324,7 @@ MonoBehaviour:
     ParentPath: Events\Puzzle
     guid: f52fa766ba11844b882cd3dd3494d08a
     GuidInternal: 
-    m_lastTime: -8585540599516516917
+    m_lastTime: -8585540564286007811
     List:
     - name: Play_Generator_Hum
       guid: aa417a4dceb6cd43a6ae58977f35a58e
@@ -386,7 +386,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0712bfab92afb340a63c6588fc4ec0f8
     GuidInternal: 
-    m_lastTime: -8585603614573301196
+    m_lastTime: -8585535236378551044
     List: []
   - PhysicalPath: States\Dialogue.wwu
     PathAndIcons:
@@ -944,7 +944,7 @@ MonoBehaviour:
     ParentPath: States\Puzzle
     guid: 647699534d80c949a56e1fe8688a3d65
     GuidInternal: 
-    m_lastTime: -8585540599514976911
+    m_lastTime: -8585540564273974865
     List:
     - name: Generator_Hum_Note
       guid: 8ba9d53eb5b3444389a224a4fcc251c1
