@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour {
     public float comboTimeout = 1.00f;
     public float attackInactivityTimeout = 5.0f;
     public DamageCollider weaponCollider;
-    public bool isAttacking;
 
     private List<Attack> _attacks;
     private Vector3 _velocity = new Vector3(0f, 0f, 0f);
@@ -38,17 +37,13 @@ public class PlayerController : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Confined;
     }
     
-    private async void Start() {
+    private void Start() {
         // TODO: Use enums for attack names
         _attacks = new List<Attack> {
             new Attack("Light1", 5),
             new Attack("Light2", 10),
             new Attack("Heavy", 20)
         };
-
-        if (DialogueManager.Instance != null) {
-            await DialogueManager.Instance.PlayDialogueSequence("lvl1_stasis_room_seru_01");
-        }
     }
 
     private void OnDestroy() {
@@ -203,12 +198,13 @@ public class PlayerController : MonoBehaviour {
         AkSoundEngine.SetState("Attack_Type", currAttack.Name);
         AkSoundEngine.PostEvent("Player_Attack", gameObject);
         
-        OnPlayerAttack?.Invoke(currAttack.Damage);
-        isAttacking = true;
+        //OnPlayerAttack?.Invoke(currAttack.Damage);
         // Why is this here?
-        //StartCoroutine(ResetAttacking());
+        StartCoroutine(ResetAttacking());
         weaponCollider.damage = currAttack.Damage;
+        weaponCollider.active = true;
         
+        // This should only happen on hit
         if (_nextAttackIndex == 2) {
             playerStats.ConsumeGeo(5);
         }
@@ -222,7 +218,7 @@ public class PlayerController : MonoBehaviour {
     // This is janky
     private IEnumerator ResetAttacking() {
         yield return new WaitForSeconds(attackCooldown);
-        isAttacking = false;
+        weaponCollider.active = true;
     }
 }
 

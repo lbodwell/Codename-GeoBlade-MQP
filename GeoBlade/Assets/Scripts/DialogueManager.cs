@@ -33,8 +33,22 @@ public class DialogueManager : MonoBehaviour {
     private bool _sequenceActive;
 
     private void Awake() {
-        Instance = this;
+        if (Instance != null && Instance != this) {
+            Destroy(this);
+        } else {
+            Instance = this;
+        }
+        
         _dialogueLines = new Dictionary<string, DialogueLine>();
+        
+        if (subtitlesEnabled && subtitlesTextBox != null) {
+            var textBox = subtitlesTextBox.GetComponent<TextMeshProUGUI>();
+
+            if (textBox != null) {
+                textBox.SetText("");
+            }
+        }
+        
         ResetCancellationToken();
 
         Debug.Log("Loading dialogue lines...");
@@ -42,6 +56,7 @@ public class DialogueManager : MonoBehaviour {
             Debug.Log("Failed to load dialogue lines.");
             return;
         }
+        
         Debug.Log("Successfully loaded dialogue lines.");
     }
 
@@ -137,7 +152,7 @@ public class DialogueManager : MonoBehaviour {
         }
 
         // TODO: Make this more robust
-        if (line.Speaker == "Seru") {
+        if (line.Speaker == "Seru" || line.Speaker == "Unknown" || line.Speaker == "The Core") {
             AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.player);
         } else if (line.Speaker == "Iris") {
             AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.iris);

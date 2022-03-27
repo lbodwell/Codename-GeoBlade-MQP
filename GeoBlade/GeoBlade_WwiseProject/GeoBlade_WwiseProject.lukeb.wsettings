@@ -124,7 +124,8 @@
 				<List Name="BatchRenameSettings">
 					<PluginInnerObject Name="" ID="{7474B061-E4EF-4F19-B422-402C329DB7B7}" PluginName="BatchRenameSettings" CompanyID="0" PluginID="992">
 						<PropertyList>
-							<Property Name="ReplaceFindWhat" Type="string" Value="geoblade_dialogue_"/>
+							<Property Name="ReplaceFindWhat" Type="string" Value="lv1"/>
+							<Property Name="ReplaceReplaceWith" Type="string" Value="lvl1"/>
 						</PropertyList>
 					</PluginInnerObject>
 				</List>
