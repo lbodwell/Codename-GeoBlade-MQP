@@ -1568,67 +1568,6 @@
 						</MusicTransition>
 					</TransitionList>
 					<ObjectLists/>
-					<ArgumentList>
-						<ArgumentRef Name="Music_Level1" ID="{5EFCDAB4-B77E-4CBA-B45F-1F7C053A0AA0}"/>
-					</ArgumentList>
-					<EntryList>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Track1_Section1" ID="{CFA14121-2F09-4B58-9AC2-B62F1CD035EA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Level1_Track1_Section1" ID="{51EE1109-5862-4F42-838B-4906AF77BCBE}" WorkUnitID="{838802FB-A13D-4A8F-B73B-7400A1B4DE29}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Track2_Section1" ID="{C931A956-4679-4314-BF98-DA7EB0F665E6}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Level1_Track2_Section1" ID="{C804D6DB-D829-49AE-ABE8-AE635E17CD4E}" WorkUnitID="{838802FB-A13D-4A8F-B73B-7400A1B4DE29}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Track1_Section2" ID="{4B300C52-F4A9-48E9-A524-DFD38D7F5AF9}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Level1_Track1_Section2" ID="{CBBA5602-7142-4635-9F84-DEC0F8F5C3F2}" WorkUnitID="{838802FB-A13D-4A8F-B73B-7400A1B4DE29}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Track3_Section1" ID="{DC0287FF-D213-4248-9E91-7B07CB6F1922}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Level1_Track3_Section1" ID="{5010DAC3-8E6D-440B-8ABF-2867A35608BE}" WorkUnitID="{838802FB-A13D-4A8F-B73B-7400A1B4DE29}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Track3_Section2" ID="{2D03040A-4BBF-4FB6-9606-02D079BB2D4D}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Level1_Track3_Section2" ID="{3B3FE151-9EE8-4711-90D9-A4E069873138}" WorkUnitID="{838802FB-A13D-4A8F-B73B-7400A1B4DE29}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Track3_Section3" ID="{D4F021FB-AA29-4A21-9CE5-765C35961541}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Level1_Track3_Section3" ID="{DBC42400-524A-4BAB-BF87-DA0B0679C875}" WorkUnitID="{838802FB-A13D-4A8F-B73B-7400A1B4DE29}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Track3_Section4" ID="{6D20F2F1-25B2-47F0-9CFD-8BA83BF160AA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Level1_Track3_Section4" ID="{2CD87E6C-891E-4EB8-A8B4-A9B981C7CC05}" WorkUnitID="{838802FB-A13D-4A8F-B73B-7400A1B4DE29}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-					</EntryList>
 				</MusicSwitchContainer>
 			</ChildrenList>
 		</WorkUnit>

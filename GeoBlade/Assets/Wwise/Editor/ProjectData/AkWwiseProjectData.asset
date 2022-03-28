@@ -165,9 +165,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0666227a29948e44bafd5efae5ca592a
       Path: Events\Dialogue\Dialogue_Trigger
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 50
+      maxDuration: 11.449729
+      minDuration: 0.772417
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -225,9 +225,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0ad39d166b78414794157b131727df95
       Path: Events\Player\Player_Attack_Impact
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 25
+      maxDuration: 1.965013
+      minDuration: 1.199113
     - name: Player_Attack_Swing
       guid: 418c7b323b94844b987a1b61b2ef0f23
       id: 337451782
@@ -242,9 +242,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 418c7b323b94844b987a1b61b2ef0f23
       Path: Events\Player\Player_Attack_Swing
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 25
+      maxDuration: 2.454716
+      minDuration: 0.898961
     - name: Player_Footstep
       guid: 064aba3baf0b324fb279b0ae52626346
       id: 2453392179
@@ -260,8 +260,8 @@ MonoBehaviour:
         guid: 064aba3baf0b324fb279b0ae52626346
       Path: Events\Player\Player_Footstep
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.401294
+      minDuration: 0.201399
     - name: Player_Jump
       guid: 0d3f22ba86284b4ba6ca6b837cb7a8ae
       id: 1305133589
@@ -277,8 +277,8 @@ MonoBehaviour:
         guid: 0d3f22ba86284b4ba6ca6b837cb7a8ae
       Path: Events\Player\Player_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.614489
+      minDuration: 0.358672
     - name: Player_Unsheathe
       guid: ef2973933364b94b8b560a96f215cb61
       id: 917509252
@@ -294,8 +294,8 @@ MonoBehaviour:
         guid: ef2973933364b94b8b560a96f215cb61
       Path: Events\Player\Player_Unsheathe
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.217415
+      minDuration: 2.217415
     - name: Security_Droid_Attack
       guid: 51070990e701f74a8dd5de6f148aa2e5
       id: 1402779743
@@ -310,9 +310,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 51070990e701f74a8dd5de6f148aa2e5
       Path: Events\Player\Security_Droid_Attack
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 50
+      maxDuration: 0.340454
+      minDuration: 0.340454
     - name: Stasis_Pod_Hiss
       guid: 585f63e979bc9a4385690f2689f9a533
       id: 3474418164
@@ -327,9 +327,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 585f63e979bc9a4385690f2689f9a533
       Path: Events\Player\Stasis_Pod_Hiss
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 50
+      maxDuration: 61.407814
+      minDuration: 61.407814
   - PhysicalPath: Events\Puzzle.wwu
     PathAndIcons:
     - ElementName: Events
@@ -357,9 +357,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: aa417a4dceb6cd43a6ae58977f35a58e
       Path: Events\Puzzle\Play_Generator_Hum
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 100
+      maxDuration: 1.12805
+      minDuration: 1.125011
     - name: Play_Resonant_Frequency
       guid: 774ab42d9908ee46b94c8accae3b8f9a
       id: 853873997
@@ -374,9 +374,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 774ab42d9908ee46b94c8accae3b8f9a
       Path: Events\Puzzle\Play_Resonant_Frequency
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 100
+      maxDuration: 1.249501
+      minDuration: 1.229116
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -2356,7 +2356,7 @@ MonoBehaviour:
     m_lastTime: -8585643027370968801
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 010000000500000009000000160000001a0000001b0000002300000024000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

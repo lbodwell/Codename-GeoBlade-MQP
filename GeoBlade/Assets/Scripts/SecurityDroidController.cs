@@ -25,7 +25,7 @@ public class SecurityDroidController : MonoBehaviour {
     }
     
     private void Update() {
-        if (isAggro && _target != null) {
+        if (_target != null) {
             var dist = Vector3.Distance(_target.position, transform.position);
 
             if (dist <= chaseRadius) {
@@ -36,20 +36,22 @@ public class SecurityDroidController : MonoBehaviour {
                     turnSmoothingTime);
                 transform.rotation = Quaternion.Euler(0f, smoothedAngle, 0f);
 
-                if (dist <= attackRadius) {
-                    if (!_isInAttackRange) {
-                        _nextAttackAttempt = Time.time + attackGracePeriod;
-                    }
+                if (isAggro) {
+                    if (dist <= attackRadius) {
+                        if (!_isInAttackRange) {
+                            _nextAttackAttempt = Time.time + attackGracePeriod;
+                        }
 
-                    _isInAttackRange = true;
-                    if (Time.time >= _nextAttackAttempt) {
-                        PlayerManager.Instance.player.GetComponent<PlayerStats>().DamageCharacter(attackDamage);
-                        AkSoundEngine.PostEvent("Security_Droid_Attack", gameObject);
-                        _nextAttackAttempt = Time.time + attackCooldown;
+                        _isInAttackRange = true;
+                        if (Time.time >= _nextAttackAttempt) {
+                            PlayerManager.Instance.player.GetComponent<PlayerStats>().DamageCharacter(attackDamage);
+                            AkSoundEngine.PostEvent("Security_Droid_Attack", gameObject);
+                            _nextAttackAttempt = Time.time + attackCooldown;
+                        }
+                    } else {
+                        _isInAttackRange = false;
+                        controller.SimpleMove(new Vector3(dir.x * movementSpeed, dir.y, dir.z * movementSpeed));
                     }
-                } else {
-                    _isInAttackRange = false;
-                    controller.SimpleMove(new Vector3(dir.x * movementSpeed, dir.y, dir.z * movementSpeed));
                 }
             }
         }

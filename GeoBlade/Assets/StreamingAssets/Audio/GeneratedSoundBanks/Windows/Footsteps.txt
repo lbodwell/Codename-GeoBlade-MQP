@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2453392179	Player_Footstep			\Default Work Unit\Player_Footstep	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	726608421	footstep_underground_1	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\sfx_player_footstep_underground_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\footstep_underground_1		74560
+
