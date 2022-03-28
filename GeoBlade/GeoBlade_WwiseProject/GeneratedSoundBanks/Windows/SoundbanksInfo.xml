@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="4249681007">
+		<SoundBank Id="1069431850" Language="SFX" Hash="2821176366">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3715470202" Name="Player_Attack_Impact" ObjectPath="\Events\Player\Player_Attack_Impact" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.199113" DurationMax="1.965013">
+				<Event Id="3715470202" Name="Player_Attack_Impact" ObjectPath="\Events\Player\Player_Attack_Impact" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.199113" DurationMax="1.965013">
 					<IncludedMemoryFiles>
 						<File Id="241756453" Language="SFX">
 							<ShortName>geoblade_heavy_impact.wav</ShortName>
@@ -50,7 +50,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="337451782" Name="Player_Attack_Swing" ObjectPath="\Events\Player\Player_Attack_Swing" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.898961" DurationMax="2.454716">
+				<Event Id="337451782" Name="Player_Attack_Swing" ObjectPath="\Events\Player\Player_Attack_Swing" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.898961" DurationMax="2.454716">
 					<IncludedMemoryFiles>
 						<File Id="66772328" Language="SFX">
 							<ShortName>geoblade_light1_swing.wav</ShortName>
@@ -290,7 +290,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1402779743" Name="Security_Droid_Attack" ObjectPath="\Events\Player\Security_Droid_Attack" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.340454" DurationMax="0.340454">
+				<Event Id="1402779743" Name="Security_Droid_Attack" ObjectPath="\Events\Player\Security_Droid_Attack" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.340454" DurationMax="0.340454">
 					<IncludedMemoryFiles>
 						<File Id="119322569" Language="SFX">
 							<ShortName>security_droid_stab.wav</ShortName>
@@ -298,7 +298,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3474418164" Name="Stasis_Pod_Hiss" ObjectPath="\Events\Player\Stasis_Pod_Hiss" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="61.407814" DurationMax="61.407814">
+				<Event Id="3474418164" Name="Stasis_Pod_Hiss" ObjectPath="\Events\Player\Stasis_Pod_Hiss" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="61.407814" DurationMax="61.407814">
 					<IncludedMemoryFiles>
 						<File Id="201693393" Language="SFX">
 							<ShortName>stasis_pod_hiss.wav</ShortName>
@@ -333,7 +333,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2095369236">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1426975017">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -481,12 +481,12 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3930136735" Language="SFX" Hash="1207793842">
+		<SoundBank Id="3930136735" Language="SFX" Hash="58424313">
 			<ObjectPath>\SoundBanks\Default Work Unit\Dialogue</ObjectPath>
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4029211690" Name="Dialogue_Trigger" ObjectPath="\Events\Dialogue\Dialogue_Trigger" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.772417" DurationMax="11.449729">
+				<Event Id="4029211690" Name="Dialogue_Trigger" ObjectPath="\Events\Dialogue\Dialogue_Trigger" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.772417" DurationMax="11.449729">
 					<IncludedMemoryFiles>
 						<File Id="17941453" Language="SFX">
 							<ShortName>lv1_generatorRoom_iris_04.wav</ShortName>
@@ -495,10 +495,6 @@
 						<File Id="21767523" Language="SFX">
 							<ShortName>lv1_platformB_core_01.wav</ShortName>
 							<Path>SFX\lv1_platformB_core_01_10C4C929.wem</Path>
-						</File>
-						<File Id="48171670" Language="SFX">
-							<ShortName>lvl1_spiralRoom_seru_03.wav</ShortName>
-							<Path>SFX\lvl1_spiralRoom_seru_03_10C4C929.wem</Path>
 						</File>
 						<File Id="52354809" Language="SFX">
 							<ShortName>lvl1_spiralRoom_seru_02.wav</ShortName>
@@ -515,10 +511,6 @@
 						<File Id="74934006" Language="SFX">
 							<ShortName>lv1_vista_seru_04.wav</ShortName>
 							<Path>SFX\lv1_vista_seru_04_10C4C929.wem</Path>
-						</File>
-						<File Id="92462724" Language="SFX">
-							<ShortName>geoblade_dialogue_lvl1_spiral_room_iris_05.wav</ShortName>
-							<Path>SFX\geoblade_dialogue_lvl1_spiral_room_iris_05_10C4C929.wem</Path>
 						</File>
 						<File Id="112668475" Language="SFX">
 							<ShortName>lvl1_spiralRoom_seru_01.wav</ShortName>
@@ -615,6 +607,10 @@
 						<File Id="409018837" Language="SFX">
 							<ShortName>lvl1_platformA_seru_02.wav</ShortName>
 							<Path>SFX\lvl1_platformA_seru_02_10C4C929.wem</Path>
+						</File>
+						<File Id="411634141" Language="SFX">
+							<ShortName>lvl1_spiralRoom_iris_05.wav</ShortName>
+							<Path>SFX\lvl1_spiralRoom_iris_05_10C4C929.wem</Path>
 						</File>
 						<File Id="439598663" Language="SFX">
 							<ShortName>lvl1_transportationHangar_seru_04.wav</ShortName>
@@ -829,11 +825,6 @@
 								<File Id="69217860"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{8A364B4B-9C3F-4C66-BA68-21266C55D5B2}">
-							<Media>
-								<File Id="92462724"/>
-							</Media>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{0BE6B722-5A09-4293-8D4E-393E00BB487C}">
 							<Media>
 								<File Id="112668475"/>
@@ -842,11 +833,6 @@
 						<SwitchContainer SwitchValue="{74DEE83E-F925-49D7-8BC9-B133CD3A1C82}">
 							<Media>
 								<File Id="52354809"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{341D3BF9-CB08-429E-B2E6-E62DAA4A34E7}">
-							<Media>
-								<File Id="48171670"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{BD86F8AD-F762-42BC-A223-387EB5AC0D6A}">
@@ -1184,6 +1170,11 @@
 								<File Id="402648391"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{8A364B4B-9C3F-4C66-BA68-21266C55D5B2}">
+							<Media>
+								<File Id="411634141"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
@@ -1202,7 +1193,6 @@
 						<State Id="2662722073" Name="lvl1_spiralRoom_iris_03" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_spiralRoom_iris_03" GUID="{8EA3C08F-AF4E-4F56-A3FD-D6785ED40847}"/>
 						<State Id="380905701" Name="lvl1_spiralRoom_seru_01" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_spiralRoom_seru_01" GUID="{0BE6B722-5A09-4293-8D4E-393E00BB487C}"/>
 						<State Id="380905702" Name="lvl1_spiralRoom_seru_02" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_spiralRoom_seru_02" GUID="{74DEE83E-F925-49D7-8BC9-B133CD3A1C82}"/>
-						<State Id="380905703" Name="lvl1_spiralRoom_seru_03" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_spiralRoom_seru_03" GUID="{341D3BF9-CB08-429E-B2E6-E62DAA4A34E7}"/>
 						<State Id="3117459357" Name="lvl1_transportationHanagar_iris_01" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_transportationHanagar_iris_01" GUID="{273228D5-6E65-4E69-BAAE-B1277F0D14C9}"/>
 						<State Id="2881107239" Name="lvl1_transportationHanagar_seru_01" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_transportationHanagar_seru_01" GUID="{EA0DF432-32A3-4653-877A-D68CB54EF2D2}"/>
 						<State Id="3117459358" Name="lvl1_transportationHanagar_iris_02" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_transportationHanagar_iris_02" GUID="{18A0A028-D1F8-4353-AF9A-4B50D0F06296}"/>
@@ -1272,20 +1262,44 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="492963397">
+		<SoundBank Id="3991942870" Language="SFX" Hash="3954630258">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2026953958" Name="Level1_Music" ObjectPath="\Events\Music\Level1_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="332179452" Language="SFX">
-							<ShortName>Seru Theme.wav</ShortName>
-							<Path>SFX\Seru Theme_D79FB2B7.wem</Path>
+						<File Id="327011514" Language="SFX">
+							<ShortName>Seru Theme Intro.wav</ShortName>
+							<Path>SFX\Seru Theme Intro_D79FB2B7.wem</Path>
+						</File>
+						<File Id="486047884" Language="SFX">
+							<ShortName>City_Segment1_cut.wav</ShortName>
+							<Path>SFX\City_Segment1_cut_D79FB2B7.wem</Path>
+						</File>
+						<File Id="578067207" Language="SFX">
+							<ShortName>City_Segment4.wav</ShortName>
+							<Path>SFX\City_Segment4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="582909837" Language="SFX">
+							<ShortName>City_Segment5.wav</ShortName>
+							<Path>SFX\City_Segment5_D79FB2B7.wem</Path>
 						</File>
 						<File Id="777378290" Language="SFX">
 							<ShortName>New Section1.wav</ShortName>
 							<Path>SFX\New Section1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="859221486" Language="SFX">
+							<ShortName>City_Segment3.wav</ShortName>
+							<Path>SFX\City_Segment3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="894948625" Language="SFX">
+							<ShortName>City_Segment2_cut.wav</ShortName>
+							<Path>SFX\City_Segment2_cut_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1020416721" Language="SFX">
+							<ShortName>Seru Theme Loop.wav</ShortName>
+							<Path>SFX\Seru Theme Loop_D79FB2B7.wem</Path>
 						</File>
 						<File Id="1025610557" Language="SFX">
 							<ShortName>music_level1_track1_section3.wav</ShortName>
@@ -1298,26 +1312,52 @@
 								<File Id="777378290"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C931A956-4679-4314-BF98-DA7EB0F665E6}">
+							<Media>
+								<File Id="327011514"/>
+								<File Id="1020416721"/>
+							</Media>
+						</SwitchContainer>
 						<SwitchContainer SwitchValue="{4B300C52-F4A9-48E9-A524-DFD38D7F5AF9}">
 							<Media>
 								<File Id="1025610557"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{C931A956-4679-4314-BF98-DA7EB0F665E6}">
+						<SwitchContainer SwitchValue="{DC0287FF-D213-4248-9E91-7B07CB6F1922}">
 							<Media>
-								<File Id="332179452"/>
+								<File Id="486047884"/>
+								<File Id="894948625"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2D03040A-4BBF-4FB6-9606-02D079BB2D4D}">
+							<Media>
+								<File Id="859221486"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D4F021FB-AA29-4A21-9CE5-765C35961541}">
+							<Media>
+								<File Id="578067207"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6D20F2F1-25B2-47F0-9CFD-8BA83BF160AA}">
+							<Media>
+								<File Id="582909837"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
 			<StateGroups>
-				<StateGroup Id="2489350135" Name="Music_Level1_Track1" ObjectPath="\States\Music\Music_Level1_Track1" GUID="{5EFCDAB4-B77E-4CBA-B45F-1F7C053A0AA0}">
+				<StateGroup Id="2209143526" Name="Music_Level1" ObjectPath="\States\Music\Music_Level1" GUID="{5EFCDAB4-B77E-4CBA-B45F-1F7C053A0AA0}">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Music\Music_Level1_Track1\None" GUID="{DD0D7B19-867E-4C3A-9142-C12A21CAB4C2}"/>
-						<State Id="3524678539" Name="Section1" ObjectPath="\States\Music\Music_Level1_Track1\Section1" GUID="{CFA14121-2F09-4B58-9AC2-B62F1CD035EA}"/>
-						<State Id="3524678536" Name="Section2" ObjectPath="\States\Music\Music_Level1_Track1\Section2" GUID="{4B300C52-F4A9-48E9-A524-DFD38D7F5AF9}"/>
-						<State Id="3524678537" Name="Section3" ObjectPath="\States\Music\Music_Level1_Track1\Section3" GUID="{C931A956-4679-4314-BF98-DA7EB0F665E6}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Music\Music_Level1\None" GUID="{DD0D7B19-867E-4C3A-9142-C12A21CAB4C2}"/>
+						<State Id="2280635048" Name="Track1_Section1" ObjectPath="\States\Music\Music_Level1\Track1_Section1" GUID="{CFA14121-2F09-4B58-9AC2-B62F1CD035EA}"/>
+						<State Id="2280635051" Name="Track1_Section2" ObjectPath="\States\Music\Music_Level1\Track1_Section2" GUID="{4B300C52-F4A9-48E9-A524-DFD38D7F5AF9}"/>
+						<State Id="2599758657" Name="Track2_Section1" ObjectPath="\States\Music\Music_Level1\Track2_Section1" GUID="{C931A956-4679-4314-BF98-DA7EB0F665E6}"/>
+						<State Id="2744513742" Name="Track3_Section1" ObjectPath="\States\Music\Music_Level1\Track3_Section1" GUID="{DC0287FF-D213-4248-9E91-7B07CB6F1922}"/>
+						<State Id="2744513741" Name="Track3_Section2" ObjectPath="\States\Music\Music_Level1\Track3_Section2" GUID="{2D03040A-4BBF-4FB6-9606-02D079BB2D4D}"/>
+						<State Id="2744513740" Name="Track3_Section3" ObjectPath="\States\Music\Music_Level1\Track3_Section3" GUID="{D4F021FB-AA29-4A21-9CE5-765C35961541}"/>
+						<State Id="2744513739" Name="Track3_Section4" ObjectPath="\States\Music\Music_Level1\Track3_Section4" GUID="{6D20F2F1-25B2-47F0-9CFD-8BA83BF160AA}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>

@@ -17,7 +17,6 @@
 						<State Name="lvl1_spiralRoom_iris_03" ID="{8EA3C08F-AF4E-4F56-A3FD-D6785ED40847}"/>
 						<State Name="lvl1_spiralRoom_seru_01" ID="{0BE6B722-5A09-4293-8D4E-393E00BB487C}"/>
 						<State Name="lvl1_spiralRoom_seru_02" ID="{74DEE83E-F925-49D7-8BC9-B133CD3A1C82}"/>
-						<State Name="lvl1_spiralRoom_seru_03" ID="{341D3BF9-CB08-429E-B2E6-E62DAA4A34E7}"/>
 						<State Name="lvl1_transportationHanagar_iris_01" ID="{273228D5-6E65-4E69-BAAE-B1277F0D14C9}"/>
 						<State Name="lvl1_transportationHanagar_seru_01" ID="{EA0DF432-32A3-4653-877A-D68CB54EF2D2}"/>
 						<State Name="lvl1_transportationHanagar_iris_02" ID="{18A0A028-D1F8-4353-AF9A-4B50D0F06296}"/>

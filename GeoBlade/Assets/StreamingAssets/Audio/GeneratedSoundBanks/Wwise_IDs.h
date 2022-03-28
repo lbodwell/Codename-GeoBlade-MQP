@@ -83,7 +83,6 @@ namespace AK
                 static const AkUniqueID LVL1_SPIRALROOM_IRIS_05 = 2662722079U;
                 static const AkUniqueID LVL1_SPIRALROOM_SERU_01 = 380905701U;
                 static const AkUniqueID LVL1_SPIRALROOM_SERU_02 = 380905702U;
-                static const AkUniqueID LVL1_SPIRALROOM_SERU_03 = 380905703U;
                 static const AkUniqueID LVL1_STASISROOM_IRIS_01 = 4061841897U;
                 static const AkUniqueID LVL1_STASISROOM_IRIS_02 = 4061841898U;
                 static const AkUniqueID LVL1_STASISROOM_SERU_01 = 4003890723U;
@@ -167,18 +166,22 @@ namespace AK
             } // namespace STATE
         } // namespace MATERIAL
 
-        namespace MUSIC_LEVEL1_TRACK1
+        namespace MUSIC_LEVEL1
         {
-            static const AkUniqueID GROUP = 2489350135U;
+            static const AkUniqueID GROUP = 2209143526U;
 
             namespace STATE
             {
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID SECTION1 = 3524678539U;
-                static const AkUniqueID SECTION2 = 3524678536U;
-                static const AkUniqueID SECTION3 = 3524678537U;
+                static const AkUniqueID TRACK1_SECTION1 = 2280635048U;
+                static const AkUniqueID TRACK1_SECTION2 = 2280635051U;
+                static const AkUniqueID TRACK2_SECTION1 = 2599758657U;
+                static const AkUniqueID TRACK3_SECTION1 = 2744513742U;
+                static const AkUniqueID TRACK3_SECTION2 = 2744513741U;
+                static const AkUniqueID TRACK3_SECTION3 = 2744513740U;
+                static const AkUniqueID TRACK3_SECTION4 = 2744513739U;
             } // namespace STATE
-        } // namespace MUSIC_LEVEL1_TRACK1
+        } // namespace MUSIC_LEVEL1
 
         namespace RESONANT_FREQUENCY_NOTE
         {

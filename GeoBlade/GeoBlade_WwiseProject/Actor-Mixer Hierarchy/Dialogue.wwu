@@ -172,29 +172,6 @@
 								<ActiveSource Name="geoblade_dialogue_lvl1_spiral_room_iris_04" ID="{1376F0C3-0D48-4B09-80AF-98B3C2BF542C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="lvl1_spiralRoom_iris_05" ID="{2EA0C38D-8A29-4263-A4DE-C74A82F3A449}" ShortID="1826902">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="geoblade_dialogue_lvl1_spiral_room_iris_05" ID="{CEACBFFE-B14F-4A1D-BE8D-17C638BAE882}">
-									<Language>SFX</Language>
-									<AudioFile>geoblade_dialogue_lvl1_spiral_room_iris_05.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="92462724"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="geoblade_dialogue_lvl1_spiral_room_iris_05" ID="{CEACBFFE-B14F-4A1D-BE8D-17C638BAE882}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="lvl1_spiralRoom_seru_01" ID="{AA527835-D0C2-48DD-BABD-018D2026C6A8}" ShortID="829619540">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -239,29 +216,6 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="lvl1_spiralRoom_seru_02" ID="{652A4028-6B73-4EE1-9DB2-E7E57EB7CE9A}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_spiralRoom_seru_03" ID="{394D386A-BEDB-44A6-B30D-5289D52544B5}" ShortID="37965272">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lvl1_spiralRoom_seru_03" ID="{411B6FD9-B5C9-434E-AB7A-88F145D5B485}">
-									<Language>SFX</Language>
-									<AudioFile>lvl1_spiralRoom_seru_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="48171670"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lvl1_spiralRoom_seru_03" ID="{411B6FD9-B5C9-434E-AB7A-88F145D5B485}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="lvl1_stasisRoom_seru_01" ID="{A1E9644E-C96C-4B57-983B-CFA56CB33E32}" ShortID="145290011">
@@ -472,6 +426,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="lvl1_transportationHangar_securityDroid_01" ID="{9F7265C6-4581-4120-A799-EA6276B91E6B}" ShortID="317653855">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
@@ -495,6 +456,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="lvl1_transportationHangar_securityDroid_02" ID="{762E7E01-7FD5-474D-884D-E9EA0196F832}" ShortID="555157293">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
@@ -518,6 +486,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="lvl1_transportationHangar_securityDroid_03" ID="{8E6857C5-91AA-4C2C-B2BB-C542DF43C3E7}" ShortID="103208253">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
@@ -1805,6 +1780,29 @@
 								<ActiveSource Name="lvl1_platformB_iris_08" ID="{29EE4AE1-8C54-42BC-B333-48B9866C30FF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="lvl1_spiralRoom_iris_05" ID="{6C3AE1AA-4FFF-4779-BD75-1FE9B7E93FE0}" ShortID="980386775">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_spiralRoom_iris_05" ID="{556C7C7D-6C3F-4952-8E77-37BD14B0BD3E}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_spiralRoom_iris_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="411634141"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_spiralRoom_iris_05" ID="{556C7C7D-6C3F-4952-8E77-37BD14B0BD3E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 					<GroupingInfo>
@@ -1897,9 +1895,6 @@
 								<ItemRef Name="lvl1_platformB_seru_03" ID="{1BD2FE69-AB43-4AA1-8A49-A9638D18151B}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_spiralRoom_seru_03" ID="{394D386A-BEDB-44A6-B30D-5289D52544B5}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_seru_13" ID="{AB767F6B-1958-4F89-AB08-6ED4F1DA207D}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
@@ -1916,9 +1911,6 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_spiralRoom_iris_03" ID="{F42C778C-6BB0-4C8D-B80B-498FBF3391DE}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="lvl1_spiralRoom_iris_05" ID="{2EA0C38D-8A29-4263-A4DE-C74A82F3A449}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_generatorRoom_seru_01" ID="{490C1295-3783-44D0-A83F-B41F579FB529}"/>
@@ -1949,6 +1941,9 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_seru_07" ID="{DCA885A8-B855-4B30-AC93-DD1EBDC79859}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="lvl1_spiralRoom_iris_05" ID="{6C3AE1AA-4FFF-4779-BD75-1FE9B7E93FE0}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_generatorRoom_iris_03" ID="{B87E2CAE-1D5B-4CB3-8BEA-F7734DD08CB2}"/>
@@ -2207,7 +2202,7 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_spiralRoom_iris_05" ID="{8A364B4B-9C3F-4C66-BA68-21266C55D5B2}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_spiralRoom_iris_05" ID="{2EA0C38D-8A29-4263-A4DE-C74A82F3A449}"/>
+									<ItemRef Name="lvl1_spiralRoom_iris_05" ID="{6C3AE1AA-4FFF-4779-BD75-1FE9B7E93FE0}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2496,12 +2491,6 @@
 								<SwitchRef Name="lvl1_transportationHanagar_seru_03" ID="{6272FEF8-DE74-42AF-B162-90B5349F1177}"/>
 								<ItemList>
 									<ItemRef Name="lvl1_transportationHangar_seru_03" ID="{EA6320BE-EA1F-4765-8559-B952464BA9F4}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="lvl1_spiralRoom_seru_03" ID="{341D3BF9-CB08-429E-B2E6-E62DAA4A34E7}"/>
-								<ItemList>
-									<ItemRef Name="lvl1_spiralRoom_seru_03" ID="{394D386A-BEDB-44A6-B30D-5289D52544B5}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>
