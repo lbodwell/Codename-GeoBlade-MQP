@@ -27,7 +27,7 @@ lvl1_transportationHanagar_seru_01,This appears to be some sort of locomotive tr
 lvl1_transportationHanagar_iris_02,"Uh, what are those things?",This is an example of translated text.,Iris,2.5,0,lvl1_transportationHanagar_seru_02,
 lvl1_transportationHanagar_seru_02,They must be security droids tasked with protecting this location.,This is an example of translated text.,Seru,3.5,0,lvl1_transportationHanagar_securityDroid_01,
 lvl1_transportationHanagar_securityDroid_01,Security breach detected. Targets include entity of unknown origin and possible renegade surface reconnaissance unit.,This is an example of translated text.,Security Droid 1,6.5,0.5,lvl1_transportationHanagar_securityDroid_02,
-lvl1_transportationHanagar_securityDroid_02,Decryonization of Unit-02 has not been authorized.,This is an example of translated text.,Security Droid 2,3.5,0.5,lvl1_transportationHanagar_iris_03,
+lvl1_transportationHanagar_securityDroid_02,Decryonization of Unit-02 has not been authorized.,This is an example of translated text.,Security Droid 1,3.5,0.5,lvl1_transportationHanagar_iris_03,
 lvl1_transportationHanagar_iris_03,Uh-oh. It sounds like they didn’t want me to wake you up… or be here in the first place.,This is an example of translated text.,Iris,6.5,0,lvl1_transportationHanagar_securityDroid_03,
 lvl1_transportationHanagar_securityDroid_03,Breach confirmed. Initiate attack protocol.,This is an example of translated text.,Security Droid 2,2.5,1,lvl1_transportationHanagar_iris_04,
 lvl1_transportationHanagar_iris_04,"Okay, I think they’re mad! Be careful!",This is an example of translated text.,Iris,2.75,0,lvl1_transportationHanagar_seru_03,

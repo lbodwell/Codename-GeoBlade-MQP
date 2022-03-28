@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using Event = AK.Wwise.Event;
 
 public class DialogueLine {
     public readonly string Text;
@@ -23,6 +24,7 @@ public class DialogueLine {
 
 public class DialogueManager : MonoBehaviour {
     public static DialogueManager Instance  { get; private set; }
+    public AK.Wwise.Event dialogueEvent;
     public GameObject subtitlesTextBox;
     public string locale = "en_US";
     public bool subtitlesEnabled = true;
@@ -31,6 +33,8 @@ public class DialogueManager : MonoBehaviour {
     private CancellationToken _token;
     private bool _lineActive;
     private bool _sequenceActive;
+    private float _lastUnfocus;
+    private float _lastFocus;
 
     private void Awake() {
         if (Instance != null && Instance != this) {
@@ -96,7 +100,7 @@ public class DialogueManager : MonoBehaviour {
         if (_sequenceActive) {
             while (_lineActive) {
                 await Task.Delay(100, _token);
-                Debug.Log("Waiting for active line to finish to start next dialogue sequence...");
+                //Debug.Log("Waiting for active line to finish to start next dialogue sequence...");
             }
 
             _source.Cancel();
@@ -124,7 +128,7 @@ public class DialogueManager : MonoBehaviour {
         _sequenceActive = false;
     }
 
-    public async Task CancelDialogue() {
+    public void CancelDialogue() {
         _source.Cancel();
         ResetCancellationToken();
     }
@@ -158,19 +162,18 @@ public class DialogueManager : MonoBehaviour {
 
         // TODO: Make this more robust
         if (line.Speaker == "Seru" || line.Speaker == "Unknown" || line.Speaker == "The Core") {
-            AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.player);
+            dialogueEvent.Post(PlayerManager.Instance.player, (uint) AkCallbackType.AK_EndOfEvent, EventCallback);
         } else if (line.Speaker == "Iris") {
-            AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.iris);
+            dialogueEvent.Post(PlayerManager.Instance.iris, (uint) AkCallbackType.AK_EndOfEvent, EventCallback);
         } else if (line.Speaker == "Security Droid 1") {
-            AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.securityDroid1);
+            dialogueEvent.Post(PlayerManager.Instance.securityDroid1, (uint) AkCallbackType.AK_EndOfEvent, EventCallback);
         } else if (line.Speaker == "Security Droid 2") {
-            AkSoundEngine.PostEvent("Dialogue_Trigger", PlayerManager.Instance.securityDroid2);
+            dialogueEvent.Post(PlayerManager.Instance.securityDroid2, (uint) AkCallbackType.AK_EndOfEvent, EventCallback);
         } else {
             Debug.Log("Invalid speaker for current dialogue line");
         }
         
-        
-        await Task.Delay((int) (line.Duration * 1000), token).ContinueWith(t => _lineActive = false, token);
+        Debug.Log("got here");
         
         if (subtitlesTextBox != null) {
             var textBox = subtitlesTextBox.GetComponent<TextMeshProUGUI>();
@@ -188,6 +191,13 @@ public class DialogueManager : MonoBehaviour {
         }
         
         return line.NextLine;
+    }
+
+    private void EventCallback(object cookie, AkCallbackType type, AkCallbackInfo info) {
+        if (type == AkCallbackType.AK_EndOfEvent) {
+            _lineActive = false;
+            Debug.Log("End of dialogue line");
+        }
     }
     
     private void ResetCancellationToken() {

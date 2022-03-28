@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
     public PlayerStats playerStats;
@@ -43,10 +44,16 @@ public class PlayerController : MonoBehaviour {
             new Attack("Light2", 10),
             new Attack("Heavy", 20)
         };
+        Debug.Log("start called");
+        AkSoundEngine.SetState("Music_Level1", "Track1_Section1");
+        AkSoundEngine.PostEvent("Level1_Music", gameObject);
     }
 
     private void OnDestroy() {
+        Debug.Log("Player died");
         AkSoundEngine.StopAll();
+        DialogueManager.Instance.CancelDialogue();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         
         //weaponCollider.onDamage += (other) => {}
     }

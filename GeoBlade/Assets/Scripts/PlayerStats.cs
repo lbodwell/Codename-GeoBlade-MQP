@@ -1,22 +1,15 @@
 ﻿using System;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerStats : CharacterStats {
     public float maxGeo;
     public float geo;
     
-    public override async void DamageCharacter(float amount) {
+    public override void DamageCharacter(float amount) {
         health = Math.Max(0, health - amount);
         HUDManager.Instance.UpdateBar(HUDManager.BarType.Health, health / maxHealth);
         
         if (health == 0) {
-            // TODO: make this more robust
-            Debug.Log("Game over!");
             Destroy(gameObject);
-            AkSoundEngine.StopAll();
-            await DialogueManager.Instance.CancelDialogue();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

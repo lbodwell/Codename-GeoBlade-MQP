@@ -21,6 +21,7 @@ public class GeoPuzzle : MonoBehaviour {
     // Roughly the amount of time that a half note lasts at 112 bpm
     private const float NoteTimeout = 1.0708f;
     private Material _activeGeneratorMaterial;
+    private Material _activeGeneratorMaterialSolved;
     private Material _inactiveGeneratorMaterial;
 
     private void Awake() {
@@ -31,6 +32,7 @@ public class GeoPuzzle : MonoBehaviour {
         }
 
         _activeGeneratorMaterial = Resources.Load("Materials/GeoPickup1", typeof(Material)) as Material;
+        _activeGeneratorMaterialSolved = Resources.Load("Materials/GeoPickup4", typeof(Material)) as Material;
         _inactiveGeneratorMaterial = receptacles[0].gameObject.GetComponent<Renderer>().material;
     }
     
@@ -49,8 +51,13 @@ public class GeoPuzzle : MonoBehaviour {
             if (_isPuzzleComplete && !_lastPlaythroughStarted && _noteSequenceIndex == 3) {
                 _lastPlaythroughStarted = true;
             }
+
+            if (receptacle.targetReached) {
+                receptacle.gameObject.GetComponent<Renderer>().material = _activeGeneratorMaterialSolved;
+            } else {
+                receptacle.gameObject.GetComponent<Renderer>().material = _activeGeneratorMaterial;
+            }
             
-            receptacle.gameObject.GetComponent<Renderer>().material = _activeGeneratorMaterial;
             prevReceptacle.gameObject.GetComponent<Renderer>().material = _inactiveGeneratorMaterial;
 
             AkSoundEngine.SetState("Generator_Hum_Note", "Note_" + receptacle.targetEnergy);

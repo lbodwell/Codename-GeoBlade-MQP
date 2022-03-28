@@ -1673,6 +1673,14 @@
 								<AudioNodeRef Name="Level1_Track3_Section4" ID="{2CD87E6C-891E-4EB8-A8B4-A9B981C7CC05}" WorkUnitID="{838802FB-A13D-4A8F-B73B-7400A1B4DE29}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="None" ID="{DD0D7B19-867E-4C3A-9142-C12A21CAB4C2}"/>
+							</Path>
+							<AudioNodeInfo>
+								<NoObject Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
 					</EntryList>
 				</MusicSwitchContainer>
 			</ChildrenList>
