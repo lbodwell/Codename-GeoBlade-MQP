@@ -24,7 +24,6 @@ public class GeoPuzzle : MonoBehaviour {
     private Material _inactiveGeneratorMaterial;
 
     private void Awake() {
-        // TODO: Apply this pattern to all singletons
         if (Instance != null && Instance != this) {
             Destroy(this);
         } else {

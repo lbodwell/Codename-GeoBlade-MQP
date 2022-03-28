@@ -13,7 +13,6 @@ State	ID	Name	State Group			Notes
 	255261663	lvl1_platformB_seru_02	Dialogue_Line			
 	380905701	lvl1_spiralRoom_seru_01	Dialogue_Line			
 	380905702	lvl1_spiralRoom_seru_02	Dialogue_Line			
-	380905703	lvl1_spiralRoom_seru_03	Dialogue_Line			
 	596189768	lvl1_vista_seru_10	Dialogue_Line			
 	596189769	lvl1_vista_seru_11	Dialogue_Line			
 	596189770	lvl1_vista_seru_12	Dialogue_Line			
@@ -87,12 +86,10 @@ State	ID	Name	State Group			Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	17941453	lvl1_generatorRoom_iris_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lv1_generatorRoom_iris_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_generatorRoom_iris_04		1720436
 	21767523	lvl1_platformB_core_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lv1_platformB_core_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_core_01		590350
-	48171670	lvl1_spiralRoom_seru_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lvl1_spiralRoom_seru_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_seru_03		94684
 	52354809	lvl1_spiralRoom_seru_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lvl1_spiralRoom_seru_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_seru_02		620754
 	55637762	lvl1_generatorRoom_seru_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lv1_generatorRoom_seru_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_generatorRoom_seru_02		441828
 	69217860	lvl1_spiralRoom_iris_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\geoblade_dialogue_lvl1_spiral_room_iris_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_iris_04		2198412
 	74934006	lvl1_vista_seru_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lv1_vista_seru_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_04		537926
-	92462724	lvl1_spiralRoom_iris_05	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\geoblade_dialogue_lvl1_spiral_room_iris_05_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_iris_05		2156476
 	112668475	lvl1_spiralRoom_seru_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lvl1_spiralRoom_seru_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_seru_01		508796
 	117053325	lvl1_transportationHangar_securityDroid_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lvl1_transportationHangar_securityDroid_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHangar_securityDroid_02		691440
 	129079745	lvl1_spiralRoom_iris_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\geoblade_dialogue_lvl1_spiral_room_iris_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_iris_01		550164
@@ -117,6 +114,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	384593246	lvl1_stasisRoom_seru_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lvl1_stasisRoom_seru_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_stasisRoom_seru_01		134224
 	402648391	lvl1_platformB_iris_08	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lvl1_platformB_iris_08_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_iris_08		429080
 	409018837	lvl1_platformA_seru_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lvl1_platformA_seru_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformA_seru_02		74216
+	411634141	lvl1_spiralRoom_iris_05	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lvl1_spiralRoom_iris_05_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_iris_05		673432
 	439598663	lvl1_transportationHangar_seru_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lvl1_transportationHangar_seru_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHangar_seru_04		272824
 	454350175	lvl1_vista_iris_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lv1_vista_iris_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_iris_03		504964
 	492348402	lvl1_vista_iris_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\lv1_vista_iris_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_iris_01		471068

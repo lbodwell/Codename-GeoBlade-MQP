@@ -165,7 +165,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0666227a29948e44bafd5efae5ca592a
       Path: Events\Dialogue\Dialogue_Trigger
-      maxAttenuation: 25
+      maxAttenuation: 50
       maxDuration: 11.449729
       minDuration: 0.772417
   - PhysicalPath: Events\Music.wwu
@@ -225,7 +225,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0ad39d166b78414794157b131727df95
       Path: Events\Player\Player_Attack_Impact
-      maxAttenuation: 10
+      maxAttenuation: 25
       maxDuration: 1.965013
       minDuration: 1.199113
     - name: Player_Attack_Swing
@@ -242,7 +242,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 418c7b323b94844b987a1b61b2ef0f23
       Path: Events\Player\Player_Attack_Swing
-      maxAttenuation: 10
+      maxAttenuation: 25
       maxDuration: 2.454716
       minDuration: 0.898961
     - name: Player_Footstep
@@ -310,7 +310,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 51070990e701f74a8dd5de6f148aa2e5
       Path: Events\Player\Security_Droid_Attack
-      maxAttenuation: 25
+      maxAttenuation: 50
       maxDuration: 0.340454
       minDuration: 0.340454
     - name: Stasis_Pod_Hiss
@@ -327,7 +327,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 585f63e979bc9a4385690f2689f9a533
       Path: Events\Player\Stasis_Pod_Hiss
-      maxAttenuation: 25
+      maxAttenuation: 50
       maxDuration: 61.407814
       minDuration: 61.407814
   - PhysicalPath: Events\Puzzle.wwu
@@ -416,7 +416,7 @@ MonoBehaviour:
     ParentPath: States\Dialogue
     guid: 144533a6a42c9b4788631915b5bc027b
     GuidInternal: 
-    m_lastTime: -8585531921410628692
+    m_lastTime: -8585531778060950471
     List:
     - name: Dialogue_Line
       guid: 5810706b7aea4d41b6605c58c6e215a1
@@ -1009,22 +1009,6 @@ MonoBehaviour:
         - ElementName: lvl1_spiralRoom_seru_02
           ObjectType: 8
           guid: 3ee8de7425f9d7498bc9b133cd3a1c82
-      - name: lvl1_spiralRoom_seru_03
-        guid: f93b1d3408cb9e42b2e6e62daa4a34e7
-        id: 380905703
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Dialogue
-          ObjectType: 12
-          guid: 144533a6a42c9b4788631915b5bc027b
-        - ElementName: Dialogue_Line
-          ObjectType: 9
-          guid: 5810706b7aea4d41b6605c58c6e215a1
-        - ElementName: lvl1_spiralRoom_seru_03
-          ObjectType: 8
-          guid: f93b1d3408cb9e42b2e6e62daa4a34e7
       - name: lvl1_stasisRoom_iris_01
         guid: e348c2563dc80e44a53ea8d276fe6e51
         id: 4061841897
@@ -1695,11 +1679,11 @@ MonoBehaviour:
     ParentPath: States\Music
     guid: 2bac94c602ec474cba1fae799efa8b50
     GuidInternal: 
-    m_lastTime: -8585643027370978719
+    m_lastTime: -8585531679482565346
     List:
-    - name: Music_Level1_Track1
+    - name: Music_Level1
       guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
-      id: 2489350135
+      id: 2209143526
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -1707,10 +1691,10 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 12
         guid: 2bac94c602ec474cba1fae799efa8b50
-      - ElementName: Music_Level1_Track1
+      - ElementName: Music_Level1
         ObjectType: 9
         guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
-      Path: States\Music\Music_Level1_Track1
+      Path: States\Music\Music_Level1
       values:
       - name: None
         guid: 197b0ddd7e863a4c9142c12a21cab4c2
@@ -1722,15 +1706,15 @@ MonoBehaviour:
         - ElementName: Music
           ObjectType: 12
           guid: 2bac94c602ec474cba1fae799efa8b50
-        - ElementName: Music_Level1_Track1
+        - ElementName: Music_Level1
           ObjectType: 9
           guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
         - ElementName: None
           ObjectType: 8
           guid: 197b0ddd7e863a4c9142c12a21cab4c2
-      - name: Section1
+      - name: Track1_Section1
         guid: 2141a1cf092f584b9ac2b62f1cd035ea
-        id: 3524678539
+        id: 2280635048
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1738,15 +1722,15 @@ MonoBehaviour:
         - ElementName: Music
           ObjectType: 12
           guid: 2bac94c602ec474cba1fae799efa8b50
-        - ElementName: Music_Level1_Track1
+        - ElementName: Music_Level1
           ObjectType: 9
           guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
-        - ElementName: Section1
+        - ElementName: Track1_Section1
           ObjectType: 8
           guid: 2141a1cf092f584b9ac2b62f1cd035ea
-      - name: Section2
+      - name: Track1_Section2
         guid: 520c304ba9f4e948a524dfd38d7f5af9
-        id: 3524678536
+        id: 2280635051
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1754,15 +1738,15 @@ MonoBehaviour:
         - ElementName: Music
           ObjectType: 12
           guid: 2bac94c602ec474cba1fae799efa8b50
-        - ElementName: Music_Level1_Track1
+        - ElementName: Music_Level1
           ObjectType: 9
           guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
-        - ElementName: Section2
+        - ElementName: Track1_Section2
           ObjectType: 8
           guid: 520c304ba9f4e948a524dfd38d7f5af9
-      - name: Section3
+      - name: Track2_Section1
         guid: 56a931c979461443bf98da7eb0f665e6
-        id: 3524678537
+        id: 2599758657
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1770,12 +1754,76 @@ MonoBehaviour:
         - ElementName: Music
           ObjectType: 12
           guid: 2bac94c602ec474cba1fae799efa8b50
-        - ElementName: Music_Level1_Track1
+        - ElementName: Music_Level1
           ObjectType: 9
           guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
-        - ElementName: Section3
+        - ElementName: Track2_Section1
           ObjectType: 8
           guid: 56a931c979461443bf98da7eb0f665e6
+      - name: Track3_Section1
+        guid: ff8702dc13d248429e917b07cb6f1922
+        id: 2744513742
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track3_Section1
+          ObjectType: 8
+          guid: ff8702dc13d248429e917b07cb6f1922
+      - name: Track3_Section2
+        guid: 0a04032dbf4bb64f960602d079bb2d4d
+        id: 2744513741
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track3_Section2
+          ObjectType: 8
+          guid: 0a04032dbf4bb64f960602d079bb2d4d
+      - name: Track3_Section3
+        guid: fb21f0d429aa214a9ce5765c35961541
+        id: 2744513740
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track3_Section3
+          ObjectType: 8
+          guid: fb21f0d429aa214a9ce5765c35961541
+      - name: Track3_Section4
+        guid: f1f2206db225f0479cfd8ba83bf160aa
+        id: 2744513739
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track3_Section4
+          ObjectType: 8
+          guid: f1f2206db225f0479cfd8ba83bf160aa
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2308,7 +2356,7 @@ MonoBehaviour:
     m_lastTime: -8585643027370968801
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000b000000
+  ExpandedWaapiItemIds: 01000000050000000b000000160000001a0000001b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -13,12 +13,10 @@ public class DamageCollider : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
-        Debug.Log("Trigger was entered");
         OnCollision(other.gameObject);
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {
-        Debug.Log("Collider was hit");
         OnCollision(hit.gameObject);
     }
 

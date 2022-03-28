@@ -11,23 +11,26 @@ public class SecurityDroidStats : CharacterStats {
     }
 
     public override void DamageCharacter(float amount) {
-        health = Math.Max(0, health - amount);
+        if (gameObject.GetComponent<SecurityDroidController>().isAggro) {
+            health = Math.Max(0, health - amount);
 
-        var playerStats = PlayerManager.Instance.player.GetComponent<PlayerStats>();
+            var playerStats = PlayerManager.Instance.player.GetComponent<PlayerStats>();
 
-        // Incredibly jank way to check for heavy attack. This should not be handled like this.
-        if (Math.Abs(amount - 20) < 0.5) {
-            playerStats.ConsumeGeo(5);
-        }
+            // Incredibly jank way to check for heavy attack. This should not be handled like this.
+            if (Math.Abs(amount - 20) < 0.5) {
+                playerStats.ConsumeGeo(5);
+            }
         
-        if (health == 0) {
-            Destroy(gameObject);
-            playerStats.ReplenishGeo(10);
-        }
+            if (health == 0) {
+                Destroy(gameObject);
+                playerStats.ReplenishGeo(10);
+                playerStats.HealCharacter(10);
+            }
         
-        healthBarUI.SetActive(true);
+            healthBarUI.SetActive(true);
 
-        slider.value = health / maxHealth;
+            slider.value = health / maxHealth;
+        }
     }
     
     public override void HealCharacter(float amount) {

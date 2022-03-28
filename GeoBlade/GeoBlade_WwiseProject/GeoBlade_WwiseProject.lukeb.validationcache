@@ -32,8 +32,8 @@
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1637304148" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\States\Puzzle.wwu" DateLow="1647550458" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\States\Player.wwu" DateLow="1639514657" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\States\Music.wwu" DateLow="1637304148" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\States\Dialogue.wwu" DateLow="1648347814" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\States\Music.wwu" DateLow="1648435523" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\States\Dialogue.wwu" DateLow="1648429079" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\States\Default Work Unit.wwu" DateLow="1648083247" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1637304148" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\SoundBanks\Player.wwu" DateLow="1632272510" DateHigh="0"/>
@@ -46,10 +46,10 @@
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1637304147" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1637304147" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1637304147" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Interactive Music Hierarchy\Level1.wwu" DateLow="1647550457" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Interactive Music Hierarchy\Level1.wwu" DateLow="1648438703" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1637304147" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\GeoBlade_WwiseProject.wproj" DateLow="1637304147" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\GeoBlade_WwiseProject.lukeb.wsettings" DateLow="1648372585" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\GeoBlade_WwiseProject.lukeb.wsettings" DateLow="1648438703" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1637304147" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Events\Puzzle.wwu" DateLow="1647550456" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Events\Player.wwu" DateLow="1648368591" DateHigh="0"/>
@@ -63,9 +63,9 @@
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1637304147" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1637304147" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1637304147" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1648358954" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1648427809" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Actor-Mixer Hierarchy\Puzzle.wwu" DateLow="1648083247" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Actor-Mixer Hierarchy\Player.wwu" DateLow="1648369331" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Actor-Mixer Hierarchy\Dialogue.wwu" DateLow="1648347943" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Actor-Mixer Hierarchy\Dialogue.wwu" DateLow="1648429126" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1637304147" DateHigh="0"/>
 </ValidationCache>

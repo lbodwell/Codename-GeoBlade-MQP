@@ -90,10 +90,10 @@ public class PlayerController : MonoBehaviour {
                     // TODO: Make this dynamic
                     if (_isSprinting) {
                         AkSoundEngine.SetState("Footstep_Type", "Run");
-                        _nextFootstep = Time.time + 0.3375f;
+                        _nextFootstep = Time.time + 0.25f;
                     } else {
                         AkSoundEngine.SetState("Footstep_Type", "Walk");
-                        _nextFootstep = Time.time + 0.4125f;
+                        _nextFootstep = Time.time + 0.375f;
                     }
 
                     AkSoundEngine.PostEvent("Player_Footstep", gameObject);
@@ -124,12 +124,19 @@ public class PlayerController : MonoBehaviour {
         if (animator.IsInTransition(0)) {
             AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
             AnimatorStateInfo nextState = animator.GetNextAnimatorStateInfo(0);
-            if (nextState.IsName("Run")) // Set animation speed to player speed
-                // What is the significance of 12? Should this be movementSpeed?
-                animator.speed = movementSpeed / 12;
-            else
+            // Set animation speed to player speed
+            if (nextState.IsName("Run")) {
+                if (_isSprinting) {
+                    animator.speed = movementSpeed * 1.5f / movementSpeed;
+                } else {
+                    animator.speed = movementSpeed / movementSpeed;
+                }
+            } else {
                 animator.speed = 1;
+            }
+               
         }
+        //Debug.Log("animator speed: " + animator.speed);
 
         // TODO: Is there any reason this is so scuffed?
         if (!controller.isGrounded || !_isJumping) return;
