@@ -6,7 +6,7 @@ public class PlayerStats : CharacterStats {
     public float maxGeo;
     public float geo;
     
-    public override void DamageCharacter(float amount) {
+    public override async void DamageCharacter(float amount) {
         health = Math.Max(0, health - amount);
         HUDManager.Instance.UpdateBar(HUDManager.BarType.Health, health / maxHealth);
         
@@ -14,6 +14,8 @@ public class PlayerStats : CharacterStats {
             // TODO: make this more robust
             Debug.Log("Game over!");
             Destroy(gameObject);
+            AkSoundEngine.StopAll();
+            await DialogueManager.Instance.CancelDialogue();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }

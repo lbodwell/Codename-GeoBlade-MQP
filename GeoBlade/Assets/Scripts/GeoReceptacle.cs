@@ -29,7 +29,7 @@ public class GeoReceptacle : MonoBehaviour {
 
     public Vector3 GetNextOpenPosition() {
         var pos = transform.position;
-        return new Vector3(pos.x,  pos.y + (_pickups.Count + 1) * 0.5f, pos.z);
+        return new Vector3(pos.x,  pos.y + (_pickups.Count + 1) * 0.5f + 1, pos.z);
     }
 
     public bool IsEmpty() {

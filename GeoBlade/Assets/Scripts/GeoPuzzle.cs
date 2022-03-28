@@ -43,6 +43,7 @@ public class GeoPuzzle : MonoBehaviour {
             _nextNote = Time.time + NoteTimeout;
             
             var receptacle = receptacles[_noteSequenceIndex];
+            
             var prevReceptacle = _noteSequenceIndex == 0 ? receptacles[3] : receptacles[_noteSequenceIndex - 1];
             
             if (_isPuzzleComplete && !_lastPlaythroughStarted && _noteSequenceIndex == 3) {
@@ -69,6 +70,7 @@ public class GeoPuzzle : MonoBehaviour {
             if (_notesLeftInLastPlaythrough == 0) {
                 isPuzzleActive = false;
                 SceneManager.LoadScene("Demo_End");
+                Cursor.visible = true;
             }
         }
             

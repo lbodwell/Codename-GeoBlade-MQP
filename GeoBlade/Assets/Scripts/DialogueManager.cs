@@ -124,6 +124,11 @@ public class DialogueManager : MonoBehaviour {
         _sequenceActive = false;
     }
 
+    public async Task CancelDialogue() {
+        _source.Cancel();
+        ResetCancellationToken();
+    }
+
     private async Task<string> PlayLine(string lineId, CancellationToken token) {
         while (_lineActive) {
             await Task.Delay(250, token);
