@@ -8,7 +8,7 @@ public class HUDManager : MonoBehaviour {
         Geo
     }
     
-    public static HUDManager Instance;
+    public static HUDManager Instance  { get; private set; }
     public Image healthBar;
     public Image geoBar;
 

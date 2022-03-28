@@ -416,7 +416,7 @@ MonoBehaviour:
     ParentPath: States\Dialogue
     guid: 144533a6a42c9b4788631915b5bc027b
     GuidInternal: 
-    m_lastTime: -8585532590708795612
+    m_lastTime: -8585531921410628692
     List:
     - name: Dialogue_Line
       guid: 5810706b7aea4d41b6605c58c6e215a1
@@ -1057,22 +1057,6 @@ MonoBehaviour:
         - ElementName: lvl1_stasisRoom_iris_02
           ObjectType: 8
           guid: b8b48c0873dd0b45be3d9d5495b14544
-      - name: lvl1_stasisRoom_iris_03
-        guid: 1024519b0d5a7c45b98f5de48494dab5
-        id: 4061841899
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Dialogue
-          ObjectType: 12
-          guid: 144533a6a42c9b4788631915b5bc027b
-        - ElementName: Dialogue_Line
-          ObjectType: 9
-          guid: 5810706b7aea4d41b6605c58c6e215a1
-        - ElementName: lvl1_stasisRoom_iris_03
-          ObjectType: 8
-          guid: 1024519b0d5a7c45b98f5de48494dab5
       - name: lvl1_stasisRoom_seru_01
         guid: adf886bd62f7bc42a223387eb5ac0d6a
         id: 4003890723

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour {
-    public static PlayerManager Instance;
+    public static PlayerManager Instance { get; private set; }
     public GameObject player;
     public GameObject geoBlade;
     public GameObject iris;

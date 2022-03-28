@@ -5,9 +5,9 @@ public class DialogueTrigger : MonoBehaviour {
     private bool _hasDialogueBeenTriggered;
     
     private async void OnTriggerEnter(Collider other) {
-        if (_hasDialogueBeenTriggered || !other.gameObject.CompareTag("Player")) return;
-        
-        _hasDialogueBeenTriggered = true;
-        await DialogueManager.Instance.PlayDialogueSequence(lineId);
+        if (!_hasDialogueBeenTriggered && other.gameObject.CompareTag("Player")) {
+            _hasDialogueBeenTriggered = true;
+            await DialogueManager.Instance.PlayDialogueSequence(lineId);
+        }
     }
 }

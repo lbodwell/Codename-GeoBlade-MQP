@@ -22,10 +22,10 @@ public class DialogueLine {
 }
 
 public class DialogueManager : MonoBehaviour {
+    public static DialogueManager Instance  { get; private set; }
     public GameObject subtitlesTextBox;
     public string locale = "en_US";
     public bool subtitlesEnabled = true;
-    public static DialogueManager Instance;
     private Dictionary<string, DialogueLine> _dialogueLines;
     private CancellationTokenSource _source;
     private CancellationToken _token;

@@ -1,8 +1,10 @@
-using System;
+using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class TramMotion : MonoBehaviour {
-    public float speed = 2.0f;
+    public float speed;
+    public Vector3 destination;
     public bool isMoving;
     public bool isPlayerOnTram;
     private GameObject _player;
@@ -11,7 +13,8 @@ public class TramMotion : MonoBehaviour {
         _player = PlayerManager.Instance.player;
     }
 
-    private void Update() {
+    private async void Update() {
+        _player = PlayerManager.Instance.player;
         if (_player != null) {
             var playerPos = _player.transform.position;
             var tramPos = transform.position;
@@ -21,19 +24,28 @@ public class TramMotion : MonoBehaviour {
                              playerPos.z < tramPos.z + 5 && playerPos.z > tramPos.z - 5 &&
                              playerController.isGrounded;
 
-            if (transform.position.x >= 0) {
+            if (transform.position.x > destination.x) {
                 isMoving = false;
             } else if (!isMoving && isPlayerOnTram) {
                 isMoving = true;
+                await StartDialogue();
             }
 
-            if (!isMoving) return;
-            // TODO: Find a way to do this without using direct translation
-            transform.Translate(10 * Time.deltaTime, 0.0f, 0.0f);
-            if (isPlayerOnTram) {
-                playerController.Move(new Vector3(10 * Time.deltaTime, 0.0f, 0.0f));
+            if (isMoving) {
+                // TODO: Find a way to do this without using direct translation
+                transform.Translate(speed * Time.deltaTime, 0.0f, 0.0f);
+                if (isPlayerOnTram) {
+                    playerController.Move(new Vector3(speed * Time.deltaTime, 0.0f, 0.0f));
+                }
             }
+        } else {
+            Debug.Log("player is null");
         }
+    }
+    
+    private static async Task StartDialogue() {
+        await Task.Delay(1000);
+        await DialogueManager.Instance.PlayDialogueSequence("lvl1_platformA_iris_03");
     }
     
     // Events not working

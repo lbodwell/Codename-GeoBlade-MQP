@@ -125,6 +125,7 @@ public class PlayerController : MonoBehaviour {
             AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
             AnimatorStateInfo nextState = animator.GetNextAnimatorStateInfo(0);
             if (nextState.IsName("Run")) // Set animation speed to player speed
+                // What is the significance of 12? Should this be movementSpeed?
                 animator.speed = movementSpeed / 12;
             else
                 animator.speed = 1;

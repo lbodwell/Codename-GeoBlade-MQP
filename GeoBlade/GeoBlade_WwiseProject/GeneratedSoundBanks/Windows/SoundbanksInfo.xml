@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="4210732908">
+		<SoundBank Id="1069431850" Language="SFX" Hash="4249681007">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -481,7 +481,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3930136735" Language="SFX" Hash="1646793692">
+		<SoundBank Id="3930136735" Language="SFX" Hash="1207793842">
 			<ObjectPath>\SoundBanks\Default Work Unit\Dialogue</ObjectPath>
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
@@ -528,10 +528,6 @@
 							<ShortName>lvl1_transportationHangar_securityDroid_02.wav</ShortName>
 							<Path>SFX\lvl1_transportationHangar_securityDroid_02_10C4C929.wem</Path>
 						</File>
-						<File Id="124623700" Language="SFX">
-							<ShortName>lv1_platformB_iris_02.wav</ShortName>
-							<Path>SFX\lv1_platformB_iris_02_10C4C929.wem</Path>
-						</File>
 						<File Id="129079745" Language="SFX">
 							<ShortName>geoblade_dialogue_lvl1_spiral_room_iris_01.wav</ShortName>
 							<Path>SFX\geoblade_dialogue_lvl1_spiral_room_iris_01_10C4C929.wem</Path>
@@ -552,6 +548,10 @@
 							<ShortName>lv1_vista_seru_01.wav</ShortName>
 							<Path>SFX\lv1_vista_seru_01_10C4C929.wem</Path>
 						</File>
+						<File Id="172112504" Language="SFX">
+							<ShortName>lvl1_platformB_seru_05.wav</ShortName>
+							<Path>SFX\lvl1_platformB_seru_05_10C4C929.wem</Path>
+						</File>
 						<File Id="183379798" Language="SFX">
 							<ShortName>lv1_vista_iris_06.wav</ShortName>
 							<Path>SFX\lv1_vista_iris_06_10C4C929.wem</Path>
@@ -568,13 +568,9 @@
 							<ShortName>geoblade_dialogue_lvl1_stasis_room_iris_02.wav</ShortName>
 							<Path>SFX\geoblade_dialogue_lvl1_stasis_room_iris_02_10C4C929.wem</Path>
 						</File>
-						<File Id="236598745" Language="SFX">
-							<ShortName>lv1_platformB_seru_02.wav</ShortName>
-							<Path>SFX\lv1_platformB_seru_02_10C4C929.wem</Path>
-						</File>
-						<File Id="257986357" Language="SFX">
-							<ShortName>lv1_platformB_seru_03.wav</ShortName>
-							<Path>SFX\lv1_platformB_seru_03_10C4C929.wem</Path>
+						<File Id="236504068" Language="SFX">
+							<ShortName>lvl1_platformB_seru_03.wav</ShortName>
+							<Path>SFX\lvl1_platformB_seru_03_10C4C929.wem</Path>
 						</File>
 						<File Id="305046832" Language="SFX">
 							<ShortName>lvl1_transportationHangar_seru_03.wav</ShortName>
@@ -583,10 +579,6 @@
 						<File Id="305670596" Language="SFX">
 							<ShortName>lv1_vista_seru_03.wav</ShortName>
 							<Path>SFX\lv1_vista_seru_03_10C4C929.wem</Path>
-						</File>
-						<File Id="306017818" Language="SFX">
-							<ShortName>lv1_platformB_seru_06.wav</ShortName>
-							<Path>SFX\lv1_platformB_seru_06_10C4C929.wem</Path>
 						</File>
 						<File Id="309564777" Language="SFX">
 							<ShortName>lv1_generatorRoom_iris_02.wav</ShortName>
@@ -600,9 +592,9 @@
 							<ShortName>lv1_vista_seru_08.wav</ShortName>
 							<Path>SFX\lv1_vista_seru_08_10C4C929.wem</Path>
 						</File>
-						<File Id="364575913" Language="SFX">
-							<ShortName>lv1_platformB_iris_05.wav</ShortName>
-							<Path>SFX\lv1_platformB_iris_05_10C4C929.wem</Path>
+						<File Id="369670797" Language="SFX">
+							<ShortName>lvl1_platformB_iris_04.wav</ShortName>
+							<Path>SFX\lvl1_platformB_iris_04_10C4C929.wem</Path>
 						</File>
 						<File Id="371202896" Language="SFX">
 							<ShortName>lvl1_platformA_seru_01.wav</ShortName>
@@ -616,13 +608,13 @@
 							<ShortName>lvl1_stasisRoom_seru_01.wav</ShortName>
 							<Path>SFX\lvl1_stasisRoom_seru_01_10C4C929.wem</Path>
 						</File>
+						<File Id="402648391" Language="SFX">
+							<ShortName>lvl1_platformB_iris_08.wav</ShortName>
+							<Path>SFX\lvl1_platformB_iris_08_10C4C929.wem</Path>
+						</File>
 						<File Id="409018837" Language="SFX">
 							<ShortName>lvl1_platformA_seru_02.wav</ShortName>
 							<Path>SFX\lvl1_platformA_seru_02_10C4C929.wem</Path>
-						</File>
-						<File Id="428178622" Language="SFX">
-							<ShortName>lv1_platformB_iris_04.wav</ShortName>
-							<Path>SFX\lv1_platformB_iris_04_10C4C929.wem</Path>
 						</File>
 						<File Id="439598663" Language="SFX">
 							<ShortName>lvl1_transportationHangar_seru_04.wav</ShortName>
@@ -631,14 +623,6 @@
 						<File Id="454350175" Language="SFX">
 							<ShortName>lv1_vista_iris_03.wav</ShortName>
 							<Path>SFX\lv1_vista_iris_03_10C4C929.wem</Path>
-						</File>
-						<File Id="456014795" Language="SFX">
-							<ShortName>lv1_platformB_seru_05.wav</ShortName>
-							<Path>SFX\lv1_platformB_seru_05_10C4C929.wem</Path>
-						</File>
-						<File Id="476367442" Language="SFX">
-							<ShortName>lv1_platformB_iris_01.wav</ShortName>
-							<Path>SFX\lv1_platformB_iris_01_10C4C929.wem</Path>
 						</File>
 						<File Id="492348402" Language="SFX">
 							<ShortName>lv1_vista_iris_01.wav</ShortName>
@@ -652,6 +636,10 @@
 							<ShortName>lv1_vista_iris_02.wav</ShortName>
 							<Path>SFX\lv1_vista_iris_02_10C4C929.wem</Path>
 						</File>
+						<File Id="553446299" Language="SFX">
+							<ShortName>lvl1_platformB_iris_05.wav</ShortName>
+							<Path>SFX\lvl1_platformB_iris_05_10C4C929.wem</Path>
+						</File>
 						<File Id="579532051" Language="SFX">
 							<ShortName>lv1_generatorRoom_seru_01.wav</ShortName>
 							<Path>SFX\lv1_generatorRoom_seru_01_10C4C929.wem</Path>
@@ -660,9 +648,13 @@
 							<ShortName>lv1_vista_iris_04.wav</ShortName>
 							<Path>SFX\lv1_vista_iris_04_10C4C929.wem</Path>
 						</File>
-						<File Id="616455534" Language="SFX">
-							<ShortName>lv1_platformB_iris_08.wav</ShortName>
-							<Path>SFX\lv1_platformB_iris_08_10C4C929.wem</Path>
+						<File Id="609501657" Language="SFX">
+							<ShortName>lvl1_platformB_seru_01.wav</ShortName>
+							<Path>SFX\lvl1_platformB_seru_01_10C4C929.wem</Path>
+						</File>
+						<File Id="626448583" Language="SFX">
+							<ShortName>lvl1_platformB_seru_02.wav</ShortName>
+							<Path>SFX\lvl1_platformB_seru_02_10C4C929.wem</Path>
 						</File>
 						<File Id="631747237" Language="SFX">
 							<ShortName>lvl1_platformA_seru_03.wav</ShortName>
@@ -672,6 +664,10 @@
 							<ShortName>lv1_vista_seru_06.wav</ShortName>
 							<Path>SFX\lv1_vista_seru_06_10C4C929.wem</Path>
 						</File>
+						<File Id="655696943" Language="SFX">
+							<ShortName>lvl1_platformB_iris_02.wav</ShortName>
+							<Path>SFX\lvl1_platformB_iris_02_10C4C929.wem</Path>
+						</File>
 						<File Id="680842040" Language="SFX">
 							<ShortName>lvl1_transportationHanagar_iris_01.wav</ShortName>
 							<Path>SFX\lvl1_transportationHanagar_iris_01_10C4C929.wem</Path>
@@ -680,13 +676,17 @@
 							<ShortName>lvl1_stasisRoom_seru_02.wav</ShortName>
 							<Path>SFX\lvl1_stasisRoom_seru_02_10C4C929.wem</Path>
 						</File>
+						<File Id="715642614" Language="SFX">
+							<ShortName>lvl1_platformB_iris_03.wav</ShortName>
+							<Path>SFX\lvl1_platformB_iris_03_10C4C929.wem</Path>
+						</File>
 						<File Id="732132979" Language="SFX">
 							<ShortName>geoblade_dialogue_lvl1_spiral_room_iris_02.wav</ShortName>
 							<Path>SFX\geoblade_dialogue_lvl1_spiral_room_iris_02_10C4C929.wem</Path>
 						</File>
-						<File Id="761327441" Language="SFX">
-							<ShortName>geoblade_dialogue_lvl1_stasis_room_iris_03.wav</ShortName>
-							<Path>SFX\geoblade_dialogue_lvl1_stasis_room_iris_03_10C4C929.wem</Path>
+						<File Id="742503847" Language="SFX">
+							<ShortName>lvl1_platformB_seru_06.wav</ShortName>
+							<Path>SFX\lvl1_platformB_seru_06_10C4C929.wem</Path>
 						</File>
 						<File Id="768293926" Language="SFX">
 							<ShortName>lv1_vista_seru_11.wav</ShortName>
@@ -695,10 +695,6 @@
 						<File Id="768368793" Language="SFX">
 							<ShortName>lvl1_transportationHanagar_iris_04.wav</ShortName>
 							<Path>SFX\lvl1_transportationHanagar_iris_04_10C4C929.wem</Path>
-						</File>
-						<File Id="772204659" Language="SFX">
-							<ShortName>lv1_platformB_iris_07.wav</ShortName>
-							<Path>SFX\lv1_platformB_iris_07_10C4C929.wem</Path>
 						</File>
 						<File Id="772518561" Language="SFX">
 							<ShortName>lvl1_transportationHanagar_iris_06.wav</ShortName>
@@ -724,10 +720,6 @@
 							<ShortName>lvl1_transportationHangar_seru_01.wav</ShortName>
 							<Path>SFX\lvl1_transportationHangar_seru_01_10C4C929.wem</Path>
 						</File>
-						<File Id="830106958" Language="SFX">
-							<ShortName>lv1_platformB_iris_06.wav</ShortName>
-							<Path>SFX\lv1_platformB_iris_06_10C4C929.wem</Path>
-						</File>
 						<File Id="833069986" Language="SFX">
 							<ShortName>lv1_vista_seru_05.wav</ShortName>
 							<Path>SFX\lv1_vista_seru_05_10C4C929.wem</Path>
@@ -739,6 +731,10 @@
 						<File Id="858709726" Language="SFX">
 							<ShortName>lvl1_platformA_iris_03.wav</ShortName>
 							<Path>SFX\lvl1_platformA_iris_03_10C4C929.wem</Path>
+						</File>
+						<File Id="860139807" Language="SFX">
+							<ShortName>lvl1_platformB_iris_06.wav</ShortName>
+							<Path>SFX\lvl1_platformB_iris_06_10C4C929.wem</Path>
 						</File>
 						<File Id="865265404" Language="SFX">
 							<ShortName>lvl1_transportationHangar_securityDroid_01.wav</ShortName>
@@ -764,13 +760,17 @@
 							<ShortName>lv1_vista_iris_08.wav</ShortName>
 							<Path>SFX\lv1_vista_iris_08_10C4C929.wem</Path>
 						</File>
-						<File Id="970804534" Language="SFX">
-							<ShortName>lv1_platformB_seru_04.wav</ShortName>
-							<Path>SFX\lv1_platformB_seru_04_10C4C929.wem</Path>
+						<File Id="963008792" Language="SFX">
+							<ShortName>lvl1_platformB_iris_07.wav</ShortName>
+							<Path>SFX\lvl1_platformB_iris_07_10C4C929.wem</Path>
 						</File>
-						<File Id="994834939" Language="SFX">
-							<ShortName>lv1_platformB_seru_01.wav</ShortName>
-							<Path>SFX\lv1_platformB_seru_01_10C4C929.wem</Path>
+						<File Id="988565201" Language="SFX">
+							<ShortName>lvl1_platformB_iris_01.wav</ShortName>
+							<Path>SFX\lvl1_platformB_iris_01_10C4C929.wem</Path>
+						</File>
+						<File Id="988643121" Language="SFX">
+							<ShortName>lvl1_platformB_seru_04.wav</ShortName>
+							<Path>SFX\lvl1_platformB_seru_04_10C4C929.wem</Path>
 						</File>
 						<File Id="1008634780" Language="SFX">
 							<ShortName>lv1_vista_seru_10.wav</ShortName>
@@ -796,10 +796,6 @@
 							<ShortName>lv1_vista_core_01.wav</ShortName>
 							<Path>SFX\lv1_vista_core_01_10C4C929.wem</Path>
 						</File>
-						<File Id="1064277918" Language="SFX">
-							<ShortName>lv1_platformB_iris_03.wav</ShortName>
-							<Path>SFX\lv1_platformB_iris_03_10C4C929.wem</Path>
-						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{0146F0C6-AEEA-4CAE-9E35-5F8766ECF0BF}</DefaultSwitchValue>
 					<SwitchContainers>
@@ -811,11 +807,6 @@
 						<SwitchContainer SwitchValue="{088CB4B8-DD73-450B-BE3D-9D5495B14544}">
 							<Media>
 								<File Id="230777457"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{9B512410-5A0D-457C-B98F-5DE48494DAB5}">
-							<Media>
-								<File Id="761327441"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{75124501-3797-4A8D-B484-902E7ACF0B36}">
@@ -1083,76 +1074,6 @@
 								<File Id="21767523"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{1C0F6AC6-19C6-4D9F-81F8-FE2D007B6513}">
-							<Media>
-								<File Id="476367442"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{13845612-3B61-4FDA-AFCE-22C08EA82346}">
-							<Media>
-								<File Id="124623700"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{253B7DF6-A871-4EEC-956A-93D0F02AE5EE}">
-							<Media>
-								<File Id="1064277918"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{63C354EA-3DE9-4D34-A301-8FC945192BA4}">
-							<Media>
-								<File Id="428178622"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{06199D12-E772-4C10-A8C9-AAAE3843A19D}">
-							<Media>
-								<File Id="364575913"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{488CBD30-3863-4E8F-A02E-E27F1B249A20}">
-							<Media>
-								<File Id="830106958"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{699EF314-4B40-4F62-B72A-3FDAA4DF6B21}">
-							<Media>
-								<File Id="772204659"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{086C2C3C-08B3-4618-862E-0FFE0C3A660C}">
-							<Media>
-								<File Id="616455534"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{AF10966C-36E3-46A4-B173-AEAA945A6F07}">
-							<Media>
-								<File Id="994834939"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0353929A-092B-4AED-9217-4887ED5638D7}">
-							<Media>
-								<File Id="236598745"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{73850C65-A468-4F2B-9C92-157F1EB21C88}">
-							<Media>
-								<File Id="257986357"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{604D8385-578D-406D-9636-326860EF37E1}">
-							<Media>
-								<File Id="970804534"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{A58282D5-2373-4B21-9DA8-8E7DD1AD5365}">
-							<Media>
-								<File Id="456014795"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0B1E7ABC-8C88-4107-9ADF-75C31FBF5DED}">
-							<Media>
-								<File Id="306017818"/>
-							</Media>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{B9AE4D4C-72DE-465E-BAD4-9F9D82F6F50C}">
 							<Media>
 								<File Id="579532051"/>
@@ -1193,6 +1114,76 @@
 								<File Id="164341597"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{AF10966C-36E3-46A4-B173-AEAA945A6F07}">
+							<Media>
+								<File Id="609501657"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0353929A-092B-4AED-9217-4887ED5638D7}">
+							<Media>
+								<File Id="626448583"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{73850C65-A468-4F2B-9C92-157F1EB21C88}">
+							<Media>
+								<File Id="236504068"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{604D8385-578D-406D-9636-326860EF37E1}">
+							<Media>
+								<File Id="988643121"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A58282D5-2373-4B21-9DA8-8E7DD1AD5365}">
+							<Media>
+								<File Id="172112504"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0B1E7ABC-8C88-4107-9ADF-75C31FBF5DED}">
+							<Media>
+								<File Id="742503847"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1C0F6AC6-19C6-4D9F-81F8-FE2D007B6513}">
+							<Media>
+								<File Id="988565201"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{13845612-3B61-4FDA-AFCE-22C08EA82346}">
+							<Media>
+								<File Id="655696943"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{253B7DF6-A871-4EEC-956A-93D0F02AE5EE}">
+							<Media>
+								<File Id="715642614"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{63C354EA-3DE9-4D34-A301-8FC945192BA4}">
+							<Media>
+								<File Id="369670797"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{06199D12-E772-4C10-A8C9-AAAE3843A19D}">
+							<Media>
+								<File Id="553446299"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{488CBD30-3863-4E8F-A02E-E27F1B249A20}">
+							<Media>
+								<File Id="860139807"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{699EF314-4B40-4F62-B72A-3FDAA4DF6B21}">
+							<Media>
+								<File Id="963008792"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{086C2C3C-08B3-4618-862E-0FFE0C3A660C}">
+							<Media>
+								<File Id="402648391"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
@@ -1202,7 +1193,6 @@
 						<State Id="748895195" Name="None" ObjectPath="\States\Dialogue\Dialogue_Line\None" GUID="{0146F0C6-AEEA-4CAE-9E35-5F8766ECF0BF}"/>
 						<State Id="4061841897" Name="lvl1_stasisRoom_iris_01" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasisRoom_iris_01" GUID="{56C248E3-C83D-440E-A53E-A8D276FE6E51}"/>
 						<State Id="4061841898" Name="lvl1_stasisRoom_iris_02" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasisRoom_iris_02" GUID="{088CB4B8-DD73-450B-BE3D-9D5495B14544}"/>
-						<State Id="4061841899" Name="lvl1_stasisRoom_iris_03" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasisRoom_iris_03" GUID="{9B512410-5A0D-457C-B98F-5DE48494DAB5}"/>
 						<State Id="4003890723" Name="lvl1_stasisRoom_seru_01" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasisRoom_seru_01" GUID="{BD86F8AD-F762-42BC-A223-387EB5AC0D6A}"/>
 						<State Id="4003890720" Name="lvl1_stasisRoom_seru_02" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_stasisRoom_seru_02" GUID="{00933F0A-4A9C-4A13-8DB3-83CA0AA956F2}"/>
 						<State Id="2662722078" Name="lvl1_spiralRoom_iris_04" ObjectPath="\States\Dialogue\Dialogue_Line\lvl1_spiralRoom_iris_04" GUID="{E5FA1B82-2B00-47E8-82D9-5F54C4DE1B11}"/>

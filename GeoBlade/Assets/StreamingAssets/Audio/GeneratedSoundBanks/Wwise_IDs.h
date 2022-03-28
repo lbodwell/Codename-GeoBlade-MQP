@@ -86,7 +86,6 @@ namespace AK
                 static const AkUniqueID LVL1_SPIRALROOM_SERU_03 = 380905703U;
                 static const AkUniqueID LVL1_STASISROOM_IRIS_01 = 4061841897U;
                 static const AkUniqueID LVL1_STASISROOM_IRIS_02 = 4061841898U;
-                static const AkUniqueID LVL1_STASISROOM_IRIS_03 = 4061841899U;
                 static const AkUniqueID LVL1_STASISROOM_SERU_01 = 4003890723U;
                 static const AkUniqueID LVL1_STASISROOM_SERU_02 = 4003890720U;
                 static const AkUniqueID LVL1_STASISROOM_SERU_03 = 4003890721U;

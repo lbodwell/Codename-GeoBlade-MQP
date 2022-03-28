@@ -2,12 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class GeoPuzzle : MonoBehaviour {
     public static GeoPuzzle Instance { get; private set; }
     public Transform pickupDestination;
-    public bool isPuzzleActive = true;
+    public bool isPuzzleActive;
     public bool isPickupInHand;
     public List<GeoReceptacle> receptacles;
     private GeoReceptacle _nearestReceptacle;
@@ -68,6 +69,7 @@ public class GeoPuzzle : MonoBehaviour {
 
             if (_notesLeftInLastPlaythrough == 0) {
                 isPuzzleActive = false;
+                SceneManager.LoadScene("Demo_End");
             }
         }
             

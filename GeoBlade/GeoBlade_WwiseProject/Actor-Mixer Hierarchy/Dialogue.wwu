@@ -80,29 +80,6 @@
 								<ActiveSource Name="geoblade_dialogue_lvl1_stasis_room_iris_02" ID="{E324AD6D-17E8-4A6E-9148-4352EB822668}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="lvl1_stasisRoom_iris_03" ID="{79EE6EE3-B15C-415B-AF0A-E6AECBD63001}" ShortID="370732416">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="geoblade_dialogue_lvl1_stasis_room_iris_03" ID="{77C6216E-4941-47FE-B5D1-4ED9431877A7}">
-									<Language>SFX</Language>
-									<AudioFile>geoblade_dialogue_lvl1_stasis_room_iris_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="761327441"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="geoblade_dialogue_lvl1_stasis_room_iris_03" ID="{77C6216E-4941-47FE-B5D1-4ED9431877A7}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="lvl1_spiralRoom_iris_01" ID="{01E2FAA5-3DF0-4204-AEF6-070E511D46A8}" ShortID="871529694">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1322,328 +1299,6 @@
 								<ActiveSource Name="lv1_platformB_core_01" ID="{2F5A3567-363F-486B-A990-2252C2B223FB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="lvl1_platformB_iris_01" ID="{72374AB7-9B45-4FBE-8CFD-C9DA2648A7D8}" ShortID="313502268">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_iris_01" ID="{679EF4A8-0900-4654-9EBC-4E1E95E0AF00}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_iris_01.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="476367442"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_iris_01" ID="{679EF4A8-0900-4654-9EBC-4E1E95E0AF00}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_iris_02" ID="{F4DAA763-6652-477A-B3CF-BCF80811EAB7}" ShortID="715550819">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_iris_02" ID="{852EBCF1-7D93-498C-9F2A-78EEE0E09921}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_iris_02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="124623700"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_iris_02" ID="{852EBCF1-7D93-498C-9F2A-78EEE0E09921}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_iris_03" ID="{3FF11D82-278B-49DC-B98E-1285DB311957}" ShortID="885408565">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_iris_03" ID="{172F95E1-6418-4AD2-8F1D-3B54F58E47CA}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_iris_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1064277918"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_iris_03" ID="{172F95E1-6418-4AD2-8F1D-3B54F58E47CA}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_iris_04" ID="{1A38A24C-DA73-45CE-9619-83BB30011965}" ShortID="316907236">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_iris_04" ID="{D5E6AFE5-2D43-46B4-86FF-D361B2CDAEBE}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_iris_04.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="428178622"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_iris_04" ID="{D5E6AFE5-2D43-46B4-86FF-D361B2CDAEBE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_iris_05" ID="{6309BA73-F8BB-419A-8FE2-1F9DAFD9D76D}" ShortID="713615522">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_iris_05" ID="{85E1B6AD-CB49-450B-AD33-9F015B0B7024}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_iris_05.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="364575913"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_iris_05" ID="{85E1B6AD-CB49-450B-AD33-9F015B0B7024}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_iris_06" ID="{5C489A3F-9A47-483B-A46F-A48153E9A68F}" ShortID="906996491">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_iris_06" ID="{1AB060BA-AC9D-45C1-8B95-F108FA4D7B35}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_iris_06.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="830106958"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_iris_06" ID="{1AB060BA-AC9D-45C1-8B95-F108FA4D7B35}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_iris_07" ID="{9D104677-A1B6-48BB-B9A8-25ECBF951546}" ShortID="90118817">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_iris_07" ID="{C25FF544-69B6-4FA8-87DD-AA703A53D513}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_iris_07.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="772204659"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_iris_07" ID="{C25FF544-69B6-4FA8-87DD-AA703A53D513}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_iris_08" ID="{5D39C594-BA61-4410-80CA-26C84128EA4F}" ShortID="573123407">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_iris_08" ID="{FCB9D6D5-2E42-43D5-9909-2C632D48DA8C}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_iris_08.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="616455534"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_iris_08" ID="{FCB9D6D5-2E42-43D5-9909-2C632D48DA8C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_seru_01" ID="{3777E4F7-3B0E-4897-92AF-A1D20F2E0630}" ShortID="564852863">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_seru_01" ID="{41A9EC1E-9761-4DA7-A223-51D641A214C0}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_seru_01.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="994834939"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_seru_01" ID="{41A9EC1E-9761-4DA7-A223-51D641A214C0}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_seru_02" ID="{954EB1AE-63B6-4154-8680-7A8043A15488}" ShortID="424915924">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_seru_02" ID="{B00F6CE3-7BED-4412-931B-8C79446056E4}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_seru_02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="236598745"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_seru_02" ID="{B00F6CE3-7BED-4412-931B-8C79446056E4}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_seru_03" ID="{ECC69E61-2976-48C6-933B-35D9356B6067}" ShortID="649325785">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_seru_03" ID="{B2EB9E9A-1A6F-479C-BF8A-69EA5F520E29}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_seru_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="257986357"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_seru_03" ID="{B2EB9E9A-1A6F-479C-BF8A-69EA5F520E29}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_seru_04" ID="{10AFB0B3-A28E-40C5-ACB8-21620904D637}" ShortID="926375302">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_seru_04" ID="{5861483B-07C4-4BBD-B58E-F4617CE702C0}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_seru_04.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="970804534"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_seru_04" ID="{5861483B-07C4-4BBD-B58E-F4617CE702C0}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_seru_05" ID="{21B6A27A-2C34-4980-B6D0-C8A261768C41}" ShortID="34699837">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_seru_05" ID="{3DC7D91E-24D5-48D4-AB01-6AA7D14BE883}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_seru_05.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="456014795"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_seru_05" ID="{3DC7D91E-24D5-48D4-AB01-6AA7D14BE883}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="lvl1_platformB_seru_06" ID="{913FB8AC-DB4E-4492-8BB2-B8F809186152}" ShortID="37010622">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="lv1_platformB_seru_06" ID="{4480217E-0849-46F7-B8AF-86DFECF1633A}">
-									<Language>SFX</Language>
-									<AudioFile>lv1_platformB_seru_06.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="306017818"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="lv1_platformB_seru_06" ID="{4480217E-0849-46F7-B8AF-86DFECF1633A}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="lvl1_generatorRoom_seru_01" ID="{490C1295-3783-44D0-A83F-B41F579FB529}" ShortID="506618928">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1828,6 +1483,328 @@
 								<ActiveSource Name="lv1_generatorRoom_iris_05" ID="{9B2DCB58-5A39-45C5-81F3-F85947F0B492}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="lvl1_platformB_seru_01" ID="{027EAA39-D074-46BD-8B36-CD744C3DB9FA}" ShortID="269283957">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_seru_01" ID="{4F76E7ED-B33D-4DDC-ADCD-E8AD70802545}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_seru_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="609501657"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_seru_01" ID="{4F76E7ED-B33D-4DDC-ADCD-E8AD70802545}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_seru_02" ID="{02209E4A-115E-4EE5-8824-E7458FAFDFBE}" ShortID="436326246">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_seru_02" ID="{883BD311-8A1E-4096-9CE0-75632F86CC1B}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_seru_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="626448583"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_seru_02" ID="{883BD311-8A1E-4096-9CE0-75632F86CC1B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_seru_03" ID="{1BD2FE69-AB43-4AA1-8A49-A9638D18151B}" ShortID="936124424">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_seru_03" ID="{E2C8ED2D-209D-4F6E-8C74-56A48AAEAAEF}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_seru_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="236504068"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_seru_03" ID="{E2C8ED2D-209D-4F6E-8C74-56A48AAEAAEF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_seru_04" ID="{4C266A03-4051-49D8-87C1-F351625D9080}" ShortID="125675246">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_seru_04" ID="{7D5BA3C7-9FA2-4015-ADC9-004672A10800}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_seru_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="988643121"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_seru_04" ID="{7D5BA3C7-9FA2-4015-ADC9-004672A10800}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_seru_05" ID="{1750F9BB-99A6-4823-834C-8A68A7354565}" ShortID="837663771">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_seru_05" ID="{67B7B4C8-C260-4D9E-BD0C-27AC17F4D3EE}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_seru_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="172112504"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_seru_05" ID="{67B7B4C8-C260-4D9E-BD0C-27AC17F4D3EE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_seru_06" ID="{626DC35E-0CDD-40FC-B2DD-4CB6EE30920B}" ShortID="629793434">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_seru_06" ID="{66677BC3-08C7-45C5-AA61-BA7F39D54757}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_seru_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="742503847"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_seru_06" ID="{66677BC3-08C7-45C5-AA61-BA7F39D54757}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_iris_01" ID="{4C160310-64D0-4C32-9AA1-96ED82CB4D19}" ShortID="913008275">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_iris_01" ID="{F001062B-DE7E-472D-B254-14096A02D50E}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_iris_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="988565201"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_iris_01" ID="{F001062B-DE7E-472D-B254-14096A02D50E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_iris_02" ID="{0B8C03F3-8DEC-4A38-9E6D-18138F7FB138}" ShortID="199504041">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_iris_02" ID="{926532BF-E7D1-4122-8841-B5D1A072DCFD}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_iris_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="655696943"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_iris_02" ID="{926532BF-E7D1-4122-8841-B5D1A072DCFD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_iris_03" ID="{DE468856-9D95-4867-A0F2-5F710BC1965F}" ShortID="362031423">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_iris_03" ID="{2CF21A13-DAD4-4661-AAF4-9C15CB2C1E4A}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_iris_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="715642614"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_iris_03" ID="{2CF21A13-DAD4-4661-AAF4-9C15CB2C1E4A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_iris_04" ID="{4D3BB0F6-F011-4816-8B89-B1C4D75CF60D}" ShortID="626961489">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_iris_04" ID="{76743311-DBF3-4FD2-8CDA-865B3FB70F88}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_iris_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="369670797"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_iris_04" ID="{76743311-DBF3-4FD2-8CDA-865B3FB70F88}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_iris_05" ID="{1E9BD1F2-4F40-48B9-BA52-B3FF01531AF9}" ShortID="628859481">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_iris_05" ID="{06454D47-00AD-4E3F-9057-C9E5002BF3CC}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_iris_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="553446299"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_iris_05" ID="{06454D47-00AD-4E3F-9057-C9E5002BF3CC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_iris_06" ID="{1300648A-378E-4B37-8D5D-990D8B267CDE}" ShortID="630030944">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_iris_06" ID="{EC50D16C-3406-4EAA-A7E8-26428ED54BEB}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_iris_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="860139807"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_iris_06" ID="{EC50D16C-3406-4EAA-A7E8-26428ED54BEB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_iris_07" ID="{EC5F0118-FE63-4900-A61D-28BA17F7F945}" ShortID="12050203">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_iris_07" ID="{DDA016EE-9541-4247-8914-1C382A280AEA}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_iris_07.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="963008792"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_iris_07" ID="{DDA016EE-9541-4247-8914-1C382A280AEA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="lvl1_platformB_iris_08" ID="{7EFDE5B3-867D-4E06-907E-925407D7DDC8}" ShortID="607772858">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lvl1_platformB_iris_08" ID="{29EE4AE1-8C54-42BC-B333-48B9866C30FF}">
+									<Language>SFX</Language>
+									<AudioFile>lvl1_platformB_iris_08.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="402648391"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lvl1_platformB_iris_08" ID="{29EE4AE1-8C54-42BC-B333-48B9866C30FF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 					<GroupingInfo>
@@ -1842,10 +1819,19 @@
 								<ItemRef Name="lvl1_transportationHangar_securityDroid_02" ID="{762E7E01-7FD5-474D-884D-E9EA0196F832}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
+								<ItemRef Name="lvl1_platformB_seru_04" ID="{4C266A03-4051-49D8-87C1-F351625D9080}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_seru_06" ID="{F30F350F-F9AD-4922-B03A-E92BB11B9FA7}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
+								<ItemRef Name="lvl1_platformB_iris_01" ID="{4C160310-64D0-4C32-9AA1-96ED82CB4D19}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="lvl1_stasisRoom_seru_03" ID="{DE3E3510-AEA1-4FDB-98AC-E6A8AABC8178}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="lvl1_platformB_iris_07" ID="{EC5F0118-FE63-4900-A61D-28BA17F7F945}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_generatorRoom_iris_01" ID="{601B9D20-D1BF-4016-A9DC-8FA1F6CC7E99}"/>
@@ -1854,13 +1840,13 @@
 								<ItemRef Name="lvl1_spiralRoom_seru_01" ID="{AA527835-D0C2-48DD-BABD-018D2026C6A8}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
+								<ItemRef Name="lvl1_platformB_seru_01" ID="{027EAA39-D074-46BD-8B36-CD744C3DB9FA}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_seru_03" ID="{95E9EE39-132D-47B0-AEAC-06CA7BFBC0F0}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_iris_01" ID="{4CCE933D-A2DE-4301-989B-6369AA8776B9}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_iris_06" ID="{5C489A3F-9A47-483B-A46F-A48153E9A68F}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_spiralRoom_iris_02" ID="{C9ADFB41-722F-4C49-BFA6-B4F3C02AA555}"/>
@@ -1875,10 +1861,10 @@
 								<ItemRef Name="lvl1_platformA_seru_01" ID="{4982C749-FA47-4BD8-8490-A92ACB88C62C}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_transportationHanagar_iris_03" ID="{5F37514C-0840-47BC-A110-2FB20180D2B2}"/>
+								<ItemRef Name="lvl1_platformB_seru_02" ID="{02209E4A-115E-4EE5-8824-E7458FAFDFBE}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_iris_04" ID="{1A38A24C-DA73-45CE-9619-83BB30011965}"/>
+								<ItemRef Name="lvl1_transportationHanagar_iris_03" ID="{5F37514C-0840-47BC-A110-2FB20180D2B2}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_stasisRoom_seru_01" ID="{A1E9644E-C96C-4B57-983B-CFA56CB33E32}"/>
@@ -1890,22 +1876,25 @@
 								<ItemRef Name="lvl1_vista_seru_02" ID="{EF581F54-72C0-4DC3-85CA-8D685F8052CC}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
+								<ItemRef Name="lvl1_platformB_iris_03" ID="{DE468856-9D95-4867-A0F2-5F710BC1965F}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_iris_06" ID="{EEB30158-BC8B-42BD-A406-C7BF69C8DF5C}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
+								<ItemRef Name="lvl1_platformB_seru_06" ID="{626DC35E-0CDD-40FC-B2DD-4CB6EE30920B}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="lvl1_transportationHangar_seru_02" ID="{B6713160-6DB2-4490-B8AB-049630B83808}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_seru_03" ID="{ECC69E61-2976-48C6-933B-35D9356B6067}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_iris_02" ID="{F4DAA763-6652-477A-B3CF-BCF80811EAB7}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_generatorRoom_iris_04" ID="{85069865-CAB0-4B4A-8DA7-1EE642692F18}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_iris_04" ID="{2F474869-F0B4-4337-A8AC-56F36D6786DC}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="lvl1_platformB_seru_03" ID="{1BD2FE69-AB43-4AA1-8A49-A9638D18151B}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_spiralRoom_seru_03" ID="{394D386A-BEDB-44A6-B30D-5289D52544B5}"/>
@@ -1917,19 +1906,10 @@
 								<ItemRef Name="lvl1_vista_seru_12" ID="{A575FD71-8006-42DD-BBD2-01EEEC9D8B69}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_iris_05" ID="{6309BA73-F8BB-419A-8FE2-1F9DAFD9D76D}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_iris_07" ID="{9D104677-A1B6-48BB-B9A8-25ECBF951546}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_seru_05" ID="{21B6A27A-2C34-4980-B6D0-C8A261768C41}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_seru_04" ID="{D365017D-4B78-4609-8D8A-6AD998E6F8AC}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_iris_03" ID="{3FF11D82-278B-49DC-B98E-1285DB311957}"/>
+								<ItemRef Name="lvl1_platformB_iris_06" ID="{1300648A-378E-4B37-8D5D-990D8B267CDE}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_iris_02" ID="{67A7578B-D1F9-465B-81C8-D14754D15424}"/>
@@ -1939,9 +1919,6 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_spiralRoom_iris_05" ID="{2EA0C38D-8A29-4263-A4DE-C74A82F3A449}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_iris_08" ID="{5D39C594-BA61-4410-80CA-26C84128EA4F}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_generatorRoom_seru_01" ID="{490C1295-3783-44D0-A83F-B41F579FB529}"/>
@@ -1974,13 +1951,7 @@
 								<ItemRef Name="lvl1_vista_seru_07" ID="{DCA885A8-B855-4B30-AC93-DD1EBDC79859}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_seru_06" ID="{913FB8AC-DB4E-4492-8BB2-B8F809186152}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
 								<ItemRef Name="lvl1_generatorRoom_iris_03" ID="{B87E2CAE-1D5B-4CB3-8BEA-F7734DD08CB2}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_seru_02" ID="{954EB1AE-63B6-4154-8680-7A8043A15488}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_iris_05" ID="{C83999B0-86E8-4AB8-B3FB-9C595E2AF52E}"/>
@@ -1989,16 +1960,16 @@
 								<ItemRef Name="lvl1_platformA_seru_02" ID="{A0452CB3-EA5C-4E25-B6E1-75F8D200EC0B}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_seru_04" ID="{10AFB0B3-A28E-40C5-ACB8-21620904D637}"/>
+								<ItemRef Name="lvl1_platformB_iris_08" ID="{7EFDE5B3-867D-4E06-907E-925407D7DDC8}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_generatorRoom_iris_02" ID="{ACB1C6B4-D238-4988-B314-7B919E82B9A4}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_iris_01" ID="{72374AB7-9B45-4FBE-8CFD-C9DA2648A7D8}"/>
+								<ItemRef Name="lvl1_generatorRoom_seru_02" ID="{22B1FCB7-6801-4205-87FD-ABC044EA2E58}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_generatorRoom_seru_02" ID="{22B1FCB7-6801-4205-87FD-ABC044EA2E58}"/>
+								<ItemRef Name="lvl1_platformB_seru_05" ID="{1750F9BB-99A6-4823-834C-8A68A7354565}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_generatorRoom_iris_05" ID="{7E5C99BC-B12D-4F03-ADCB-517CC94404D4}"/>
@@ -2034,9 +2005,6 @@
 								<ItemRef Name="lvl1_transportationHanagar_iris_06" ID="{10D755DE-8EAF-4C15-B040-A2AD36559C3B}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_stasisRoom_iris_03" ID="{79EE6EE3-B15C-415B-AF0A-E6AECBD63001}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
 								<ItemRef Name="lvl1_platformA_iris_03" ID="{D706A7E7-F063-4470-8087-02F5C03EC301}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
@@ -2046,16 +2014,22 @@
 								<ItemRef Name="lvl1_vista_seru_10" ID="{735B48ED-C0FD-4B5E-B3DE-17D8763BC4FD}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
+								<ItemRef Name="lvl1_platformB_iris_05" ID="{1E9BD1F2-4F40-48B9-BA52-B3FF01531AF9}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="lvl1_platformB_iris_02" ID="{0B8C03F3-8DEC-4A38-9E6D-18138F7FB138}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="lvl1_vista_seru_05" ID="{E84423F4-683E-4BEB-880B-25714BE56EDE}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_generatorRoom_seru_03" ID="{678083F6-310B-478F-B796-630CC71A6ECC}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_transportationHanagar_iris_04" ID="{6231F2F6-2C6D-4B6C-95C3-7620316CB536}"/>
+								<ItemRef Name="lvl1_platformB_iris_04" ID="{4D3BB0F6-F011-4816-8B89-B1C4D75CF60D}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="lvl1_platformB_seru_01" ID="{3777E4F7-3B0E-4897-92AF-A1D20F2E0630}"/>
+								<ItemRef Name="lvl1_transportationHanagar_iris_04" ID="{6231F2F6-2C6D-4B6C-95C3-7620316CB536}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="lvl1_transportationHanagar_iris_01" ID="{75FB70FA-9A7E-4E64-81A1-7791B00FF58C}"/>
@@ -2105,21 +2079,15 @@
 								</ItemList>
 							</Grouping>
 							<Grouping>
-								<SwitchRef Name="lvl1_stasisRoom_iris_03" ID="{9B512410-5A0D-457C-B98F-5DE48494DAB5}"/>
-								<ItemList>
-									<ItemRef Name="lvl1_stasisRoom_iris_03" ID="{79EE6EE3-B15C-415B-AF0A-E6AECBD63001}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
 								<SwitchRef Name="lvl1_platformB_iris_02" ID="{13845612-3B61-4FDA-AFCE-22C08EA82346}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_iris_02" ID="{F4DAA763-6652-477A-B3CF-BCF80811EAB7}"/>
+									<ItemRef Name="lvl1_platformB_iris_02" ID="{0B8C03F3-8DEC-4A38-9E6D-18138F7FB138}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_iris_05" ID="{06199D12-E772-4C10-A8C9-AAAE3843A19D}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_iris_05" ID="{6309BA73-F8BB-419A-8FE2-1F9DAFD9D76D}"/>
+									<ItemRef Name="lvl1_platformB_iris_05" ID="{1E9BD1F2-4F40-48B9-BA52-B3FF01531AF9}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2131,7 +2099,7 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_iris_07" ID="{699EF314-4B40-4F62-B72A-3FDAA4DF6B21}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_iris_07" ID="{9D104677-A1B6-48BB-B9A8-25ECBF951546}"/>
+									<ItemRef Name="lvl1_platformB_iris_07" ID="{EC5F0118-FE63-4900-A61D-28BA17F7F945}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2197,7 +2165,7 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_iris_06" ID="{488CBD30-3863-4E8F-A02E-E27F1B249A20}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_iris_06" ID="{5C489A3F-9A47-483B-A46F-A48153E9A68F}"/>
+									<ItemRef Name="lvl1_platformB_iris_06" ID="{1300648A-378E-4B37-8D5D-990D8B267CDE}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2221,7 +2189,7 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_iris_08" ID="{086C2C3C-08B3-4618-862E-0FFE0C3A660C}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_iris_08" ID="{5D39C594-BA61-4410-80CA-26C84128EA4F}"/>
+									<ItemRef Name="lvl1_platformB_iris_08" ID="{7EFDE5B3-867D-4E06-907E-925407D7DDC8}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2269,13 +2237,13 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_seru_03" ID="{73850C65-A468-4F2B-9C92-157F1EB21C88}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_seru_03" ID="{ECC69E61-2976-48C6-933B-35D9356B6067}"/>
+									<ItemRef Name="lvl1_platformB_seru_03" ID="{1BD2FE69-AB43-4AA1-8A49-A9638D18151B}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_seru_01" ID="{AF10966C-36E3-46A4-B173-AEAA945A6F07}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_seru_01" ID="{3777E4F7-3B0E-4897-92AF-A1D20F2E0630}"/>
+									<ItemRef Name="lvl1_platformB_seru_01" ID="{027EAA39-D074-46BD-8B36-CD744C3DB9FA}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2323,7 +2291,7 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_seru_04" ID="{604D8385-578D-406D-9636-326860EF37E1}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_seru_04" ID="{10AFB0B3-A28E-40C5-ACB8-21620904D637}"/>
+									<ItemRef Name="lvl1_platformB_seru_04" ID="{4C266A03-4051-49D8-87C1-F351625D9080}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2359,7 +2327,7 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_seru_02" ID="{0353929A-092B-4AED-9217-4887ED5638D7}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_seru_02" ID="{954EB1AE-63B6-4154-8680-7A8043A15488}"/>
+									<ItemRef Name="lvl1_platformB_seru_02" ID="{02209E4A-115E-4EE5-8824-E7458FAFDFBE}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2437,13 +2405,13 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_seru_06" ID="{0B1E7ABC-8C88-4107-9ADF-75C31FBF5DED}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_seru_06" ID="{913FB8AC-DB4E-4492-8BB2-B8F809186152}"/>
+									<ItemRef Name="lvl1_platformB_seru_06" ID="{626DC35E-0CDD-40FC-B2DD-4CB6EE30920B}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_iris_01" ID="{1C0F6AC6-19C6-4D9F-81F8-FE2D007B6513}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_iris_01" ID="{72374AB7-9B45-4FBE-8CFD-C9DA2648A7D8}"/>
+									<ItemRef Name="lvl1_platformB_iris_01" ID="{4C160310-64D0-4C32-9AA1-96ED82CB4D19}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2467,7 +2435,7 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_seru_05" ID="{A58282D5-2373-4B21-9DA8-8E7DD1AD5365}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_seru_05" ID="{21B6A27A-2C34-4980-B6D0-C8A261768C41}"/>
+									<ItemRef Name="lvl1_platformB_seru_05" ID="{1750F9BB-99A6-4823-834C-8A68A7354565}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2503,7 +2471,7 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_iris_04" ID="{63C354EA-3DE9-4D34-A301-8FC945192BA4}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_iris_04" ID="{1A38A24C-DA73-45CE-9619-83BB30011965}"/>
+									<ItemRef Name="lvl1_platformB_iris_04" ID="{4D3BB0F6-F011-4816-8B89-B1C4D75CF60D}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -2521,7 +2489,7 @@
 							<Grouping>
 								<SwitchRef Name="lvl1_platformB_iris_03" ID="{253B7DF6-A871-4EEC-956A-93D0F02AE5EE}"/>
 								<ItemList>
-									<ItemRef Name="lvl1_platformB_iris_03" ID="{3FF11D82-278B-49DC-B98E-1285DB311957}"/>
+									<ItemRef Name="lvl1_platformB_iris_03" ID="{DE468856-9D95-4867-A0F2-5F710BC1965F}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>

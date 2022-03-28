@@ -10,6 +10,7 @@ public class SecurityDroidController : MonoBehaviour {
     public float attackCooldown = 3f;
     public float attackGracePeriod = 1f;
     public float attackDamage = 10f;
+    public bool isAggro;
 
     private GameObject _player;
     private Transform _target;
@@ -24,7 +25,7 @@ public class SecurityDroidController : MonoBehaviour {
     }
     
     private void Update() {
-        if (_target != null) {
+        if (isAggro && _target != null) {
             var dist = Vector3.Distance(_target.position, transform.position);
 
             if (dist <= chaseRadius) {

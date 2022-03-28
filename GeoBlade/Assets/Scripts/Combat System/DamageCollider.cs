@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class DamageEvent : UnityEvent<StatCollider> {}
 public class DamageCollider : MonoBehaviour {
-    public Collider collider;
+    public Collider coll;
     public float damage = 0;
     public bool active = true;
     public DamageEvent onDamage = new DamageEvent();
