@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="2821176366">
+		<SoundBank Id="1069431850" Language="SFX" Hash="2897223397">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -49,6 +49,9 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1553540245" Name="Reflection_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflection_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="337451782" Name="Player_Attack_Swing" ObjectPath="\Events\Player\Player_Attack_Swing" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.898961" DurationMax="2.454716">
 					<IncludedMemoryFiles>
@@ -83,6 +86,9 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1553540245" Name="Reflection_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflection_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2453392179" Name="Player_Footstep" ObjectPath="\Events\Player\Player_Footstep" DurationType="OneShot" DurationMin="0.201399" DurationMax="0.401294">
 					<IncludedMemoryFiles>
@@ -216,6 +222,9 @@
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1553540245" Name="Reflection_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflection_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1305133589" Name="Player_Jump" ObjectPath="\Events\Player\Player_Jump" DurationType="OneShot" DurationMin="0.358672" DurationMax="0.614489">
 					<IncludedMemoryFiles>
@@ -281,6 +290,9 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1553540245" Name="Reflection_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflection_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="917509252" Name="Player_Unsheathe" ObjectPath="\Events\Player\Player_Unsheathe" DurationType="OneShot" DurationMin="2.217415" DurationMax="2.217415">
 					<IncludedMemoryFiles>
@@ -297,6 +309,9 @@
 							<Path>SFX\security_droid_stab_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1553540245" Name="Reflection_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflection_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3474418164" Name="Stasis_Pod_Hiss" ObjectPath="\Events\Player\Stasis_Pod_Hiss" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="61.407814" DurationMax="61.407814">
 					<IncludedMemoryFiles>
@@ -305,6 +320,9 @@
 							<Path>SFX\stasis_pod_hiss_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1553540245" Name="Reflection_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflection_Bus"/>
+					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
 			<StateGroups>
@@ -333,12 +351,16 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="490323007">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1424890609">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1553540245" Name="Reflection_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflection_Bus"/>
+				<AuxBus Id="3923769827" Name="Room_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room_Bus"/>
+			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1780448749" Language="SFX" Hash="2249641392">
+		<SoundBank Id="1780448749" Language="SFX" Hash="2278286231">
 			<ObjectPath>\SoundBanks\Default Work Unit\Puzzle</ObjectPath>
 			<ShortName>Puzzle</ShortName>
 			<Path>Puzzle.bnk</Path>
@@ -385,6 +407,9 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1553540245" Name="Reflection_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflection_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="853873997" Name="Play_Resonant_Frequency" ObjectPath="\Events\Puzzle\Play_Resonant_Frequency" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.229116" DurationMax="1.249501">
 					<IncludedMemoryFiles>
@@ -455,6 +480,9 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1553540245" Name="Reflection_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflection_Bus"/>
+					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
 			<StateGroups>
@@ -481,7 +509,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3930136735" Language="SFX" Hash="3521480439">
+		<SoundBank Id="3930136735" Language="SFX" Hash="3264266541">
 			<ObjectPath>\SoundBanks\Default Work Unit\Dialogue</ObjectPath>
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
@@ -1176,6 +1204,9 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1553540245" Name="Reflection_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflection_Bus"/>
+					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
 			<StateGroups>

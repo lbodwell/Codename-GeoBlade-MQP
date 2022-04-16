@@ -57,19 +57,20 @@
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2021.1|Build=7665|VersionName=v2021.1.3|Config=Release" />
-			
 				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjExMjUxIiBtYXNrPSJRQ0RJNTM3NCIgZW5jPSIwIj48bGlj
 ZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwx
 MCIgZXhwaXJlcz0iMjAyMi0wNi0wMSIgIC8+PGxpY2Vuc2UgaWQ9IjIxIiBuYW1l
 PSJNYWludGVuYW5jZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVz
 PSIyMDIyLTA2LTAxIiAgLz48bGljZW5zZSBpZD0iMjIiIG5hbWU9IkxldmVsIEEg
 TGljZW5zZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVzPSIyMDIy
-LTA2LTAxIiAgLz48L3Byb2plY3Q+|dsxSwLf7RhMAU5oWkn67nKq+wWxtrrJblQh
-rgvHWgAZiPJrSd2M4ZL5OPU/PmtT2d4N5zv7Luaz6V+o35WCQ5hpkzYmUJkN5DFM
-Ka9w4UW9d65Vl4F25xeNL5xAziuAAkmTIf7m8SNjsTm6Zjf9lSJwPs3Bww/XSEEq
-gN8Sl3s8aokgE8IQ1lYP+wLab7QFb14Ci9hiyEKvhs9ELh65Ip/HDBAhG9suxkap
-Trmd35G+Y9QOHTI8EiPFpdq2XG+JJCAQesHoCNEbO5sBVFUoz9OFeNEC8+IXpXYU
-USrlCYtF4+kUW1FfK38jzshKTSGr942ncLPPgAwrEVkW9xyI60g==
+LTA2LTAxIiAgLz48bGljZW5zZSBpZD0iNDkiIG5hbWU9Ild3aXNlIFJlZmxlY3Qi
+IHR5cGU9IjEiIHBsYXRmb3Jtcz0iNCwxMCIgZXhwaXJlcz0iMjAyMi0wNi0wMSIg
+IC8+PC9wcm9qZWN0Pg==|DSOKZWbXs3C/WfndwVOvgMQj8E/6lQA4lT68+06LYtR
+tgeshnqyoj+KP+EvYYqqyvsKqlkb4RJZi/X1RVMM0y5xJ34rhZA6M1eQqfC6GvKH
++plbujNNYt+nuXdBUhMCpENtluVQ/9pv+f7Kf9aPqpVTkP3NH5fu5A+4Kiv4dnpQ
+DKlECy5nyI3jsRxMzp4sQFj6IbPiRVPq/6NusOTuppIRuSYXzSBpvBcOuA2egLJ1
+spPZ7sTa6CP9IP/L+FWBc4+0N5rqX8aybDURw/6uAQUg18nEpHPCb4l9iZUjmr+1
+Vhu0D9I0RO8MOVC/AqwTxhjIfrTlCMlJsfcaLY1WSXg==
 "/>
 			</PropertyList>
 			<SharedValues>

@@ -216,6 +216,12 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
 
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REFLECTION_BUS = 1553540245U;
+        static const AkUniqueID ROOM_BUS = 3923769827U;
+    } // namespace AUX_BUSSES
+
     namespace AUDIO_DEVICES
     {
         static const AkUniqueID NO_OUTPUT = 2317455096U;

@@ -1,4 +1,6 @@
 ﻿using System;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : CharacterStats {
     public float maxGeo;
@@ -9,7 +11,10 @@ public class PlayerStats : CharacterStats {
         HUDManager.Instance.UpdateBar(HUDManager.BarType.Health, health / maxHealth);
         
         if (health == 0) {
-            Destroy(gameObject);
+            Debug.Log("Player died");
+            AkSoundEngine.StopAll();
+            DialogueManager.Instance.CancelDialogue();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
