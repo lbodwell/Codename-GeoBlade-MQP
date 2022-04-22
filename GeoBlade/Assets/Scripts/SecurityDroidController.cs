@@ -1,3 +1,5 @@
+using System;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class SecurityDroidController : MonoBehaviour {
@@ -18,15 +20,19 @@ public class SecurityDroidController : MonoBehaviour {
     private bool _isInAttackRange;
     private float _turnSmoothingVel;
     private float _nextAttackAttempt;
-
+    private Animator _animator;
+    
+    private static readonly int Fighting = Animator.StringToHash("Fighting");
     private void Start() {
         _target = PlayerManager.Instance.player.transform;
         _playerWeaponCollider = PlayerManager.Instance.geoBlade.GetComponent<Collider>();
+        _animator = gameObject.GetComponentInChildren<Animator>();
     }
     
     private void Update() {
         if (_target != null) {
             var dist = Vector3.Distance(_target.position, transform.position);
+            bool fighting = _animator.GetBool(Fighting);
 
             if (dist <= chaseRadius) {
                 // TODO: Re-write this. Target angle is always off by 90 degrees for some reason, so I hardcoded -90 for now.
@@ -52,6 +58,20 @@ public class SecurityDroidController : MonoBehaviour {
                         _isInAttackRange = false;
                         controller.SimpleMove(new Vector3(dir.x * movementSpeed, dir.y, dir.z * movementSpeed));
                     }
+                    
+                    if (!fighting)
+                    {
+                        _animator.SetBool(Fighting, true);
+                    }
+                    
+                }
+            }
+            else
+            {
+                if (fighting)
+                {
+                    _animator.SetBool(Fighting, false);
+                    Debug.Log("Setting fighting to false");
                 }
             }
         }

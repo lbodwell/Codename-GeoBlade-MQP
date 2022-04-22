@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 76110ace18d2dbb4788fc53011d36876
+guid: 76e154d5b25fbbe489a586c786a2064f
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -26,7 +26,7 @@ ModelImporter:
     second: Eye.L|Idle
   - first:
       74: -3372514740408402142
-    second: Drone_Rig|Attacking
+    second: Attacking
   - first:
       74: 6455675387600195749
     second: Drone_Rig|CoreAction
@@ -36,6 +36,12 @@ ModelImporter:
   - first:
       74: -8981053301470775634
     second: Drone_Rig|Idle
+  - first:
+      74: -2743880914767375675
+    second: Deploy
+  - first:
+      74: -3100369314251171874
+    second: Idle
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -70,7 +76,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Drone_Rig|Attacking
+      name: Attacking
       takeName: Drone_Rig|Attacking
       internalID: 0
       firstFrame: 0
@@ -81,7 +87,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -99,7 +105,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Drone_Rig|Deploy
+      name: Deploy
       takeName: Drone_Rig|Deploy
       internalID: 0
       firstFrame: 0
@@ -128,7 +134,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Drone_Rig|Idle
+      name: Idle
       takeName: Drone_Rig|Idle
       internalID: 0
       firstFrame: 0
@@ -139,7 +145,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
