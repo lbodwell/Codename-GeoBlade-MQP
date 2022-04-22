@@ -16,7 +16,7 @@ public class GeoPuzzle : MonoBehaviour {
     private bool _isPuzzleComplete;
     private bool _lastPlaythroughStarted;
     private int _noteSequenceIndex;
-    private int _notesLeftInLastPlaythrough = 4;
+    private int _notesLeftInLastPlaythrough = 5;
     private float _nextNote;
     // Roughly the amount of time that a half note lasts at 112 bpm
     private const float NoteTimeout = 1.0708f;
@@ -69,16 +69,15 @@ public class GeoPuzzle : MonoBehaviour {
             }
             
             _noteSequenceIndex = (_noteSequenceIndex + 1) % 4;
-            
+
+            if (_lastPlaythroughStarted) {
+                _notesLeftInLastPlaythrough--;
+            }
+
             if (_notesLeftInLastPlaythrough == 0) {
-                Debug.Log("Got here");
                 isPuzzleActive = false;
                 SceneManager.LoadScene("Demo_End");
                 Cursor.visible = true;
-            }
-            
-            if (_lastPlaythroughStarted) {
-                _notesLeftInLastPlaythrough--;
             }
         }
             

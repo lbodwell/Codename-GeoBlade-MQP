@@ -9,42 +9,6 @@
 							<ObjectRef Name="System" ID="{329E9BAD-F365-4766-A0D9-2E9CFD599F39}" WorkUnitID="{665BEB09-6F9C-427D-828E-BC85839106E8}"/>
 						</Reference>
 					</ReferenceList>
-					<ChildrenList>
-						<AuxBus Name="Reflection_Bus" ID="{991DF871-BDB9-4D97-9B04-F0933B1D9DDA}">
-							<PropertyList>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>16641</Value>
-									</ValueList>
-								</Property>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
-									<ObjectRef Name="Wwise_Reflect" ID="{37779A87-4754-4420-8175-3236FA46AA12}" WorkUnitID="{923039AD-F8B4-46D4-BDA7-CB5A6EE595E0}"/>
-								</Reference>
-							</ReferenceList>
-							<ObjectLists/>
-						</AuxBus>
-						<AuxBus Name="Room_Bus" ID="{14B9504C-8CFA-45B6-84F2-3A700F084B6F}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{1C898897-87BF-49AD-9886-35544DF34538}" ShortID="866518306" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
-									</Custom>
-								</Reference>
-							</ReferenceList>
-							<ObjectLists/>
-						</AuxBus>
-					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

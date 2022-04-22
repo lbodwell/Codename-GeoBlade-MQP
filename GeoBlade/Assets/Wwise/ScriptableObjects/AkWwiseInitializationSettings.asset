@@ -41,7 +41,7 @@ MonoBehaviour:
       m_MaxSoundPropagationDepth: 8
       m_MovementThreshold: 1
       m_NumberOfPrimaryRays: 100
-      m_MaxReflectionOrder: 2
+      m_MaxReflectionOrder: 1
       m_MaxPathLength: 10000
       m_CPULimitPercentage: 0
       m_EnableDiffractionOnReflections: 1

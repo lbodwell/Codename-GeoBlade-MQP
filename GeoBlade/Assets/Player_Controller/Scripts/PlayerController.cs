@@ -49,6 +49,15 @@ public class PlayerController : MonoBehaviour {
         AkSoundEngine.PostEvent("Level1_Music", gameObject);
     }
 
+    private void OnDestroy() {
+        Debug.Log("Player died");
+        AkSoundEngine.StopAll();
+        DialogueManager.Instance.CancelDialogue();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
+        //weaponCollider.onDamage += (other) => {}
+    }
+
     private void knockback(StatCollider other)
     {
         

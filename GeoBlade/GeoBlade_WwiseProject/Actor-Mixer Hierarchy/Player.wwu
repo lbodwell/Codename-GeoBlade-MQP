@@ -51,9 +51,6 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
 						</Reference>
-						<Reference Name="ReflectionsAuxSend">
-							<ObjectRef Name="Reflection_Bus" ID="{991DF871-BDB9-4D97-9B04-F0933B1D9DDA}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Footstep_Type" ID="{8F75990E-CED9-47AA-8AEE-BFC38DEAC310}" WorkUnitID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}"/>
 						</Reference>
@@ -767,9 +764,6 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
 						</Reference>
-						<Reference Name="ReflectionsAuxSend">
-							<ObjectRef Name="Reflection_Bus" ID="{991DF871-BDB9-4D97-9B04-F0933B1D9DDA}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Material" ID="{FB92C39F-9452-4C8C-B66E-3C435E589866}" WorkUnitID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}"/>
 						</Reference>
@@ -1144,9 +1138,6 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
 						</Reference>
-						<Reference Name="ReflectionsAuxSend">
-							<ObjectRef Name="Reflection_Bus" ID="{991DF871-BDB9-4D97-9B04-F0933B1D9DDA}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="security_droid_stab" ID="{96CCA744-EA7A-4EB8-A0C2-51FF6BEE0C51}">
@@ -1186,9 +1177,6 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
 						</Reference>
-						<Reference Name="ReflectionsAuxSend">
-							<ObjectRef Name="Reflection_Bus" ID="{991DF871-BDB9-4D97-9B04-F0933B1D9DDA}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="stasis_pod_hiss" ID="{23BFE3C9-B8D5-4B06-91AE-D4A0E9109C13}">
@@ -1222,7 +1210,6 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>
@@ -1241,9 +1228,6 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-								<Reference Name="ReflectionsAuxSend">
-									<ObjectRef Name="Reflection_Bus" ID="{991DF871-BDB9-4D97-9B04-F0933B1D9DDA}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Attack_Type" ID="{05F9D408-CF10-4C60-8710-300508312E18}" WorkUnitID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}"/>
@@ -1392,7 +1376,6 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>
@@ -1411,9 +1394,6 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-								</Reference>
-								<Reference Name="ReflectionsAuxSend">
-									<ObjectRef Name="Reflection_Bus" ID="{991DF871-BDB9-4D97-9B04-F0933B1D9DDA}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Attack_Type" ID="{05F9D408-CF10-4C60-8710-300508312E18}" WorkUnitID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}"/>

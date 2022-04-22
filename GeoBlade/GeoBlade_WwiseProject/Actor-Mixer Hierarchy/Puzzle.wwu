@@ -20,9 +20,6 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
 						</Reference>
-						<Reference Name="ReflectionsAuxSend">
-							<ObjectRef Name="Reflection_Bus" ID="{991DF871-BDB9-4D97-9B04-F0933B1D9DDA}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Generator_Hum_Note" ID="{3ED5A98B-B3B5-4344-89A2-24A4FCC251C1}" WorkUnitID="{53997664-804D-49C9-A56E-1FE8688A3D65}"/>
 						</Reference>
@@ -181,9 +178,6 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-						</Reference>
-						<Reference Name="ReflectionsAuxSend">
-							<ObjectRef Name="Reflection_Bus" ID="{991DF871-BDB9-4D97-9B04-F0933B1D9DDA}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Resonant_Frequency_Note" ID="{F7F79A31-0CA6-4966-8C61-5385ADF19D35}" WorkUnitID="{53997664-804D-49C9-A56E-1FE8688A3D65}"/>

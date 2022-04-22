@@ -20,9 +20,6 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
 						</Reference>
-						<Reference Name="ReflectionsAuxSend">
-							<ObjectRef Name="Reflection_Bus" ID="{991DF871-BDB9-4D97-9B04-F0933B1D9DDA}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
-						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Dialogue_Line" ID="{6B701058-EA7A-414D-B660-5C58C6E215A1}" WorkUnitID="{A6334514-2CA4-479B-8863-1915B5BC027B}"/>
 						</Reference>

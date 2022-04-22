@@ -172,14 +172,15 @@ public class DialogueManager : MonoBehaviour {
         } else {
             Debug.Log("Invalid speaker for current dialogue line");
         }
-
-        while (_lineActive) {
-            await Task.Delay(250, token);
-        }
+        
+        Debug.Log("got here");
         
         if (subtitlesTextBox != null) {
             var textBox = subtitlesTextBox.GetComponent<TextMeshProUGUI>();
-
+            while (_lineActive) {
+                await Task.Delay(250, token);
+            }
+            
             if (textBox != null) {
                 textBox.SetText("");
             }
