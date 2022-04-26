@@ -416,7 +416,7 @@ MonoBehaviour:
     ParentPath: States\Dialogue
     guid: 144533a6a42c9b4788631915b5bc027b
     GuidInternal: 
-    m_lastTime: -8585531523199421760
+    m_lastTime: -8585506229874970986
     List:
     - name: Dialogue_Line
       guid: 5810706b7aea4d41b6605c58c6e215a1
@@ -1679,7 +1679,7 @@ MonoBehaviour:
     ParentPath: States\Music
     guid: 2bac94c602ec474cba1fae799efa8b50
     GuidInternal: 
-    m_lastTime: -8585531523199416759
+    m_lastTime: -8585506229874970986
     List:
     - name: Music_Level1
       guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
