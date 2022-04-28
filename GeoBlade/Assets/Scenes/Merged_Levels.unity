@@ -178,6 +178,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiral Light (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
       value: 15.2
@@ -2030,6 +2046,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiral Light (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
       value: 15.2
@@ -2077,12 +2109,12 @@ GameObject:
   m_Component:
   - component: {fileID: 142893828}
   - component: {fileID: 142893829}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &142893828
 Transform:
@@ -3497,12 +3529,12 @@ GameObject:
   m_Component:
   - component: {fileID: 253768798}
   - component: {fileID: 253768799}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &253768798
 Transform:
@@ -3971,12 +4003,12 @@ GameObject:
   m_Component:
   - component: {fileID: 284627240}
   - component: {fileID: 284627241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &284627240
 Transform:
@@ -4466,12 +4498,12 @@ GameObject:
   m_Component:
   - component: {fileID: 316140460}
   - component: {fileID: 316140461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &316140460
 Transform:
@@ -4630,6 +4662,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 451735836982517937, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 451735836982517937, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 63
+      objectReference: {fileID: 0}
     - target: {fileID: 1551214877945591451, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4725,6 +4765,10 @@ PrefabInstance:
     - target: {fileID: 1994993594968572721, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.08792261
+      objectReference: {fileID: 0}
+    - target: {fileID: 2928658514666933208, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2978857075321096510, guid: bf636e9d68f1e8e4ca5a1b50d990330a, type: 3}
       propertyPath: m_WarningMessage
@@ -6255,12 +6299,12 @@ GameObject:
   m_Component:
   - component: {fileID: 547084690}
   - component: {fileID: 547084691}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &547084690
 Transform:
@@ -6734,6 +6778,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiral Light (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
       value: 15.2
@@ -6758,7 +6818,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26828
+  m_Name: pb_Mesh26112
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7048,6 +7108,14 @@ PrefabInstance:
     - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Name
       value: Station Light (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
@@ -7630,6 +7698,22 @@ PrefabInstance:
     - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Name
       value: Ceiling Light (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
@@ -9920,6 +10004,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiral Light (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
       value: 15.2
@@ -10683,6 +10783,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ceiling Light (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
 --- !u!4 &1030789964 stripped
@@ -10753,12 +10869,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1044476116}
   - component: {fileID: 1044476117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1044476116
 Transform:
@@ -10890,6 +11006,14 @@ PrefabInstance:
     - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Name
       value: Station Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
@@ -11590,6 +11714,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ceiling Light (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
 --- !u!4 &1098272754 stripped
@@ -11752,6 +11892,22 @@ PrefabInstance:
     - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Name
       value: Spiral Light (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
@@ -12938,6 +13094,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiral Light (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
       value: 15.2
@@ -14050,6 +14222,22 @@ PrefabInstance:
     - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Name
       value: Hall Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
@@ -15554,6 +15742,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiral Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
       value: 15.2
@@ -15626,6 +15830,22 @@ PrefabInstance:
     - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Name
       value: Spiral Light (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
@@ -16602,6 +16822,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiral Light (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
       value: 15.2
@@ -16824,6 +17060,22 @@ PrefabInstance:
     - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Name
       value: Ceiling Light (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
@@ -17373,6 +17625,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiral Light (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
       value: 15.2
@@ -17743,6 +18011,14 @@ PrefabInstance:
     - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Name
       value: Station Light (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
@@ -25821,6 +26097,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Station Light (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
       value: 40.288944
@@ -26184,6 +26468,22 @@ PrefabInstance:
     - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Name
       value: Spiral Light (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
@@ -27042,6 +27342,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiral Light
       objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8264559222751788059, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Range
       value: 15.2
@@ -27382,6 +27698,22 @@ PrefabInstance:
     - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
       propertyPath: m_Name
       value: Ceiling Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222593161411, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264559222751788057, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df5efe7c2affa9841939013ad51a36cf, type: 3}
