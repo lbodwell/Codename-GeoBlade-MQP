@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : CharacterStats {
     public float maxGeo;
@@ -10,6 +11,7 @@ public class PlayerStats : CharacterStats {
         
         if (health == 0) {
             Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
     public PlayerStats playerStats;
@@ -31,6 +30,8 @@ public class PlayerController : MonoBehaviour {
     private int _nextAttackIndex;
     private float _turnSmoothingVel;
     private Vector2 _movementInput = new Vector2(0f, 0f);
+    private bool _musicStarted;
+    private float _timeoutTarget;
 
     private void Awake() {
         Cursor.visible = false;
@@ -44,17 +45,14 @@ public class PlayerController : MonoBehaviour {
             new Attack("Light2", 10),
             new Attack("Heavy", 20)
         };
-        Debug.Log("start called");
-        AkSoundEngine.SetState("Music_Level1", "Track1_Section1");
-        AkSoundEngine.PostEvent("Level1_Music", gameObject);
+        _timeoutTarget = Time.time + 0.1f;
     }
 
     private void OnDestroy() {
         Debug.Log("Player died");
         AkSoundEngine.StopAll();
         DialogueManager.Instance.CancelDialogue();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        
+
         //weaponCollider.onDamage += (other) => {}
     }
 
@@ -64,6 +62,12 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void Update() {
+        // This is definitely some of the hackiest garbage I've ever written
+        if (!_musicStarted && Time.time > _timeoutTarget) {
+            AkSoundEngine.SetState("Music_Level1", "Track1_Section1");
+            AkSoundEngine.PostEvent("Level1_Music", gameObject);
+            _musicStarted = true;
+        }
         AkSoundEngine.SetState("Material", "Concrete");
         
         var horizInput = _movementInput.x;

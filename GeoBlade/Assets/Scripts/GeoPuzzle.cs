@@ -71,13 +71,13 @@ public class GeoPuzzle : MonoBehaviour {
             _noteSequenceIndex = (_noteSequenceIndex + 1) % 4;
 
             if (_lastPlaythroughStarted) {
-                _notesLeftInLastPlaythrough--;
-            }
-
-            if (_notesLeftInLastPlaythrough == 0) {
-                isPuzzleActive = false;
-                SceneManager.LoadScene("Demo_End");
-                Cursor.visible = true;
+                if (_notesLeftInLastPlaythrough == 0) {
+                    isPuzzleActive = false;
+                    SceneManager.LoadScene("Demo_End");
+                    Cursor.visible = true;
+                } else {
+                    _notesLeftInLastPlaythrough--;
+                }
             }
         }
             
