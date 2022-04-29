@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: bb8f8cfe1e885447b85a271938b99bc3
     GuidInternal: 
-    m_lastTime: -8585698956304635881
+    m_lastTime: -8585603614573291199
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ebe94a29748da34fa148ff1844aaba9f
     GuidInternal: 
-    m_lastTime: -8585698956304734988
+    m_lastTime: -8585509956309229516
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,11 +66,11 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b144575cff53e145bbed4dfb8f16af44
     GuidInternal: 
-    m_lastTime: -8585698956304670602
+    m_lastTime: -8585506202399140691
     List:
-    - name: Footsteps
-      guid: 6e7d2d40d2933a42819431665310e031
-      id: 2385628198
+    - name: Dialogue
+      guid: 4a7f2e159c23e64a8d15f2d8b354e15c
+      id: 3930136735
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -78,10 +78,52 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b144575cff53e145bbed4dfb8f16af44
-      - ElementName: Footsteps
+      - ElementName: Dialogue
+        ObjectType: 7
+        guid: 4a7f2e159c23e64a8d15f2d8b354e15c
+      Path: SoundBanks\Default Work Unit\Dialogue
+    - name: Music
+      guid: abc689fd0b46364393e8e9d43ce750a5
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b144575cff53e145bbed4dfb8f16af44
+      - ElementName: Music
+        ObjectType: 7
+        guid: abc689fd0b46364393e8e9d43ce750a5
+      Path: SoundBanks\Default Work Unit\Music
+    - name: Player
+      guid: 6e7d2d40d2933a42819431665310e031
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b144575cff53e145bbed4dfb8f16af44
+      - ElementName: Player
         ObjectType: 7
         guid: 6e7d2d40d2933a42819431665310e031
-      Path: SoundBanks\Default Work Unit\Footsteps
+      Path: SoundBanks\Default Work Unit\Player
+    - name: Puzzle
+      guid: 17fc7369277e9d4eb01625918e5f1e53
+      id: 1780448749
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b144575cff53e145bbed4dfb8f16af44
+      - ElementName: Puzzle
+        ObjectType: 7
+        guid: 17fc7369277e9d4eb01625918e5f1e53
+      Path: SoundBanks\Default Work Unit\Puzzle
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -94,25 +136,247 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fcbb3e7f157bd64fad51bae9e3b0a8ce
     GuidInternal: 
-    m_lastTime: -8585698956304809473
+    m_lastTime: -8585603614258857828
+    List: []
+  - PhysicalPath: Events\Dialogue.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Dialogue
+      ObjectType: 12
+      guid: 475c5da5829670438fba66501ba9a246
+    ParentPath: Events\Dialogue
+    guid: 475c5da5829670438fba66501ba9a246
+    GuidInternal: 
+    m_lastTime: -8585506202423847937
     List:
-    - name: Footstep
-      guid: 064aba3baf0b324fb279b0ae52626346
-      id: 1866025847
+    - name: Dialogue_Trigger
+      guid: 0666227a29948e44bafd5efae5ca592a
+      id: 4029211690
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Dialogue
         ObjectType: 12
-        guid: fcbb3e7f157bd64fad51bae9e3b0a8ce
-      - ElementName: Footstep
+        guid: 475c5da5829670438fba66501ba9a246
+      - ElementName: Dialogue_Trigger
+        ObjectType: 3
+        guid: 0666227a29948e44bafd5efae5ca592a
+      Path: Events\Dialogue\Dialogue_Trigger
+      maxAttenuation: 50
+      maxDuration: 11.449729
+      minDuration: 0.772417
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 90d90a6b2474e243b6c55a57c1b35207
+    ParentPath: Events\Music
+    guid: 90d90a6b2474e243b6c55a57c1b35207
+    GuidInternal: 
+    m_lastTime: -8585531074123578898
+    List:
+    - name: Level1_Music
+      guid: ddc53016e33abd4296debd8dd65405ee
+      id: 2026953958
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 90d90a6b2474e243b6c55a57c1b35207
+      - ElementName: Level1_Music
+        ObjectType: 3
+        guid: ddc53016e33abd4296debd8dd65405ee
+      Path: Events\Music\Level1_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Player.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Player
+      ObjectType: 12
+      guid: d19439dca0fb2b4e9c232a66be5f6f0f
+    ParentPath: Events\Player
+    guid: d19439dca0fb2b4e9c232a66be5f6f0f
+    GuidInternal: 
+    m_lastTime: -8585506202423842945
+    List:
+    - name: Player_Attack_Impact
+      guid: 0ad39d166b78414794157b131727df95
+      id: 3715470202
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Player_Attack_Impact
+        ObjectType: 3
+        guid: 0ad39d166b78414794157b131727df95
+      Path: Events\Player\Player_Attack_Impact
+      maxAttenuation: 25
+      maxDuration: 1.965013
+      minDuration: 1.199113
+    - name: Player_Attack_Swing
+      guid: 418c7b323b94844b987a1b61b2ef0f23
+      id: 337451782
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Player_Attack_Swing
+        ObjectType: 3
+        guid: 418c7b323b94844b987a1b61b2ef0f23
+      Path: Events\Player\Player_Attack_Swing
+      maxAttenuation: 25
+      maxDuration: 2.454716
+      minDuration: 0.898961
+    - name: Player_Footstep
+      guid: 064aba3baf0b324fb279b0ae52626346
+      id: 2453392179
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Player_Footstep
         ObjectType: 3
         guid: 064aba3baf0b324fb279b0ae52626346
-      Path: Events\Default Work Unit\Footstep
+      Path: Events\Player\Player_Footstep
       maxAttenuation: 0
-      maxDuration: 0.330023
-      minDuration: 0.330023
+      maxDuration: 0.401294
+      minDuration: 0.201399
+    - name: Player_Jump
+      guid: 0d3f22ba86284b4ba6ca6b837cb7a8ae
+      id: 1305133589
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Player_Jump
+        ObjectType: 3
+        guid: 0d3f22ba86284b4ba6ca6b837cb7a8ae
+      Path: Events\Player\Player_Jump
+      maxAttenuation: 0
+      maxDuration: 0.614489
+      minDuration: 0.358672
+    - name: Player_Unsheathe
+      guid: ef2973933364b94b8b560a96f215cb61
+      id: 917509252
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Player_Unsheathe
+        ObjectType: 3
+        guid: ef2973933364b94b8b560a96f215cb61
+      Path: Events\Player\Player_Unsheathe
+      maxAttenuation: 0
+      maxDuration: 2.217415
+      minDuration: 2.217415
+    - name: Security_Droid_Attack
+      guid: 51070990e701f74a8dd5de6f148aa2e5
+      id: 1402779743
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Security_Droid_Attack
+        ObjectType: 3
+        guid: 51070990e701f74a8dd5de6f148aa2e5
+      Path: Events\Player\Security_Droid_Attack
+      maxAttenuation: 50
+      maxDuration: 0.340454
+      minDuration: 0.340454
+    - name: Stasis_Pod_Hiss
+      guid: 585f63e979bc9a4385690f2689f9a533
+      id: 3474418164
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d19439dca0fb2b4e9c232a66be5f6f0f
+      - ElementName: Stasis_Pod_Hiss
+        ObjectType: 3
+        guid: 585f63e979bc9a4385690f2689f9a533
+      Path: Events\Player\Stasis_Pod_Hiss
+      maxAttenuation: 50
+      maxDuration: 61.407814
+      minDuration: 61.407814
+  - PhysicalPath: Events\Puzzle.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Puzzle
+      ObjectType: 12
+      guid: f52fa766ba11844b882cd3dd3494d08a
+    ParentPath: Events\Puzzle
+    guid: f52fa766ba11844b882cd3dd3494d08a
+    GuidInternal: 
+    m_lastTime: -8585506202423837942
+    List:
+    - name: Play_Generator_Hum
+      guid: aa417a4dceb6cd43a6ae58977f35a58e
+      id: 2682110950
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: f52fa766ba11844b882cd3dd3494d08a
+      - ElementName: Play_Generator_Hum
+        ObjectType: 3
+        guid: aa417a4dceb6cd43a6ae58977f35a58e
+      Path: Events\Puzzle\Play_Generator_Hum
+      maxAttenuation: 100
+      maxDuration: 1.12805
+      minDuration: 1.125011
+    - name: Play_Resonant_Frequency
+      guid: 774ab42d9908ee46b94c8accae3b8f9a
+      id: 853873997
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: f52fa766ba11844b882cd3dd3494d08a
+      - ElementName: Play_Resonant_Frequency
+        ObjectType: 3
+        guid: 774ab42d9908ee46b94c8accae3b8f9a
+      Path: Events\Puzzle\Play_Resonant_Frequency
+      maxAttenuation: 100
+      maxDuration: 1.249501
+      minDuration: 1.229116
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -125,7 +389,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6729555d9375884586107b6426b43d60
     GuidInternal: 
-    m_lastTime: -8585698956304799560
+    m_lastTime: -8585603614573421206
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -139,8 +403,1930 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0712bfab92afb340a63c6588fc4ec0f8
     GuidInternal: 
-    m_lastTime: -8585698956304660677
+    m_lastTime: -8585535236378551044
     List: []
+  - PhysicalPath: States\Dialogue.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Dialogue
+      ObjectType: 12
+      guid: 144533a6a42c9b4788631915b5bc027b
+    ParentPath: States\Dialogue
+    guid: 144533a6a42c9b4788631915b5bc027b
+    GuidInternal: 
+    m_lastTime: -8585506202399140691
+    List:
+    - name: Dialogue_Line
+      guid: 5810706b7aea4d41b6605c58c6e215a1
+      id: 3247544628
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Dialogue
+        ObjectType: 12
+        guid: 144533a6a42c9b4788631915b5bc027b
+      - ElementName: Dialogue_Line
+        ObjectType: 9
+        guid: 5810706b7aea4d41b6605c58c6e215a1
+      Path: States\Dialogue\Dialogue_Line
+      values:
+      - name: lvl1_generatorRoom_iris_01
+        guid: 7ef1cac99242da42b681fa167ba4ed37
+        id: 3771780349
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_generatorRoom_iris_01
+          ObjectType: 8
+          guid: 7ef1cac99242da42b681fa167ba4ed37
+      - name: lvl1_generatorRoom_iris_02
+        guid: 749c70a92599af40b72a231e170796d3
+        id: 3771780350
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_generatorRoom_iris_02
+          ObjectType: 8
+          guid: 749c70a92599af40b72a231e170796d3
+      - name: lvl1_generatorRoom_iris_03
+        guid: 58d8d66202431747aa3280a2030f99ea
+        id: 3771780351
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_generatorRoom_iris_03
+          ObjectType: 8
+          guid: 58d8d66202431747aa3280a2030f99ea
+      - name: lvl1_generatorRoom_iris_04
+        guid: ac7fa02661ed8547aae952264cfd13da
+        id: 3771780344
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_generatorRoom_iris_04
+          ObjectType: 8
+          guid: ac7fa02661ed8547aae952264cfd13da
+      - name: lvl1_generatorRoom_iris_05
+        guid: aff69dc991d02d4abc4aaff113dc56a6
+        id: 3771780345
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_generatorRoom_iris_05
+          ObjectType: 8
+          guid: aff69dc991d02d4abc4aaff113dc56a6
+      - name: lvl1_generatorRoom_seru_01
+        guid: 4c4daeb9de725e46bad49f9d82f6f50c
+        id: 3259346055
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_generatorRoom_seru_01
+          ObjectType: 8
+          guid: 4c4daeb9de725e46bad49f9d82f6f50c
+      - name: lvl1_generatorRoom_seru_02
+        guid: 2e638ed6d7c71145a61de453f0553132
+        id: 3259346052
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_generatorRoom_seru_02
+          ObjectType: 8
+          guid: 2e638ed6d7c71145a61de453f0553132
+      - name: lvl1_generatorRoom_seru_03
+        guid: 05e1e7087ecb274092faaf5088df1ec8
+        id: 3259346053
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_generatorRoom_seru_03
+          ObjectType: 8
+          guid: 05e1e7087ecb274092faaf5088df1ec8
+      - name: lvl1_platformA_iris_01
+        guid: 145a85c3662e1a4ca0d63f15e5fcab98
+        id: 1220749281
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformA_iris_01
+          ObjectType: 8
+          guid: 145a85c3662e1a4ca0d63f15e5fcab98
+      - name: lvl1_platformA_iris_02
+        guid: 9c17bd26d2d4b14698b40c720e342710
+        id: 1220749282
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformA_iris_02
+          ObjectType: 8
+          guid: 9c17bd26d2d4b14698b40c720e342710
+      - name: lvl1_platformA_iris_03
+        guid: e85d78e86865024f938d8c58eee506ab
+        id: 1220749283
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformA_iris_03
+          ObjectType: 8
+          guid: e85d78e86865024f938d8c58eee506ab
+      - name: lvl1_platformA_seru_01
+        guid: b28ed074b29282408eb5cad60f38c724
+        id: 2841863195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformA_seru_01
+          ObjectType: 8
+          guid: b28ed074b29282408eb5cad60f38c724
+      - name: lvl1_platformA_seru_02
+        guid: 0ed3d90fbca0b44e8902162bd88e61a5
+        id: 2841863192
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformA_seru_02
+          ObjectType: 8
+          guid: 0ed3d90fbca0b44e8902162bd88e61a5
+      - name: lvl1_platformA_seru_03
+        guid: 7efe8e66e9d4f2419c547306f0da9bbf
+        id: 2841863193
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformA_seru_03
+          ObjectType: 8
+          guid: 7efe8e66e9d4f2419c547306f0da9bbf
+      - name: lvl1_platformB_core_01
+        guid: 7df7ad7be95abe43a1a015031562336e
+        id: 612702794
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_core_01
+          ObjectType: 8
+          guid: 7df7ad7be95abe43a1a015031562336e
+      - name: lvl1_platformB_iris_01
+        guid: c66a0f1cc6199f4d81f8fe2d007b6513
+        id: 966952198
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_iris_01
+          ObjectType: 8
+          guid: c66a0f1cc6199f4d81f8fe2d007b6513
+      - name: lvl1_platformB_iris_02
+        guid: 12568413613bda4fafce22c08ea82346
+        id: 966952197
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_iris_02
+          ObjectType: 8
+          guid: 12568413613bda4fafce22c08ea82346
+      - name: lvl1_platformB_iris_03
+        guid: f67d3b2571a8ec4e956a93d0f02ae5ee
+        id: 966952196
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_iris_03
+          ObjectType: 8
+          guid: f67d3b2571a8ec4e956a93d0f02ae5ee
+      - name: lvl1_platformB_iris_04
+        guid: ea54c363e93d344da3018fc945192ba4
+        id: 966952195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_iris_04
+          ObjectType: 8
+          guid: ea54c363e93d344da3018fc945192ba4
+      - name: lvl1_platformB_iris_05
+        guid: 129d190672e7104ca8c9aaae3843a19d
+        id: 966952194
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_iris_05
+          ObjectType: 8
+          guid: 129d190672e7104ca8c9aaae3843a19d
+      - name: lvl1_platformB_iris_06
+        guid: 30bd8c4863388f4ea02ee27f1b249a20
+        id: 966952193
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_iris_06
+          ObjectType: 8
+          guid: 30bd8c4863388f4ea02ee27f1b249a20
+      - name: lvl1_platformB_iris_07
+        guid: 14f39e69404b624fb72a3fdaa4df6b21
+        id: 966952192
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_iris_07
+          ObjectType: 8
+          guid: 14f39e69404b624fb72a3fdaa4df6b21
+      - name: lvl1_platformB_iris_08
+        guid: 3c2c6c08b3081846862e0ffe0c3a660c
+        id: 966952207
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_iris_08
+          ObjectType: 8
+          guid: 3c2c6c08b3081846862e0ffe0c3a660c
+      - name: lvl1_platformB_seru_01
+        guid: 6c9610afe336a446b173aeaa945a6f07
+        id: 255261660
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_seru_01
+          ObjectType: 8
+          guid: 6c9610afe336a446b173aeaa945a6f07
+      - name: lvl1_platformB_seru_02
+        guid: 9a9253032b09ed4a92174887ed5638d7
+        id: 255261663
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_seru_02
+          ObjectType: 8
+          guid: 9a9253032b09ed4a92174887ed5638d7
+      - name: lvl1_platformB_seru_03
+        guid: 650c857368a42b4f9c92157f1eb21c88
+        id: 255261662
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_seru_03
+          ObjectType: 8
+          guid: 650c857368a42b4f9c92157f1eb21c88
+      - name: lvl1_platformB_seru_04
+        guid: 85834d608d576d409636326860ef37e1
+        id: 255261657
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_seru_04
+          ObjectType: 8
+          guid: 85834d608d576d409636326860ef37e1
+      - name: lvl1_platformB_seru_05
+        guid: d58282a57323214b9da88e7dd1ad5365
+        id: 255261656
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_seru_05
+          ObjectType: 8
+          guid: d58282a57323214b9da88e7dd1ad5365
+      - name: lvl1_platformB_seru_06
+        guid: bc7a1e0b888c07419adf75c31fbf5ded
+        id: 255261659
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_platformB_seru_06
+          ObjectType: 8
+          guid: bc7a1e0b888c07419adf75c31fbf5ded
+      - name: lvl1_spiralRoom_iris_01
+        guid: 0145127597378d4ab484902e7acf0b36
+        id: 2662722075
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_iris_01
+          ObjectType: 8
+          guid: 0145127597378d4ab484902e7acf0b36
+      - name: lvl1_spiralRoom_iris_02
+        guid: 3198877908d63644923827d92375409e
+        id: 2662722072
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_iris_02
+          ObjectType: 8
+          guid: 3198877908d63644923827d92375409e
+      - name: lvl1_spiralRoom_iris_03
+        guid: 8fc0a38e4eaf564fa3fdd6785ed40847
+        id: 2662722073
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_iris_03
+          ObjectType: 8
+          guid: 8fc0a38e4eaf564fa3fdd6785ed40847
+      - name: lvl1_spiralRoom_iris_04
+        guid: 821bfae5002be84782d95f54c4de1b11
+        id: 2662722078
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_iris_04
+          ObjectType: 8
+          guid: 821bfae5002be84782d95f54c4de1b11
+      - name: lvl1_spiralRoom_iris_05
+        guid: 4b4b368a3f9c664cba6821266c55d5b2
+        id: 2662722079
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_iris_05
+          ObjectType: 8
+          guid: 4b4b368a3f9c664cba6821266c55d5b2
+      - name: lvl1_spiralRoom_seru_01
+        guid: 22b7e60b095a93428d4e393e00bb487c
+        id: 380905701
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_seru_01
+          ObjectType: 8
+          guid: 22b7e60b095a93428d4e393e00bb487c
+      - name: lvl1_spiralRoom_seru_02
+        guid: 3ee8de7425f9d7498bc9b133cd3a1c82
+        id: 380905702
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_spiralRoom_seru_02
+          ObjectType: 8
+          guid: 3ee8de7425f9d7498bc9b133cd3a1c82
+      - name: lvl1_stasisRoom_iris_01
+        guid: e348c2563dc80e44a53ea8d276fe6e51
+        id: 4061841897
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasisRoom_iris_01
+          ObjectType: 8
+          guid: e348c2563dc80e44a53ea8d276fe6e51
+      - name: lvl1_stasisRoom_iris_02
+        guid: b8b48c0873dd0b45be3d9d5495b14544
+        id: 4061841898
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasisRoom_iris_02
+          ObjectType: 8
+          guid: b8b48c0873dd0b45be3d9d5495b14544
+      - name: lvl1_stasisRoom_seru_01
+        guid: adf886bd62f7bc42a223387eb5ac0d6a
+        id: 4003890723
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasisRoom_seru_01
+          ObjectType: 8
+          guid: adf886bd62f7bc42a223387eb5ac0d6a
+      - name: lvl1_stasisRoom_seru_02
+        guid: 0a3f93009c4a134a8db383ca0aa956f2
+        id: 4003890720
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasisRoom_seru_02
+          ObjectType: 8
+          guid: 0a3f93009c4a134a8db383ca0aa956f2
+      - name: lvl1_stasisRoom_seru_03
+        guid: f06ebedbdbbed4429dc4a3d1b41606ca
+        id: 4003890721
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_stasisRoom_seru_03
+          ObjectType: 8
+          guid: f06ebedbdbbed4429dc4a3d1b41606ca
+      - name: lvl1_transportationHanagar_iris_01
+        guid: d5283227656e694ebaaeb1277f0d14c9
+        id: 3117459357
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_iris_01
+          ObjectType: 8
+          guid: d5283227656e694ebaaeb1277f0d14c9
+      - name: lvl1_transportationHanagar_iris_02
+        guid: 28a0a018f8d15343af9a4b50d0f06296
+        id: 3117459358
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_iris_02
+          ObjectType: 8
+          guid: 28a0a018f8d15343af9a4b50d0f06296
+      - name: lvl1_transportationHanagar_iris_03
+        guid: 9be581e0e9dce342b53d7c4936ebcdd2
+        id: 3117459359
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_iris_03
+          ObjectType: 8
+          guid: 9be581e0e9dce342b53d7c4936ebcdd2
+      - name: lvl1_transportationHanagar_iris_04
+        guid: 3d7be7c95722884ea83cffeef8983c07
+        id: 3117459352
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_iris_04
+          ObjectType: 8
+          guid: 3d7be7c95722884ea83cffeef8983c07
+      - name: lvl1_transportationHanagar_iris_05
+        guid: a1efcee92612d948b0d215d445de3ea7
+        id: 3117459353
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_iris_05
+          ObjectType: 8
+          guid: a1efcee92612d948b0d215d445de3ea7
+      - name: lvl1_transportationHanagar_iris_06
+        guid: 293defe0384f07439d28d303c0a62376
+        id: 3117459354
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_iris_06
+          ObjectType: 8
+          guid: 293defe0384f07439d28d303c0a62376
+      - name: lvl1_transportationHanagar_securityDroid_01
+        guid: 7cdccb23e6972b4998a06bd7dfbd0fc9
+        id: 2560847918
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_securityDroid_01
+          ObjectType: 8
+          guid: 7cdccb23e6972b4998a06bd7dfbd0fc9
+      - name: lvl1_transportationHanagar_securityDroid_02
+        guid: 4bd5fe40b10dd74488a818cbab5d031c
+        id: 2560847917
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_securityDroid_02
+          ObjectType: 8
+          guid: 4bd5fe40b10dd74488a818cbab5d031c
+      - name: lvl1_transportationHanagar_securityDroid_03
+        guid: a7505b485705d04590505926fac60f17
+        id: 2560847916
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_securityDroid_03
+          ObjectType: 8
+          guid: a7505b485705d04590505926fac60f17
+      - name: lvl1_transportationHanagar_seru_01
+        guid: 32f40deaa3325346877ad68cb54ef2d2
+        id: 2881107239
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_seru_01
+          ObjectType: 8
+          guid: 32f40deaa3325346877ad68cb54ef2d2
+      - name: lvl1_transportationHanagar_seru_02
+        guid: ef3672ade27daa458921dad51fbdbf79
+        id: 2881107236
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_seru_02
+          ObjectType: 8
+          guid: ef3672ade27daa458921dad51fbdbf79
+      - name: lvl1_transportationHanagar_seru_03
+        guid: f8fe726274deaf42b16290b5349f1177
+        id: 2881107237
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_seru_03
+          ObjectType: 8
+          guid: f8fe726274deaf42b16290b5349f1177
+      - name: lvl1_transportationHanagar_seru_04
+        guid: b4b36ed8b5644542b184553b30a3aaa0
+        id: 2881107234
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_transportationHanagar_seru_04
+          ObjectType: 8
+          guid: b4b36ed8b5644542b184553b30a3aaa0
+      - name: lvl1_vista_core_01
+        guid: 2b80b8b26df5b34d944ac1151db0969c
+        id: 3383705420
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_core_01
+          ObjectType: 8
+          guid: 2b80b8b26df5b34d944ac1151db0969c
+      - name: lvl1_vista_iris_01
+        guid: 1697270bc012544592b29ed6b2c0d7ab
+        id: 1260396596
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_iris_01
+          ObjectType: 8
+          guid: 1697270bc012544592b29ed6b2c0d7ab
+      - name: lvl1_vista_iris_02
+        guid: 55fd9b68343166439d0f1e44c7f4f210
+        id: 1260396599
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_iris_02
+          ObjectType: 8
+          guid: 55fd9b68343166439d0f1e44c7f4f210
+      - name: lvl1_vista_iris_03
+        guid: 24522a58fb55fc4b9465e6b7945ca060
+        id: 1260396598
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_iris_03
+          ObjectType: 8
+          guid: 24522a58fb55fc4b9465e6b7945ca060
+      - name: lvl1_vista_iris_04
+        guid: 9fa647c193efe24b894aeef314be4f33
+        id: 1260396593
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_iris_04
+          ObjectType: 8
+          guid: 9fa647c193efe24b894aeef314be4f33
+      - name: lvl1_vista_iris_05
+        guid: cc6e9f7a26dd5141ad75bdb9668ac752
+        id: 1260396592
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_iris_05
+          ObjectType: 8
+          guid: cc6e9f7a26dd5141ad75bdb9668ac752
+      - name: lvl1_vista_iris_06
+        guid: 349c9c9cd0386d4ca1e8d1ff08f843f1
+        id: 1260396595
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_iris_06
+          ObjectType: 8
+          guid: 349c9c9cd0386d4ca1e8d1ff08f843f1
+      - name: lvl1_vista_iris_07
+        guid: 180e088fa46de84d8c822a36fccf3545
+        id: 1260396594
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_iris_07
+          ObjectType: 8
+          guid: 180e088fa46de84d8c822a36fccf3545
+      - name: lvl1_vista_iris_08
+        guid: 736271a226cd0c43beb9735c4d3000e6
+        id: 1260396605
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_iris_08
+          ObjectType: 8
+          guid: 736271a226cd0c43beb9735c4d3000e6
+      - name: lvl1_vista_seru_01
+        guid: e0995741c4213740b8b9e7ef5db480e7
+        id: 612967482
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_01
+          ObjectType: 8
+          guid: e0995741c4213740b8b9e7ef5db480e7
+      - name: lvl1_vista_seru_02
+        guid: 0187474ed2381445be492cd28ae1a192
+        id: 612967481
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_02
+          ObjectType: 8
+          guid: 0187474ed2381445be492cd28ae1a192
+      - name: lvl1_vista_seru_03
+        guid: 89b56645430e9d44bdf1ab3bf3ae7952
+        id: 612967480
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_03
+          ObjectType: 8
+          guid: 89b56645430e9d44bdf1ab3bf3ae7952
+      - name: lvl1_vista_seru_04
+        guid: 9e0bd2ecff050c47a0e0450972b41d9e
+        id: 612967487
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_04
+          ObjectType: 8
+          guid: 9e0bd2ecff050c47a0e0450972b41d9e
+      - name: lvl1_vista_seru_05
+        guid: d13991f10a86234fa2b4a4414527f7b2
+        id: 612967486
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_05
+          ObjectType: 8
+          guid: d13991f10a86234fa2b4a4414527f7b2
+      - name: lvl1_vista_seru_06
+        guid: 986a90da54a7974185233e531c08133a
+        id: 612967485
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_06
+          ObjectType: 8
+          guid: 986a90da54a7974185233e531c08133a
+      - name: lvl1_vista_seru_07
+        guid: db6ad76b29b5fe42b78206ec9a40eb2c
+        id: 612967484
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_07
+          ObjectType: 8
+          guid: db6ad76b29b5fe42b78206ec9a40eb2c
+      - name: lvl1_vista_seru_08
+        guid: 89efecb3ca262c45ab6bbc191aa2b2f7
+        id: 612967475
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_08
+          ObjectType: 8
+          guid: 89efecb3ca262c45ab6bbc191aa2b2f7
+      - name: lvl1_vista_seru_09
+        guid: 21dbaa47be88ba499b5e71d73cfbfcc4
+        id: 612967474
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_09
+          ObjectType: 8
+          guid: 21dbaa47be88ba499b5e71d73cfbfcc4
+      - name: lvl1_vista_seru_10
+        guid: 2e93b9561aedee4798e5479fedf2a477
+        id: 596189768
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_10
+          ObjectType: 8
+          guid: 2e93b9561aedee4798e5479fedf2a477
+      - name: lvl1_vista_seru_11
+        guid: d860e18afe96094ab0eafca5a3d0dcad
+        id: 596189769
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_11
+          ObjectType: 8
+          guid: d860e18afe96094ab0eafca5a3d0dcad
+      - name: lvl1_vista_seru_12
+        guid: 8e6158a6e136dd43af43ff7b64832972
+        id: 596189770
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_12
+          ObjectType: 8
+          guid: 8e6158a6e136dd43af43ff7b64832972
+      - name: lvl1_vista_seru_13
+        guid: 06598c6694bca144b832f2d69ca06306
+        id: 596189771
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: lvl1_vista_seru_13
+          ObjectType: 8
+          guid: 06598c6694bca144b832f2d69ca06306
+      - name: None
+        guid: c6f04601eaaeae4c9e355f8766ecf0bf
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Dialogue
+          ObjectType: 12
+          guid: 144533a6a42c9b4788631915b5bc027b
+        - ElementName: Dialogue_Line
+          ObjectType: 9
+          guid: 5810706b7aea4d41b6605c58c6e215a1
+        - ElementName: None
+          ObjectType: 8
+          guid: c6f04601eaaeae4c9e355f8766ecf0bf
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\Music.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 2bac94c602ec474cba1fae799efa8b50
+    ParentPath: States\Music
+    guid: 2bac94c602ec474cba1fae799efa8b50
+    GuidInternal: 
+    m_lastTime: -8585506202399135693
+    List:
+    - name: Music_Level1
+      guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+      id: 2209143526
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 2bac94c602ec474cba1fae799efa8b50
+      - ElementName: Music_Level1
+        ObjectType: 9
+        guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+      Path: States\Music\Music_Level1
+      values:
+      - name: None
+        guid: 197b0ddd7e863a4c9142c12a21cab4c2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: None
+          ObjectType: 8
+          guid: 197b0ddd7e863a4c9142c12a21cab4c2
+      - name: Track1_Section1
+        guid: 2141a1cf092f584b9ac2b62f1cd035ea
+        id: 2280635048
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track1_Section1
+          ObjectType: 8
+          guid: 2141a1cf092f584b9ac2b62f1cd035ea
+      - name: Track1_Section2
+        guid: 520c304ba9f4e948a524dfd38d7f5af9
+        id: 2280635051
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track1_Section2
+          ObjectType: 8
+          guid: 520c304ba9f4e948a524dfd38d7f5af9
+      - name: Track2_Section1
+        guid: 56a931c979461443bf98da7eb0f665e6
+        id: 2599758657
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track2_Section1
+          ObjectType: 8
+          guid: 56a931c979461443bf98da7eb0f665e6
+      - name: Track3_Section1
+        guid: ff8702dc13d248429e917b07cb6f1922
+        id: 2744513742
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track3_Section1
+          ObjectType: 8
+          guid: ff8702dc13d248429e917b07cb6f1922
+      - name: Track3_Section2
+        guid: 0a04032dbf4bb64f960602d079bb2d4d
+        id: 2744513741
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track3_Section2
+          ObjectType: 8
+          guid: 0a04032dbf4bb64f960602d079bb2d4d
+      - name: Track3_Section3
+        guid: fb21f0d429aa214a9ce5765c35961541
+        id: 2744513740
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track3_Section3
+          ObjectType: 8
+          guid: fb21f0d429aa214a9ce5765c35961541
+      - name: Track3_Section4
+        guid: f1f2206db225f0479cfd8ba83bf160aa
+        id: 2744513739
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Music
+          ObjectType: 12
+          guid: 2bac94c602ec474cba1fae799efa8b50
+        - ElementName: Music_Level1
+          ObjectType: 9
+          guid: b4dafc5e7eb7ba4cb45f1f7c053a0aa0
+        - ElementName: Track3_Section4
+          ObjectType: 8
+          guid: f1f2206db225f0479cfd8ba83bf160aa
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\Player.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Player
+      ObjectType: 12
+      guid: 98e2c4458da7bb4bb423952bf4ad2d10
+    ParentPath: States\Player
+    guid: 98e2c4458da7bb4bb423952bf4ad2d10
+    GuidInternal: 
+    m_lastTime: -8585506202399130688
+    List:
+    - name: Attack_Type
+      guid: 08d4f90510cf604c8710300508312e18
+      id: 2578485808
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 98e2c4458da7bb4bb423952bf4ad2d10
+      - ElementName: Attack_Type
+        ObjectType: 9
+        guid: 08d4f90510cf604c8710300508312e18
+      Path: States\Player\Attack_Type
+      values:
+      - name: Heavy
+        guid: 6c4c6adbc626044ead8990ce445f177b
+        id: 2732489590
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Attack_Type
+          ObjectType: 9
+          guid: 08d4f90510cf604c8710300508312e18
+        - ElementName: Heavy
+          ObjectType: 8
+          guid: 6c4c6adbc626044ead8990ce445f177b
+      - name: Light1
+        guid: 9cafa5be2b4a1942a75a94b48d061310
+        id: 3192784680
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Attack_Type
+          ObjectType: 9
+          guid: 08d4f90510cf604c8710300508312e18
+        - ElementName: Light1
+          ObjectType: 8
+          guid: 9cafa5be2b4a1942a75a94b48d061310
+      - name: Light2
+        guid: 3e22ad7cf2826c41a123452e2e9c946a
+        id: 3192784683
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Attack_Type
+          ObjectType: 9
+          guid: 08d4f90510cf604c8710300508312e18
+        - ElementName: Light2
+          ObjectType: 8
+          guid: 3e22ad7cf2826c41a123452e2e9c946a
+      - name: None
+        guid: e6577b17fa74b74aaea79bcb43590f6a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Attack_Type
+          ObjectType: 9
+          guid: 08d4f90510cf604c8710300508312e18
+        - ElementName: None
+          ObjectType: 8
+          guid: e6577b17fa74b74aaea79bcb43590f6a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Footstep_Type
+      guid: 0e99758fd9ceaa478aeebfc38deac310
+      id: 2615620554
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 98e2c4458da7bb4bb423952bf4ad2d10
+      - ElementName: Footstep_Type
+        ObjectType: 9
+        guid: 0e99758fd9ceaa478aeebfc38deac310
+      Path: States\Player\Footstep_Type
+      values:
+      - name: None
+        guid: 09bf788d8ce9eb46b12745e165e24259
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Footstep_Type
+          ObjectType: 9
+          guid: 0e99758fd9ceaa478aeebfc38deac310
+        - ElementName: None
+          ObjectType: 8
+          guid: 09bf788d8ce9eb46b12745e165e24259
+      - name: Run
+        guid: 49cf13533e8fa64b861857c8e6ed556d
+        id: 712161704
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Footstep_Type
+          ObjectType: 9
+          guid: 0e99758fd9ceaa478aeebfc38deac310
+        - ElementName: Run
+          ObjectType: 8
+          guid: 49cf13533e8fa64b861857c8e6ed556d
+      - name: Walk
+        guid: e755bbde757ff74095a6a07ada26dd32
+        id: 2108779966
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Footstep_Type
+          ObjectType: 9
+          guid: 0e99758fd9ceaa478aeebfc38deac310
+        - ElementName: Walk
+          ObjectType: 8
+          guid: e755bbde757ff74095a6a07ada26dd32
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Material
+      guid: 9fc392fb52948c4cb66e3c435e589866
+      id: 3865314626
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 98e2c4458da7bb4bb423952bf4ad2d10
+      - ElementName: Material
+        ObjectType: 9
+        guid: 9fc392fb52948c4cb66e3c435e589866
+      Path: States\Player\Material
+      values:
+      - name: Concrete
+        guid: fa9aab294289de4e9761459993b31c40
+        id: 841620460
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Material
+          ObjectType: 9
+          guid: 9fc392fb52948c4cb66e3c435e589866
+        - ElementName: Concrete
+          ObjectType: 8
+          guid: fa9aab294289de4e9761459993b31c40
+      - name: Grass
+        guid: 2c28fa72fba6c449acd73af1bea8c380
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Material
+          ObjectType: 9
+          guid: 9fc392fb52948c4cb66e3c435e589866
+        - ElementName: Grass
+          ObjectType: 8
+          guid: 2c28fa72fba6c449acd73af1bea8c380
+      - name: Metal
+        guid: 5f6b45e8908be643b157a724c80359fc
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Material
+          ObjectType: 9
+          guid: 9fc392fb52948c4cb66e3c435e589866
+        - ElementName: Metal
+          ObjectType: 8
+          guid: 5f6b45e8908be643b157a724c80359fc
+      - name: None
+        guid: b5ac77d9f373aa459ed1531da6577937
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Player
+          ObjectType: 12
+          guid: 98e2c4458da7bb4bb423952bf4ad2d10
+        - ElementName: Material
+          ObjectType: 9
+          guid: 9fc392fb52948c4cb66e3c435e589866
+        - ElementName: None
+          ObjectType: 8
+          guid: b5ac77d9f373aa459ed1531da6577937
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\Puzzle.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Puzzle
+      ObjectType: 12
+      guid: 647699534d80c949a56e1fe8688a3d65
+    ParentPath: States\Puzzle
+    guid: 647699534d80c949a56e1fe8688a3d65
+    GuidInternal: 
+    m_lastTime: -8585506202399130688
+    List:
+    - name: Generator_Hum_Note
+      guid: 8ba9d53eb5b3444389a224a4fcc251c1
+      id: 4288503750
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: 647699534d80c949a56e1fe8688a3d65
+      - ElementName: Generator_Hum_Note
+        ObjectType: 9
+        guid: 8ba9d53eb5b3444389a224a4fcc251c1
+      Path: States\Puzzle\Generator_Hum_Note
+      values:
+      - name: None
+        guid: 684e4562507b3a479f470d71975e1e73
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: None
+          ObjectType: 8
+          guid: 684e4562507b3a479f470d71975e1e73
+      - name: Note_2
+        guid: df631d37211d604fa2a736441a9b4678
+        id: 2108395138
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_2
+          ObjectType: 8
+          guid: df631d37211d604fa2a736441a9b4678
+      - name: Note_3
+        guid: e9c05e91d29c1349a370026f5291ce9b
+        id: 2108395139
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_3
+          ObjectType: 8
+          guid: e9c05e91d29c1349a370026f5291ce9b
+      - name: Note_4
+        guid: 1a0a035ade81104f88bae00426ca262b
+        id: 2108395140
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_4
+          ObjectType: 8
+          guid: 1a0a035ade81104f88bae00426ca262b
+      - name: Note_5
+        guid: 691c6b7aec1fde4fa31bf4d56fa0c4e8
+        id: 2108395141
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Generator_Hum_Note
+          ObjectType: 9
+          guid: 8ba9d53eb5b3444389a224a4fcc251c1
+        - ElementName: Note_5
+          ObjectType: 8
+          guid: 691c6b7aec1fde4fa31bf4d56fa0c4e8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Resonant_Frequency_Note
+      guid: 319af7f7a60c66498c615385adf19d35
+      id: 2533881733
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Puzzle
+        ObjectType: 12
+        guid: 647699534d80c949a56e1fe8688a3d65
+      - ElementName: Resonant_Frequency_Note
+        ObjectType: 9
+        guid: 319af7f7a60c66498c615385adf19d35
+      Path: States\Puzzle\Resonant_Frequency_Note
+      values:
+      - name: None
+        guid: ebc76a61a437a740a6324919a6dff8bc
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: None
+          ObjectType: 8
+          guid: ebc76a61a437a740a6324919a6dff8bc
+      - name: Note_1
+        guid: 95a88c28b7c29847b8c01ef065be9a4d
+        id: 2108395137
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_1
+          ObjectType: 8
+          guid: 95a88c28b7c29847b8c01ef065be9a4d
+      - name: Note_2
+        guid: 56e3c7f273291047b9b29133bbb8a011
+        id: 2108395138
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_2
+          ObjectType: 8
+          guid: 56e3c7f273291047b9b29133bbb8a011
+      - name: Note_3
+        guid: 647ab442103eda4bab9176154da9ede1
+        id: 2108395139
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_3
+          ObjectType: 8
+          guid: 647ab442103eda4bab9176154da9ede1
+      - name: Note_4
+        guid: c90283ceb74ab2428caf914e2a283ccc
+        id: 2108395140
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_4
+          ObjectType: 8
+          guid: c90283ceb74ab2428caf914e2a283ccc
+      - name: Note_5
+        guid: e13d485da1df1d4d9f56dcc336406fc2
+        id: 2108395141
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_5
+          ObjectType: 8
+          guid: e13d485da1df1d4d9f56dcc336406fc2
+      - name: Note_6
+        guid: 5e787071f56cc74dafd86e25232fbc0b
+        id: 2108395142
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_6
+          ObjectType: 8
+          guid: 5e787071f56cc74dafd86e25232fbc0b
+      - name: Note_7
+        guid: a8544100ed3da44b9e7af048a33f83e0
+        id: 2108395143
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Puzzle
+          ObjectType: 12
+          guid: 647699534d80c949a56e1fe8688a3d65
+        - ElementName: Resonant_Frequency_Note
+          ObjectType: 9
+          guid: 319af7f7a60c66498c615385adf19d35
+        - ElementName: Note_7
+          ObjectType: 8
+          guid: a8544100ed3da44b9e7af048a33f83e0
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -153,7 +2339,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: ba3f39085c1e1a4eaa95b413330db915
     GuidInternal: 
-    m_lastTime: -8585698956304650762
+    m_lastTime: -8585603614573301196
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -167,7 +2353,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: f25b47a12a518141afbc59f62725d309
     GuidInternal: 
-    m_lastTime: -8585698956304645797
+    m_lastTime: -8585603614573296200
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

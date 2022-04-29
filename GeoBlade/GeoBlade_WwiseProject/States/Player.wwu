@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Player" ID="{45C4E298-A78D-4BBB-B423-952BF4AD2D10}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Material" ID="{FB92C39F-9452-4C8C-B66E-3C435E589866}">
+					<ChildrenList>
+						<State Name="None" ID="{D977ACB5-73F3-45AA-9ED1-531DA6577937}"/>
+						<State Name="Concrete" ID="{29AB9AFA-8942-4EDE-9761-459993B31C40}"/>
+						<State Name="Grass" ID="{72FA282C-A6FB-49C4-ACD7-3AF1BEA8C380}"/>
+						<State Name="Metal" ID="{E8456B5F-8B90-43E6-B157-A724C80359FC}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Footstep_Type" ID="{8F75990E-CED9-47AA-8AEE-BFC38DEAC310}">
+					<ChildrenList>
+						<State Name="None" ID="{8D78BF09-E98C-46EB-B127-45E165E24259}"/>
+						<State Name="Walk" ID="{DEBB55E7-7F75-40F7-95A6-A07ADA26DD32}"/>
+						<State Name="Run" ID="{5313CF49-8F3E-4BA6-8618-57C8E6ED556D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Attack_Type" ID="{05F9D408-CF10-4C60-8710-300508312E18}">
+					<ChildrenList>
+						<State Name="None" ID="{177B57E6-74FA-4AB7-AEA7-9BCB43590F6A}"/>
+						<State Name="Light1" ID="{BEA5AF9C-4A2B-4219-A75A-94B48D061310}"/>
+						<State Name="Light2" ID="{7CAD223E-82F2-416C-A123-452E2E9C946A}"/>
+						<State Name="Heavy" ID="{DB6A4C6C-26C6-4E04-AD89-90CE445F177B}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

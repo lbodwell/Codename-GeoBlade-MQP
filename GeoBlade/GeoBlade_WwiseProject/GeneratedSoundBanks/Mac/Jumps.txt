@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1305133589	Player_Jump			\Default Work Unit\Player_Jump	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	575696739	jump_underground_1	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Mac\SFX\sfx_player_jump_underground_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\jump_underground_1		155564
+

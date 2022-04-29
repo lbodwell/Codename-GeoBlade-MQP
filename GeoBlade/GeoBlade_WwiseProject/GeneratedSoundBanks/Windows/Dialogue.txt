@@ -1,0 +1,163 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4029211690	Dialogue_Trigger			\Dialogue\Dialogue_Trigger	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3247544628	Dialogue_Line			\Dialogue\Dialogue_Line	
+
+State	ID	Name	State Group			Notes
+	255261656	lvl1_platformB_seru_05	Dialogue_Line			
+	255261657	lvl1_platformB_seru_04	Dialogue_Line			
+	255261659	lvl1_platformB_seru_06	Dialogue_Line			
+	255261660	lvl1_platformB_seru_01	Dialogue_Line			
+	255261662	lvl1_platformB_seru_03	Dialogue_Line			
+	255261663	lvl1_platformB_seru_02	Dialogue_Line			
+	380905701	lvl1_spiralRoom_seru_01	Dialogue_Line			
+	380905702	lvl1_spiralRoom_seru_02	Dialogue_Line			
+	596189768	lvl1_vista_seru_10	Dialogue_Line			
+	596189769	lvl1_vista_seru_11	Dialogue_Line			
+	596189770	lvl1_vista_seru_12	Dialogue_Line			
+	596189771	lvl1_vista_seru_13	Dialogue_Line			
+	612702794	lvl1_platformB_core_01	Dialogue_Line			
+	612967474	lvl1_vista_seru_09	Dialogue_Line			
+	612967475	lvl1_vista_seru_08	Dialogue_Line			
+	612967480	lvl1_vista_seru_03	Dialogue_Line			
+	612967481	lvl1_vista_seru_02	Dialogue_Line			
+	612967482	lvl1_vista_seru_01	Dialogue_Line			
+	612967484	lvl1_vista_seru_07	Dialogue_Line			
+	612967485	lvl1_vista_seru_06	Dialogue_Line			
+	612967486	lvl1_vista_seru_05	Dialogue_Line			
+	612967487	lvl1_vista_seru_04	Dialogue_Line			
+	748895195	None	Dialogue_Line			
+	966952192	lvl1_platformB_iris_07	Dialogue_Line			
+	966952193	lvl1_platformB_iris_06	Dialogue_Line			
+	966952194	lvl1_platformB_iris_05	Dialogue_Line			
+	966952195	lvl1_platformB_iris_04	Dialogue_Line			
+	966952196	lvl1_platformB_iris_03	Dialogue_Line			
+	966952197	lvl1_platformB_iris_02	Dialogue_Line			
+	966952198	lvl1_platformB_iris_01	Dialogue_Line			
+	966952207	lvl1_platformB_iris_08	Dialogue_Line			
+	1220749281	lvl1_platformA_iris_01	Dialogue_Line			
+	1220749282	lvl1_platformA_iris_02	Dialogue_Line			
+	1220749283	lvl1_platformA_iris_03	Dialogue_Line			
+	1260396592	lvl1_vista_iris_05	Dialogue_Line			
+	1260396593	lvl1_vista_iris_04	Dialogue_Line			
+	1260396594	lvl1_vista_iris_07	Dialogue_Line			
+	1260396595	lvl1_vista_iris_06	Dialogue_Line			
+	1260396596	lvl1_vista_iris_01	Dialogue_Line			
+	1260396598	lvl1_vista_iris_03	Dialogue_Line			
+	1260396599	lvl1_vista_iris_02	Dialogue_Line			
+	1260396605	lvl1_vista_iris_08	Dialogue_Line			
+	2560847916	lvl1_transportationHanagar_securityDroid_03	Dialogue_Line			
+	2560847917	lvl1_transportationHanagar_securityDroid_02	Dialogue_Line			
+	2560847918	lvl1_transportationHanagar_securityDroid_01	Dialogue_Line			
+	2662722072	lvl1_spiralRoom_iris_02	Dialogue_Line			
+	2662722073	lvl1_spiralRoom_iris_03	Dialogue_Line			
+	2662722075	lvl1_spiralRoom_iris_01	Dialogue_Line			
+	2662722078	lvl1_spiralRoom_iris_04	Dialogue_Line			
+	2662722079	lvl1_spiralRoom_iris_05	Dialogue_Line			
+	2841863192	lvl1_platformA_seru_02	Dialogue_Line			
+	2841863193	lvl1_platformA_seru_03	Dialogue_Line			
+	2841863195	lvl1_platformA_seru_01	Dialogue_Line			
+	2881107234	lvl1_transportationHanagar_seru_04	Dialogue_Line			
+	2881107236	lvl1_transportationHanagar_seru_02	Dialogue_Line			
+	2881107237	lvl1_transportationHanagar_seru_03	Dialogue_Line			
+	2881107239	lvl1_transportationHanagar_seru_01	Dialogue_Line			
+	3117459352	lvl1_transportationHanagar_iris_04	Dialogue_Line			
+	3117459353	lvl1_transportationHanagar_iris_05	Dialogue_Line			
+	3117459354	lvl1_transportationHanagar_iris_06	Dialogue_Line			
+	3117459357	lvl1_transportationHanagar_iris_01	Dialogue_Line			
+	3117459358	lvl1_transportationHanagar_iris_02	Dialogue_Line			
+	3117459359	lvl1_transportationHanagar_iris_03	Dialogue_Line			
+	3259346052	lvl1_generatorRoom_seru_02	Dialogue_Line			
+	3259346053	lvl1_generatorRoom_seru_03	Dialogue_Line			
+	3259346055	lvl1_generatorRoom_seru_01	Dialogue_Line			
+	3383705420	lvl1_vista_core_01	Dialogue_Line			
+	3771780344	lvl1_generatorRoom_iris_04	Dialogue_Line			
+	3771780345	lvl1_generatorRoom_iris_05	Dialogue_Line			
+	3771780349	lvl1_generatorRoom_iris_01	Dialogue_Line			
+	3771780350	lvl1_generatorRoom_iris_02	Dialogue_Line			
+	3771780351	lvl1_generatorRoom_iris_03	Dialogue_Line			
+	4003890720	lvl1_stasisRoom_seru_02	Dialogue_Line			
+	4003890721	lvl1_stasisRoom_seru_03	Dialogue_Line			
+	4003890723	lvl1_stasisRoom_seru_01	Dialogue_Line			
+	4061841897	lvl1_stasisRoom_iris_01	Dialogue_Line			
+	4061841898	lvl1_stasisRoom_iris_02	Dialogue_Line			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	17941453	lvl1_generatorRoom_iris_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_generatorRoom_iris_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_generatorRoom_iris_04		1720436
+	21767523	lvl1_platformB_core_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_platformB_core_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_core_01		590350
+	52354809	lvl1_spiralRoom_seru_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_spiralRoom_seru_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_seru_02		620754
+	55637762	lvl1_generatorRoom_seru_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_generatorRoom_seru_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_generatorRoom_seru_02		441828
+	69217860	lvl1_spiralRoom_iris_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\geoblade_dialogue_lvl1_spiral_room_iris_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_iris_04		2198412
+	74934006	lvl1_vista_seru_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_04		537926
+	112668475	lvl1_spiralRoom_seru_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_spiralRoom_seru_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_seru_01		508796
+	117053325	lvl1_transportationHangar_securityDroid_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHangar_securityDroid_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHangar_securityDroid_02		691440
+	129079745	lvl1_spiralRoom_iris_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\geoblade_dialogue_lvl1_spiral_room_iris_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_iris_01		550164
+	138660706	lvl1_vista_seru_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_02		952350
+	163305341	lvl1_spiralRoom_iris_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\geoblade_dialogue_lvl1_spiral_room_iris_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_iris_03		1119280
+	164341597	lvl1_generatorRoom_iris_05	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_generatorRoom_iris_05_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_generatorRoom_iris_05		1016568
+	165612238	lvl1_vista_seru_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_01		991314
+	172112504	lvl1_platformB_seru_05	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_seru_05_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_seru_05		79784
+	183379798	lvl1_vista_iris_06	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_iris_06_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_iris_06		792000
+	196224523	lvl1_vista_iris_07	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_iris_07_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_iris_07		475916
+	198308398	lvl1_transportationHanagar_iris_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHanagar_iris_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHanagar_iris_02		474368
+	230777457	lvl1_stasisRoom_iris_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\geoblade_dialogue_lvl1_stasis_room_iris_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_stasisRoom_iris_02		2000952
+	236504068	lvl1_platformB_seru_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_seru_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_seru_03		737534
+	305046832	lvl1_transportationHangar_seru_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHangar_seru_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHangar_seru_03		157198
+	305670596	lvl1_vista_seru_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_03		703334
+	309564777	lvl1_generatorRoom_iris_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_generatorRoom_iris_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_generatorRoom_iris_02		438080
+	312893373	lvl1_stasisRoom_seru_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_stasisRoom_seru_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_stasisRoom_seru_03		135330
+	341577424	lvl1_vista_seru_08	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_08_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_08		878764
+	369670797	lvl1_platformB_iris_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_iris_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_iris_04		309828
+	371202896	lvl1_platformA_seru_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformA_seru_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformA_seru_01		732820
+	381358808	lvl1_transportationHangar_seru_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHangar_seru_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHangar_seru_02		337310
+	384593246	lvl1_stasisRoom_seru_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_stasisRoom_seru_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_stasisRoom_seru_01		134224
+	402648391	lvl1_platformB_iris_08	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_iris_08_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_iris_08		429080
+	409018837	lvl1_platformA_seru_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformA_seru_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformA_seru_02		74216
+	411634141	lvl1_spiralRoom_iris_05	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_spiralRoom_iris_05_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_iris_05		673432
+	439598663	lvl1_transportationHangar_seru_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHangar_seru_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHangar_seru_04		272824
+	454350175	lvl1_vista_iris_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_iris_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_iris_03		504964
+	492348402	lvl1_vista_iris_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_iris_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_iris_01		471068
+	516758416	lvl1_transportationHanagar_iris_05	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHanagar_iris_05_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHanagar_iris_05		533904
+	526643277	lvl1_vista_iris_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_iris_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_iris_02		247976
+	553446299	lvl1_platformB_iris_05	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_iris_05_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_iris_05		546956
+	579532051	lvl1_generatorRoom_seru_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_generatorRoom_seru_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_generatorRoom_seru_01		473624
+	597478837	lvl1_vista_iris_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_iris_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_iris_04		1368780
+	609501657	lvl1_platformB_seru_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_seru_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_seru_01		74474
+	626448583	lvl1_platformB_seru_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_seru_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_seru_02		496202
+	631747237	lvl1_platformA_seru_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformA_seru_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformA_seru_03		304856
+	649351665	lvl1_vista_seru_06	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_06_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_06		732064
+	655696943	lvl1_platformB_iris_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_iris_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_iris_02		983176
+	680842040	lvl1_transportationHanagar_iris_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHanagar_iris_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHanagar_iris_01		740220
+	681263395	lvl1_stasisRoom_seru_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_stasisRoom_seru_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_stasisRoom_seru_02		781730
+	715642614	lvl1_platformB_iris_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_iris_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_iris_03		828872
+	732132979	lvl1_spiralRoom_iris_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\geoblade_dialogue_lvl1_spiral_room_iris_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_spiralRoom_iris_02		1613768
+	742503847	lvl1_platformB_seru_06	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_seru_06_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_seru_06		286568
+	768293926	lvl1_vista_seru_11	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_11_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_11		790694
+	768368793	lvl1_transportationHanagar_iris_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHanagar_iris_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHanagar_iris_04		529936
+	772518561	lvl1_transportationHanagar_iris_06	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHanagar_iris_06_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHanagar_iris_06		691164
+	780918975	lvl1_platformA_iris_02	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformA_iris_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformA_iris_02		504736
+	785383613	lvl1_vista_seru_13	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_13_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_13		300626
+	796665864	lvl1_transportationHanagar_iris_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHanagar_iris_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHanagar_iris_03		1230196
+	801844897	lvl1_vista_seru_12	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_12_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_12		389816
+	818479008	lvl1_transportationHangar_seru_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHangar_seru_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHangar_seru_01		664138
+	833069986	lvl1_vista_seru_05	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_05_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_05		541922
+	848602495	lvl1_generatorRoom_iris_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_generatorRoom_iris_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_generatorRoom_iris_01		658376
+	858709726	lvl1_platformA_iris_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformA_iris_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformA_iris_03		800420
+	860139807	lvl1_platformB_iris_06	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_iris_06_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_iris_06		702080
+	865265404	lvl1_transportationHangar_securityDroid_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHangar_securityDroid_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHangar_securityDroid_01		1317376
+	895619089	lvl1_transportationHangar_securityDroid_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_transportationHangar_securityDroid_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_transportationHangar_securityDroid_03		502424
+	903086115	lvl1_vista_iris_05	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_iris_05_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_iris_05		1057504
+	908389872	lvl1_vista_seru_07	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_07_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_07		687376
+	922251863	lvl1_vista_seru_09	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_09_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_09		712686
+	933542293	lvl1_vista_iris_08	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_iris_08_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_iris_08		907452
+	963008792	lvl1_platformB_iris_07	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_iris_07_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_iris_07		389088
+	988565201	lvl1_platformB_iris_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_iris_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_iris_01		1003656
+	988643121	lvl1_platformB_seru_04	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformB_seru_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformB_seru_04		398030
+	1008634780	lvl1_vista_seru_10	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_seru_10_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_seru_10		134464
+	1013482112	lvl1_generatorRoom_seru_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_generatorRoom_seru_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_generatorRoom_seru_03		541010
+	1016299112	lvl1_stasisRoom_iris_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\geoblade_dialogue_lvl1_stasis_room_iris_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_stasisRoom_iris_01		1479004
+	1030104141	lvl1_generatorRoom_iris_03	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_generatorRoom_iris_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_generatorRoom_iris_03		2176672
+	1034549744	lvl1_platformA_iris_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lvl1_platformA_iris_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_platformA_iris_01		885100
+	1057573288	lvl1_vista_core_01	D:\Dev\Codename-GeoBlade-MQP\GeoBlade\GeoBlade_WwiseProject\.cache\Windows\SFX\lv1_vista_core_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialogue\Play_Dialogue_Line\lvl1_vista_core_01		761272
+

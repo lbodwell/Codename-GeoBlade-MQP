@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F43D3F90-AFB7-4022-A244-2A5BF36F7435}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Puzzle" ID="{F43D3F90-AFB7-4022-A244-2A5BF36F7435}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="Puzzle_Generator_Hum" ID="{DF054188-C2CE-4CC7-9EAA-80D86E79C3E2}" ShortID="901575224">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Generator Attenuation" ID="{65633CFE-4BC0-4F09-B609-7165552D3857}" WorkUnitID="{9E44F940-DC2D-46E1-9E14-08F4FE44DFE7}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="None" ID="{62454E68-7B50-473A-9F47-0D71975E1E73}" WorkUnitID="{53997664-804D-49C9-A56E-1FE8688A3D65}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Generator_Hum_Note" ID="{3ED5A98B-B3B5-4344-89A2-24A4FCC251C1}" WorkUnitID="{53997664-804D-49C9-A56E-1FE8688A3D65}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Puzzle_Generator_Hum_A" ID="{AB74311A-388E-4D1F-B36A-DEB12E43481E}" ShortID="830838319">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Generator_Hum_A" ID="{7932D664-6D09-4DD7-A80A-F081665A133C}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Generator_Hum_A.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="59144974"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Generator_Hum_A" ID="{7932D664-6D09-4DD7-A80A-F081665A133C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Puzzle_Generator_Hum_B" ID="{C74B30A7-FF25-418E-8AE1-9578C4494253}" ShortID="172650257">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Generator_Hum_B" ID="{C20CBDF6-6515-451E-800A-4349C413AEB5}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Generator_Hum_B.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="595071410"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Generator_Hum_B" ID="{C20CBDF6-6515-451E-800A-4349C413AEB5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Puzzle_Generator_Hum_F#" ID="{72F4C11C-928A-47C4-8BE9-E876CE91F012}" ShortID="124199531">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Generator_Hum_F#" ID="{6A023DF7-2907-4E89-AA61-7B134D7BC944}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Generator_Hum_F#.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1010712288"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Generator_Hum_F#" ID="{6A023DF7-2907-4E89-AA61-7B134D7BC944}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Puzzle_Generator_Hum_G" ID="{06159B8A-83CC-4BE3-802C-32EC8EA84D67}" ShortID="220100515">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Generator_Hum_G" ID="{4D418DE9-03E1-4227-93E9-8E2AEBCE5677}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Generator_Hum_G.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="389562452"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Generator_Hum_G" ID="{4D418DE9-03E1-4227-93E9-8E2AEBCE5677}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Generator_Hum_A" ID="{AB74311A-388E-4D1F-B36A-DEB12E43481E}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Generator_Hum_F#" ID="{72F4C11C-928A-47C4-8BE9-E876CE91F012}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Generator_Hum_G" ID="{06159B8A-83CC-4BE3-802C-32EC8EA84D67}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Generator_Hum_B" ID="{C74B30A7-FF25-418E-8AE1-9578C4494253}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Note_4" ID="{5A030A1A-81DE-4F10-88BA-E00426CA262B}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Generator_Hum_A" ID="{AB74311A-388E-4D1F-B36A-DEB12E43481E}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Note_5" ID="{7A6B1C69-1FEC-4FDE-A31B-F4D56FA0C4E8}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Generator_Hum_B" ID="{C74B30A7-FF25-418E-8AE1-9578C4494253}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Note_2" ID="{371D63DF-1D21-4F60-A2A7-36441A9B4678}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Generator_Hum_F#" ID="{72F4C11C-928A-47C4-8BE9-E876CE91F012}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Note_3" ID="{915EC0E9-9CD2-4913-A370-026F5291CE9B}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Generator_Hum_G" ID="{06159B8A-83CC-4BE3-802C-32EC8EA84D67}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<SwitchContainer Name="Puzzle_Resonant_Frequency" ID="{A930C6A2-10A9-46EF-9C40-96AAD18A048D}" ShortID="661892160">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Generator Attenuation" ID="{65633CFE-4BC0-4F09-B609-7165552D3857}" WorkUnitID="{9E44F940-DC2D-46E1-9E14-08F4FE44DFE7}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="None" ID="{616AC7EB-37A4-40A7-A632-4919A6DFF8BC}" WorkUnitID="{53997664-804D-49C9-A56E-1FE8688A3D65}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Resonant_Frequency_Note" ID="{F7F79A31-0CA6-4966-8C61-5385ADF19D35}" WorkUnitID="{53997664-804D-49C9-A56E-1FE8688A3D65}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Puzzle_Resonant_Freq_A" ID="{6BDE1E35-78D2-4436-A213-33C67EB368D7}" ShortID="187911895">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Resonant_Freq_A" ID="{949D2783-782F-4E8E-8849-13C4005697B9}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Resonant_Freq_A.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="89613828"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Resonant_Freq_A" ID="{949D2783-782F-4E8E-8849-13C4005697B9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Puzzle_Resonant_Freq_B" ID="{ED2F376D-A28E-4518-9C04-C2316207E265}" ShortID="70823090">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Resonant_Freq_B" ID="{D86615C0-BEB0-47EE-AD6E-EC61A3F34CC7}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Resonant_Freq_B.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="770132114"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Resonant_Freq_B" ID="{D86615C0-BEB0-47EE-AD6E-EC61A3F34CC7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Puzzle_Resonant_Freq_C" ID="{B37C58AB-12F7-4823-AD96-220A2B9612AA}" ShortID="881045485">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Resonant_Freq_C" ID="{BAF6D3B9-2575-42AA-90EB-A808DA7B2F0C}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Resonant_Freq_C.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="851307500"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Resonant_Freq_C" ID="{BAF6D3B9-2575-42AA-90EB-A808DA7B2F0C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Puzzle_Resonant_Freq_D" ID="{8AAC75B7-9C73-4A32-8D95-2EC5D09195B0}" ShortID="589353110">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Resonant_Freq_D" ID="{8F4F185A-48D3-4352-AA6C-B353B6BC7CFD}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Resonant_Freq_D.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="153292582"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Resonant_Freq_D" ID="{8F4F185A-48D3-4352-AA6C-B353B6BC7CFD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Puzzle_Resonant_Freq_E" ID="{D4194B74-68BA-4EF2-857D-3A4E03A2EB44}" ShortID="204842961">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Resonant_Freq_E" ID="{87CC552E-DFFB-4735-B188-D5AB1EBB7BF5}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Resonant_Freq_E.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1051904299"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Resonant_Freq_E" ID="{87CC552E-DFFB-4735-B188-D5AB1EBB7BF5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Puzzle_Resonant_Freq_F#" ID="{7793270B-78F3-430E-8AA9-2DEAD0675FFB}" ShortID="197185552">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Resonant_Freq_F#" ID="{81A65540-7782-40D5-9DE1-F0DE8CBBEDD6}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Resonant_Freq_F#.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="722968896"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Resonant_Freq_F#" ID="{81A65540-7782-40D5-9DE1-F0DE8CBBEDD6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Puzzle_Resonant_Freq_G" ID="{EB03384F-2C55-46C5-BE48-F7F12FF6BD58}" ShortID="172139348">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FCF91A7-90E8-4343-8ACA-0E5534BEB74D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294AE9EB-8D74-4FA3-A148-FF1844AABA9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puzzle_Resonant_Freq_G" ID="{03CF61BF-AFCB-4F21-9D89-83888735FE8B}">
+									<Language>SFX</Language>
+									<AudioFile>Puzzle_Resonant_Freq_G.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1050792892"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puzzle_Resonant_Freq_G" ID="{03CF61BF-AFCB-4F21-9D89-83888735FE8B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Resonant_Frequency_Note" ID="{F7F79A31-0CA6-4966-8C61-5385ADF19D35}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Note_4" ID="{CE8302C9-4AB7-42B2-8CAF-914E2A283CCC}"/>
+								<CustomState Name="" ID="{1433F613-D109-451C-886D-D0674C1D2A8E}" ShortID="369033390"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Note_2" ID="{F2C7E356-2973-4710-B9B2-9133BBB8A011}"/>
+								<CustomState Name="" ID="{752291E1-92F5-4DC2-B8FA-0ECE6A019860}" ShortID="226609949"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Note_1" ID="{288CA895-C2B7-4798-B8C0-1EF065BE9A4D}"/>
+								<CustomState Name="" ID="{E94DF1D4-6601-4A76-BA97-9B6C03EC1375}" ShortID="244514359"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Note_7" ID="{004154A8-3DED-4BA4-9E7A-F048A33F83E0}"/>
+								<CustomState Name="" ID="{37C215E3-59C9-466F-A8B3-B09CDAEAFB80}" ShortID="473907455"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Note_3" ID="{42B47A64-3E10-4BDA-AB91-76154DA9EDE1}"/>
+								<CustomState Name="" ID="{E0A4FF79-A830-44D4-B741-98B2A975790B}" ShortID="287387014"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Note_5" ID="{5D483DE1-DFA1-4D1D-9F56-DCC336406FC2}"/>
+								<CustomState Name="" ID="{D65F6A2A-0334-43AD-8446-8B6557275136}" ShortID="795076526"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Note_6" ID="{7170785E-6CF5-4DC7-AFD8-6E25232FBC0B}"/>
+								<CustomState Name="" ID="{CB26EAFB-A1D2-428F-AE3B-764B8D1D55A4}" ShortID="37670427"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ObjectLists/>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Resonant_Freq_F#" ID="{7793270B-78F3-430E-8AA9-2DEAD0675FFB}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Resonant_Freq_A" ID="{6BDE1E35-78D2-4436-A213-33C67EB368D7}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Resonant_Freq_G" ID="{EB03384F-2C55-46C5-BE48-F7F12FF6BD58}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Resonant_Freq_B" ID="{ED2F376D-A28E-4518-9C04-C2316207E265}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Resonant_Freq_E" ID="{D4194B74-68BA-4EF2-857D-3A4E03A2EB44}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Resonant_Freq_C" ID="{B37C58AB-12F7-4823-AD96-220A2B9612AA}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puzzle_Resonant_Freq_D" ID="{8AAC75B7-9C73-4A32-8D95-2EC5D09195B0}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Note_2" ID="{F2C7E356-2973-4710-B9B2-9133BBB8A011}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Resonant_Freq_F#" ID="{7793270B-78F3-430E-8AA9-2DEAD0675FFB}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Note_6" ID="{7170785E-6CF5-4DC7-AFD8-6E25232FBC0B}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Resonant_Freq_C" ID="{B37C58AB-12F7-4823-AD96-220A2B9612AA}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Note_3" ID="{42B47A64-3E10-4BDA-AB91-76154DA9EDE1}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Resonant_Freq_G" ID="{EB03384F-2C55-46C5-BE48-F7F12FF6BD58}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Note_1" ID="{288CA895-C2B7-4798-B8C0-1EF065BE9A4D}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Resonant_Freq_E" ID="{D4194B74-68BA-4EF2-857D-3A4E03A2EB44}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Note_7" ID="{004154A8-3DED-4BA4-9E7A-F048A33F83E0}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Resonant_Freq_D" ID="{8AAC75B7-9C73-4A32-8D95-2EC5D09195B0}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Note_4" ID="{CE8302C9-4AB7-42B2-8CAF-914E2A283CCC}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Resonant_Freq_A" ID="{6BDE1E35-78D2-4436-A213-33C67EB368D7}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Note_5" ID="{5D483DE1-DFA1-4D1D-9F56-DCC336406FC2}"/>
+								<ItemList>
+									<ItemRef Name="Puzzle_Resonant_Freq_B" ID="{ED2F376D-A28E-4518-9C04-C2316207E265}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

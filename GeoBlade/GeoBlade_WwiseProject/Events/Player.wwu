@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DC3994D1-FBA0-4E2B-9C23-2A66BE5F6F0F}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Player" ID="{DC3994D1-FBA0-4E2B-9C23-2A66BE5F6F0F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Player_Footstep" ID="{3BBA4A06-0BAF-4F32-B279-B0AE52626346}">
+					<ChildrenList>
+						<Action Name="" ID="{15D6246B-27B1-4F7F-BBBE-676EB293DBE0}" ShortID="978808005">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Footsteps" ID="{96E05679-3EBD-4856-8771-D2E6A3AB2243}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Jump" ID="{BA223F0D-2886-4B4B-A6CA-6B837CB7A8AE}">
+					<ChildrenList>
+						<Action Name="" ID="{1E015F31-AF0B-4FC1-977A-B0ECC4CF9089}" ShortID="848051948">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Jump" ID="{90077BB9-3038-450A-9F68-E00E74B6391E}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Attack_Swing" ID="{327B8C41-943B-4B84-987A-1B61B2EF0F23}">
+					<ChildrenList>
+						<Action Name="" ID="{AB671645-394D-4289-ACD6-53557143289F}" ShortID="947198833">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Attack_Swing" ID="{2AABB46D-33FA-42D1-8D3B-9EF58E6D0E6E}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Unsheathe" ID="{937329EF-6433-4BB9-8B56-0A96F215CB61}">
+					<ChildrenList>
+						<Action Name="" ID="{362E28D6-FB4C-4594-9F5B-E81BAA1C3678}" ShortID="468630338">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="geoblade_unsheathe" ID="{AB947EDA-4EA8-46DE-B625-89F79C46EBE7}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Security_Droid_Attack" ID="{90090751-01E7-4AF7-8DD5-DE6F148AA2E5}">
+					<ChildrenList>
+						<Action Name="" ID="{66DD774E-E2E8-472A-AC8F-35C009F59F9E}" ShortID="902925027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="security_droid_stab" ID="{65E26057-3FEA-49AB-BA8E-EA2FF82CC5F1}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stasis_Pod_Hiss" ID="{E9635F58-BC79-439A-8569-0F2689F9A533}">
+					<ChildrenList>
+						<Action Name="" ID="{F8BA29D1-E7FB-4DE0-9AC9-13FA24B3982E}" ShortID="620267796">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stasis_pod_hiss" ID="{53BA0B1E-0120-403F-AA71-C4F877E3F9DF}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Attack_Impact" ID="{169DD30A-786B-4741-9415-7B131727DF95}">
+					<ChildrenList>
+						<Action Name="" ID="{1B086BAF-EEBE-4A44-A0A0-C98614573601}" ShortID="242606329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Attack_Impact" ID="{64399029-3111-4545-9FC8-6A20EC4B5764}" WorkUnitID="{8946AC96-824F-4335-97E8-95D5D31A4BD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
