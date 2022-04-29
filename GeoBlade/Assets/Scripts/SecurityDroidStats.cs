@@ -44,8 +44,8 @@ public class SecurityDroidStats : CharacterStats {
         slider.value = health / maxHealth;
     }
 
-    public void Update()
-    {
+    public void Update() {
         healthBarUI.transform.LookAt(PlayerManager.Instance.camera.transform);
+        healthBarUI.transform.rotation = Quaternion.LookRotation(-healthBarUI.transform.forward, healthBarUI.transform.up);
     }
 }
