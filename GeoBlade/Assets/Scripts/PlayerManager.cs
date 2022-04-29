@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour {
     public static PlayerManager Instance { get; private set; }
     public GameObject player;
+    public GameObject camera;
     public GameObject geoBlade;
     public GameObject iris;
     public GameObject securityDroid1;
