@@ -42,4 +42,9 @@ public class SecurityDroidStats : CharacterStats {
         
         slider.value = health / maxHealth;
     }
+
+    public void Update()
+    {
+        healthBarUI.transform.LookAt(PlayerManager.Instance.camera.transform);
+    }
 }
