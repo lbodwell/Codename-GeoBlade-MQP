@@ -50,7 +50,7 @@ MonoBehaviour:
   controller: {fileID: 4138032695740395158}
   securityDroidStats: {fileID: 4138032695740395159}
   movementSpeed: 2
-  chaseRadius: 10
+  chaseRadius: 25
   attackRadius: 2
   turnSmoothingTime: 0.2
   attackCooldown: 4
