@@ -234,7 +234,7 @@ public class PlayerController : MonoBehaviour {
     {
         Vector2 deltaPos = context.ReadValue<Vector2>();
         Debug.Log("Changing Look by " + deltaPos);
-        freeLookCam.m_XAxis.Value += -deltaPos.x * 5;
+        freeLookCam.m_XAxis.Value += -deltaPos.x * 4;
         freeLookCam.m_YAxis.Value += deltaPos.y * 0.03f;
     }
     
