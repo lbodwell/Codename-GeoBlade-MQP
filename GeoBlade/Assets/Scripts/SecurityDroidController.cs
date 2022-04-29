@@ -35,7 +35,6 @@ public class SecurityDroidController : MonoBehaviour {
             bool fighting = _animator.GetBool(Fighting);
 
             if (dist <= chaseRadius) {
-                // TODO: Re-write this. Target angle is always off by 90 degrees for some reason, so I hardcoded -90 for now.
                 var dir = (_target.position - transform.position).normalized;
                 var targetAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
                 var smoothedAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothingVel,

@@ -20,8 +20,8 @@ public class TramMotion : MonoBehaviour {
             var tramPos = transform.position;
             var playerController = _player.GetComponent<CharacterController>();
         
-            isPlayerOnTram = playerPos.x < tramPos.x + 10 && playerPos.x > tramPos.x - 10 &&
-                             playerPos.z < tramPos.z + 5 && playerPos.z > tramPos.z - 5 &&
+            isPlayerOnTram = playerPos.x < tramPos.x + 15 && playerPos.x > tramPos.x - 15 &&
+                             playerPos.z < tramPos.z + 10 && playerPos.z > tramPos.z - 10 &&
                              playerController.isGrounded;
 
             if (transform.position.x > destination.x) {
