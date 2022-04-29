@@ -8,7 +8,7 @@ public class SecurityDroidStats : CharacterStats {
 
     private void Start() {
         health = maxHealth;
-        healthBarUI.SetActive(true);
+        healthBarUI.SetActive(false);
     }
 
     public override void DamageCharacter(float amount) {
@@ -28,8 +28,7 @@ public class SecurityDroidStats : CharacterStats {
                 playerStats.HealCharacter(10);
             }
         
-            Debug.Log("got to damage char -> set health bar active");
-            //healthBarUI.SetActive(true);
+            healthBarUI.SetActive(true);
 
             slider.value = health / maxHealth;
         }
