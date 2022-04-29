@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour {
     public float comboTimeout = 1.0f;
     public float attackInactivityTimeout = 5.0f;
     public DamageCollider weaponCollider;
+    public CinemachineFreeLook freeLookCam;
 
     private List<Attack> _attacks;
     private Vector3 _velocity = new Vector3(0f, 0f, 0f);
@@ -226,6 +228,14 @@ public class PlayerController : MonoBehaviour {
     public void Sprint(InputAction.CallbackContext context) {
         _isSprinting = true;
         _nextFootstep = Time.time;
+    }
+
+    public void Look(InputAction.CallbackContext context)
+    {
+        Vector2 deltaPos = context.ReadValue<Vector2>();
+        Debug.Log("Changing Look by " + deltaPos);
+        freeLookCam.m_XAxis.Value += -deltaPos.x * 5;
+        freeLookCam.m_YAxis.Value += deltaPos.y * 0.03f;
     }
     
     // This is janky

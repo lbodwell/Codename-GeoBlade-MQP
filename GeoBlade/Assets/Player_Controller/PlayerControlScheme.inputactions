@@ -1,5 +1,5 @@
 {
-    "name": "ThirdPersonControlScheme",
+    "name": "PlayerControlScheme",
     "maps": [
         {
             "name": "Movement",
@@ -11,7 +11,8 @@
                     "id": "e08d2b87-3fac-4eb9-94f3-571212195c84",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Jump",
@@ -19,7 +20,8 @@
                     "id": "510cb160-ad28-4324-8070-999583d0fa49",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Attack",
@@ -27,7 +29,8 @@
                     "id": "58427b67-80e1-4c85-bb11-956b6674d63a",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Sprint",
@@ -35,23 +38,17 @@
                     "id": "53169ad3-657d-4f2a-9bc0-854ad49d6506",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Dash",
-                    "type": "Button",
-                    "id": "64fdc2d3-6440-4167-9fe5-9e46081954c0",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Look",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "3f46dd2f-b25b-411e-89a9-48b3e5d17fc7",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -112,11 +109,33 @@
                 },
                 {
                     "name": "",
+                    "id": "82ba0ba4-b086-4635-955a-0d3daedeff31",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "474abcb7-5ef4-4c18-8717-d960ecc2df33",
                     "path": "<Mouse>/press",
                     "interactions": "",
                     "processors": "",
                     "groups": "Mouse_Keyboard",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cd5daf63-1e24-4eee-8f68-e90b9c4d1b4b",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -134,12 +153,12 @@
                 },
                 {
                     "name": "",
-                    "id": "6ba32c32-9444-4815-aaa3-862e043fb30d",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "Tap",
+                    "id": "662bab96-73bf-4b06-a2d4-40f281704400",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
                     "processors": "",
-                    "groups": "Mouse_Keyboard",
-                    "action": "Dash",
+                    "groups": "Gamepad",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -156,11 +175,33 @@
                 },
                 {
                     "name": "",
-                    "id": "835cb0f0-72f1-405b-bda4-ea972aa54581",
-                    "path": "<Mouse>/delta",
+                    "id": "6faf1ad1-4277-497b-a33e-ed2c9f815077",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Mouse_Keyboard",
+                    "groups": "Gamepad",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e36e279d-8184-4869-af54-aa99c35ed541",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "50783251-5ea4-408b-b13f-ab030fb00f11",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -180,6 +221,17 @@
                 },
                 {
                     "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
                     "isOptional": false,
                     "isOR": false
                 }
