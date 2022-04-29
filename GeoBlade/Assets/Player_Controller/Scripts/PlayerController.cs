@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,9 +42,9 @@ public class PlayerController : MonoBehaviour {
     private void Start() {
         // TODO: Use enums for attack names
         _attacks = new List<Attack> {
-            new Attack("Light1", 5),
-            new Attack("Light2", 10),
-            new Attack("Heavy", 20)
+            new Attack("Light1", 5, 1.267f),
+            new Attack("Light2", 10, 0.8f),
+            new Attack("Heavy", 20, 1.3f)
         };
         _timeoutTarget = Time.time + 0.1f;
     }
@@ -203,7 +204,7 @@ public class PlayerController : MonoBehaviour {
         var currAttack = _attacks[_nextAttackIndex];
 
         _nextAttackWindowStart = Time.time + attackCooldown;
-        _nextAttackWindowClose = Time.time + comboTimeout;
+        _nextAttackWindowClose = Time.time + currAttack.Duration + 0.05f;
         _nextWeaponSheathe = Time.time + attackInactivityTimeout;
 
         Debug.Log($"Attack (type: {currAttack.Name}, damage: {currAttack.Damage})");
@@ -238,9 +239,11 @@ public class PlayerController : MonoBehaviour {
 public class Attack {
     public readonly string Name;
     public readonly float Damage;
+    public readonly float Duration;
 
-    public Attack(string name, float damage) {
+    public Attack(string name, float damage, float duration) {
         Name = name;
         Damage = damage;
+        Duration = duration;
     }
 }
